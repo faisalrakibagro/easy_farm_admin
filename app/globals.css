@@ -1,0 +1,529 @@
+@import "tailwindcss";
+
+/* `dark:` utilities follow the class on <html> (set by the theme toggle), not only the OS. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ── Design tokens ─────────────────────────────────────────────────────────
+   Light is the default; `.dark` on <html> switches every token. Pages keep
+   their plain Tailwind classes (bg-white, text-slate-700 …): in dark mode the
+   palette itself is remapped below, so the whole panel follows at once. */
+:root {
+  /* One font per script, chosen in Settings → Languages (lib/fonts.ts sets
+     --font-latin/bengali/arabic). Latin text takes the first; Bengali and
+     Arabic letters fall through to their own font. Kept outside @theme
+     inline, which would bake the fallbacks in at build time. */
+  --app-font: var(--font-latin, 'Inter'), var(--font-bengali, 'Hind Siliguri'), var(--font-arabic, 'Noto Sans Arabic'), ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --app-bg: #f3f6fb;
+  --card: #ffffff;
+  --background: var(--app-bg);
+  --foreground: #1e293b;
+  --brand: #10b981;
+  --brand-2: #14b8a6;
+  --ring: #3b82f6;
+
+  /* Sidebar stays dark in both modes */
+  --sb-bg: linear-gradient(180deg, #0f1b30 0%, #0c1526 55%, #0a1a1c 100%);
+  --sb-border: rgba(148, 163, 184, 0.10);
+  --sb-text: #a3b1c6;
+  --sb-text-strong: #f1f5f9;
+  --sb-muted: #64748b;
+  --sb-hover: rgba(255, 255, 255, 0.06);
+  --sb-chip: rgba(255, 255, 255, 0.05);
+
+  /* Chart series (categorical, validated for colour-blind separation) */
+  --chart-1: #10b981; --chart-2: #0ea5e9; --chart-3: #f59e0b;
+  --chart-4: #8b5cf6; --chart-5: #f43f5e; --chart-6: #14b8a6; --chart-other: #94a3b8;
+}
+
+.dark {
+  --app-bg: #0a1020;
+  --card: #131c2e;
+  --foreground: #e2e8f0;
+  --ring: #60a5fa;
+  --sb-bg: linear-gradient(180deg, #0b1322 0%, #080e1a 60%, #07120f 100%);
+  --sb-border: rgba(148, 163, 184, 0.08);
+  color-scheme: dark;
+  --chart-1: #059669; --chart-2: #0284c7; --chart-3: #d97706;
+  --chart-4: #8b5cf6; --chart-5: #f43f5e; --chart-6: #0d9488; --chart-other: #64748b;
+
+  --color-slate-50: #0f1729;
+  --color-slate-100: #1a2439;
+  --color-slate-200: #253149;
+  --color-slate-300: #34425c;
+  --color-slate-400: #6f7f99;
+  --color-slate-500: #8c9ab1;
+  --color-slate-600: #a9b5c8;
+  --color-slate-700: #c6cfdc;
+  --color-slate-800: #dde3ec;
+  --color-slate-900: #eef2f7;
+  --color-slate-950: #f8fafc;
+  --color-gray-50: #0f1729;
+  --color-gray-100: #1a2439;
+  --color-gray-200: #253149;
+  --color-gray-300: #34425c;
+  --color-gray-400: #6f7f99;
+  --color-gray-500: #8c9ab1;
+  --color-gray-600: #a9b5c8;
+  --color-gray-700: #c6cfdc;
+  --color-gray-800: #dde3ec;
+  --color-gray-900: #eef2f7;
+  --color-gray-950: #f8fafc;
+  --color-zinc-50: #0f1729;
+  --color-zinc-100: #1a2439;
+  --color-zinc-200: #253149;
+  --color-zinc-300: #34425c;
+  --color-zinc-400: #6f7f99;
+  --color-zinc-500: #8c9ab1;
+  --color-zinc-600: #a9b5c8;
+  --color-zinc-700: #c6cfdc;
+  --color-zinc-800: #dde3ec;
+  --color-zinc-900: #eef2f7;
+  --color-zinc-950: #f8fafc;
+  --color-neutral-50: #0f1729;
+  --color-neutral-100: #1a2439;
+  --color-neutral-200: #253149;
+  --color-neutral-300: #34425c;
+  --color-neutral-400: #6f7f99;
+  --color-neutral-500: #8c9ab1;
+  --color-neutral-600: #a9b5c8;
+  --color-neutral-700: #c6cfdc;
+  --color-neutral-800: #dde3ec;
+  --color-neutral-900: #eef2f7;
+  --color-neutral-950: #f8fafc;
+  --color-stone-50: #0f1729;
+  --color-stone-100: #1a2439;
+  --color-stone-200: #253149;
+  --color-stone-300: #34425c;
+  --color-stone-400: #6f7f99;
+  --color-stone-500: #8c9ab1;
+  --color-stone-600: #a9b5c8;
+  --color-stone-700: #c6cfdc;
+  --color-stone-800: #dde3ec;
+  --color-stone-900: #eef2f7;
+  --color-stone-950: #f8fafc;
+  --color-red-50: color-mix(in oklab, oklch(63.7% 0.237 25.331) 13%, var(--card));
+  --color-red-100: color-mix(in oklab, oklch(63.7% 0.237 25.331) 18%, var(--card));
+  --color-red-200: color-mix(in oklab, oklch(63.7% 0.237 25.331) 30%, var(--card));
+  --color-red-300: color-mix(in oklab, oklch(63.7% 0.237 25.331) 45%, var(--card));
+  --color-red-700: oklch(80.8% 0.114 19.571);
+  --color-red-800: oklch(88.5% 0.062 18.334);
+  --color-red-900: oklch(93.6% 0.032 17.717);
+  --color-red-950: oklch(97.1% 0.013 17.38);
+  --color-orange-50: color-mix(in oklab, oklch(70.5% 0.213 47.604) 13%, var(--card));
+  --color-orange-100: color-mix(in oklab, oklch(70.5% 0.213 47.604) 18%, var(--card));
+  --color-orange-200: color-mix(in oklab, oklch(70.5% 0.213 47.604) 30%, var(--card));
+  --color-orange-300: color-mix(in oklab, oklch(70.5% 0.213 47.604) 45%, var(--card));
+  --color-orange-700: oklch(83.7% 0.128 66.29);
+  --color-orange-800: oklch(90.1% 0.076 70.697);
+  --color-orange-900: oklch(95.4% 0.038 75.164);
+  --color-orange-950: oklch(98% 0.016 73.684);
+  --color-amber-50: color-mix(in oklab, oklch(76.9% 0.188 70.08) 13%, var(--card));
+  --color-amber-100: color-mix(in oklab, oklch(76.9% 0.188 70.08) 18%, var(--card));
+  --color-amber-200: color-mix(in oklab, oklch(76.9% 0.188 70.08) 30%, var(--card));
+  --color-amber-300: color-mix(in oklab, oklch(76.9% 0.188 70.08) 45%, var(--card));
+  --color-amber-700: oklch(87.9% 0.169 91.605);
+  --color-amber-800: oklch(92.4% 0.12 95.746);
+  --color-amber-900: oklch(96.2% 0.059 95.617);
+  --color-amber-950: oklch(98.7% 0.022 95.277);
+  --color-yellow-50: color-mix(in oklab, oklch(79.5% 0.184 86.047) 13%, var(--card));
+  --color-yellow-100: color-mix(in oklab, oklch(79.5% 0.184 86.047) 18%, var(--card));
+  --color-yellow-200: color-mix(in oklab, oklch(79.5% 0.184 86.047) 30%, var(--card));
+  --color-yellow-300: color-mix(in oklab, oklch(79.5% 0.184 86.047) 45%, var(--card));
+  --color-yellow-700: oklch(90.5% 0.182 98.111);
+  --color-yellow-800: oklch(94.5% 0.129 101.54);
+  --color-yellow-900: oklch(97.3% 0.071 103.193);
+  --color-yellow-950: oklch(98.7% 0.026 102.212);
+  --color-lime-50: color-mix(in oklab, oklch(76.8% 0.233 130.85) 13%, var(--card));
+  --color-lime-100: color-mix(in oklab, oklch(76.8% 0.233 130.85) 18%, var(--card));
+  --color-lime-200: color-mix(in oklab, oklch(76.8% 0.233 130.85) 30%, var(--card));
+  --color-lime-300: color-mix(in oklab, oklch(76.8% 0.233 130.85) 45%, var(--card));
+  --color-lime-700: oklch(89.7% 0.196 126.665);
+  --color-lime-800: oklch(93.8% 0.127 124.321);
+  --color-lime-900: oklch(96.7% 0.067 122.328);
+  --color-lime-950: oklch(98.6% 0.031 120.757);
+  --color-green-50: color-mix(in oklab, oklch(72.3% 0.219 149.579) 13%, var(--card));
+  --color-green-100: color-mix(in oklab, oklch(72.3% 0.219 149.579) 18%, var(--card));
+  --color-green-200: color-mix(in oklab, oklch(72.3% 0.219 149.579) 30%, var(--card));
+  --color-green-300: color-mix(in oklab, oklch(72.3% 0.219 149.579) 45%, var(--card));
+  --color-green-700: oklch(87.1% 0.15 154.449);
+  --color-green-800: oklch(92.5% 0.084 155.995);
+  --color-green-900: oklch(96.2% 0.044 156.743);
+  --color-green-950: oklch(98.2% 0.018 155.826);
+  --color-emerald-50: color-mix(in oklab, oklch(69.6% 0.17 162.48) 13%, var(--card));
+  --color-emerald-100: color-mix(in oklab, oklch(69.6% 0.17 162.48) 18%, var(--card));
+  --color-emerald-200: color-mix(in oklab, oklch(69.6% 0.17 162.48) 30%, var(--card));
+  --color-emerald-300: color-mix(in oklab, oklch(69.6% 0.17 162.48) 45%, var(--card));
+  --color-emerald-700: oklch(84.5% 0.143 164.978);
+  --color-emerald-800: oklch(90.5% 0.093 164.15);
+  --color-emerald-900: oklch(95% 0.052 163.051);
+  --color-emerald-950: oklch(97.9% 0.021 166.113);
+  --color-teal-50: color-mix(in oklab, oklch(70.4% 0.14 182.503) 13%, var(--card));
+  --color-teal-100: color-mix(in oklab, oklch(70.4% 0.14 182.503) 18%, var(--card));
+  --color-teal-200: color-mix(in oklab, oklch(70.4% 0.14 182.503) 30%, var(--card));
+  --color-teal-300: color-mix(in oklab, oklch(70.4% 0.14 182.503) 45%, var(--card));
+  --color-teal-700: oklch(85.5% 0.138 181.071);
+  --color-teal-800: oklch(91% 0.096 180.426);
+  --color-teal-900: oklch(95.3% 0.051 180.801);
+  --color-teal-950: oklch(98.4% 0.014 180.72);
+  --color-cyan-50: color-mix(in oklab, oklch(71.5% 0.143 215.221) 13%, var(--card));
+  --color-cyan-100: color-mix(in oklab, oklch(71.5% 0.143 215.221) 18%, var(--card));
+  --color-cyan-200: color-mix(in oklab, oklch(71.5% 0.143 215.221) 30%, var(--card));
+  --color-cyan-300: color-mix(in oklab, oklch(71.5% 0.143 215.221) 45%, var(--card));
+  --color-cyan-700: oklch(86.5% 0.127 207.078);
+  --color-cyan-800: oklch(91.7% 0.08 205.041);
+  --color-cyan-900: oklch(95.6% 0.045 203.388);
+  --color-cyan-950: oklch(98.4% 0.019 200.873);
+  --color-sky-50: color-mix(in oklab, oklch(68.5% 0.169 237.323) 13%, var(--card));
+  --color-sky-100: color-mix(in oklab, oklch(68.5% 0.169 237.323) 18%, var(--card));
+  --color-sky-200: color-mix(in oklab, oklch(68.5% 0.169 237.323) 30%, var(--card));
+  --color-sky-300: color-mix(in oklab, oklch(68.5% 0.169 237.323) 45%, var(--card));
+  --color-sky-700: oklch(82.8% 0.111 230.318);
+  --color-sky-800: oklch(90.1% 0.058 230.902);
+  --color-sky-900: oklch(95.1% 0.026 236.824);
+  --color-sky-950: oklch(97.7% 0.013 236.62);
+  --color-blue-50: color-mix(in oklab, oklch(62.3% 0.214 259.815) 13%, var(--card));
+  --color-blue-100: color-mix(in oklab, oklch(62.3% 0.214 259.815) 18%, var(--card));
+  --color-blue-200: color-mix(in oklab, oklch(62.3% 0.214 259.815) 30%, var(--card));
+  --color-blue-300: color-mix(in oklab, oklch(62.3% 0.214 259.815) 45%, var(--card));
+  --color-blue-700: oklch(80.9% 0.105 251.813);
+  --color-blue-800: oklch(88.2% 0.059 254.128);
+  --color-blue-900: oklch(93.2% 0.032 255.585);
+  --color-blue-950: oklch(97% 0.014 254.604);
+  --color-indigo-50: color-mix(in oklab, oklch(58.5% 0.233 277.117) 13%, var(--card));
+  --color-indigo-100: color-mix(in oklab, oklch(58.5% 0.233 277.117) 18%, var(--card));
+  --color-indigo-200: color-mix(in oklab, oklch(58.5% 0.233 277.117) 30%, var(--card));
+  --color-indigo-300: color-mix(in oklab, oklch(58.5% 0.233 277.117) 45%, var(--card));
+  --color-indigo-700: oklch(78.5% 0.115 274.713);
+  --color-indigo-800: oklch(87% 0.065 274.039);
+  --color-indigo-900: oklch(93% 0.034 272.788);
+  --color-indigo-950: oklch(96.2% 0.018 272.314);
+  --color-violet-50: color-mix(in oklab, oklch(60.6% 0.25 292.717) 13%, var(--card));
+  --color-violet-100: color-mix(in oklab, oklch(60.6% 0.25 292.717) 18%, var(--card));
+  --color-violet-200: color-mix(in oklab, oklch(60.6% 0.25 292.717) 30%, var(--card));
+  --color-violet-300: color-mix(in oklab, oklch(60.6% 0.25 292.717) 45%, var(--card));
+  --color-violet-700: oklch(81.1% 0.111 293.571);
+  --color-violet-800: oklch(89.4% 0.057 293.283);
+  --color-violet-900: oklch(94.3% 0.029 294.588);
+  --color-violet-950: oklch(96.9% 0.016 293.756);
+  --color-purple-50: color-mix(in oklab, oklch(62.7% 0.265 303.9) 13%, var(--card));
+  --color-purple-100: color-mix(in oklab, oklch(62.7% 0.265 303.9) 18%, var(--card));
+  --color-purple-200: color-mix(in oklab, oklch(62.7% 0.265 303.9) 30%, var(--card));
+  --color-purple-300: color-mix(in oklab, oklch(62.7% 0.265 303.9) 45%, var(--card));
+  --color-purple-700: oklch(82.7% 0.119 306.383);
+  --color-purple-800: oklch(90.2% 0.063 306.703);
+  --color-purple-900: oklch(94.6% 0.033 307.174);
+  --color-purple-950: oklch(97.7% 0.014 308.299);
+  --color-fuchsia-50: color-mix(in oklab, oklch(66.7% 0.295 322.15) 13%, var(--card));
+  --color-fuchsia-100: color-mix(in oklab, oklch(66.7% 0.295 322.15) 18%, var(--card));
+  --color-fuchsia-200: color-mix(in oklab, oklch(66.7% 0.295 322.15) 30%, var(--card));
+  --color-fuchsia-300: color-mix(in oklab, oklch(66.7% 0.295 322.15) 45%, var(--card));
+  --color-fuchsia-700: oklch(83.3% 0.145 321.434);
+  --color-fuchsia-800: oklch(90.3% 0.076 319.62);
+  --color-fuchsia-900: oklch(95.2% 0.037 318.852);
+  --color-fuchsia-950: oklch(97.7% 0.017 320.058);
+  --color-pink-50: color-mix(in oklab, oklch(65.6% 0.241 354.308) 13%, var(--card));
+  --color-pink-100: color-mix(in oklab, oklch(65.6% 0.241 354.308) 18%, var(--card));
+  --color-pink-200: color-mix(in oklab, oklch(65.6% 0.241 354.308) 30%, var(--card));
+  --color-pink-300: color-mix(in oklab, oklch(65.6% 0.241 354.308) 45%, var(--card));
+  --color-pink-700: oklch(82.3% 0.12 346.018);
+  --color-pink-800: oklch(89.9% 0.061 343.231);
+  --color-pink-900: oklch(94.8% 0.028 342.258);
+  --color-pink-950: oklch(97.1% 0.014 343.198);
+  --color-rose-50: color-mix(in oklab, oklch(64.5% 0.246 16.439) 13%, var(--card));
+  --color-rose-100: color-mix(in oklab, oklch(64.5% 0.246 16.439) 18%, var(--card));
+  --color-rose-200: color-mix(in oklab, oklch(64.5% 0.246 16.439) 30%, var(--card));
+  --color-rose-300: color-mix(in oklab, oklch(64.5% 0.246 16.439) 45%, var(--card));
+  --color-rose-700: oklch(81% 0.117 11.638);
+  --color-rose-800: oklch(89.2% 0.058 10.001);
+  --color-rose-900: oklch(94.1% 0.03 12.58);
+  --color-rose-950: oklch(96.9% 0.015 12.422);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-app: var(--app-bg);
+  /* Fixed dark surfaces (same in both modes), e.g. summary bars */
+  --color-ink: #1e293b;
+  --color-ink-2: #0f172a;
+  --color-ink-line: #334155;
+  --font-sans: var(--app-font);
+}
+
+html { color-scheme: light; }
+
+body {
+  background: var(--app-bg);
+  color: var(--foreground);
+  font-family: var(--app-font);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: color-mix(in oklab, var(--brand) 30%, transparent); }
+
+/* White surfaces become the dark card. :where() keeps the specificity of the
+   original utility, so hover:/focus: variants still win. */
+@layer utilities {
+  :where(.dark) .bg-white { background-color: var(--card); }
+  :where(.dark) .bg-white\/80 { background-color: color-mix(in oklab, var(--card) 80%, transparent); }
+  :where(.dark) .hover\:bg-white:hover { background-color: var(--card); }
+  :where(.dark) .shadow-sm, :where(.dark) .shadow, :where(.dark) .shadow-md,
+  :where(.dark) .shadow-lg, :where(.dark) .shadow-xl, :where(.dark) .shadow-2xl {
+    --tw-shadow-color: rgb(0 0 0 / 0.45);
+  }
+}
+
+/* App background: soft light wash, deep night in dark mode */
+.app-bg {
+  background:
+    radial-gradient(1200px 500px at 100% -10%, color-mix(in oklab, var(--brand) 9%, transparent), transparent 60%),
+    radial-gradient(900px 400px at -10% 110%, color-mix(in oklab, #3b82f6 7%, transparent), transparent 60%),
+    var(--app-bg);
+}
+
+/* Thin, quiet scrollbars */
+* { scrollbar-width: thin; scrollbar-color: color-mix(in oklab, var(--foreground) 22%, transparent) transparent; }
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-thumb { background: color-mix(in oklab, var(--foreground) 20%, transparent); border-radius: 999px; }
+*::-webkit-scrollbar-track { background: transparent; }
+
+:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+
+/* ── Sidebar ───────────────────────────────────────────────────────────── */
+.sb { background: var(--sb-bg); color: var(--sb-text); border-inline-end: 1px solid var(--sb-border); }
+.sb * { scrollbar-color: rgba(148, 163, 184, 0.25) transparent; }
+.sb *::-webkit-scrollbar-thumb { background: rgba(148, 163, 184, 0.25); }
+
+.sb-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.7rem;
+  color: var(--sb-text);
+  font-size: 0.855rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  text-align: start;
+  transition: background-color .15s, color .15s;
+}
+.sb-link:hover { background: var(--sb-hover); color: var(--sb-text-strong); }
+.sb-link .sb-chip {
+  display: grid; place-items: center; flex-shrink: 0;
+  width: 1.9rem; height: 1.9rem; border-radius: 0.6rem;
+  /* Each group has its own accent (--c, set inline); plain grey otherwise */
+  background: color-mix(in oklab, var(--c, #94a3b8) 16%, transparent);
+  color: var(--c, #93a4bd);
+  box-shadow: inset 0 0 0 1px color-mix(in oklab, var(--c, #94a3b8) 22%, transparent);
+  transition: background .15s, color .15s, box-shadow .15s;
+}
+.sb-link .sb-chip svg { width: 16px; height: 16px; }
+.sb-link:hover .sb-chip { background: color-mix(in oklab, var(--c, #94a3b8) 26%, transparent); }
+.sb-link.open { color: var(--sb-text-strong); }
+.sb-link.has-active .sb-chip,
+.sb-link.active .sb-chip {
+  background: linear-gradient(135deg, var(--c, var(--brand)), color-mix(in oklab, var(--c, var(--brand)) 55%, #0f172a));
+  color: #fff;
+  box-shadow: 0 6px 16px -6px color-mix(in oklab, var(--c, var(--brand)) 75%, transparent);
+}
+.sb-link.active { background: linear-gradient(90deg, color-mix(in oklab, var(--c, var(--brand)) 18%, transparent), transparent); color: #f8fafc; }
+
+.sb-sub {
+  display: flex; align-items: center; gap: 0.6rem;
+  padding: 0.38rem 0.6rem; border-radius: 0.55rem;
+  color: #8e9cb3; font-size: 0.82rem; font-weight: 500;
+  transition: background-color .15s, color .15s;
+}
+.sb-sub svg { color: color-mix(in oklab, var(--c, #64748b) 70%, #64748b); flex-shrink: 0; width: 15px; height: 15px; transition: color .15s; }
+.sb-sub:hover { background: var(--sb-hover); color: var(--sb-text-strong); }
+.sb-sub:hover svg { color: var(--c, #cbd5e1); }
+.sb-sub.active { background: color-mix(in oklab, var(--c, var(--brand)) 15%, transparent); color: #f8fafc; }
+.sb-sub.active svg { color: var(--c, #34d399); }
+.sb-sub.active::before {
+  content: ''; position: absolute; inset-inline-start: -0.56rem; width: 3px; height: 1.1rem;
+  border-radius: 999px; background: var(--c, var(--brand));
+}
+
+/* Smooth open / close of a menu group */
+.sb-collapse { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .22s ease; }
+.sb-collapse.open { grid-template-rows: 1fr; }
+.sb-collapse > div { overflow: hidden; }
+
+.sb-section {
+  padding: 0.9rem 0.75rem 0.35rem; font-size: 0.66rem; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--sb-muted);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Native date/time inputs clip in narrow grid columns: the browser renders
+   "mm/dd/yyyy" plus a calendar picker button at a fixed intrinsic size, and
+   w-full + px-3 padding squeezes it below that. Give them a floor and trim
+   the horizontal padding so the picker icon always stays reachable.
+   ───────────────────────────────────────────────────────────────────────── */
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"] {
+  min-width: 0;
+  padding-inline: 0.5rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+input[type="month"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  flex-shrink: 0;
+  margin-inline-start: 0;
+  cursor: pointer;
+}
+
+/* Native dropdown lists follow the theme too */
+.dark select option { background-color: var(--card); color: var(--foreground); }
+
+/* ── Data tables & actions (content area) ─────────────────────────────────
+   Unlayered on purpose: these restyle the utility classes the pages already
+   use, so every list page picks them up without per-page edits. Colours come
+   from palette variables, which the .dark remap already flips. */
+main .overflow-hidden.border:has(> div > table, > table) {
+  border-radius: 1rem;
+  border-color: color-mix(in oklab, var(--color-slate-200) 80%, transparent);
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.04), 0 8px 24px -12px rgb(15 23 42 / 0.10);
+}
+main table thead tr {
+  background: linear-gradient(180deg, color-mix(in oklab, var(--brand) 5%, var(--card)), color-mix(in oklab, var(--brand) 2%, var(--card)));
+  border-bottom: 1px solid var(--color-slate-200);
+}
+main table thead th {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-slate-500);
+  white-space: nowrap;
+}
+main table tbody tr { transition: background-color .12s ease; }
+main table tbody tr:hover { background-color: color-mix(in oklab, var(--brand) 5%, var(--card)); }
+main table tbody td { vertical-align: middle; }
+
+/* Primary buttons: a soft gradient and a lift on hover. */
+main :is(button, a).bg-blue-500.text-white {
+  background-image: linear-gradient(135deg, #3b82f6, #4f46e5);
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 16px -6px rgb(59 130 246 / 0.55);
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+main :is(button, a).bg-blue-500.text-white:hover:not(:disabled) {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px -8px rgb(79 70 229 / 0.6);
+}
+
+/* "Add / new" buttons carry the brand colour. */
+main :is(button, a).text-white:is(.bg-blue-500, .bg-blue-600, .bg-green-600, .bg-emerald-600, .bg-emerald-500):has(> svg.lucide-plus) {
+  background-image: linear-gradient(135deg, #10b981, #0d9488);
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 16px -6px rgb(16 185 129 / 0.6);
+}
+main :is(button, a).text-white:is(.bg-blue-500, .bg-blue-600, .bg-green-600, .bg-emerald-600, .bg-emerald-500):has(> svg.lucide-plus):hover {
+  box-shadow: 0 10px 22px -8px rgb(13 148 136 / 0.65);
+}
+main :is(button, a):has(> svg.lucide-plus) > svg.lucide-plus {
+  padding: 1px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.2);
+  stroke-width: 2.6;
+}
+
+/* Trash (recycle bin) links in page headers. */
+main a[href$="/trash"] {
+  border-radius: 0.75rem;
+  border-color: var(--color-rose-200);
+  background-color: color-mix(in oklab, var(--color-rose-50) 70%, var(--card));
+  color: var(--color-rose-600);
+  transition: background-color .15s ease, border-color .15s ease, transform .15s ease;
+}
+main a[href$="/trash"]:hover {
+  background-color: var(--color-rose-100);
+  border-color: var(--color-rose-300);
+  transform: translateY(-1px);
+}
+
+/* Row action icons: tinted square chips, one colour per action. */
+main button:is(.p-1, .p-1\.5, .p-2):has(> svg:is(.lucide-pencil, .lucide-square-pen, .lucide-pen, .lucide-trash-2, .lucide-trash, .lucide-eye, .lucide-printer, .lucide-rotate-ccw, .lucide-undo-2, .lucide-banknote, .lucide-download, .lucide-file-text, .lucide-hand-coins, .lucide-dollar-sign)) {
+  --act: var(--color-slate-500);
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border-radius: 0.6rem;
+  color: var(--act);
+  background-color: color-mix(in oklab, var(--act) 10%, var(--card));
+  border: 1px solid color-mix(in oklab, var(--act) 18%, transparent);
+  transition: background-color .15s ease, color .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+main button:is(.p-1, .p-1\.5, .p-2):has(> svg:is(.lucide-pencil, .lucide-square-pen, .lucide-pen))     { --act: var(--color-sky-600); }
+main button:is(.p-1, .p-1\.5, .p-2):has(> svg:is(.lucide-trash-2, .lucide-trash))                     { --act: var(--color-rose-500); }
+main button:is(.p-1, .p-1\.5, .p-2):has(> svg.lucide-eye)                                             { --act: var(--color-indigo-500); }
+main button:is(.p-1, .p-1\.5, .p-2):has(> svg:is(.lucide-rotate-ccw, .lucide-undo-2))                 { --act: var(--color-emerald-600); }
+main button:is(.p-1, .p-1\.5, .p-2):has(> svg:is(.lucide-banknote, .lucide-download, .lucide-printer, .lucide-file-text)) { --act: var(--color-amber-600); }
+main button:is(.p-1, .p-1\.5, .p-2):has(> svg.lucide-hand-coins)                                       { --act: var(--color-orange-500); }
+main button:is(.p-1, .p-1\.5, .p-2):has(> svg.lucide-dollar-sign)                                      { --act: var(--color-emerald-600); }
+main button:is(.p-1, .p-1\.5, .p-2):has(> svg:is(.lucide-pencil, .lucide-square-pen, .lucide-pen, .lucide-trash-2, .lucide-trash, .lucide-eye, .lucide-printer, .lucide-rotate-ccw, .lucide-undo-2, .lucide-banknote, .lucide-download, .lucide-file-text, .lucide-hand-coins, .lucide-dollar-sign)):hover:not(:disabled) {
+  color: #fff;
+  background-color: var(--act);
+  border-color: var(--act);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px -6px var(--act);
+}
+
+/* Pagination: rounded pills. */
+main button.rounded.border.px-3.py-1 {
+  border-radius: 0.6rem;
+  padding: 0.3rem 0.85rem;
+  font-weight: 500;
+  color: var(--color-slate-600);
+  background-color: var(--card);
+  transition: background-color .15s ease, border-color .15s ease;
+}
+main button.rounded.border.px-3.py-1:hover:not(:disabled) {
+  background-color: color-mix(in oklab, var(--brand) 8%, var(--card));
+  border-color: color-mix(in oklab, var(--brand) 40%, transparent);
+  color: var(--color-emerald-700);
+}
+
+/* Icons inside buttons and links never get squeezed by a long label (phones). */
+main :is(button, a) > svg { flex-shrink: 0; }
+
+/* A money figure in a narrow card. Put `@container min-w-0` on the card and
+   `amount-fit` on the figure: the text shrinks with the card (down to 16px)
+   instead of pushing the page sideways on a phone, and wraps only as a last
+   resort. `--amount-max` sets the desktop size (default text-2xl). */
+@utility amount-fit {
+  font-size: clamp(1rem, 12cqi, var(--amount-max, 1.5rem));
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+/* ── Phones and touch screens ─────────────────────────────────────────────
+   Unlayered like the rules above, so they win over the text-sm / p-1.5
+   utilities the pages use without editing every page. */
+
+/* iOS zooms the whole page into any field whose text is under 16px. */
+@media (max-width: 639.98px) {
+  input:not([type="checkbox"], [type="radio"], [type="range"], [type="color"], [type="file"]),
+  select,
+  textarea { font-size: 16px; }
+}
+
+/* A finger needs a bigger target than a mouse pointer. */
+@media (pointer: coarse) {
+  main button:is(.p-1, .p-1\.5, .p-2):has(> svg:is(.lucide-pencil, .lucide-square-pen, .lucide-pen, .lucide-trash-2, .lucide-trash, .lucide-eye, .lucide-printer, .lucide-rotate-ccw, .lucide-undo-2, .lucide-banknote, .lucide-download, .lucide-file-text, .lucide-hand-coins, .lucide-dollar-sign)) {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  main button.rounded.border.px-3.py-1 { min-height: 2.5rem; padding-inline: 1rem; }
+}

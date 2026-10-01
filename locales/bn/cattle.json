@@ -1,0 +1,980 @@
+{
+  "search_placeholder": "ট্যাগ, নাম, জাত দিয়ে খুঁজুন…",
+  "filter": {
+    "all_status": "সব অবস্থা",
+    "active": "সক্রিয়",
+    "sold": "বিক্রিত",
+    "dead": "মৃত",
+    "transferred": "স্থানান্তরিত",
+    "all_ages": "সব বয়স",
+    "immature": "অপরিপক্ক",
+    "adult": "প্রাপ্তবয়স্ক",
+    "all_sheds": "সব শেড"
+  },
+  "btn": {
+    "add": "পশু যোগ করুন",
+    "register": "গবাদি পশু নিবন্ধন",
+    "trash": "ট্র্যাশ",
+    "view_invoice": "ইনভয়েস দেখুন",
+    "schedule_vaccine": "ভ্যাকসিন নির্ধারণ",
+    "milk_entry": "দুধ সংগ্রহ",
+    "milk_entry_selected": "সিলেক্ট করা {{count}}টি পশুর দুধ এন্ট্রি"
+  },
+  "tooltip": {
+    "sell_cattle": "বিক্রি করুন",
+    "select_all_active": "সব সক্রিয় পশু বাছাই করুন",
+    "view_invoice": "ইনভয়েস দেখুন",
+    "next_date": "পরবর্তী তারিখ",
+    "select_animal": "{{tag}} বাছাই করুন"
+  },
+  "placeholder": {
+    "select_medicine": "— ওষুধ সিলেক্ট করুন —",
+    "select_vaccine": "— ভ্যাকসিন সিলেক্ট করুন —",
+    "doctor_name": "ডাক্তার/কর্মীর নাম",
+    "diagnosis": "রোগের নাম / উপসর্গ",
+    "treatment_desc": "চিকিৎসার বিবরণ...",
+    "prescription_text": "ডাক্তারের পরামর্শ ও নির্দেশনা...",
+    "buyer_name": "ক্রেতার নাম",
+    "buyer_phone": "ফোন নম্বর",
+    "buyer_address": "ঠিকানা",
+    "amount_paid": "যত টাকা পরিশোধ হয়েছে",
+    "feed_ratio_hint": "খালি রাখলে খাদ্য অনুপাত অপরিবর্তিত থাকবে",
+    "medicines_used": "ব্যবহৃত ওষুধের তালিকা..."
+  },
+  "label": {
+    "address": "ঠিকানা"
+  },
+  "trash": {
+    "title": "পশু ট্র্যাশ",
+    "back": "পশু তালিকায় ফিরুন",
+    "count": "{{count}}টি মুছে ফেলা পশু",
+    "warning": "ভুল করে এখানে আসা এন্ট্রি ফেরত আনা যায়। কোনো পশু কখনো স্থায়ীভাবে মোছা হয় না।",
+    "search_placeholder": "ট্র্যাশ করা পশু খুঁজুন…",
+    "empty_title": "ট্র্যাশ খালি",
+    "empty_desc": "কোনো মুছে ফেলা পশু পাওয়া যায়নি",
+    "force_delete_confirm": "\"{{tag}}\" স্থায়ীভাবে মুছে ফেলবেন? এটি পূর্বাবস্থায় ফেরানো যাবে না।",
+    "col": {
+      "deleted_at": "মুছে ফেলার সময়"
+    },
+    "btn": {
+      "restore": "পুনরুদ্ধার",
+      "force_delete": "স্থায়ীভাবে মুছুন"
+    }
+  },
+  "col": {
+    "photo": "ছবি",
+    "tag_name": "ট্যাগ / নাম",
+    "type": "ধরন",
+    "breed": "জাত",
+    "gender": "লিঙ্গ",
+    "age_group": "বয়সের বিভাগ",
+    "weight_kg": "ওজন (কেজি)",
+    "feed_ratio": "খাদ্য অনুপাত",
+    "purchase_price": "ক্রয় মূল্য",
+    "status": "অবস্থা",
+    "health": "স্বাস্থ্য",
+    "shed": "শেড"
+  },
+  "status": {
+    "active": "সক্রিয়",
+    "sold": "বিক্রিত",
+    "dead": "মৃত",
+    "transferred": "স্থানান্তরিত"
+  },
+  "health_status": {
+    "healthy": "সুস্থ",
+    "sick": "অসুস্থ",
+    "critical": "সংকটাপন্ন",
+    "recovering": "সুস্থ হচ্ছে"
+  },
+  "age_category": {
+    "immature": "অপরিপক্ক",
+    "adult": "প্রাপ্তবয়স্ক (পরিপক্ক)"
+  },
+  "gender": {
+    "male": "পুরুষ",
+    "female": "স্ত্রী"
+  },
+  "modal": {
+    "edit_title": "পশু সম্পাদনা",
+    "create_title": "পশু নিবন্ধন করুন",
+    "delete_title": "পশু ট্র্যাশে সরান",
+    "delete_desc": "<strong>{{tag}}</strong> ট্র্যাশে সরানো হবে। পরে পুনরুদ্ধার করা যাবে।",
+    "delete_type_tag": "নিশ্চিত করতে ট্যাগ নম্বর <strong>{{tag}}</strong> টাইপ করুন",
+    "delete_btn": "ট্র্যাশে সরান"
+  },
+  "field": {
+    "profile_photo": "প্রোফাইল ছবি / ডকুমেন্ট (JPG, PNG, PDF — সর্বোচ্চ ৫ MB)",
+    "tag_number": "ট্যাগ নম্বর",
+    "tag_generating": "ট্যাগ তৈরি হচ্ছে...",
+    "tag_auto_hint": "স্বয়ংক্রিয়ভাবে তৈরি। চাইলে কাস্টম ট্যাগ দিতে পারবেন।",
+    "name_optional": "নাম (ঐচ্ছিক)",
+    "ear_tag": "কানের ট্যাগ নম্বর",
+    "animal_type": "পশুর ধরন",
+    "color": "রঙ",
+    "color_placeholder": "যেমন: কালো, বাদামি, সাদা",
+    "breed": "জাত",
+    "breed_placeholder": "জাত বেছে নিন বা লিখুন...",
+    "gender": "লিঙ্গ",
+    "age_category": "বয়সের বিভাগ",
+    "health_status": "স্বাস্থ্য অবস্থা",
+    "purchase_date": "ক্রয়ের তারিখ",
+    "purchase_price": "ক্রয় মূল্য (৳)",
+    "purchase_weight": "ক্রয়ের সময় ওজন (কেজি)",
+    "current_weight": "বর্তমান ওজন (কেজি)",
+    "market_value": "বর্তমান বাজার মূল্য (৳)",
+    "market_value_placeholder": "আনুমানিক বর্তমান মূল্য",
+    "shed": "শেড",
+    "no_shed": "কোনো শেড নেই",
+    "seller_name": "বিক্রেতার নাম",
+    "seller_phone": "বিক্রেতার ফোন",
+    "payment_account": "যে অ্যাকাউন্ট থেকে পরিশোধ",
+    "feed_ratio_label": "নির্দিষ্ট খাদ্য অনুপাত (%)",
+    "feed_ratio_hint": "০ = ওজন অনুযায়ী স্বয়ংক্রিয় বণ্টন। এই পশুর খাদ্য খরচের নির্দিষ্ট অংশ নির্ধারণ করতে মান দিন।",
+    "invoice": "ইনভয়েস / ক্রয়ের কাগজ",
+    "invoice_hint": "(PDF, JPG, JPEG, PNG, WEBP — সর্বোচ্চ ১০ MB)",
+    "current_invoice": "রেকর্ডে থাকা বর্তমান ইনভয়েস",
+    "select_type": "ধরন নির্বাচন করুন",
+    "select_breed": "জাত বেছে নিন...",
+    "select_shed": "শেড নির্বাচন করুন",
+    "select_account": "অ্যাকাউন্ট নির্বাচন করুন",
+    "account_hint": "ক্রয়ের খরচ লেজারে তুলতে এবং অ্যাকাউন্টের ব্যালেন্স থেকে কাটতে একটি অ্যাকাউন্ট নির্বাচন করুন।",
+    "notes": "নোট",
+    "age_stage": "কয় দাঁত",
+    "select_animal_type_first": "প্রথমে পশুর ধরন নির্বাচন করুন",
+    "validation": {
+      "age_stage_required": "কয় দাঁত নির্বাচন করা আবশ্যক",
+      "age_category_required": "বয়সের বিভাগ নির্বাচন করা আবশ্যক",
+      "tag_required": "ট্যাগ নম্বর দিন।",
+      "animal_type_required": "পশুর ধরন বাছাই করুন।",
+      "breed_required": "জাত বাছাই করুন।",
+      "shed_required": "শেড বাছাই করুন।",
+      "purchase_date_required": "কেনার তারিখ দিন।",
+      "purchase_price_required": "কত টাকায় কেনা হয়েছে লিখুন (০ বা বেশি)।"
+    }
+  },
+  "detail": {
+    "title": "গবাদি পশুর বিবরণ",
+    "overview": "সারসংক্ষেপ",
+    "costs": "খরচের বিবরণ",
+    "weight_history": "ওজনের ইতিহাস",
+    "feed_history": "খাদ্যের ইতিহাস",
+    "medicine_history": "ওষুধের ইতিহাস",
+    "vaccines": "ভ্যাকসিন সময়সূচি",
+    "treatments": "চিকিৎসা",
+    "sales": "বিক্রয় রেকর্ড",
+    "animal_information": "পশুর তথ্য",
+    "cost_breakdown": "খরচের বিবরণ",
+    "supplier_information": "সরবরাহকারীর তথ্য",
+    "unknown_supplier": "অজানা সরবরাহকারী",
+    "all_time_expenses": "সর্বকালীন খরচ",
+    "kg_since_purchase": "কেজি কেনার পর থেকে",
+    "total_cost": "মোট খরচ",
+    "current_feed_ratio": "বর্তমান খাদ্য অনুপাত",
+    "auto_allocated": "ওজন ভিত্তিক স্বয়ংক্রিয় বরাদ্দ",
+    "fixed_override": "নির্দিষ্ট করা",
+    "feed_ratio": "খাদ্য অনুপাত",
+    "feed_ratio_history": "খাদ্য অনুপাতের ইতিহাস",
+    "no_ratio_history": "এখন পর্যন্ত কোনো অনুপাত পরিবর্তনের ইতিহাস নেই।",
+    "update_feed_ratio": "খাদ্য অনুপাত আপডেট করুন",
+    "new_feed_ratio": "নতুন খাদ্য অনুপাত (%)",
+    "effective_date": "কার্যকর তারিখ",
+    "no_medicine_usage": "এই পশুর জন্য কোনো ওষুধ ব্যবহারের রেকর্ড নেই।",
+    "no_vaccine_records": "এই পশুর জন্য কোনো ভ্যাকসিন রেকর্ড নেই।",
+    "no_treatment_records": "এই পশুর জন্য কোনো চিকিৎসার রেকর্ড নেই।",
+    "current_age_category": "বর্তমান বয়সের বিভাগ",
+    "transition_history": "বয়স পরিবর্তনের ইতিহাস",
+    "no_transition_history": "এখন পর্যন্ত কোনো বয়স পরিবর্তনের ইতিহাস নেই।",
+    "no_ledger_entries": "এখন পর্যন্ত কোনো লেজার এন্ট্রি নেই।",
+    "sale_information": "বিক্রয়ের তথ্য",
+    "sale_date": "বিক্রয়ের তারিখ",
+    "buyer": "ক্রেতা",
+    "sale_price": "বিক্রয় মূল্য",
+    "total_investment": "মোট বিনিয়োগ",
+    "sale_amount": "বিক্রয় পরিমাণ",
+    "net_profit": "নিট লাভ",
+    "net_loss": "নিট ক্ষতি",
+    "return": "রিটার্ন",
+    "loss": "ক্ষতি",
+    "animal_active_cost_summary": "এই পশু এখনো সক্রিয়। বর্তমান খরচের সারসংক্ষেপ দেখানো হচ্ছে।",
+    "total_cost_to_date": "আজ পর্যন্ত মোট খরচ",
+    "all_expenses_since_purchase": "কেনার পর থেকে সব খরচ",
+    "initial_investment": "প্রাথমিক বিনিয়োগ",
+    "profit_analysis_sold_only": "বিক্রিত পশুর জন্য সম্পূর্ণ লাভ বিশ্লেষণ পাওয়া যাবে।",
+    "total_recorded_costs": "মোট নথিভুক্ত খরচ",
+    "not_found": "পশু পাওয়া যায়নি।",
+    "age_history": "বয়সের ইতিহাস",
+    "cost_ledger": "খরচের লেজার",
+    "profit_analysis": "লাভ বিশ্লেষণ",
+    "medicine": "ওষুধ",
+    "initial_weight": "শুরুর ওজন {{weight}} কেজি",
+    "no_weight_records": "এখনো কোনো ওজনের রেকর্ড নেই।",
+    "weight_kg": "ওজন (কেজি)",
+    "supplier_name_label": "নাম",
+    "feed_ratio_table": {
+      "change_count": "মোট {{count}}টি পরিবর্তন",
+      "current_badge": "বর্তমান",
+      "first_badge": "প্রথম",
+      "set_date_col": "নির্ধারণের তারিখ",
+      "ratio_col": "অনুপাত",
+      "change_col": "পরিবর্তন"
+    },
+    "btn": {
+      "record_weight": "ওজন রেকর্ড করুন",
+      "change_ratio": "অনুপাত পরিবর্তন করুন",
+      "update_ratio": "অনুপাত আপডেট করুন",
+      "set_immature": "অপরিপক্ক হিসেবে সেট করুন",
+      "set_adult": "প্রাপ্তবয়স্ক হিসেবে সেট করুন"
+    },
+    "col": {
+      "weight": {
+        "date": "তারিখ",
+        "weight_kg": "ওজন (কেজি)",
+        "gain_kg": "বৃদ্ধি (কেজি)",
+        "daily_gain": "দৈনিক বৃদ্ধি",
+        "days": "দিন",
+        "notes": "নোট"
+      },
+      "feed_ratio": {
+        "effective_date": "কার্যকর তারিখ",
+        "new_ratio": "নতুন অনুপাত",
+        "previous": "আগের",
+        "notes": "নোট"
+      },
+      "medicine": {
+        "date": "তারিখ",
+        "medicine": "ওষুধ",
+        "quantity": "পরিমাণ",
+        "cost": "খরচ",
+        "notes": "নোট"
+      },
+      "vaccine": {
+        "vaccine": "ভ্যাকসিন",
+        "type": "ধরন",
+        "scheduled": "নির্ধারিত",
+        "administered": "প্রদান করা হয়েছে",
+        "cost": "খরচ",
+        "quantity": "পরিমাণ",
+        "status": "অবস্থা",
+        "next_due": "পরবর্তী তারিখ"
+      },
+      "treatment": {
+        "date": "তারিখ",
+        "doctor": "ডাক্তার",
+        "diagnosis": "রোগ নির্ণয়",
+        "vet_fee": "ডাক্তারের ফি",
+        "med_cost": "ওষুধের খরচ",
+        "total": "মোট",
+        "follow_up": "ফলো আপ"
+      },
+      "shed_transfer": {
+        "date": "তারিখ",
+        "from": "থেকে",
+        "to": "যেখানে",
+        "reason": "কারণ",
+        "notes": "নোট",
+        "triggered_by": "যার মাধ্যমে"
+      },
+      "costs": {
+        "date": "তারিখ",
+        "type": "ধরন",
+        "description": "বিবরণ",
+        "amount": "পরিমাণ"
+      }
+    },
+    "modal": {
+      "save_btn": "সেভ করুন",
+      "v": {
+        "weight_range": "১ থেকে ২০০০ কেজির মধ্যে ওজন লিখুন।",
+        "ratio_range": "০ থেকে ১০০-এর মধ্যে অনুপাত লিখুন।"
+      },
+      "vaccine": {
+        "add_btn": "ভ্যাকসিন যোগ করুন",
+        "item_label": "ভ্যাকসিন {{n}}",
+        "qty_placeholder": "পরিমাণ {{unit}}",
+        "add_another": "+ আরেকটি ভ্যাকসিন যোগ করুন",
+        "administered_by": "প্রদানকারী",
+        "stock_ok": "✓ স্টক: {{qty}} {{unit}}",
+        "stock_low": "⚠ স্টক অপর্যাপ্ত! আছে: {{qty}} {{unit}}",
+        "cost_suffix": "| খরচ: ৳{{cost}}",
+        "fifo_hint": "খরচ FIFO ব্যাচ মূল্য অনুযায়ী স্বয়ংক্রিয় — পশুর লেজারে যোগ হবে।",
+        "validation": {
+          "at_least_one": "অন্তত একটি ভ্যাকসিন ওষুধ ও পরিমাণ দিন।",
+          "stock_insufficient": "\"{{name}}\" — পর্যাপ্ত স্টক নেই! আছে: {{qty}} {{unit}}"
+        },
+        "toast": {
+          "saved": "ভ্যাকসিন রেকর্ড সেভ হয়েছে।"
+        }
+      },
+      "medicine": {
+        "add_btn": "ওষুধ যোগ করুন",
+        "item_label": "ওষুধ {{n}}",
+        "qty_placeholder": "পরিমাণ {{unit}}",
+        "add_another": "+ আরেকটি ওষুধ যোগ করুন",
+        "optional_suffix": "(ঐচ্ছিক)",
+        "stock_ok": "✓ স্টক: {{qty}} {{unit}}",
+        "stock_low": "⚠ স্টক অপর্যাপ্ত! আছে: {{qty}} {{unit}}",
+        "cost_suffix": "| খরচ: ৳{{cost}}",
+        "fifo_hint": "খরচ FIFO ব্যাচ মূল্য অনুযায়ী স্বয়ংক্রিয় — পশুর লেজারে যোগ হবে।",
+        "validation": {
+          "at_least_one": "অন্তত একটি ওষুধ ও পরিমাণ দিন।",
+          "stock_insufficient": "\"{{name}}\" — পর্যাপ্ত স্টক নেই! আছে: {{qty}} {{unit}}"
+        },
+        "toast": {
+          "saved": "ওষুধ রেকর্ড সেভ হয়েছে।"
+        }
+      },
+      "treatment": {
+        "add_btn": "চিকিৎসা যোগ করুন",
+        "title": "চিকিৎসা রেকর্ড যোগ করুন",
+        "date_label": "চিকিৎসার তারিখ",
+        "health_status_label": "চিকিৎসার পর পশুর স্বাস্থ্য অবস্থা",
+        "health_status_hint": "সেভ করলে পশুর স্বাস্থ্য অবস্থা স্বয়ংক্রিয়ভাবে আপডেট হবে।",
+        "health_option": {
+          "sick": "অসুস্থ",
+          "critical": "সংকটাপন্ন",
+          "recovering": "সুস্থ হচ্ছে",
+          "healthy": "সুস্থ"
+        },
+        "doctor_name_label": "ডাক্তারের নাম",
+        "doctor_phone_label": "ডাক্তারের ফোন",
+        "diagnosis_label": "রোগ নির্ণয়",
+        "treatment_desc_label": "চিকিৎসা বিবরণ",
+        "medicines_used_label": "ব্যবহৃত ওষুধ",
+        "prescription_section_title": "ডাক্তারের প্রেসক্রিপশন / পরামর্শ",
+        "written_advice_label": "লিখিত পরামর্শ",
+        "upload_label": "প্রেসক্রিপশন PDF / ছবি আপলোড",
+        "choose_file": "ফাইল বেছে নিন (PDF, JPG, PNG)",
+        "remove_file": "সরান",
+        "vet_fee_label": "ডাক্তারের ফি",
+        "payment_account_label": "পেমেন্ট অ্যাকাউন্ট",
+        "select_account_option": "অ্যাকাউন্ট নির্বাচন করুন",
+        "follow_up_label": "ফলো-আপ তারিখ",
+        "validation": {
+          "diagnosis_required": "রোগ নির্ণয় আবশ্যক",
+          "date_required": "চিকিৎসার তারিখ আবশ্যক",
+          "payment_account_required": "পেমেন্ট অ্যাকাউন্ট আবশ্যক"
+        },
+        "toast": {
+          "saved": "চিকিৎসা রেকর্ড সেভ হয়েছে।",
+          "save_failed": "চিকিৎসা সেভ করতে ব্যর্থ।"
+        }
+      },
+      "weight": {
+        "ratio_update_label": "খাদ্য অনুপাত আপডেট",
+        "current_ratio_prefix": "বর্তমান অনুপাত:",
+        "auto_suffix": "(স্বয়ংক্রিয়)",
+        "toast": {
+          "saved": "ওজন রেকর্ড সেভ হয়েছে।"
+        }
+      },
+      "sell": {
+        "title": "পশু বিক্রি — {{tag}}",
+        "buyer_existing": "📋 নিবন্ধিত ক্রেতা",
+        "buyer_new": "➕ নতুন ক্রেতা",
+        "select_buyer_option": "— ক্রেতা বাছাই করুন —",
+        "new_buyer_hint": "নতুন ক্রেতার তথ্য দিন — স্বয়ংক্রিয়ভাবে সিস্টেমে সেভ হবে",
+        "sale_date_label": "বিক্রির তারিখ",
+        "payment_account_label": "পেমেন্ট অ্যাকাউন্ট",
+        "select_option": "— বাছাই করুন —",
+        "balance_label": "ব্যালেন্স: ৳{{balance}}",
+        "sale_price_label": "বিক্রয় মূল্য (৳)",
+        "sale_weight_label": "বিক্রির সময় ওজন (কেজি)",
+        "payment_status_label": "পরিশোধের অবস্থা",
+        "status_paid": "পরিশোধিত ✅",
+        "status_partial": "আংশিক পরিশোধ ⚠️",
+        "status_unpaid": "অপরিশোধিত ❌",
+        "paid_amount_label": "পরিশোধিত টাকা (৳)",
+        "est_profit": "আনুমানিক লাভ: ৳{{amount}}",
+        "est_loss": "আনুমানিক ক্ষতি: ৳{{amount}}",
+        "total_cost_paren": "(মোট খরচ: ৳{{cost}})",
+        "confirm_btn": "বিক্রি নিশ্চিত করুন",
+        "f": {
+          "buyer": "ক্রেতা",
+          "new_name": "ক্রেতার নাম",
+          "new_phone": "ফোন নম্বর",
+          "new_address": "ঠিকানা",
+          "sale_date": "বিক্রির তারিখ",
+          "payment_account": "পেমেন্ট অ্যাকাউন্ট",
+          "sale_price": "বিক্রয় মূল্য",
+          "payment_status": "পরিশোধের অবস্থা",
+          "paid_amount": "পরিশোধিত টাকা"
+        },
+        "validation": {
+          "date_required": "তারিখ দিন।",
+          "price_required": "বিক্রয় মূল্য দিন।",
+          "account_required": "পেমেন্ট অ্যাকাউন্ট বাছাই করুন।",
+          "buyer_required": "ক্রেতা বাছাই করুন।",
+          "new_buyer_name_required": "নতুন ক্রেতার নাম দিন।",
+          "partial_amount_required": "আংশিক পরিশোধের টাকার পরিমাণ দিন।"
+        },
+        "toast": {
+          "success": "পশু বিক্রি সম্পন্ন হয়েছে।",
+          "failed": "বিক্রি সম্পন্ন হয়নি।"
+        }
+      }
+    },
+    "entry_type": {
+      "purchase": "ক্রয়",
+      "sale": "বিক্রি",
+      "expense": "খরচ",
+      "feed": "খাদ্য",
+      "medicine": "ওষুধ",
+      "vaccine": "ভ্যাকসিন",
+      "treatment": "চিকিৎসা",
+      "labour": "শ্রমিক",
+      "salary": "বেতন",
+      "breeding": "প্রজনন",
+      "birth": "প্রসব",
+      "electricity": "বিদ্যুৎ",
+      "water": "পানি",
+      "fuel": "জ্বালানি",
+      "transport": "পরিবহন",
+      "maintenance": "রক্ষণাবেক্ষণ",
+      "rent": "ভাড়া",
+      "miscellaneous": "বিবিধ",
+      "other": "অন্যান্য",
+      "birth_value": "জন্মের সময়ের মূল্য",
+      "milk": "দুধ",
+      "calf_value": "বাছুরের মূল্য",
+      "pregnancy_check": "গর্ভ পরীক্ষা",
+      "byproduct": "উপজাত"
+    },
+    "feed_ratio_override": "খাদ্যের অনুপাত: {{v}}% (নির্দিষ্ট করা)"
+  },
+  "age_cat": {
+    "title": "বয়সের বিভাগ ব্যবস্থাপনা",
+    "tab_categories": "বয়সের বিভাগ",
+    "tab_stages": "দাঁতের ধাপ (কয় দাঁত)",
+    "btn_new_category": "নতুন বিভাগ",
+    "btn_new_stage": "নতুন দাঁতের ধাপ",
+    "cat_modal_create": "নতুন বয়সের বিভাগ",
+    "cat_modal_edit": "বিভাগ সম্পাদনা",
+    "stage_modal_create": "নতুন দাঁতের ধাপ",
+    "stage_modal_edit": "দাঁতের ধাপ সম্পাদনা",
+    "field_animal_type": "পশুর ধরন",
+    "field_sort_order": "ক্রম",
+    "field_active": "সক্রিয়",
+    "select_type": "-- নির্বাচন করুন --",
+    "placeholder_category": "যেমন: বাছুর",
+    "placeholder_stage": "যেমন: দুধ দাঁত",
+    "count_suffix": "{{count}}টি",
+    "toast": {
+      "saved": "সংরক্ষিত হয়েছে।",
+      "save_failed": "সংরক্ষণ ব্যর্থ হয়েছে।",
+      "deleted": "মুছে গেছে।"
+    }
+  },
+  "bulk": {
+    "selected_animals_count": "সিলেক্ট করা পশু ({{count}}টি)",
+    "application_date": "প্রয়োগের তারিখ",
+    "saving": "সেভ হচ্ছে...",
+    "save_btn": "সেভ করুন",
+    "fifo_cost_note": "খরচ FIFO ব্যাচ মূল্য অনুযায়ী স্বয়ংক্রিয় — প্রতিটি পশুর লেজারে যোগ হবে।",
+    "qty_mode": {
+      "per_animal": "প্রতি পশু",
+      "total_split": "মোট পরিমাণ (ভাগ)"
+    },
+    "qty_placeholder": {
+      "per_animal": "প্রতি পশু {{unit}}",
+      "total": "মোট {{unit}}"
+    },
+    "qty_summary": {
+      "total": "মোট: {{val}}",
+      "per_animal": "প্রতি পশু: {{val}}"
+    },
+    "stock": {
+      "available": "✓ স্টক: {{qty}} {{unit}}",
+      "insufficient": "⚠ স্টক অপর্যাপ্ত! আছে: {{qty}} {{unit}}",
+      "cost_summary": "| খরচ: ৳{{perAnimal}}/পশু | মোট: ৳{{total}}"
+    },
+    "validation": {
+      "stock_insufficient_named": "\"{{name}}\" — পর্যাপ্ত স্টক নেই।"
+    },
+    "bar": {
+      "selected_count": "{{count}}টি পশু সিলেক্ট করা হয়েছে",
+      "btn_medicine": "ওষুধ দিন",
+      "btn_vaccine": "ভ্যাকসিন দিন",
+      "btn_treatment": "চিকিৎসা দিন",
+      "btn_expense": "খরচ যোগ করুন"
+    },
+    "medicine": {
+      "title": "ওষুধ প্রয়োগ",
+      "subtitle": "{{count}}টি পশু — একাধিক ওষুধ দিতে পারবেন",
+      "item_label": "ওষুধ {{n}}",
+      "next_due_label": "পরবর্তী ওষুধের তারিখ",
+      "add_another": "+ আরেকটি ওষুধ যোগ করুন",
+      "footer_count": "{{animals}} পশু × {{items}} ওষুধ",
+      "validation": {
+        "at_least_one": "অন্তত একটি ওষুধ ও পরিমাণ দিন।"
+      },
+      "toast": {
+        "saved": "ওষুধ রেকর্ড সেভ হয়েছে।"
+      }
+    },
+    "vaccine": {
+      "title": "ভ্যাকসিন প্রয়োগ",
+      "subtitle": "{{count}}টি পশু — একাধিক ভ্যাকসিন দিতে পারবেন",
+      "item_label": "ভ্যাকসিন {{n}}",
+      "next_due_label": "পরবর্তী ভ্যাকসিন তারিখ",
+      "add_another": "+ আরেকটি ভ্যাকসিন যোগ করুন",
+      "administered_by_label": "প্রদানকারী",
+      "footer_count": "{{animals}} পশু × {{items}} ভ্যাকসিন",
+      "validation": {
+        "at_least_one": "অন্তত একটি ভ্যাকসিন ওষুধ ও পরিমাণ দিন।"
+      },
+      "toast": {
+        "saved": "ভ্যাকসিন রেকর্ড সেভ হয়েছে।"
+      }
+    },
+    "treatment": {
+      "title": "চিকিৎসা প্রদান",
+      "subtitle": "{{count}}টি পশু — প্রতিটির জন্য আলাদা তথ্য দিন",
+      "per_animal_section": "প্রতিটি পশুর জন্য আলাদা তথ্য",
+      "diagnosis_label": "রোগ নির্ণয়",
+      "health_status_after_label": "চিকিৎসার পর স্বাস্থ্য অবস্থা",
+      "health_status": {
+        "sick": "অসুস্থ",
+        "critical": "সংকটাপন্ন",
+        "recovering": "সুস্থ হচ্ছে",
+        "healthy": "সুস্থ"
+      },
+      "follow_up_date_label": "ফলো-আপ তারিখ",
+      "treatment_desc_label": "চিকিৎসা বিবরণ",
+      "prescription_label": "ডাক্তারের প্রেসক্রিপশন / পরামর্শ",
+      "file_label": "প্রেসক্রিপশন PDF / ছবি",
+      "choose_file": "ফাইল বেছে নিন",
+      "shared_section": "সকল পশুর জন্য একই তথ্য",
+      "date_label": "চিকিৎসার তারিখ",
+      "payment_account_label": "পেমেন্ট অ্যাকাউন্ট",
+      "select_account_placeholder": "অ্যাকাউন্ট নির্বাচন করুন",
+      "doctor_name_label": "ডাক্তারের নাম",
+      "doctor_phone_label": "ডাক্তারের ফোন",
+      "vet_fee_label": "ডাক্তারের ফি (প্রতি পশু)",
+      "general_notes_label": "সাধারণ নোট",
+      "footer_count": "{{count}}টি পশুর আলাদা রেকর্ড",
+      "submit_btn": "{{count}}টি পশুর রেকর্ড সেভ করুন",
+      "validation": {
+        "payment_account_required": "পেমেন্ট অ্যাকাউন্ট নির্বাচন করুন।",
+        "diagnosis_required": "রোগ নির্ণয় লিখুন।"
+      },
+      "toast": {
+        "saved": "{{count}}টি পশুর চিকিৎসা রেকর্ড সেভ হয়েছে।",
+        "failed": "চিকিৎসা সেভ করতে ব্যর্থ।"
+      }
+    },
+    "sale": {
+      "title": "পশু বিক্রি",
+      "subtitle": "{{count}}টি পশু নির্বাচিত",
+      "buyer_mode": {
+        "existing": "📋 নিবন্ধিত ক্রেতা",
+        "new": "➕ নতুন ক্রেতা"
+      },
+      "select_customer_placeholder": "— ক্রেতা বাছাই করুন —",
+      "new_customer_hint": "নতুন ক্রেতার তথ্য দিন — স্বয়ংক্রিয়ভাবে সিস্টেমে সেভ হবে",
+      "date_label": "বিক্রির তারিখ",
+      "payment_account_label": "পেমেন্ট অ্যাকাউন্ট",
+      "select_placeholder": "— বাছাই করুন —",
+      "payment_status_label": "পরিশোধের অবস্থা",
+      "new_customer_paid_only_note": "নতুন ক্রেতার ক্ষেত্রে শুধু পুরো টাকা পরিশোধিত বিক্রি করা যাবে",
+      "payment_status": {
+        "paid": "পরিশোধিত ✅",
+        "partial": "আংশিক পরিশোধ ⚠️",
+        "unpaid": "অপরিশোধিত ❌"
+      },
+      "total_paid_label": "মোট পরিশোধিত টাকা",
+      "col_cattle_tag": "পশু (ট্যাগ)",
+      "col_sale_price_required": "বিক্রয় মূল্য (৳)",
+      "col_weight": "ওজন (কেজি)",
+      "summary_total_label": "মোট বিক্রয়",
+      "col_cattle": "পশু",
+      "col_sale_price": "বিক্রয় মূল্য",
+      "col_paid": "পরিশোধিত",
+      "col_due": "বাকি",
+      "buyer_label": "ক্রেতা:",
+      "new_addition_badge": "নতুন",
+      "success_title": "বিক্রয় সম্পন্ন",
+      "success_count": "{{count}}টি পশু বিক্রি সম্পন্ন হয়েছে",
+      "print_invoice_btn": "ইনভয়েস প্রিন্ট",
+      "footer_count": "{{count}}টি পশু",
+      "submit_btn": "বিক্রি করুন",
+      "validation": {
+        "date_required": "বিক্রির তারিখ দিন।",
+        "payment_account_required": "পেমেন্ট অ্যাকাউন্ট বাছাই করুন।",
+        "customer_required": "ক্রেতা বাছাই করুন।",
+        "new_customer_name_required": "নতুন ক্রেতার নাম দিন।",
+        "partial_amount_required": "আংশিক পরিশোধের টাকার পরিমাণ দিন।",
+        "price_required": "প্রতিটি পশুর বিক্রয় মূল্য দিন।"
+      },
+      "toast": {
+        "saved": "পশু বিক্রি সম্পন্ন হয়েছে।",
+        "failed": "বিক্রি সম্পন্ন হয়নি।"
+      }
+    },
+    "expense": {
+      "title": "সিলেক্ট করা পশুর খরচ যোগ",
+      "subtitle": "খরচটি শুধু এই {{count}}টি পশুর উপর বসবে",
+      "category": "বিভাগ",
+      "date": "তারিখ",
+      "expense_title": "কীসের খরচ?",
+      "title_placeholder": "যেমন: হাটে নেওয়ার গাড়ি ভাড়া, ডাক্তার দেখানো",
+      "split": "টাকা কীভাবে ভাগ হবে",
+      "split_equal": "সমান ভাগ",
+      "split_equal_hint": "মোট টাকা সবার মধ্যে সমান",
+      "split_weight_based": "ওজন অনুযায়ী",
+      "split_weight_based_hint": "ভারী পশুর ভাগে বেশি",
+      "split_per_animal": "প্রতি পশু একই টাকা",
+      "split_per_animal_hint": "প্রতিটি পশুর জন্য নির্দিষ্ট টাকা",
+      "amount_total": "মোট টাকা (৳)",
+      "amount_per_animal": "প্রতি পশুর টাকা (৳)",
+      "total_for": "{{count}}টি পশু — মোট {{total}}",
+      "no_weight": "এই পশুগুলোর ওজন রেকর্ড নেই: {{tags}}। সমান ভাগ বেছে নিন অথবা আগে ওজন রেকর্ড করুন।",
+      "col_animal": "পশু",
+      "col_share": "ভাগ",
+      "kg": "{{kg}} কেজি",
+      "total": "মোট",
+      "status_paid": "পরিশোধিত",
+      "status_partial": "আংশিক পরিশোধ",
+      "status_unpaid": "বাকি",
+      "paid_now": "এখন পরিশোধ (৳)",
+      "account": "কোন অ্যাকাউন্ট থেকে",
+      "account_placeholder": "অ্যাকাউন্ট বাছাই করুন",
+      "submit": "{{total}} সেভ করুন",
+      "saved": "{{count}}টি পশুর উপর খরচ বসানো হয়েছে।",
+      "validation": {
+        "title": "কীসের খরচ তা লিখুন।",
+        "amount": "শূন্যের বেশি টাকা দিন।",
+        "date": "তারিখ দিন।",
+        "paid": "পরিশোধের টাকা শূন্যের বেশি এবং মোটের কম হতে হবে।",
+        "account": "কোন অ্যাকাউন্ট থেকে দেওয়া হয়েছে তা বাছাই করুন।"
+      }
+    }
+  },
+  "receipt": {
+    "title": "বিক্রয় রশিদ",
+    "col_weight": "ওজন",
+    "footer_note": "এই রশিদটি সফটওয়্যার দ্বারা তৈরি",
+    "print_btn": "🖨️ প্রিন্ট করুন"
+  },
+  "breeding": {
+    "origin_label": "উৎস",
+    "origin": {
+      "purchased": "কেনা",
+      "farm_born": "খামারে জন্ম"
+    },
+    "origin_hint": {
+      "purchased": "কেনা পশু — ক্রয়মূল্য খরচ হিসেবে লেজারে যাবে।",
+      "farm_born": "খামারে জন্মানো পশু — কোনো ক্রয়মূল্য বা পেমেন্ট লাগবে না।"
+    },
+    "purpose_label": "উদ্দেশ্য",
+    "purpose": {
+      "fattening": "মোটাতাজা",
+      "breeding_female": "প্রজনন (স্ত্রী)",
+      "breeding_male": "প্রজনন ষাঁড়/পাঁঠা",
+      "dairy": "দুগ্ধ",
+      "young_stock": "বাছুর / বাড়ন্ত"
+    },
+    "profit_center": {
+      "fattening": "মোটাতাজা খাত",
+      "breeding": "প্রজনন খাত",
+      "dairy": "দুগ্ধ খাত"
+    },
+    "reproductive_status_label": "প্রজনন অবস্থা",
+    "reproductive_status": {
+      "open": "খালি",
+      "inseminated": "প্রজনন হয়েছে",
+      "pregnant": "গর্ভবতী",
+      "lactating": "দুধ দিচ্ছে",
+      "dry": "দুধ বন্ধ"
+    },
+    "not_set": "নির্ধারিত নয়",
+    "dam": "মা",
+    "sire": "বাবা",
+    "select_dam": "মা বাছাই করুন (ঐচ্ছিক)",
+    "select_sire": "বাবা বাছাই করুন (ঐচ্ছিক)",
+    "unknown": "অজানা",
+    "parents_hint": "একই ধরনের পশু থেকে মা (স্ত্রী) ও বাবা (পুরুষ) বাছাই করা যাবে।",
+    "birth_date": "জন্ম তারিখ",
+    "birth_weight": "জন্ম ওজন (কেজি)",
+    "current_weight": "বর্তমান ওজন (কেজি)",
+    "weight_hint": "জন্ম ওজন অথবা বর্তমান ওজন — অন্তত একটা দিন।",
+    "milking_times": "দিনে কতবার দোয়ানো",
+    "milking_times_default": "প্রজাতির ডিফল্ট ({{count}} বার)",
+    "milking_times_option": "{{count}} বার",
+    "filter_all_origins": "সব উৎস",
+    "filter_all_purposes": "সব উদ্দেশ্য",
+    "born_badge": "খামারে জন্ম",
+    "validation": {
+      "birth_date_required": "জন্ম তারিখ দিন",
+      "weight_required": "জন্ম ওজন অথবা বর্তমান ওজন দিন",
+      "purchase_weight_required": "ক্রয়ের ওজন দিন",
+      "payment_account_required": "যে অ্যাকাউন্ট থেকে পরিশোধ হবে তা বাছাই করুন"
+    },
+    "tab_pedigree": "বংশ",
+    "pedigree": {
+      "title": "বংশ তালিকা",
+      "parents": "মা-বাবা",
+      "grandparents": "নানা-নানী / দাদা-দাদী",
+      "maternal_grand_dam": "নানী",
+      "maternal_grand_sire": "নানা",
+      "paternal_grand_dam": "দাদী",
+      "paternal_grand_sire": "দাদা",
+      "siblings": "ভাই-বোন",
+      "sibling_full": "আপন",
+      "sibling_half": "সৎ",
+      "offspring": "বাচ্চা",
+      "offspring_count": "মোট {{count}}টি (স্ত্রী {{female}}, পুরুষ {{male}})",
+      "no_siblings": "কোনো ভাই-বোন রেকর্ড নেই",
+      "no_offspring": "কোনো বাচ্চা রেকর্ড নেই",
+      "deleted": "মুছে ফেলা",
+      "load_failed": "বংশ তথ্য লোড করা যায়নি"
+    },
+    "purpose_change": {
+      "button": "উদ্দেশ্য বদলান",
+      "title": "উদ্দেশ্য বদলান",
+      "current": "বর্তমান উদ্দেশ্য",
+      "new": "নতুন উদ্দেশ্য",
+      "date": "কার্যকর তারিখ",
+      "reason": "কারণ (ঐচ্ছিক)",
+      "note": "এখন থেকে নতুন খরচ নতুন খাতে যাবে। আগের খরচ আগের খাতেই থাকবে।",
+      "save": "সংরক্ষণ",
+      "history": "উদ্দেশ্য বদলের ইতিহাস",
+      "no_history": "কোনো ইতিহাস নেই",
+      "toast_saved": "উদ্দেশ্য আপডেট হয়েছে"
+    },
+    "kg_since_birth": "কেজি, জন্মের পর থেকে",
+    "birth_value": "অভ্যন্তরীণ মূল্য",
+    "birth_value_hint": "এটা পশুর প্রারম্ভিক খরচ আর তার মায়ের প্রজনন খাতের আয়। কোনো নগদ লেনদেন হয় না।",
+    "birth_value_saved": "মূল্য আপডেট হয়েছে",
+    "birth_value_failed": "আপডেট করা যায়নি",
+    "birth_value_form_hint": "খালি = পশুর ধরনের ডিফল্ট"
+  },
+  "picker": {
+    "subtitle": "যেসব পশুর জন্য কাজটি করবেন সেগুলো বাছাই করুন",
+    "search": "ট্যাগ, নাম বা জাত দিয়ে খুঁজুন…",
+    "select_all": "সব বাছাই",
+    "clear_all": "সব বাদ",
+    "empty": "কোনো সক্রিয় পশু পাওয়া যায়নি",
+    "picked": "{{count}}টি পশু বাছাই করা হয়েছে",
+    "next": "পরবর্তী",
+    "title": {
+      "medicine": "ওষুধ দিন — পশু বাছাই",
+      "vaccine": "ভ্যাকসিন দিন — পশু বাছাই",
+      "treatment": "চিকিৎসা দিন — পশু বাছাই",
+      "sell": "পশু বিক্রি — পশু বাছাই"
+    }
+  },
+  "collar": {
+    "tab_label": "কলার",
+    "title": "স্মার্ট কলার",
+    "subtitle": "সেন্সর থেকে গরম, অসুস্থতার লক্ষণ ও জ্বর আগেভাগে ধরা",
+    "on": "চালু",
+    "off": "বন্ধ",
+    "off_note": "কলার ফিচার এখন বন্ধ — কোনো ডেটা গ্রহণ করা হচ্ছে না। কলার এলে “সংযোগ ও সেটিংস” থেকে চালু করুন।",
+    "kpi": {
+      "pending": "অপেক্ষমাণ সতর্কতা",
+      "devices": "ডিভাইস (বরাদ্দ/মোট)",
+      "online": "অনলাইন",
+      "offline": "অফলাইন",
+      "low_battery": "ব্যাটারি কম"
+    },
+    "tab": {
+      "alerts": "সতর্কতা",
+      "devices": "ডিভাইস",
+      "settings": "সংযোগ ও সেটিংস"
+    },
+    "alert": {
+      "heat": "সম্ভাব্য গরম",
+      "low_rumination": "জাবর কম",
+      "low_activity": "নড়াচড়া কম",
+      "fever": "জ্বর"
+    },
+    "status": {
+      "pending": "অপেক্ষমাণ",
+      "confirmed": "নিশ্চিত",
+      "dismissed": "বাতিল"
+    },
+    "all": "সব",
+    "no_alerts": "কোনো সতর্কতা নেই",
+    "value_vs_baseline": "২৪ ঘণ্টায় {{value}}, স্বাভাবিক {{baseline}}",
+    "resolved_by": "{{name}} নিষ্পত্তি করেছেন",
+    "mark_sick": "পশুকে “অসুস্থ” চিহ্নিত করুন",
+    "heat_confirm_hint": "নিশ্চিত করলে প্রজননে গরমের রেকর্ড তৈরি হবে",
+    "confirm": "নিশ্চিত",
+    "confirm_heat": "গরম রেকর্ড করুন",
+    "dismiss": "বাতিল",
+    "online": "অনলাইন",
+    "offline": "অফলাইন",
+    "inactive": "নিষ্ক্রিয়",
+    "battery": "ব্যাটারি",
+    "unassigned": "বরাদ্দ হয়নি",
+    "add_device": "ডিভাইস যোগ করুন",
+    "edit_device": "ডিভাইস সম্পাদনা",
+    "no_devices": "এখনো কোনো ডিভাইস নেই",
+    "new_token": "নতুন টোকেন",
+    "device_token_title": "{{serial}} — ডিভাইস টোকেন",
+    "gateway_key_title": "গেটওয়ে কী",
+    "secret_once": "এটা শুধু এখনই দেখানো হচ্ছে — কপি করে কলার/গেটওয়ের সেটিংসে বসান। হারালে নতুন বানাতে হবে (পুরোনোটা বাতিল হবে)।",
+    "saved_it": "কপি করেছি",
+    "token_after_save": "সংরক্ষণের পর ডিভাইসের গোপন টোকেন একবার দেখানো হবে।",
+    "save": "সংরক্ষণ করুন",
+    "delete": "মুছে ফেলুন",
+    "delete_title": "ডিভাইস মুছবেন?",
+    "delete_message": "{{serial}} মুছে ফেলা হবে। আগের রিডিং ও সতর্কতা থেকে যাবে।",
+    "col": {
+      "device": "ডিভাইস",
+      "animal": "পশু",
+      "status": "অবস্থা",
+      "token": "টোকেন"
+    },
+    "field": {
+      "serial": "সিরিয়াল নম্বর",
+      "label": "নাম/লেবেল",
+      "vendor": "কোম্পানি",
+      "animal": "কোন পশুর গলায়",
+      "notes": "নোট",
+      "active": "সক্রিয়"
+    },
+    "vendor": {
+      "generic": "সাধারণ (যেকোনো)",
+      "allflex": "Allflex / SCR",
+      "afimilk": "Afimilk",
+      "nedap": "Nedap",
+      "cowmanager": "CowManager",
+      "smaxtec": "smaXtec",
+      "diy": "নিজে বানানো",
+      "other": "অন্যান্য"
+    },
+    "settings": {
+      "enable": "কলার ফিচার চালু",
+      "enable_hint": "বন্ধ থাকলে কলার থেকে কোনো ডেটা নেওয়া হয় না",
+      "heat_activity_rise_pct": "গরম: নড়াচড়া বৃদ্ধি",
+      "activity_drop_pct": "নড়াচড়া কমে যাওয়া",
+      "rumination_drop_pct": "জাবর কমে যাওয়া",
+      "fever_temp": "জ্বরের তাপমাত্রা",
+      "baseline_days": "স্বাভাবিক ধরতে কত দিন",
+      "min_baseline_days": "অন্তত কত দিনের ডেটা",
+      "offline_hours": "কত ঘণ্টা চুপ থাকলে অফলাইন",
+      "raw_retention_days": "কাঁচা ডেটা কত দিন রাখা হবে",
+      "days": "দিন",
+      "hours": "ঘণ্টা",
+      "notify_whatsapp": "WhatsApp-এ জানান",
+      "notify_whatsapp_hint": "নতুন সতর্কতা WhatsApp অ্যালার্টের প্রাপকদের কাছে যাবে"
+    },
+    "connect": {
+      "title": "কলার সংযোগ",
+      "url": "ডেটা পাঠানোর ঠিকানা (API)",
+      "example": "উদাহরণ",
+      "gateway": "গেটওয়ে কী:",
+      "none": "নেই",
+      "generate": "গেটওয়ে কী বানান",
+      "regenerate": "নতুন গেটওয়ে কী",
+      "steps": [
+        "“ডিভাইস” ট্যাবে প্রতিটা কলারের সিরিয়াল দিয়ে যোগ করুন ও কোন পশুর গলায় আছে বাছাই করুন — একটা গোপন টোকেন পাবেন।",
+        "কলার/গেটওয়ে নিচের ঠিকানায় POST করবে, হেডারে Authorization: Bearer <টোকেন>।",
+        "কোম্পানির সার্ভার অনেক কলারের ডেটা একসাথে পাঠালে “গেটওয়ে কী” ব্যবহার করুন; প্রতিটা রিডিংয়ে serial থাকবে। অচেনা সিরিয়াল নিজে থেকে ডিভাইস তালিকায় যোগ হবে।",
+        "ঘরের নামগুলো নমনীয়: timestamp/ts, steps, rumination, temp, lat/lng — বেশিরভাগ কোম্পানির ফরম্যাট সরাসরি চলবে।",
+        "একই রিডিং আবার এলে দুবার গোনা হয় না; ইন্টারনেট চলে গিয়ে পরে পাঠালেও সমস্যা নেই।",
+        "কলার ছাড়াই পরীক্ষা করতে সার্ভারে: php artisan collar:simulate --heat=<ট্যাগ> (শুধু টেস্ট ডেটাবেসে)।"
+      ],
+      "regenerate_title": "নতুন গেটওয়ে কী বানাবেন?",
+      "regenerate_message": "পুরোনো গেটওয়ে কী আর কাজ করবে না। যেসব গেটওয়ে এটা ব্যবহার করে, নতুন কী না বসানো পর্যন্ত সেগুলো থেকে কোনো ডেটা আসবে না। চালিয়ে যাবেন?"
+    },
+    "import": {
+      "title": "ফাইল থেকে ইমপোর্ট (CSV)",
+      "hint": "কোম্পানির ড্যাশবোর্ড থেকে এক্সপোর্ট করা CSV ফাইল এখানে দিন। প্রথম সারিতে কলামের নাম থাকবে; পশু চেনা হবে tag_number বা serial দিয়ে।",
+      "choose": "CSV ফাইল বাছাই করুন",
+      "working": "ইমপোর্ট হচ্ছে…",
+      "result": "{{accepted}}টি নতুন রিডিং, {{duplicates}}টি আগেই ছিল, {{rejected}}টি বাদ, {{alerts}}টি সতর্কতা"
+    },
+    "panel": {
+      "device": "ডিভাইস",
+      "no_device": "কোনো কলার বরাদ্দ নেই",
+      "last_temp": "সর্বশেষ তাপমাত্রা",
+      "location": "মানচিত্রে দেখুন",
+      "no_data": "এই পশুর এখনো কোনো কলার ডেটা নেই",
+      "activity": "দৈনিক নড়াচড়া",
+      "rumination": "দৈনিক জাবর কাটা (মিনিট)",
+      "minutes": "মিনিট",
+      "temp_max": "দৈনিক সর্বোচ্চ তাপমাত্রা",
+      "recent_alerts": "সাম্প্রতিক সতর্কতা"
+    },
+    "toast": {
+      "done": "সম্পন্ন",
+      "failed": "করা যায়নি",
+      "copied": "কপি হয়েছে",
+      "device_saved": "ডিভাইস সংরক্ষিত হয়েছে",
+      "settings_saved": "সেটিংস সংরক্ষিত হয়েছে"
+    },
+    "renew_token_title": "নতুন টোকেন বানাবেন?",
+    "renew_token_message": "{{serial}}-এর নতুন টোকেন হবে, পুরোনোটা আর কাজ করবে না। নতুন টোকেন কলারে না বসানো পর্যন্ত কোনো ডেটা আসবে না। চালিয়ে যাবেন?"
+  },
+  "milk_check": {
+    "title": "ভুল পশু সিলেক্ট করেছেন",
+    "subtitle": "সিলেক্ট করা পশুর মধ্যে {{count}}টি দুধ দেয় না",
+    "hint": "এগুলো সিলেকশন থেকে বাদ দিন, তারপর আবার দুধ এন্ট্রিতে ক্লিক করুন।",
+    "remove": "এই {{count}}টি সিলেকশন থেকে বাদ দিন",
+    "removed": "{{count}}টি পশু সিলেকশন থেকে বাদ দেওয়া হয়েছে। এবার আবার দুধ এন্ট্রিতে ক্লিক করুন।"
+  },
+  "form_section": {
+    "identity": "পরিচয়",
+    "breeding": "প্রজনন",
+    "age_health": "বয়স ও স্বাস্থ্য",
+    "purchase": "কেনার তথ্য",
+    "birth": "জন্মের তথ্য",
+    "place_feed": "শেড ও খাদ্য",
+    "files_notes": "ইনভয়েস ও নোট"
+  },
+  "unit": {
+    "kg": "কেজি",
+    "kg_per_day": "কেজি/দিন"
+  },
+  "account": {
+    "period": "{{from}} থেকে {{to}}",
+    "days": "{{n}} দিন",
+    "total_cost": "মোট খরচ",
+    "total_income": "মোট আয়",
+    "gap": "ফাঁক",
+    "profit": "লাভ",
+    "loss": "ক্ষতি",
+    "gap_hint_active": "এখনো খামারে আছে: কেনা দাম ফেরত আসবে বিক্রির সময় (বা এর আয় থেকে)।",
+    "capital": "কেনা দাম",
+    "birth_value": "জন্মের সময়ের মূল্য",
+    "running_cost": "পালনের খরচ",
+    "earned": "পালনের সময়ের আয়",
+    "operating_net": "পালনে লাভ/ক্ষতি",
+    "per_day": "দিনে {{v}}",
+    "recovered": "কেনা দামের {{pct}} উঠে এসেছে (আয় থেকে পালনের খরচ বাদে)।",
+    "if_sold_today": "আজ বাজারদরে ({{market}}) বিক্রি করলে: {{result}}।",
+    "no_market_value": "আজ বিক্রি করলে কী দাঁড়াত দেখতে পশুর \"বর্তমান বাজারমূল্য\" দিন।",
+    "sold_on": "{{date}} তারিখে {{price}}-এ {{buyer}}-এর কাছে বিক্রি হয়েছে।",
+    "costs": "খরচ কোথায় গেছে",
+    "incomes": "আয় কোথা থেকে এসেছে",
+    "none": "এখনো কিছু নেই।",
+    "monthly": "মাসভিত্তিক হিসাব",
+    "month": "মাস",
+    "cost": "খরচ",
+    "income": "আয়",
+    "month_gap": "সেই মাসে",
+    "running_gap": "এ পর্যন্ত",
+    "exit_dead": "{{date}} তারিখে মারা গেছে — মোট ক্ষতি {{loss}} (দাম + পালনের সব খরচ)।",
+    "exit_transferred": "{{date}} তারিখে স্থানান্তরিত — মোট ক্ষতি {{loss}} (দাম + পালনের সব খরচ)।"
+  },
+  "exit": {
+    "button": "মারা গেছে বা খামার ছেড়েছে",
+    "title": "খামার ছেড়েছে",
+    "title_back": "খামারে ফেরত",
+    "what": "কী হয়েছে",
+    "choice": {
+      "dead": "মারা গেছে",
+      "transferred": "অন্যত্র স্থানান্তর",
+      "active": "খামারে ফেরত (ভুল হয়েছিল)"
+    },
+    "date": "কোন দিন",
+    "reason": "কারণ / নোট",
+    "save": "সংরক্ষণ",
+    "note": "পশুর হিসাবে পুরো ক্ষতি (দাম + পালনের সব খরচ) দেখাবে। লাভ-ক্ষতিতে যে মাসে গেছে সে মাসে তার দাম কাটা যাবে — পালনের খরচ আগেই মাসে মাসে কাটা হয়েছে।",
+    "note_back": "পালে ফেরত আসবে, যেন কখনো যায়নি।",
+    "toast_saved": "সংরক্ষিত হয়েছে।"
+  }
+}

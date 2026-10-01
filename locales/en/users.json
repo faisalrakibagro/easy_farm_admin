@@ -1,0 +1,190 @@
+{
+  "users": {
+    "title": "Users",
+    "add": "Add User",
+    "search_placeholder": "Search users…",
+    "btn": {
+      "add": "Add User"
+    },
+    "modal": {
+      "edit": "Edit User",
+      "create": "Create User",
+      "edit_title": "Edit User",
+      "create_title": "Add User"
+    },
+    "col": {
+      "user": "User",
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "status": "Status",
+      "last_login": "Last Login"
+    },
+    "field": {
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "password_hint": "Leave blank to keep current",
+      "role": "Role",
+      "status": "Status"
+    },
+    "trash": {
+      "title": "Deleted Users",
+      "back_link": "Back to Users",
+      "page_title": "Users Trash",
+      "warning": "Deleted users are stored in the trash. Restore to re-activate, or permanently delete to remove all data.",
+      "search_placeholder": "Search trashed users…",
+      "restore_confirm": "Restore this user?",
+      "delete_confirm": "Permanently delete this user?",
+      "col": {
+        "user": "User",
+        "role": "Role",
+        "deleted_at": "Deleted At"
+      },
+      "empty_desc": "No deleted users found"
+    },
+    "msg": {
+      "created": "User created successfully.",
+      "updated": "User updated successfully.",
+      "moved_to_trash": "User moved to trash.",
+      "status_updated": "Status updated successfully.",
+      "failed_create": "Failed to create user.",
+      "failed_update": "Failed to update user.",
+      "failed_delete": "Failed to delete user.",
+      "failed_status": "Failed to update status."
+    },
+    "error": {
+      "name_required": "Name is required",
+      "email_required": "Email is required",
+      "email_invalid": "Enter a valid email",
+      "password_required": "Password is required",
+      "whatsapp_invalid": "Enter a valid phone number"
+    },
+    "dashboard_sections": {
+      "financials": "Financial Summary (Investment, P&L)",
+      "expenses": "Expense Breakdown",
+      "top_cattle": "Highest-Cost Animals",
+      "projected_profit": "Projected Profit (Super Admin default)",
+      "visibility_label": "Dashboard Visibility",
+      "visibility_hint": "Controls which sections this user sees on the dashboard.",
+      "access_control_title": "Dashboard Section Access Control",
+      "access_control_subtitle": "Control which dashboard sections each role can see from here"
+    },
+    "no_users": "No users found",
+    "reset_password": {
+      "title": "Reset Password",
+      "for_user": "Set a new password for {{name}}.",
+      "new_password_label": "New Password",
+      "confirm_label": "Confirm Password",
+      "cancel": "Cancel",
+      "submit": "Reset",
+      "submitting": "Resetting...",
+      "success": "Password reset successfully.",
+      "error": {
+        "new_password_required": "Please enter a new password",
+        "min_length": "Must be at least 8 characters",
+        "password_mismatch": "Passwords do not match"
+      }
+    },
+    "whatsapp": "WhatsApp number (optional)",
+    "whatsapp_hint": "For the WhatsApp automation: this person can send entries and questions from this number. Their role decides what is allowed.",
+    "whatsapp_linked": "Can use the WhatsApp automation",
+    "confirm_trash": "Move \"{{name}}\" to the trash? You can restore it later.",
+    "deactivate": {
+      "title": "Deactivate user?",
+      "message": "“{{name}}” will not be able to sign in until the account is made active again.",
+      "confirm": "Deactivate",
+      "toggle_label": "Change status of {{name}}"
+    }
+  },
+  "roles": {
+    "title": "Roles & Permissions",
+    "add": "Add Role",
+    "col": {
+      "name": "Role Name",
+      "permissions": "Permissions",
+      "users": "Users"
+    },
+    "modal": {
+      "edit_title": "Edit Role",
+      "create_title": "Add Role"
+    },
+    "field": {
+      "name": "Role Name",
+      "permissions": "Permissions"
+    },
+    "users_count": "{{count}} user(s)",
+    "confirm_delete": "Delete role \"{{name}}\"?",
+    "more_permissions": "+{{count}} more",
+    "permission_groups": {
+      "dashboard": "Dashboard",
+      "farm": "Farm",
+      "accounting": "Accounting",
+      "users": "Users",
+      "roles": "Roles",
+      "menus": "Menus",
+      "media": "Media",
+      "settings": "Settings",
+      "theme": "Theme",
+      "logs": "Activity Logs",
+      "cache": "Cache",
+      "animal-type": "Animal Types",
+      "cattle": "Cattle",
+      "suppliers": "Suppliers",
+      "customers": "Customers",
+      "partners": "Partners & Investment",
+      "dashboard-sections": "Dashboard Sections"
+    },
+    "perm_resource": {
+      "accounting": "Accounting",
+      "animal-type": "Animal types",
+      "cache": "Cache",
+      "cattle": "Animals",
+      "customers": "Customers",
+      "dashboard": "Dashboard",
+      "assets": "Fixed assets",
+      "breeding": "Breeding",
+      "byproducts": "By-products",
+      "dairy": "Dairy",
+      "expenses": "Expenses",
+      "feed": "Feed",
+      "health": "Health",
+      "labour": "Labour",
+      "master-data": "Master data",
+      "medicine": "Medicine",
+      "reports": "Reports",
+      "sales": "Sales",
+      "sheds": "Sheds",
+      "logs": "Activity logs",
+      "media": "Media",
+      "categories": "Media categories",
+      "menus": "Menus",
+      "partners": "Partners",
+      "roles": "Roles",
+      "settings": "Settings",
+      "suppliers": "Suppliers",
+      "theme": "Theme",
+      "users": "Users"
+    },
+    "perm_action": {
+      "view": "View",
+      "create": "Create",
+      "edit": "Edit",
+      "delete": "Delete",
+      "restore": "Restore",
+      "force-delete": "Delete permanently",
+      "manage": "Manage",
+      "upload": "Upload",
+      "update": "Update",
+      "clear": "Clear",
+      "rebuild": "Rebuild"
+    },
+    "names": {
+      "Super Admin": "Super Admin",
+      "Admin": "Admin",
+      "Manager": "Manager",
+      "Editor": "Editor",
+      "User": "User"
+    }
+  }
+}

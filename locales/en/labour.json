@@ -1,0 +1,240 @@
+{
+  "employees": {
+    "title": "Employees",
+    "add": "Add Employee",
+    "search_placeholder": "Search employees…",
+    "empty": "No employees found.",
+    "trash": {
+      "back_link": "Back to Employees",
+      "page_title": "Employees Trash",
+      "warning": "Deleted employees are stored in the trash. Restore to re-activate, or permanently delete to remove all data.",
+      "search_placeholder": "Search trashed employees…",
+      "col": {
+        "phone": "Phone",
+        "monthly_salary": "Monthly Salary"
+      },
+      "empty_desc": "No deleted employees found"
+    },
+    "col": {
+      "employee": "Employee",
+      "code": "Code",
+      "mobile": "Mobile",
+      "salary": "Salary",
+      "status": "Status",
+      "joined": "Joined"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "terminated": "Terminated"
+    },
+    "modal": {
+      "edit_title": "Edit Employee",
+      "create_title": "Add Employee"
+    },
+    "field": {
+      "employee_code": "Employee Code",
+      "name": "Name",
+      "mobile": "Mobile",
+      "nid_number": "NID Number",
+      "joining_date": "Joining Date",
+      "monthly_salary": "Monthly Salary (৳)",
+      "status": "Status",
+      "address": "Address"
+    },
+    "salary_modal": {
+      "title": "Pay Salary — {{name}}",
+      "month": "Month",
+      "year": "Year",
+      "base_salary": "Base Salary (৳)",
+      "advance_deduction": "Advance Deduction (৳)",
+      "bonus": "Bonus (৳)",
+      "payment_date": "Payment Date",
+      "method": "Method",
+      "method_cash": "Cash",
+      "method_bank": "Bank",
+      "method_mobile": "Mobile Banking",
+      "payment_account": "Paid From Account",
+      "select_account": "Select account…",
+      "net_payable": "Net Payable",
+      "auto_allocate": "Cost will be allocated to all active animals using the method selected below.",
+      "btn": "Pay & Allocate",
+      "pending_advance": "Advance outstanding: ৳{{amount}}",
+      "deduct_all": "Deduct all",
+      "no_pending_advance": "No advance outstanding",
+      "deduction_too_big": "The deduction cannot exceed the outstanding advance (৳{{amount}})",
+      "deduction_no_advance": "No advance was given — to give one, use “Give Advance”",
+      "net_breakdown": "৳{{gross}} − advance ৳{{advance}}"
+    },
+    "salary_history": {
+      "title": "Salary History",
+      "subtitle": "All salary payments & outstanding dues",
+      "total_paid": "Total Paid",
+      "expected": "Expected Total",
+      "months": "months",
+      "due": "Salary Due",
+      "outstanding": "Outstanding",
+      "empty": "No payments recorded yet",
+      "back_link": "Back to Employees",
+      "joined_label": "Joined:",
+      "monthly_salary_label": "Monthly Salary",
+      "payments_count": "{{count}} payments",
+      "months_worked": "Worked {{count}} months",
+      "due_hint": "Salary due",
+      "all_paid": "Fully paid",
+      "payment_history_title": "Payment History",
+      "payment_history_subtitle": "All recorded salary payments",
+      "no_payments": "No payments recorded yet",
+      "no_payments_hint": "Use the $ button in the employee list to record a payment",
+      "col": {
+        "period": "Month/Year",
+        "base": "Base",
+        "deduction": "Deduction",
+        "bonus": "Bonus",
+        "net": "Net Paid",
+        "account": "Account",
+        "date": "Date"
+      },
+      "table": {
+        "period": "Period",
+        "base": "Base",
+        "net": "Net Paid",
+        "account": "Account",
+        "date": "Payment Date"
+      },
+      "advances_title": "Advances",
+      "advances_subtitle": "Advances given and how much salaries have recovered",
+      "pending_advance": "Outstanding: ৳{{amount}}",
+      "no_advances": "No advances given",
+      "recovered": "Recovered",
+      "status": "Status",
+      "undo_salary": "Delete Salary",
+      "undo_advance": "Delete Advance",
+      "undo_confirm": "Delete",
+      "undo_salary_message": "The {{label}} salary will be deleted. The cash returns to the account, any advance it recovered is owed again, and it is removed from the animals' costs.",
+      "undo_advance_message": "The {{label}} advance will be deleted. The cash returns to the account and it is removed from the animals' costs.",
+      "undone": "Deleted",
+      "undo_failed": "Could not delete"
+    },
+    "advance": {
+      "btn": "Give Advance",
+      "title": "{{name}} — Give Advance",
+      "subtitle": "Money paid ahead of salary; recovered from a later salary",
+      "amount": "Advance amount (৳)",
+      "date": "Date",
+      "reason": "Reason (optional)",
+      "submit": "Give Advance",
+      "pending": "Advance outstanding now: ৳{{amount}}",
+      "none_pending": "No advance outstanding",
+      "how_it_works": "The cash leaves the account today and the cost is shared over the animals. When paying salary later, recover it in “Advance Deduction”.",
+      "amount_required": "Enter the advance amount",
+      "account_required": "Select a payment account",
+      "saved": "Advance given",
+      "failed": "Could not give the advance",
+      "status": {
+        "pending": "Outstanding",
+        "partially_repaid": "Partly recovered",
+        "repaid": "Recovered"
+      }
+    }
+  },
+  "daily": {
+    "title": "Daily Labour",
+    "add": "Add Labour Record",
+    "btn": {
+      "add": "Add Labour"
+    },
+    "trash": {
+      "back_link": "Back to Daily Labour",
+      "page_title": "Daily Labour Trash",
+      "warning": "Deleted daily labour records are stored here. Restore to recover them, or permanently delete to remove all data.",
+      "search_placeholder": "Search by worker name…",
+      "col": {
+        "worker": "Worker",
+        "work_date": "Work Date",
+        "description": "Description",
+        "hours": "Hours"
+      },
+      "empty_desc": "No deleted daily labour records found"
+    },
+    "filter": {
+      "all": "All",
+      "unpaid": "Unpaid",
+      "paid": "Paid"
+    },
+    "modal_title": "Add Daily Labour",
+    "empty": "No daily labour records found.",
+    "col": {
+      "date": "Date",
+      "worker": "Worker",
+      "name": "Name",
+      "task": "Task",
+      "work": "Work",
+      "hours": "Hours",
+      "rate": "Daily Rate",
+      "wage_hr": "Wage/Hour",
+      "total": "Total",
+      "account": "Account",
+      "paid_from": "Paid From",
+      "status": "Status"
+    },
+    "status": {
+      "unpaid": "Unpaid",
+      "paid": "Paid"
+    },
+    "field": {
+      "date": "Date",
+      "worker_name": "Worker Name",
+      "task": "Task Description",
+      "hours": "Hours",
+      "daily_rate": "Daily Rate (৳)",
+      "account": "Payment Account",
+      "notes": "Notes",
+      "work_description": "Work Description",
+      "wage_mode": "Wage Input Mode",
+      "wage_total": "Total Daily Wage (৳)",
+      "wage_hourly": "Wage per Hour (৳)",
+      "working_hours": "Working Hours",
+      "payment_status": "Payment Status",
+      "payment_date": "Payment Date",
+      "payment_account": "Paid From Account",
+      "by_total": "By Daily Total",
+      "by_hourly": "By Hourly Rate"
+    },
+    "mark_paid_modal": {
+      "title": "Confirm Payment",
+      "total": "Total Wage",
+      "account": "Paid From Account",
+      "select_account": "Select account…",
+      "confirm": "Confirm Payment"
+    },
+    "label": {
+      "payment_type": "Payment Type",
+      "paid_amount": "Amount Paid (৳)",
+      "payment_status_paid": "Fully Paid",
+      "payment_status_partial": "Partial Payment",
+      "payment_status_unpaid": "Unpaid",
+      "partial_badge": "Partial",
+      "remaining": "Remaining",
+      "mark_paid": "Mark Paid",
+      "per_month": "/month"
+    },
+    "placeholder": {
+      "amount_now": "Amount paid now"
+    },
+    "summary": {
+      "title": "Summary",
+      "working_hours": "Working Hours:",
+      "daily_total": "Daily Total:",
+      "hourly_rate": "Hourly Rate:",
+      "hourly_auto": "Hourly Rate (auto):",
+      "daily_auto": "Daily Total (auto):"
+    },
+    "confirm_trash": "Move \"{{name}}\" to trash? You can restore it later."
+  },
+  "allocation": {
+    "label": "Share the cost over the animals",
+    "equal": "Equally (same share per animal)",
+    "weight_based": "By weight (heavier animals pay more)"
+  }
+}

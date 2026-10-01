@@ -1,0 +1,961 @@
+{
+  "summary": {
+    "title": "Accounting Summary",
+    "error": "Failed to load accounting summary. Please refresh the page or try again.",
+    "kpi": {
+      "total_income": "Total Income",
+      "total_expense": "Total Expense",
+      "net_profit_loss": "Net Profit/Loss",
+      "net_profit": "Net Profit",
+      "net_loss": "Net Loss",
+      "livestock_value": "Livestock Value",
+      "livestock_note": "Active cattle at cost"
+    },
+    "cash_bank": {
+      "title": "Cash & Bank Balances",
+      "all_time": "(all-time)",
+      "period_in": "Period In",
+      "period_out": "Period Out",
+      "transfer_in": "Transfer In",
+      "transfer_out": "Transfer Out"
+    },
+    "income_breakdown": "Income Breakdown",
+    "expense_breakdown": "Expense Breakdown",
+    "no_income": "No income recorded for this period",
+    "no_expenses": "No expenses recorded for this period",
+    "journal_accounts": "Journal Entry Accounts",
+    "income_accounts": "Income Accounts",
+    "expense_accounts": "Expense Accounts",
+    "deleted_account": "Deleted Account",
+    "no_entries": "No entries",
+    "total_cash_title": "Total Cash (All Accounts)",
+    "total_cash_note": "Current balance across all payment accounts",
+    "ar_title": "Customer Receivable (AR)",
+    "ar_details": "Details →",
+    "ar_description": "Customers have this amount outstanding",
+    "ap_title": "Supplier Payable (AP)",
+    "ap_details": "Details →",
+    "ap_description": "This amount is owed to suppliers",
+    "partner_equity_title": "Partner Equity (Capital Movement)",
+    "partner_equity": {
+      "investments": "Investments",
+      "withdrawals": "Withdrawals",
+      "net": "Net"
+    },
+    "profit_vs_cash": {
+      "profit": "Profit / loss in this period",
+      "profit_note": "Earned less what was used up — the same as the Profit & Loss report.",
+      "cash": "Cash in less cash out",
+      "cash_note": "Money that actually came into and left the accounts (moves between your own accounts cancel out).",
+      "cash_split": "In {{in}} · Out {{out}}"
+    }
+  },
+  "accounts": {
+    "title": "Chart of Accounts",
+    "add": "Add Account",
+    "edit_title": "Edit Account",
+    "new_title": "New Account",
+    "income_accounts": "Income Accounts",
+    "expense_accounts": "Expense Accounts",
+    "empty": "No accounts",
+    "col": {
+      "code": "Code",
+      "name": "Account Name",
+      "type": "Type",
+      "balance": "Balance"
+    },
+    "types": {
+      "asset": "Asset",
+      "liability": "Liability",
+      "equity": "Equity",
+      "income": "Income",
+      "expense": "Expense"
+    },
+    "field": {
+      "code": "Account Code",
+      "name": "Account Name",
+      "type": "Account Type",
+      "parent": "Parent Account",
+      "notes": "Notes"
+    },
+    "confirm_trash": "Move this account to trash? You can restore it later."
+  },
+  "entries": {
+    "title": "Ledger",
+    "add": "Add Entry",
+    "ledger_tab": "General Ledger",
+    "manual_tab": "Manual Journal",
+    "new_entry_btn": "New Journal Entry",
+    "modal_title": "New Manual Journal Entry",
+    "no_manual": "No manual journal entries yet.",
+    "hint": "Use for corrections, depreciation, write-offs, or misc transactions not auto-recorded.",
+    "source_label": "Source Type (Optional)",
+    "source_revenue": "Revenue",
+    "source_investment": "Investment",
+    "source_none": "— Not specified —",
+    "account_label": "Account",
+    "manual_col": {
+      "account": "Account",
+      "source": "Source",
+      "amount": "Amount"
+    },
+    "total_debit": "Total Debit (Dr.)",
+    "total_credit": "Total Credit (Cr.)",
+    "net_balance": "Net Balance",
+    "search_placeholder": "Search description…",
+    "transactions_count": "{{count}} transactions",
+    "entries_count": "entries",
+    "filter": {
+      "all_payment_accounts": "All Payment Accounts",
+      "all_types": "All Types"
+    },
+    "btn": {
+      "clear_filters": "Clear Filters"
+    },
+    "legend": {
+      "title": "Legend:",
+      "debit": "Debit (Dr.) — money going out / expense",
+      "credit": "Credit (Cr.) — money coming in / income",
+      "balance": "Balance — running net position"
+    },
+    "no_transactions": "No transactions found",
+    "voucher_types": {
+      "receipt": "Receipt",
+      "payment": "Payment",
+      "contra": "Transfer",
+      "supplier_payment": "Supplier Payment",
+      "adjustment": "Adjustment",
+      "investment": "Investment",
+      "withdrawal": "Withdrawal",
+      "profit_share": "Profit Share",
+      "cattle_sale": "Cattle Sale",
+      "expense": "Expense",
+      "feed_purchase": "Feed Purchase",
+      "medicine_purchase": "Medicine Purchase",
+      "daily_labour": "Daily Labour",
+      "treatment": "Vet Fee",
+      "asset_disposal": "Asset Disposal",
+      "asset_purchase": "Asset Purchase",
+      "cattle_purchase": "Animal Purchase",
+      "customer_payment": "Customer Payment",
+      "feed_adjustment": "Feed Adjustment",
+      "medicine_adjustment": "Medicine Adjustment",
+      "salary_advance": "Salary Advance",
+      "salary_payment": "Salary Payment"
+    },
+    "voucher_filter": {
+      "receipt": "Receipt (Income)",
+      "payment": "Payment (Expense)",
+      "contra": "Account Transfer",
+      "supplier_payment": "Supplier Payment",
+      "adjustment": "Adjustment",
+      "investment": "Partner Investment",
+      "withdrawal": "Partner Withdrawal",
+      "profit_share": "Profit Distribution",
+      "cattle_sale": "Cattle Sale",
+      "expense": "Expense",
+      "feed_purchase": "Feed Purchase",
+      "medicine_purchase": "Medicine Purchase",
+      "daily_labour": "Daily Labour",
+      "treatment": "Vet Fee"
+    },
+    "col": {
+      "date": "Date",
+      "description": "Description",
+      "debit": "Debit",
+      "credit": "Credit",
+      "account": "Account",
+      "reference": "Reference",
+      "type": "Type",
+      "description_via": "Description / Via",
+      "account_party": "Account / Party",
+      "balance": "Balance",
+      "debit_dr": "Debit (Dr.)",
+      "credit_cr": "Credit (Cr.)"
+    },
+    "field": {
+      "date": "Date",
+      "description": "Description",
+      "debit_account": "Debit Account",
+      "credit_account": "Credit Account",
+      "amount": "Amount (৳)",
+      "reference": "Reference",
+      "notes": "Notes"
+    },
+    "search_placeholder_enter": "Search description… (press Enter)"
+  },
+  "trial_balance": {
+    "title": "Trial Balance",
+    "total_income": "Total Income",
+    "total_expense": "Total Expense",
+    "net_profit": "Net Profit",
+    "net_loss": "Net Loss",
+    "livestock_value": "Livestock Value",
+    "livestock_note": "Active cattle at cost",
+    "no_transactions": "No transactions recorded for this period.",
+    "livestock_stock_value": "Livestock Stock Value",
+    "livestock_note_detail": "(active cattle at cost, not included in totals)",
+    "col": {
+      "code": "Code",
+      "account": "Account",
+      "type": "Type",
+      "debit": "Debit",
+      "credit": "Credit",
+      "income": "Income",
+      "expenses": "Expenses",
+      "category": "Category",
+      "amount": "Amount"
+    },
+    "total_debit": "Total Debit",
+    "total_credit": "Total Credit"
+  },
+  "payment_accounts": {
+    "title": "Cash & Bank Accounts",
+    "add": "Add Account",
+    "edit_title": "Edit Account",
+    "create_title": "Add Payment Account",
+    "empty": "No payment accounts yet. Add cash, bank, or MFS accounts.",
+    "default": "Default",
+    "current_balance": "Current Balance",
+    "deficit": "(deficit)",
+    "opening": "Opening:",
+    "view_ledger": "View Ledger",
+    "ledger_title": "Account Ledger",
+    "ledger_subtitle": "All transactions for this account",
+    "ledger_empty": "No transactions recorded for this account",
+    "ledger_total_in": "Total In (Credit)",
+    "ledger_total_out": "Total Out (Debit)",
+    "ledger_net": "Net Balance",
+    "col": {
+      "name": "Account Name",
+      "type": "Type",
+      "balance": "Balance"
+    },
+    "types": {
+      "cash": "Cash",
+      "bank": "Bank",
+      "mfs": "Mobile Banking"
+    },
+    "field": {
+      "name": "Account Name",
+      "type": "Account Type",
+      "opening_balance": "Opening Balance (৳)",
+      "notes": "Notes",
+      "bank_name": "Bank Name",
+      "account_number": "Account Number",
+      "mfs_provider": "MFS Provider",
+      "phone_account": "Phone / Account No.",
+      "set_default": "Set as default"
+    },
+    "mfs_other": "Other"
+  },
+  "transfers": {
+    "title": "Account Transfers",
+    "add": "New Transfer",
+    "subtitle": "Transfer money between Cash, Bank, bKash, and other accounts",
+    "empty": "No transfers recorded yet",
+    "modal_title": "New Account Transfer",
+    "btn": {
+      "record": "Record Transfer"
+    },
+    "col": {
+      "date": "Date",
+      "from": "From Account",
+      "to": "To Account",
+      "amount": "Amount",
+      "notes": "Notes",
+      "reference": "Reference"
+    },
+    "field": {
+      "date": "Transfer Date",
+      "from_account": "From Account",
+      "to_account": "To Account",
+      "amount": "Amount (৳)",
+      "notes": "Notes",
+      "select_from": "Select source account",
+      "select_to": "Select destination account",
+      "reference": "Reference No."
+    },
+    "account_number": "Account #{{id}}",
+    "v_same_account": "Pick a different account — money cannot move to the account it comes from."
+  },
+  "expenses": {
+    "title": "Expenses",
+    "add": "Add Expense",
+    "modal_title": "Add Expense",
+    "allocation_hint": "Expense will be automatically allocated to all active cattle.",
+    "btn": {
+      "record_allocate": "Record & Allocate"
+    },
+    "col": {
+      "date": "Date",
+      "title": "Title",
+      "category": "Category",
+      "amount": "Amount",
+      "account": "Account",
+      "notes": "Notes",
+      "allocated": "Allocated",
+      "paid_from": "Paid From"
+    },
+    "field": {
+      "date": "Date",
+      "category": "Category",
+      "amount": "Amount (৳)",
+      "account": "Payment Account",
+      "notes": "Notes",
+      "title": "Title",
+      "allocation_method": "Allocation Method",
+      "allocation_equal": "Equal Distribution",
+      "allocation_weight": "Weight Based",
+      "allocation_hold": "Hold — allocate later",
+      "hold_badge": "On hold",
+      "hold_allocate_btn": "Allocate",
+      "allocation_hint_hold": "On hold, the cash still leaves the account but is not charged to any animal — you allocate it to chosen animals later.",
+      "not_specified": "Not specified",
+      "filter_cattle": "Search by tag or name…"
+    },
+    "placeholder": {
+      "amount_now": "Amount paid now",
+      "salary_example": "e.g. June salary — Rahim",
+      "select_account": "— Select Account —"
+    },
+    "label": {
+      "payment_status": "Payment Status",
+      "paid_amount": "Amount Paid (৳)",
+      "payment_status_paid": "Fully Paid",
+      "payment_status_partial": "Partial Payment",
+      "payment_status_unpaid": "Unpaid",
+      "remaining": "Remaining",
+      "no_active_employees": "No active employees"
+    },
+    "modal": {
+      "edit_title": "Edit Expense",
+      "save": "Save",
+      "title_salary": "Salary: {{name}}",
+      "title_daily_labour": "Daily Wage: {{name}} ({{date}})"
+    },
+    "error": {
+      "add_employee_first": "Add an employee first before recording salary expense.",
+      "no_unpaid_labour": "No outstanding daily labour",
+      "add_unpaid_labour_first": "There must be unpaid daily labour records before adding a labour expense."
+    },
+    "salary_picker": {
+      "label": "Select Employee",
+      "placeholder": "— Select Employee —",
+      "hint": "Selecting will auto-fill amount and title.",
+      "per_month": "/month"
+    },
+    "labour_picker": {
+      "label": "Unpaid Daily Labour",
+      "placeholder": "— Select —",
+      "auto_paid_hint": "Saving will automatically mark this record as paid.",
+      "go_to_employees": "Go to Employees page →",
+      "go_to_daily": "Go to Daily Labour page →"
+    },
+    "validation": {
+      "title_required": "Title is required",
+      "amount_required": "Amount must be greater than 0",
+      "date_required": "Date is required",
+      "account_required": "Payment account is required"
+    },
+    "msg": {
+      "updated": "Expense updated.",
+      "update_failed": "Update failed."
+    },
+    "recurring": {
+      "label": "Monthly cost",
+      "monthly_hint": "Shared over {{month}} in proportion to the days each animal was on the farm.",
+      "one_day_hint": "Shared only among the animals on the farm on {{date}}.",
+      "badge": "Monthly"
+    }
+  },
+  "sales": {
+    "title": "Sales",
+    "add": "Record Sale",
+    "modal_title": "Record Sale",
+    "lock_warning": "Recording a sale will lock this animal's record.",
+    "tooltip": {
+      "print_invoice": "Print Invoice"
+    },
+    "edit": {
+      "modal_title": "Edit Sale Record",
+      "error": {
+        "date_required": "Sale date is required",
+        "buyer_required": "Buyer name is required",
+        "price_positive": "Sale price must be greater than 0",
+        "account_required": "Payment account is required"
+      },
+      "msg": {
+        "updated": "Sale details updated.",
+        "update_failed": "Update failed."
+      }
+    },
+    "summary": {
+      "total_sold": "Total Sold",
+      "revenue": "Revenue",
+      "total_cost": "Total Cost",
+      "profit_loss": "Profit/Loss",
+      "profitable": "Profitable",
+      "loss": "Loss"
+    },
+    "btn": {
+      "confirm": "Confirm Sale",
+      "new": "Sell Animals"
+    },
+    "col": {
+      "date": "Date",
+      "cattle": "Cattle",
+      "sale_price": "Sale Price",
+      "buyer": "Buyer",
+      "account": "Account",
+      "profit_loss": "Profit/Loss",
+      "received_in": "Received In"
+    },
+    "field": {
+      "cattle": "Cattle",
+      "select_cattle": "Select active cattle…",
+      "date": "Sale Date",
+      "sale_price": "Sale Price (৳)",
+      "buyer_name": "Buyer Name",
+      "buyer_phone": "Buyer Phone",
+      "account": "Payment Account",
+      "notes": "Notes",
+      "sale_weight": "Sale Weight (kg)",
+      "payment_received_into": "Payment Received Into",
+      "not_specified": "Not specified",
+      "select_account": "— Select Account —"
+    }
+  },
+  "receipt": {
+    "title": "Sales Receipt",
+    "date_label": "Date",
+    "section_animal_info": "Animal Information",
+    "col_cattle": "Cattle (Tag)",
+    "col_sale_weight": "Sale Weight",
+    "section_buyer_info": "Buyer Information",
+    "col_buyer_name": "Buyer Name",
+    "col_phone": "Phone",
+    "section_financial_info": "Financial Details",
+    "col_sale_price": "Sale Price",
+    "col_total_cost": "Total Cost",
+    "profit_label": "Profit",
+    "loss_label": "Loss",
+    "col_payment_account": "Payment Account",
+    "footer": "This receipt was generated by the software",
+    "print_button": "Print",
+    "popup_blocked": "Popup blocked — please allow popups in your browser."
+  },
+  "suppliers": {
+    "title": "Suppliers",
+    "add": "Add Supplier",
+    "search_placeholder": "Search suppliers…",
+    "total_due": "Total Due",
+    "total_paid": "Total Paid",
+    "types": {
+      "feed": "Feed",
+      "medicine": "Medicine",
+      "general": "General"
+    },
+    "col": {
+      "name": "Name",
+      "phone": "Phone",
+      "address": "Address",
+      "balance": "Balance"
+    },
+    "field": {
+      "name": "Supplier Name",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "notes": "Notes",
+      "opening_balance": "Opening Balance (৳)",
+      "select_type_placeholder": "— Select Type —"
+    },
+    "confirm_delete": "Delete {{name}}?",
+    "btn": {
+      "save": "Save Supplier"
+    },
+    "detail": {
+      "title": "Supplier Details",
+      "purchases": "Purchases",
+      "payments": "Payments",
+      "ledger": "Ledger",
+      "no_transactions": "No transactions yet",
+      "modal_title": "Record Payment / Adjustment",
+      "type_payment": "Payment",
+      "type_adjustment": "Adjustment (write-off)",
+      "summary": {
+        "opening_balance": "Opening Balance",
+        "total_purchases": "Total Purchases",
+        "total_paid": "Total Paid",
+        "current_balance": "Current Balance Due"
+      },
+      "btn": {
+        "record_payment": "Record Payment / Adjustment"
+      },
+      "field": {
+        "payment_method": "Payment Method",
+        "select_method": "Select method",
+        "payment_account": "Payment Account",
+        "select_account": "Select account"
+      },
+      "col": {
+        "date": "Date",
+        "description": "Description",
+        "debit": "Debit (Due)",
+        "credit": "Credit (Paid)",
+        "balance": "Balance"
+      }
+    },
+    "msg": {
+      "moved_to_trash": "Supplier moved to trash.",
+      "created": "Supplier created successfully.",
+      "failed_delete": "Failed to delete supplier.",
+      "failed_create": "Failed to create supplier."
+    },
+    "error": {
+      "name_required": "Supplier name is required",
+      "type_required": "Please select a supplier type"
+    },
+    "empty": "No suppliers yet. Add your first supplier."
+  },
+  "customers": {
+    "title": "Customers",
+    "add": "Add Customer",
+    "search_placeholder": "Search customers…",
+    "balance_due_label": "Balance ৳",
+    "settled": "Settled",
+    "outstanding_label": "Outstanding",
+    "trash_link": "Trash",
+    "modal_title": "Add Customer",
+    "field": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "photo": "Photo",
+      "address": "Address",
+      "notes": "Notes",
+      "opening_balance": "Opening Balance (৳)"
+    },
+    "error": {
+      "name_required": "Customer name is required"
+    },
+    "confirm_delete_title": "Move to Trash",
+    "confirm_delete_message": "Move \"{{name}}\" to trash? You can restore it later.",
+    "confirm_delete_label": "Move to Trash",
+    "msg": {
+      "moved_to_trash": "Customer moved to trash.",
+      "created": "Customer created.",
+      "failed_delete": "Failed to delete."
+    },
+    "empty": "No customers yet. Add your first customer."
+  },
+  "partners": {
+    "title": "Partners & Investment",
+    "confirm_delete": "Delete {{name}}?",
+    "add": "Add Partner",
+    "subtitle": "Track partner investments, profit sharing, and withdrawals",
+    "share_label": "% share",
+    "total_invested": "Total Invested",
+    "net_investment": "Net Investment",
+    "empty": "No partners yet. Add your first partner.",
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "col": {
+      "name": "Name",
+      "investment": "Investment",
+      "share": "Share %",
+      "balance": "Balance"
+    },
+    "field": {
+      "name": "Partner Name",
+      "phone": "Phone",
+      "address": "Address",
+      "investment": "Investment Amount (৳)",
+      "share_percentage": "Share Percentage (%)",
+      "notes": "Notes",
+      "full_name": "Full Name",
+      "initial_investment": "Initial Investment (৳)",
+      "received_into": "Received Into Account",
+      "not_specified": "Not specified",
+      "join_date": "Join Date",
+      "select_account_placeholder": "Select Account...",
+      "current_balance_label": "Current Balance:"
+    },
+    "error": {
+      "investment_account_required": "Please select an account for the investment."
+    },
+    "btn": {
+      "give_advance": "Give Advance",
+      "record_payment": "Record Payment"
+    },
+    "detail": {
+      "title": "Partner Details",
+      "investments": "Investments",
+      "withdrawals": "Withdrawals",
+      "profit_share_label": "% profit share",
+      "joined": "Joined:",
+      "total_invested": "Total Invested",
+      "total_withdrawn": "Total Withdrawn / Profit",
+      "adjustments": "Adjustments",
+      "net_investment": "Net Investment (Active)",
+      "transaction_history": "Transaction History",
+      "no_transactions": "No transactions yet",
+      "modal_add_title": "Add Transaction",
+      "modal_edit_title": "Edit Transaction",
+      "types": {
+        "investment": "Investment",
+        "withdrawal": "Withdrawal",
+        "profit_share": "Profit Share",
+        "adjustment": "Adjustment"
+      },
+      "btn": {
+        "add_transaction": "Add Transaction",
+        "save_changes": "Save Changes"
+      },
+      "field": {
+        "payment_method": "Payment Method",
+        "select_method": "Select method",
+        "payment_account": "Payment Account",
+        "select_account": "Select account",
+        "photo": "Profile Photo",
+        "photo_hint": "Click the camera icon to change photo"
+      },
+      "col": {
+        "date": "Date",
+        "type": "Type",
+        "amount": "Amount",
+        "method": "Method",
+        "account": "Account",
+        "notes": "Notes"
+      },
+      "modal_edit_partner_title": "Edit Partner"
+    },
+    "form": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "share_percentage": "Share %",
+      "status": "Status",
+      "notes": "Notes"
+    }
+  },
+  "pl": {
+    "title": "Profit & Loss Statement",
+    "subtitle": "Income Statement",
+    "revenue": "Revenue",
+    "cattle_sales": "Cattle Sales",
+    "other_income": "Other Income (Journal)",
+    "total_revenue": "Total Revenue",
+    "cogs": "Cost of Goods Sold (COGS)",
+    "cattle_purchases": "Cost of animals sold",
+    "feed_purchases": "Feed used",
+    "medicine": "Medicine used",
+    "total_cogs": "Total COGS",
+    "gross_profit": "Gross Profit",
+    "operating_expenses": "Operating Expenses",
+    "labour": "Daily Labour",
+    "general_expenses": "General Expenses",
+    "supplier_payments": "Supplier Payments",
+    "journal_expenses": "Journal Expenses",
+    "total_opex": "Total Operating Expenses",
+    "operating_profit": "Operating Profit",
+    "partner_movements": "Partner Movements",
+    "partner_investments": "Partner Investments",
+    "partner_withdrawals": "Partner Withdrawals & Profit Share",
+    "net_profit": "NET PROFIT / LOSS",
+    "expense_by_category": "Expense Breakdown by Category",
+    "salary_payments": "Salary Payments",
+    "treatment": "Treatment & Vet",
+    "asset_disposal_loss": "Asset Disposal Loss",
+    "cattle_losses": "Animals died or transferred",
+    "feed_wastage": "Feed wastage",
+    "medicine_wastage": "Medicine wastage",
+    "asset_disposal_gain": "Gain on asset sale",
+    "loss_line_dead": "{{tag}} died on {{date}} — whole loss {{full}} (price {{price}} + keeping {{keeping}}; the keeping costs are already in the lines above, so only the price is taken here)",
+    "loss_line_transferred": "{{tag}} transferred on {{date}} — whole loss {{full}} (price {{price}} + keeping {{keeping}}; the keeping costs are already in the lines above, so only the price is taken here)"
+  },
+  "bs": {
+    "title": "Balance Sheet",
+    "subtitle": "Assets = Liabilities + Equity",
+    "as_of": "As of Date",
+    "assets": "ASSETS",
+    "current_assets": "Current Assets",
+    "medicine_inventory": "Medicine Inventory",
+    "total_current": "Total Current Assets",
+    "accounts_receivable": "Accounts Receivable",
+    "supplier_prepaid": "Supplier Prepayments",
+    "fixed_assets": "Fixed Assets",
+    "livestock": "Livestock (at cost)",
+    "equipment": "Equipment & Furniture (book value)",
+    "total_fixed": "Total Fixed Assets",
+    "total_assets": "TOTAL ASSETS",
+    "liabilities": "LIABILITIES",
+    "accounts_payable": "Accounts Payable (Suppliers)",
+    "no_payables": "No outstanding payables",
+    "total_payables": "Total Payables",
+    "equity": "EQUITY",
+    "partner_equity": "Partners' Capital",
+    "retained_earnings": "Retained Earnings",
+    "total_equity": "Total Equity",
+    "total_le": "TOTAL LIABILITIES + EQUITY",
+    "balanced": "Balance sheet is balanced ✓",
+    "unbalanced": "Balance sheet difference: check your data",
+    "feed_inventory": "Feed Inventory",
+    "unbalanced_by": "Balance sheet difference: {{amount}} — check your data"
+  },
+  "cf": {
+    "title": "Cash Flow Statement",
+    "subtitle": "Operating · Investing · Financing",
+    "operating": "Cash from Operating Activities",
+    "investing": "Cash from Investing Activities",
+    "financing": "Cash from Financing Activities",
+    "operating_net": "Operating",
+    "investing_net": "Investing",
+    "financing_net": "Financing",
+    "summary": "Cash Position Summary",
+    "opening_balance": "Opening Balance (all accounts)",
+    "net_change": "Net Cash Change",
+    "inflows": "Inflows",
+    "outflows": "Outflows",
+    "no_activity": "No activity in this period",
+    "total_in": "Total In",
+    "total_out": "Total Out"
+  },
+  "trial_balance_ext": {
+    "load_error": "Failed to load trial balance. Please refresh the page.",
+    "period_label": "Period:",
+    "partner_equity_title": "Partner Equity",
+    "partner_equity_subtitle": "Partner Equity Movements (Investment & Withdrawal)",
+    "col_description": "Description",
+    "col_amount": "Amount",
+    "col_type": "Type",
+    "equity_in": "Equity In",
+    "equity_out": "Equity Out",
+    "fixed_assets_title": "Fixed Assets (Non-Current Assets)",
+    "fixed_assets_subtitle": "Current book value of active assets",
+    "col_asset_name": "Asset Name",
+    "col_category": "Category",
+    "col_book_value": "Book Value",
+    "total_fixed_assets": "Total Fixed Assets"
+  },
+  "accounts_trash": {
+    "back_link": "Back to Accounts",
+    "page_title": "Accounts Trash",
+    "search_placeholder": "Search trashed accounts…",
+    "col_type": "Type",
+    "col_code": "Code",
+    "no_deleted": "No deleted accounts found",
+    "warning": "Deleted accounts are stored in the trash. Restore to re-activate, or permanently delete to remove all data.",
+    "warning_superadmin": "Permanent deletion cannot be undone."
+  },
+  "payment_accounts_trash": {
+    "back_link": "Back to Payment Accounts",
+    "page_title": "Payment Accounts Trash",
+    "search_placeholder": "Search trashed payment accounts…",
+    "col_type": "Type",
+    "col_balance": "Balance",
+    "no_deleted": "No deleted payment accounts found",
+    "warning": "Deleted payment accounts are stored here. Restore to re-activate, or permanently delete to remove all data.",
+    "warning_manage": "Permanent deletion cannot be undone."
+  },
+  "transfers_trash": {
+    "back_link": "Back to Transfers",
+    "page_title": "Transfers Trash",
+    "search_placeholder": "Search trashed transfers…",
+    "col_from_to": "From → To",
+    "col_transfer_date": "Transfer Date",
+    "no_deleted": "No deleted transfers found",
+    "warning": "Deleted transfers are stored here. Restore to recover a transfer, or permanently delete to remove all data.",
+    "warning_superadmin": "Permanent deletion cannot be undone."
+  },
+  "customers_trash": {
+    "page_title": "Customers — Trash",
+    "page_subtitle": "Deleted customers can be restored within 30 days.",
+    "search_placeholder": "Search deleted customers…",
+    "col_customer": "Customer",
+    "no_deleted": "No deleted customers."
+  },
+  "partners_trash": {
+    "back_link": "Back to Partners",
+    "page_title": "Partners Trash",
+    "search_placeholder": "Search trashed partners…",
+    "no_deleted": "No deleted partners found",
+    "warning": "Deleted partners are stored in the trash. Restore to re-activate, or permanently delete to remove all data.",
+    "warning_superadmin": "Permanent deletion cannot be undone."
+  },
+  "suppliers_trash": {
+    "back_link": "Back to Suppliers",
+    "page_title": "Suppliers Trash",
+    "search_placeholder": "Search trashed suppliers…",
+    "col_email": "Email",
+    "no_deleted": "No deleted suppliers found",
+    "warning": "Deleted suppliers are stored in the trash. Restore to re-activate, or permanently delete to remove all data.",
+    "warning_superadmin": "Permanent deletion cannot be undone."
+  },
+  "customer_detail": {
+    "status_due": "Due ৳{{amount}}",
+    "status_settled": "Settled",
+    "summary": {
+      "opening_balance": "Opening Balance",
+      "total_sales": "Total Sales",
+      "total_received": "Total Received",
+      "outstanding_balance": "Outstanding Balance (Due)",
+      "hint_due": "Customer has this amount outstanding",
+      "hint_overpaid": "Overpayment recorded",
+      "hint_settled": "Fully settled"
+    },
+    "btn_record_payment": "Record Payment / Adjustment",
+    "ledger_title": "Transaction History",
+    "col": {
+      "date": "Date",
+      "description": "Description",
+      "debit": "Debit",
+      "credit": "Credit",
+      "balance": "Balance (Due)"
+    },
+    "opening_balance_row": "Opening Balance",
+    "no_transactions": "No transactions yet.",
+    "tx_type": {
+      "sale": "Sale",
+      "sale_payment": "Payment Received"
+    },
+    "payment_modal": {
+      "title": "Record Payment / Adjustment",
+      "field_type": "Type",
+      "type_payment": "Payment Received (Cash/Bank)",
+      "type_adjustment": "Adjustment (Write-off / Correction)",
+      "field_amount": "Amount (৳)",
+      "field_date": "Date",
+      "field_payment_account": "Payment Account",
+      "select_account": "Select account…",
+      "field_notes": "Notes",
+      "placeholder_adjustment_notes": "e.g. Discount given, debt written off…",
+      "btn_save": "Save",
+      "btn_cancel": "Cancel",
+      "error_amount": "Amount is required",
+      "error_account": "Please select a payment account"
+    },
+    "edit_modal": {
+      "title": "Edit Customer",
+      "profile_photo": "Profile Photo",
+      "photo_hint": "Click the camera icon to change",
+      "field_name": "Name",
+      "field_phone": "Phone",
+      "field_email": "Email",
+      "field_address": "Address",
+      "field_notes": "Notes",
+      "btn_save": "Save Changes",
+      "btn_cancel": "Cancel"
+    }
+  },
+  "partner_detail_ext": {
+    "col_account": "Account",
+    "field_type": "Type",
+    "field_amount": "Amount (৳)",
+    "field_date": "Date",
+    "field_notes": "Notes",
+    "modal_edit_partner_title": "Edit Partner",
+    "form": {
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "share_percentage": "Share %",
+      "status": "Status",
+      "notes": "Notes"
+    },
+    "field_photo": "Profile Photo",
+    "field_photo_hint": "Click the camera icon to change photo"
+  },
+  "supplier_detail_ext": {
+    "outstanding_warning": "Outstanding Payment (from purchases)",
+    "outstanding_count": "{{count}} purchases not yet fully paid",
+    "outstanding_col": {
+      "date": "Date",
+      "type": "Type",
+      "invoice": "Invoice",
+      "total": "Total",
+      "paid": "Paid",
+      "due": "Due",
+      "status": "Status"
+    },
+    "type_feed": "Feed",
+    "type_medicine": "Medicine",
+    "type_semen": "Semen",
+    "status_unpaid": "Unpaid",
+    "status_partial": "Partial",
+    "total_outstanding": "Total Outstanding:",
+    "opening_balance_row": "Opening Balance",
+    "due_label": "Due: ৳{{amount}}",
+    "unpaid_label": "Not paid",
+    "edit_modal": {
+      "title": "Edit Supplier Info",
+      "profile_photo": "Profile Photo",
+      "photo_hint": "Click the camera icon to change photo",
+      "field_name": "Name",
+      "field_phone": "Phone",
+      "field_email": "Email",
+      "field_type": "Type",
+      "select_type": "Select type...",
+      "field_address": "Address",
+      "field_notes": "Notes",
+      "btn_save": "Save Changes"
+    },
+    "payment_modal": {
+      "field_type": "Type",
+      "field_amount": "Amount (৳)",
+      "field_date": "Date",
+      "field_notes": "Notes",
+      "btn_save": "Save",
+      "placeholder_adjustment_notes": "e.g. Rounded 702 down to 700, wrote off ৳2"
+    }
+  },
+  "expenses_trash": {
+    "back_link": "Back to Expenses",
+    "page_title": "Expenses Trash",
+    "warning": "Deleted expenses are stored in the trash. Restore to recover them, or permanently delete to remove all data.",
+    "search_placeholder": "Search trashed expenses…",
+    "col": {
+      "title": "Title",
+      "category": "Category"
+    },
+    "empty_desc": "No deleted expenses found"
+  },
+  "entries_ext": {
+    "select_account_placeholder": "— Select account —",
+    "income_accounts_group": "Income Accounts",
+    "expense_accounts_group": "Expense Accounts",
+    "no_payment_account": "— None —",
+    "payment_account_label": "Payment account (optional)",
+    "description_placeholder": "e.g. Depreciation of equipment Q2 2026",
+    "confirm_delete_title": "Delete Journal Entry",
+    "confirm_delete_message": "Are you sure you want to delete this journal entry? This action cannot be undone.",
+    "confirm_delete_label": "Delete"
+  },
+  "system_accounts": {
+    "4001": "Cattle Sales Revenue",
+    "4002": "Milk Sales Revenue",
+    "4003": "By-product Sales Revenue",
+    "5001": "Feed Purchase Expense",
+    "5002": "Medicine Purchase",
+    "5003": "Daily Labour",
+    "5004": "Salary Expense",
+    "5005": "Cattle Purchase",
+    "5006": "Veterinary / Treatment",
+    "5007": "General Expense",
+    "5008": "Supplier Payment",
+    "5009": "Breeding / AI Expense"
+  },
+  "active_switch": {
+    "inactive": "Inactive",
+    "make_inactive": "Make inactive",
+    "make_active": "Make active",
+    "show_inactive": "Show inactive"
+  },
+  "ui": {
+    "back": "Back",
+    "confirm_trash_named": "Move \"{{name}}\" to trash? You can restore it later."
+  }
+}

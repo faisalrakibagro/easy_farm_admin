@@ -1,0 +1,219 @@
+{
+  "title": "Dairy",
+  "subtitle": "Daily milk, lactations, sales and usage",
+  "session": {
+    "morning": "Morning",
+    "noon": "Noon",
+    "evening": "Evening"
+  },
+  "sale_type": {
+    "wholesale": "Wholesale",
+    "retail": "Retail"
+  },
+  "usage_type": {
+    "calf_feeding": "Fed to calves",
+    "household": "Household",
+    "wastage": "Wasted"
+  },
+  "payment_status": {
+    "paid": "Paid in full",
+    "partial": "Partial",
+    "unpaid": "On credit"
+  },
+  "end_reason": {
+    "dry_off": "Dried off",
+    "new_calving": "New calving",
+    "sold": "Sold",
+    "dead": "Died",
+    "other": "Other"
+  },
+  "btn": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add_sale": "Milk Sale",
+    "add_usage": "Add Usage",
+    "start_lactation": "Start Lactation",
+    "dry_off": "Dry Off",
+    "enter_milk": "Daily Milk",
+    "fill_same": "Fill All Empty Cells",
+    "new_customer": "New Buyer / Company",
+    "drop_session": "Not this session any more"
+  },
+  "field": {
+    "date": "Date",
+    "session": "Session",
+    "shed": "Shed",
+    "all_sheds": "All sheds",
+    "animal": "Animal",
+    "select_animal": "Select an animal",
+    "kg": "kg",
+    "saleable": "Saleable",
+    "sale_date": "Sale date",
+    "sale_type": "Sale type",
+    "customer": "Buyer / company",
+    "select_customer": "Select a buyer",
+    "buyer_name": "Buyer name (optional)",
+    "quantity_kg": "Quantity (kg)",
+    "rate": "Rate (৳/kg)",
+    "amount": "Total",
+    "period": "Milk of which days",
+    "period_from": "From",
+    "period_to": "To",
+    "payment_status": "Payment",
+    "paid_amount": "Paid (৳)",
+    "due_amount": "Due",
+    "payment_account": "Received into account",
+    "select_account": "Select an account",
+    "notes": "Notes",
+    "usage_date": "Date",
+    "usage_type": "Type",
+    "start_date": "Start date",
+    "lactation_no": "Lactation number",
+    "dry_off_date": "Dry-off date",
+    "end_reason": "Reason",
+    "search": "Search by tag or name…",
+    "active_only": "Active only",
+    "all_types": "All types",
+    "all": "All",
+    "company_name": "Company name",
+    "customer_type": "Customer type",
+    "phone": "Phone",
+    "milking_sessions": "Milking sessions"
+  },
+  "hint": {
+    "period": "For a weekly wholesale bill enter the whole week. Empty = the milk of the sale date.",
+    "share": "The full sale amount is shared out to the animals by the saleable kg each gave in this period.",
+    "credit": "The due amount goes to the buyer's balance; collect it from the customer page.",
+    "withdrawal": "Milk not for sale until {{date}} (medicine)",
+    "no_animals": "No animals to milk on this date and session. Recording a delivery or starting a lactation brings animals here.",
+    "empty_removes": "Leaving a cell empty removes that animal's record for this session.",
+    "manual_lactation": "For a cow bought in milk — a recorded delivery starts a lactation automatically.",
+    "wholesale_customer": "Select the buyer / company for a wholesale sale",
+    "credit_customer": "Select the buyer when something is left unpaid",
+    "partial_amount": "Enter more than zero and less than the total"
+  },
+  "col": {
+    "animal": "Animal",
+    "dim": "Days in Milk",
+    "times": "Per Day",
+    "kg": "kg",
+    "date": "Date",
+    "buyer": "Buyer",
+    "type": "Type",
+    "kg_rate": "kg × Rate",
+    "amount": "Amount",
+    "status": "Status",
+    "period": "Milk Period",
+    "lactation": "Lactation",
+    "start": "Start",
+    "end": "End",
+    "total_kg": "Total kg",
+    "actions": "Actions"
+  },
+  "overview": {
+    "produced": "Produced",
+    "saleable": "Saleable",
+    "withheld": "Withheld (medicine)",
+    "sold": "Sold",
+    "used": "Other use",
+    "balance": "Remaining / difference",
+    "revenue": "Sales revenue",
+    "due": "Due",
+    "avg_price": "Avg. price / kg",
+    "in_milk": "Animals in milk",
+    "avg_per_cow": "Avg. / animal / day",
+    "daily_title": "Daily",
+    "animals_title": "Milk and Income by Animal",
+    "customers_title": "By Buyer / Company",
+    "sale_types_title": "Wholesale vs Retail",
+    "withdrawal_title": "Milk Not for Sale (Medicine)",
+    "per_day": "kg/day",
+    "income": "Income",
+    "no_data": "No data in this period",
+    "last_30": "Last 30 days",
+    "last_7": "Last 7 days",
+    "this_month": "This month"
+  },
+  "history": {
+    "tab": "Milk",
+    "active": "Current lactation",
+    "none_active": "Not in milk now",
+    "lactations": "Lactations",
+    "no_lactations": "No lactations",
+    "last_60": "Milk in the last 60 days",
+    "milk_income": "Milk income",
+    "total_cost": "Total cost",
+    "profit": "Profit / loss",
+    "total_kg": "Total milk",
+    "cost_per_kg": "Cost / kg (dairy)",
+    "income_per_kg": "Income / kg",
+    "peak": "Peak",
+    "avg": "Avg.",
+    "days": "{{count}} days",
+    "not_milking_type": "Milk records are off for this animal type (see Animal Types).",
+    "running_cost": "Dairy running cost",
+    "milk_profit": "Profit from milk",
+    "lifetime": "Lifetime (incl. purchase)"
+  },
+  "customer_types": {
+    "title": "Customer Types",
+    "add": "Add Type",
+    "name": "Name",
+    "count": "Customers",
+    "confirm_delete": "Delete this type?"
+  },
+  "confirm": {
+    "delete_sale": "Delete this milk sale? It is removed from the animals' income too.",
+    "delete_usage": "Delete this record?",
+    "delete_lactation": "Delete this lactation?"
+  },
+  "toast": {
+    "saved": "Saved",
+    "deleted": "Deleted",
+    "failed": "Could not save"
+  },
+  "empty": "No records",
+  "total": "Total",
+  "entry_modal": {
+    "title": "Milk Entry",
+    "subtitle": "Only the animals in milk are listed — enter each one’s kg",
+    "start_lactation": "No animal in milk? Start a lactation →",
+    "subtitle_selected": "Only the {{count}} selected animals — enter each one's kg",
+    "not_this_session": "{{count}} of the selected animals are not milked in this session."
+  },
+  "sessions": {
+    "follow_type": "Same as its animal type ({{sessions}})"
+  },
+  "drop": {
+    "title": "Stop listing in this session?",
+    "message": "{{animal}} will no longer appear on the {{session}} sheet. It can be added back from the animal's form.",
+    "confirm": "Stop listing",
+    "last": "Only session left — to stop milking, dry it off."
+  },
+  "blank": {
+    "title": "Not milked?",
+    "message": "No milk entered for {{n}} animal(s) in this session: {{animals}}. Save them as not milked this session?",
+    "confirm": "Yes, not milked",
+    "back": "Go back"
+  },
+  "sheet": {
+    "add_other": "Add another animal in milk…",
+    "none_in_session": "No animal is milked in the {{session}} session. Add one below for today, or tick {{session}} in its milking sessions.",
+    "today_only": "Today only",
+    "keep_session": "Always in {{session}}"
+  },
+  "days": {
+    "title": "Milk by day and what it sold for",
+    "hint": "Each day's milk by session, and the part of each sale that was this animal's milk — at that sale's rate. Last 30 days unless you pick dates.",
+    "total": "Milk",
+    "saleable": "Saleable",
+    "sold": "Sold",
+    "rate": "Rate",
+    "income": "Sale money",
+    "sold_line": "Sold {{kg}} kg × {{rate}} = {{amount}}",
+    "sales_title": "Sales this milk went into",
+    "sale_line": "{{kg}} kg × {{rate}}"
+  }
+}

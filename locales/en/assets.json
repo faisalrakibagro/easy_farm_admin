@@ -1,0 +1,109 @@
+{
+  "title": "Fixed Assets",
+  "subtitle": "Equipment, Furniture & Electronics",
+  "add_btn": "Add Asset",
+  "trash_link": "Trash",
+  "search_placeholder": "Search assets...",
+  "empty": "No fixed assets found.",
+  "empty_trash": "Trash is empty.",
+  "confirm": {
+    "delete_asset": "Delete \"{{name}}\"?"
+  },
+  "summary": {
+    "total_cost": "Total Cost",
+    "book_value": "Current Value",
+    "count": "Total Assets"
+  },
+  "category": {
+    "label": "Category",
+    "equipment": "Equipment",
+    "furniture": "Furniture",
+    "electronics": "Electronics",
+    "vehicle": "Vehicle",
+    "other": "Other",
+    "select_suffix": "(select)",
+    "select_placeholder": "Select category"
+  },
+  "status": {
+    "label": "Status",
+    "active": "Active",
+    "disposed": "Disposed"
+  },
+  "field": {
+    "name": "Asset Name",
+    "category": "Category",
+    "purchase_date": "Purchase Date",
+    "purchase_price": "Purchase Price",
+    "current_value": "Current Value (optional)",
+    "payment_account": "Paid From Account",
+    "vendor": "Vendor / Supplier",
+    "invoice_no": "Invoice No.",
+    "description": "Description",
+    "status": "Status",
+    "disposed_date": "Disposal Date",
+    "disposal_amount": "Disposal Amount"
+  },
+  "placeholder": {
+    "name": "e.g. CCTV Camera, Office Chair",
+    "vendor": "Vendor name (optional)",
+    "invoice_no": "Invoice number (optional)",
+    "description": "Notes (optional)",
+    "current_value": "e.g. 5000",
+    "current_value_hint": "Leave empty to use purchase price as current value.",
+    "zero": "0",
+    "select_account": "Select account"
+  },
+  "error": {
+    "name_required": "Asset name is required.",
+    "category_required": "Please select a category.",
+    "purchase_date_required": "Purchase date is required.",
+    "purchase_price_required": "Purchase price is required.",
+    "purchase_price_min": "Purchase price must be greater than 0.",
+    "current_value_min": "Current value cannot be negative.",
+    "payment_account_required": "Please select a payment account."
+  },
+  "modal": {
+    "add_title": "Add Fixed Asset",
+    "edit_title": "Edit Fixed Asset",
+    "dispose_title": "Sell / Dispose Asset"
+  },
+  "dispose": {
+    "btn": "Sell",
+    "date": "Sale Date",
+    "amount": "Sale Price",
+    "account": "Deposit To Account",
+    "note": "Note (optional)",
+    "note_placeholder": "e.g. Sold to ABC trader",
+    "gain_label": "Gain on Sale",
+    "loss_label": "Loss on Sale",
+    "book_at_disposal": "Book Value at Sale",
+    "confirm": "Confirm Sale",
+    "sold_badge": "Sold",
+    "no_gain_loss": "No gain or loss",
+    "error": {
+      "date_required": "Date is required.",
+      "amount_required": "Sale price is required.",
+      "account_required": "Please select an account."
+    }
+  },
+  "table": {
+    "name": "Asset Name",
+    "category": "Category",
+    "purchase_date": "Purchase Date",
+    "purchase_price": "Cost",
+    "book_value": "Current Value",
+    "payment_account": "Paid From",
+    "status": "Status",
+    "actions": "Actions",
+    "custom_value_badge": "Manually set",
+    "profit_word": "Profit",
+    "loss_word": "Loss"
+  },
+  "trash": {
+    "title": "Fixed Assets Trash",
+    "restore": "Restore",
+    "force_delete": "Delete Forever",
+    "restore_confirm": "Restore this asset?",
+    "force_delete_confirm": "Permanently delete this asset? This cannot be undone."
+  }
+}

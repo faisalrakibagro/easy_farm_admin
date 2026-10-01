@@ -1,0 +1,19 @@
+{
+  "title": "Units",
+  "subtitle": "Measurement units shared across feed and medicine",
+  "add": "Add Unit",
+  "edit_title": "Edit Unit",
+  "create_title": "Add Unit",
+  "empty": "No units yet. Add your first unit.",
+  "col": {
+    "name": "Name",
+    "symbol": "Symbol",
+    "status": "Status"
+  },
+  "field": {
+    "name": "Name",
+    "symbol": "Symbol"
+  },
+  "delete_title": "Delete Unit",
+  "delete_message": "Are you sure you want to delete this unit? This action cannot be undone."
+}

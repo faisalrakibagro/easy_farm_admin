@@ -1,0 +1,109 @@
+{
+  "title": "স্থায়ী সম্পদ",
+  "subtitle": "সরঞ্জাম, আসবাবপত্র ও ইলেকট্রনিক্স",
+  "add_btn": "সম্পদ যোগ করুন",
+  "trash_link": "ট্র্যাশ",
+  "search_placeholder": "সম্পদ খুঁজুন...",
+  "empty": "কোনো স্থায়ী সম্পদ পাওয়া যায়নি।",
+  "empty_trash": "ট্র্যাশ খালি।",
+  "confirm": {
+    "delete_asset": "\"{{name}}\" মুছে ফেলবেন?"
+  },
+  "summary": {
+    "total_cost": "মোট ক্রয়মূল্য",
+    "book_value": "বর্তমান মূল্য",
+    "count": "মোট সম্পদ"
+  },
+  "category": {
+    "label": "বিভাগ",
+    "equipment": "সরঞ্জাম",
+    "furniture": "আসবাবপত্র",
+    "electronics": "ইলেকট্রনিক্স",
+    "vehicle": "যানবাহন",
+    "other": "অন্যান্য",
+    "select_suffix": "বেছে নিন",
+    "select_placeholder": "বিভাগ বেছে নিন"
+  },
+  "status": {
+    "label": "অবস্থা",
+    "active": "সক্রিয়",
+    "disposed": "বাতিল"
+  },
+  "field": {
+    "name": "সম্পদের নাম",
+    "category": "বিভাগ",
+    "purchase_date": "ক্রয়ের তারিখ",
+    "purchase_price": "ক্রয়মূল্য",
+    "current_value": "বর্তমান মূল্য (ঐচ্ছিক)",
+    "payment_account": "যে অ্যাকাউন্ট থেকে পরিশোধ",
+    "vendor": "বিক্রেতা / সরবরাহকারী",
+    "invoice_no": "ইনভয়েস নং",
+    "description": "বিবরণ",
+    "status": "অবস্থা",
+    "disposed_date": "বাতিলের তারিখ",
+    "disposal_amount": "বিক্রয়মূল্য (বাতিলকালে)"
+  },
+  "placeholder": {
+    "name": "যেমন: CCTV ক্যামেরা, অফিস চেয়ার",
+    "vendor": "বিক্রেতার নাম (ঐচ্ছিক)",
+    "invoice_no": "ইনভয়েস নম্বর (ঐচ্ছিক)",
+    "description": "নোট (ঐচ্ছিক)",
+    "current_value": "যেমন: ৫০০০",
+    "current_value_hint": "খালি রাখলে ক্রয়মূল্যই বর্তমান মূল্য হিসেবে ব্যবহার হবে।",
+    "zero": "০",
+    "select_account": "অ্যাকাউন্ট বেছে নিন"
+  },
+  "error": {
+    "name_required": "সম্পদের নাম আবশ্যক।",
+    "category_required": "বিভাগ বেছে নিন।",
+    "purchase_date_required": "ক্রয়ের তারিখ আবশ্যক।",
+    "purchase_price_required": "ক্রয়মূল্য আবশ্যক।",
+    "purchase_price_min": "ক্রয়মূল্য অবশ্যই ০-এর বেশি হতে হবে।",
+    "current_value_min": "বর্তমান মূল্য ঋণাত্মক হতে পারবে না।",
+    "payment_account_required": "পেমেন্ট অ্যাকাউন্ট বেছে নিন।"
+  },
+  "modal": {
+    "add_title": "স্থায়ী সম্পদ যোগ করুন",
+    "edit_title": "স্থায়ী সম্পদ সম্পাদনা",
+    "dispose_title": "সম্পদ বিক্রি / বাতিল"
+  },
+  "dispose": {
+    "btn": "বিক্রয়",
+    "date": "বিক্রয়ের তারিখ",
+    "amount": "বিক্রয়মূল্য",
+    "account": "যে অ্যাকাউন্টে টাকা জমা হবে",
+    "note": "নোট (ঐচ্ছিক)",
+    "note_placeholder": "যেমন: ABC ব্যবসায়ীর কাছে বিক্রি",
+    "gain_label": "বিক্রয়ে লাভ",
+    "loss_label": "বিক্রয়ে ক্ষতি",
+    "book_at_disposal": "বিক্রয়কালীন বর্তমান মূল্য",
+    "confirm": "বিক্রয় নিশ্চিত করুন",
+    "sold_badge": "বিক্রিত",
+    "no_gain_loss": "কোনো লাভ/ক্ষতি নেই",
+    "error": {
+      "date_required": "তারিখ আবশ্যক।",
+      "amount_required": "বিক্রয়মূল্য আবশ্যক।",
+      "account_required": "অ্যাকাউন্ট বেছে নিন।"
+    }
+  },
+  "table": {
+    "name": "সম্পদের নাম",
+    "category": "বিভাগ",
+    "purchase_date": "ক্রয়ের তারিখ",
+    "purchase_price": "ক্রয়মূল্য",
+    "book_value": "বর্তমান মূল্য",
+    "payment_account": "পরিশোধের অ্যাকাউন্ট",
+    "status": "অবস্থা",
+    "actions": "কার্যক্রম",
+    "custom_value_badge": "নির্ধারিত",
+    "profit_word": "লাভ",
+    "loss_word": "ক্ষতি"
+  },
+  "trash": {
+    "title": "স্থায়ী সম্পদ ট্র্যাশ",
+    "restore": "পুনরুদ্ধার",
+    "force_delete": "স্থায়ীভাবে মুছুন",
+    "restore_confirm": "এই সম্পদটি পুনরুদ্ধার করবেন?",
+    "force_delete_confirm": "এই সম্পদটি স্থায়ীভাবে মুছে ফেলবেন? এটি আর ফিরে পাওয়া যাবে না।"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "library": {
+    "title": "মিডিয়া লাইব্রেরি",
+    "overview_text": "আপনার মিডিয়া ফাইল ও বিভাগ ব্যবস্থাপনা করুন"
+  },
+  "assets": {
+    "title": "মিডিয়া ফাইল",
+    "add": "ফাইল আপলোড করুন",
+    "search_placeholder": "ফাইল অনুসন্ধান করুন…",
+    "col": {
+      "file": "ফাইল",
+      "name": "নাম",
+      "category": "বিভাগ",
+      "size": "আকার",
+      "type": "ধরন",
+      "date": "তারিখ",
+      "uploaded": "আপলোড"
+    },
+    "field": {
+      "name": "নাম",
+      "category": "বিভাগ",
+      "file": "ফাইল",
+      "alt_text": "বিকল্প টেক্সট"
+    },
+    "filter": {
+      "all_types": "সব ধরন",
+      "images": "ছবি",
+      "videos": "ভিডিও",
+      "audio": "অডিও",
+      "documents": "ডকুমেন্ট",
+      "all_categories": "সব বিভাগ"
+    },
+    "select_all": "সব নির্বাচন",
+    "deselect_all": "নির্বাচন বাতিল",
+    "selected_count": "{{count}}টি নির্বাচিত",
+    "delete_selected": "নির্বাচিত মুছুন",
+    "clear": "বাছাই বাতিল",
+    "file_count": "{{count}}টি ফাইল",
+    "file_count_plural": "{{count}}টি ফাইল",
+    "no_files_found": "কোনো ফাইল পাওয়া যায়নি",
+    "no_files_hint_filter": "ফিল্টার পরিবর্তন করে দেখুন",
+    "no_files_hint_upload": "শুরু করতে \"ফাইল আপলোড করুন\" ক্লিক করুন",
+    "uploading": "আপলোড হচ্ছে…",
+    "upload_files": "ফাইল আপলোড করুন",
+    "trash_link": "ট্র্যাশ",
+    "delete_confirm": "এই ফাইল মুছবেন?",
+    "moved_one": "ফাইলটি ট্র্যাশে সরানো হয়েছে।",
+    "moved_many": "ফাইলগুলো ট্র্যাশে সরানো হয়েছে।",
+    "upload_failed": "আপলোড হয়নি। ফাইলের ধরন ও আকার দেখুন।",
+    "bulk_delete_confirm": "{{count}}টি ফাইল মুছবেন?",
+    "edit_metadata_title": "ফাইল মেটাডেটা সম্পাদনা",
+    "preview": {
+      "file_name": "ফাইলের নাম:",
+      "type": "ধরন:",
+      "mime": "MIME:",
+      "size": "আকার:",
+      "dimensions": "মাত্রা:",
+      "category": "বিভাগ:",
+      "uploaded": "আপলোড:",
+      "download": "ডাউনলোড",
+      "edit": "সম্পাদনা",
+      "delete": "মুছুন"
+    },
+    "edit_form": {
+      "title_label": "শিরোনাম",
+      "title_placeholder": "বর্ণনামূলক শিরোনাম",
+      "alt_text_label": "বিকল্প টেক্সট (ছবির জন্য)",
+      "alt_text_placeholder": "অ্যাক্সেসিবিলিটির জন্য বিকল্প টেক্সট",
+      "description_label": "বিবরণ",
+      "description_placeholder": "ঐচ্ছিক বিবরণ",
+      "save_changes": "পরিবর্তন সংরক্ষণ করুন",
+      "saving": "সংরক্ষণ হচ্ছে…"
+    },
+    "trash": {
+      "title": "মুছে ফেলা ফাইল",
+      "back_link": "ফাইলে ফিরুন",
+      "page_title": "মিডিয়া ট্র্যাশ",
+      "warning": "ফাইলগুলো স্থায়ীভাবে মুছে না দেওয়া পর্যন্ত স্টোরেজে সংরক্ষিত থাকে। পুনরুদ্ধার করে ফিরিয়ে আনুন।",
+      "search_placeholder": "মুছে ফেলা মিডিয়া খুঁজুন…",
+      "bulk_delete_confirm": "{{count}}টি নির্বাচিত ফাইল স্থায়ীভাবে মুছবেন? এটি পূর্বাবস্থায় ফেরানো যাবে না।",
+      "col": {
+        "deleted_at": "মুছে ফেলার সময়"
+      }
+    },
+    "view_grid": "গ্রিড ভিউ",
+    "view_list": "তালিকা ভিউ",
+    "select_item": "{{name}} নির্বাচন করুন"
+  },
+  "categories": {
+    "title": "মিডিয়া বিভাগ",
+    "add": "বিভাগ যোগ করুন",
+    "new": "নতুন বিভাগ",
+    "empty": "কোনো বিভাগ নেই",
+    "empty_subtitle": "আপনার মিডিয়া ফাইল সংগঠিত করতে বিভাগ তৈরি করুন",
+    "files_count": "{{count}}টি ফাইল",
+    "modal_create": "নতুন বিভাগ",
+    "modal_edit": "বিভাগ সম্পাদনা",
+    "count": "{{count}}টি বিভাগ",
+    "placeholder_name": "যেমন: পণ্যের ছবি",
+    "placeholder_description": "বিবরণ (ঐচ্ছিক)",
+    "confirm_delete": "\"{{name}}\" মুছে ফেলবেন? এই বিভাগের ফাইলগুলো কোনো বিভাগে থাকবে না।",
+    "col": {
+      "name": "নাম",
+      "order": "ক্রম",
+      "assets": "ফাইল",
+      "files": "ফাইল",
+      "description": "বিবরণ",
+      "status": "অবস্থা",
+      "media": "মিডিয়া"
+    },
+    "field": {
+      "name": "বিভাগের নাম",
+      "order": "ক্রম",
+      "parent": "মূল বিভাগ"
+    },
+    "trash": {
+      "title": "মুছে ফেলা বিভাগ",
+      "back_link": "বিভাগে ফিরুন",
+      "col": {
+        "category": "বিভাগ",
+        "media": "মিডিয়া",
+        "deleted_at": "মুছে ফেলার সময়"
+      },
+      "files_count_one": "{{n}}টি ফাইল",
+      "files_count_other": "{{n}}টি ফাইল"
+    }
+  }
+}

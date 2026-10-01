@@ -1,0 +1,8 @@
+/* Charukola Unicode — © 2016 Chandan Acharja, SIL Open Font License 1.1. */
+@font-face {
+  font-family: 'Charukola Unicode';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('charukola-unicode.ttf') format('truetype');
+}

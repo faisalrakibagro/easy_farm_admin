@@ -1,0 +1,132 @@
+{
+  "library": {
+    "title": "مكتبة الوسائط",
+    "overview_text": "إدارة ملفات الوسائط وفئاتها"
+  },
+  "assets": {
+    "title": "ملفات الوسائط",
+    "add": "رفع ملف",
+    "search_placeholder": "ابحث في الملفات…",
+    "col": {
+      "file": "الملف",
+      "name": "الاسم",
+      "category": "الفئة",
+      "size": "الحجم",
+      "type": "النوع",
+      "date": "التاريخ",
+      "uploaded": "تاريخ الرفع"
+    },
+    "field": {
+      "name": "الاسم",
+      "category": "الفئة",
+      "file": "الملف",
+      "alt_text": "النص البديل"
+    },
+    "filter": {
+      "all_types": "كل الأنواع",
+      "images": "الصور",
+      "videos": "الفيديوهات",
+      "audio": "الصوتيات",
+      "documents": "المستندات",
+      "all_categories": "كل الفئات"
+    },
+    "select_all": "تحديد الكل",
+    "deselect_all": "إلغاء تحديد الكل",
+    "selected_count": "المحدد: {{count}}",
+    "delete_selected": "حذف المحدد",
+    "clear": "مسح",
+    "file_count": "{{count}} ملف",
+    "file_count_plural": "عدد الملفات: {{count}}",
+    "no_files_found": "لم يتم العثور على ملفات",
+    "no_files_hint_filter": "جرّب تعديل عوامل التصفية",
+    "no_files_hint_upload": "انقر على «رفع الملفات» للبدء",
+    "uploading": "جارٍ الرفع…",
+    "upload_files": "رفع الملفات",
+    "trash_link": "سلة المحذوفات",
+    "delete_confirm": "حذف هذا الملف؟",
+    "moved_one": "تم نقل الملف إلى سلة المهملات.",
+    "moved_many": "تم نقل الملفات إلى سلة المهملات.",
+    "upload_failed": "فشل الرفع. تحقق من نوع الملف وحجمه.",
+    "bulk_delete_confirm": "حذف الملفات المحددة ({{count}})؟",
+    "edit_metadata_title": "تعديل بيانات الملف",
+    "preview": {
+      "file_name": "اسم الملف:",
+      "type": "النوع:",
+      "mime": "نوع MIME:",
+      "size": "الحجم:",
+      "dimensions": "الأبعاد:",
+      "category": "الفئة:",
+      "uploaded": "تاريخ الرفع:",
+      "download": "تنزيل",
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "edit_form": {
+      "title_label": "العنوان",
+      "title_placeholder": "عنوان وصفي",
+      "alt_text_label": "النص البديل (للصور)",
+      "alt_text_placeholder": "نص بديل لتسهيل الوصول",
+      "description_label": "الوصف",
+      "description_placeholder": "وصف اختياري",
+      "save_changes": "حفظ التغييرات",
+      "saving": "جارٍ الحفظ…"
+    },
+    "trash": {
+      "title": "الملفات المحذوفة",
+      "back_link": "العودة إلى الملفات",
+      "page_title": "سلة محذوفات الوسائط",
+      "warning": "تبقى الملفات الفعلية محفوظة في التخزين حتى الحذف النهائي. استعدها لاسترجاعها.",
+      "search_placeholder": "ابحث في الوسائط المحذوفة…",
+      "bulk_delete_confirm": "حذف الملفات المحددة ({{count}}) نهائيًا؟ لا يمكن التراجع عن هذا الإجراء.",
+      "col": {
+        "deleted_at": "تاريخ الحذف"
+      }
+    },
+    "view_grid": "عرض شبكي",
+    "view_list": "عرض قائمة",
+    "select_item": "تحديد {{name}}"
+  },
+  "categories": {
+    "title": "فئات الوسائط",
+    "add": "إضافة فئة",
+    "new": "فئة جديدة",
+    "empty": "لا توجد فئات بعد",
+    "empty_subtitle": "أنشئ فئات لتنظيم ملفات الوسائط",
+    "files_count": "عدد الملفات: {{count}}",
+    "modal_create": "فئة جديدة",
+    "modal_edit": "تعديل الفئة",
+    "count": "عدد الفئات: {{count}}",
+    "placeholder_name": "مثال: صور المنتجات",
+    "placeholder_description": "وصف اختياري",
+    "confirm_delete": "حذف \"{{name}}\"؟ ستصبح الملفات في هذه الفئة بلا فئة.",
+    "col": {
+      "name": "الاسم",
+      "order": "الترتيب",
+      "assets": "الملفات",
+      "files": "الملفات",
+      "description": "الوصف",
+      "status": "الحالة",
+      "media": "الوسائط"
+    },
+    "field": {
+      "name": "اسم الفئة",
+      "order": "الترتيب",
+      "parent": "الفئة الأم"
+    },
+    "trash": {
+      "title": "الفئات المحذوفة",
+      "back_link": "العودة إلى الفئات",
+      "col": {
+        "category": "الفئة",
+        "media": "الوسائط",
+        "deleted_at": "تاريخ الحذف"
+      },
+      "files_count_zero": "لا ملفات",
+      "files_count_one": "ملف واحد",
+      "files_count_two": "ملفان",
+      "files_count_few": "{{n}} ملفات",
+      "files_count_many": "{{n}} ملفًا",
+      "files_count_other": "{{n}} ملف"
+    }
+  }
+}

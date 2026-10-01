@@ -1,0 +1,29 @@
+Options -MultiViews
+DirectoryIndex index.html
+RewriteEngine On
+
+# Serve pre-generated static files/dirs directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Dynamic cattle detail — rewrite to 0 so client router handles the real ID
+RewriteRule ^farm/cattle/([^/]+)(/)?$ /farm/cattle/0/index.html [L]
+
+# Dynamic supplier detail
+RewriteRule ^suppliers/([^/]+)(/)?$ /suppliers/0/index.html [L]
+
+# Dynamic partner detail
+RewriteRule ^partners/([^/]+)(/)?$ /partners/0/index.html [L]
+
+# Dynamic customer detail
+RewriteRule ^customers/([^/]+)(/)?$ /customers/0/index.html [L]
+
+# Dynamic payment account ledger
+RewriteRule ^accounting/payment-accounts/([^/]+)(/)?$ /accounting/payment-accounts/0/index.html [L]
+
+# Dynamic employee salary history
+RewriteRule ^farm/labour/employees/([^/]+)/salary-history(/)?$ /farm/labour/employees/0/salary-history/index.html [L]
+
+# SPA fallback — all other unmatched routes load the root index
+RewriteRule ^ /index.html [L]

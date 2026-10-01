@@ -1,0 +1,55 @@
+{
+  "title": "Profit Centers",
+  "subtitle": "Profit and loss of fattening, breeding and dairy — and the farm's general income and costs",
+  "center": {
+    "fattening": "Fattening",
+    "breeding": "Breeding",
+    "dairy": "Dairy",
+    "general": "Farm general",
+    "total": "Total"
+  },
+  "field": {
+    "all_types": "All animal types",
+    "this_month": "This month",
+    "last_3": "Last 3 months",
+    "this_year": "This year",
+    "animal_type": "Animal type"
+  },
+  "row": {
+    "income": "Income",
+    "running_cost": "Running cost",
+    "cost_of_sold": "Cost of animals sold",
+    "profit": "Profit / loss",
+    "capital_added": "Animals bought / born (value)",
+    "animals_sold": "Animals sold",
+    "active_animals": "Active animals now",
+    "cost": "Cost"
+  },
+  "line": {
+    "sale": "Animals sold",
+    "milk": "Milk",
+    "byproduct": "By-products",
+    "calf_value": "Calves born (value)",
+    "feed": "Feed",
+    "medicine": "Medicine",
+    "vaccine": "Vaccine",
+    "treatment": "Treatment",
+    "labour": "Labour",
+    "breeding": "Breeding (AI, checks)",
+    "birth": "Delivery",
+    "journal": "Journal entries",
+    "held_expense": "Expenses not shared to animals",
+    "written_off": "Feed / medicine written off",
+    "pregnancy_check": "Pregnancy check"
+  },
+  "hint": {
+    "method": "Income and running cost are for the period. An animal's purchase price or birth value counts as cost only when it is sold (like the accounting P&L); in between it is shown as value added.",
+    "calf_value": "Calf value is internal: breeding income and the calf's opening value. It does not change the farm total's cash.",
+    "general": "General: income and costs no animal carries (dung, held expenses, manual journal entries, write-offs).",
+    "type_filter": "When an animal type is selected, the farm general column is hidden."
+  },
+  "months_title": "Profit / Loss by Month",
+  "details": "Details",
+  "no_data": "No data in this period",
+  "month": "Month"
+}

@@ -1,0 +1,961 @@
+{
+  "summary": {
+    "title": "الملخص المحاسبي",
+    "error": "تعذّر تحميل ملخص المحاسبة. يُرجى تحديث الصفحة أو المحاولة مرة أخرى.",
+    "kpi": {
+      "total_income": "إجمالي الإيرادات",
+      "total_expense": "إجمالي المصروفات",
+      "net_profit_loss": "صافي الربح/الخسارة",
+      "net_profit": "صافي الربح",
+      "net_loss": "صافي الخسارة",
+      "livestock_value": "قيمة الماشية",
+      "livestock_note": "الماشية النشطة بسعر التكلفة"
+    },
+    "cash_bank": {
+      "title": "أرصدة النقدية والبنوك",
+      "all_time": "(منذ البداية)",
+      "period_in": "الوارد خلال الفترة",
+      "period_out": "الصادر خلال الفترة",
+      "transfer_in": "تحويل وارد",
+      "transfer_out": "تحويل صادر"
+    },
+    "income_breakdown": "تفصيل الإيرادات",
+    "expense_breakdown": "تفصيل المصروفات",
+    "no_income": "لا توجد إيرادات مسجّلة لهذه الفترة",
+    "no_expenses": "لا توجد مصروفات مسجّلة لهذه الفترة",
+    "journal_accounts": "حسابات قيود اليومية",
+    "income_accounts": "حسابات الإيرادات",
+    "expense_accounts": "حسابات المصروفات",
+    "deleted_account": "حساب محذوف",
+    "no_entries": "لا توجد قيود",
+    "total_cash_title": "إجمالي النقدية (جميع الحسابات)",
+    "total_cash_note": "الرصيد الحالي لجميع حسابات الدفع",
+    "ar_title": "مستحقات العملاء (الذمم المدينة)",
+    "ar_details": "التفاصيل ←",
+    "ar_description": "هذا المبلغ مستحق على العملاء",
+    "ap_title": "مستحقات الموردين (الذمم الدائنة)",
+    "ap_details": "التفاصيل ←",
+    "ap_description": "هذا المبلغ مستحق للموردين",
+    "partner_equity_title": "حقوق الشركاء (حركة رأس المال)",
+    "partner_equity": {
+      "investments": "الاستثمارات",
+      "withdrawals": "المسحوبات",
+      "net": "الصافي"
+    },
+    "profit_vs_cash": {
+      "profit": "الربح / الخسارة في هذه الفترة",
+      "profit_note": "ما كُسب ناقص ما استُهلك — مطابق لتقرير الأرباح والخسائر.",
+      "cash": "النقد الداخل ناقص الخارج",
+      "cash_note": "المال الذي دخل الحسابات وخرج منها فعلًا (التحويل بين حساباتك يُلغي بعضه).",
+      "cash_split": "دخل {{in}} · خرج {{out}}"
+    }
+  },
+  "accounts": {
+    "title": "دليل الحسابات",
+    "add": "إضافة حساب",
+    "edit_title": "تعديل الحساب",
+    "new_title": "حساب جديد",
+    "income_accounts": "حسابات الإيرادات",
+    "expense_accounts": "حسابات المصروفات",
+    "empty": "لا توجد حسابات",
+    "col": {
+      "code": "الرمز",
+      "name": "اسم الحساب",
+      "type": "النوع",
+      "balance": "الرصيد"
+    },
+    "types": {
+      "asset": "أصل",
+      "liability": "التزام",
+      "equity": "حقوق ملكية",
+      "income": "إيرادات",
+      "expense": "مصروف"
+    },
+    "field": {
+      "code": "رمز الحساب",
+      "name": "اسم الحساب",
+      "type": "نوع الحساب",
+      "parent": "الحساب الرئيسي",
+      "notes": "ملاحظات"
+    },
+    "confirm_trash": "نقل هذا الحساب إلى سلة المحذوفات؟ يمكنك استعادته لاحقًا."
+  },
+  "entries": {
+    "title": "دفتر الأستاذ",
+    "add": "إضافة قيد",
+    "ledger_tab": "دفتر الأستاذ العام",
+    "manual_tab": "قيود يومية يدوية",
+    "new_entry_btn": "قيد يومية جديد",
+    "modal_title": "قيد يومية يدوي جديد",
+    "no_manual": "لا توجد قيود يومية يدوية بعد.",
+    "hint": "يُستخدم للتصحيحات والإهلاك والشطب أو المعاملات المتفرقة التي لا تُسجَّل تلقائيًا.",
+    "source_label": "نوع المصدر (اختياري)",
+    "source_revenue": "إيرادات",
+    "source_investment": "استثمار",
+    "source_none": "— غير محدد —",
+    "account_label": "الحساب",
+    "manual_col": {
+      "account": "الحساب",
+      "source": "المصدر",
+      "amount": "المبلغ"
+    },
+    "total_debit": "إجمالي المدين",
+    "total_credit": "إجمالي الدائن",
+    "net_balance": "صافي الرصيد",
+    "search_placeholder": "ابحث في الوصف…",
+    "transactions_count": "عدد المعاملات: {{count}}",
+    "entries_count": "قيود",
+    "filter": {
+      "all_payment_accounts": "جميع حسابات الدفع",
+      "all_types": "جميع الأنواع"
+    },
+    "btn": {
+      "clear_filters": "مسح عوامل التصفية"
+    },
+    "legend": {
+      "title": "إيضاح:",
+      "debit": "مدين — أموال صادرة / مصروف",
+      "credit": "دائن — أموال واردة / إيراد",
+      "balance": "الرصيد — صافي المركز التراكمي"
+    },
+    "no_transactions": "لم يتم العثور على معاملات",
+    "voucher_types": {
+      "receipt": "سند قبض",
+      "payment": "سند صرف",
+      "contra": "تحويل",
+      "supplier_payment": "سداد مورد",
+      "adjustment": "تسوية",
+      "investment": "استثمار",
+      "withdrawal": "سحب",
+      "profit_share": "حصة أرباح",
+      "cattle_sale": "بيع ماشية",
+      "expense": "مصروف",
+      "feed_purchase": "شراء أعلاف",
+      "medicine_purchase": "شراء أدوية",
+      "daily_labour": "عمالة يومية",
+      "treatment": "أتعاب بيطرية",
+      "asset_disposal": "استبعاد أصل",
+      "asset_purchase": "شراء أصل",
+      "cattle_purchase": "شراء ماشية",
+      "customer_payment": "دفعة عميل",
+      "feed_adjustment": "تسوية أعلاف",
+      "medicine_adjustment": "تسوية أدوية",
+      "salary_advance": "سلفة راتب",
+      "salary_payment": "صرف راتب"
+    },
+    "voucher_filter": {
+      "receipt": "سند قبض (إيرادات)",
+      "payment": "سند صرف (مصروفات)",
+      "contra": "تحويل بين الحسابات",
+      "supplier_payment": "سداد الموردين",
+      "adjustment": "تسوية",
+      "investment": "استثمار شريك",
+      "withdrawal": "سحب شريك",
+      "profit_share": "توزيع الأرباح",
+      "cattle_sale": "بيع ماشية",
+      "expense": "مصروف",
+      "feed_purchase": "شراء أعلاف",
+      "medicine_purchase": "شراء أدوية",
+      "daily_labour": "عمالة يومية",
+      "treatment": "أتعاب بيطرية"
+    },
+    "col": {
+      "date": "التاريخ",
+      "description": "الوصف",
+      "debit": "مدين",
+      "credit": "دائن",
+      "account": "الحساب",
+      "reference": "المرجع",
+      "type": "النوع",
+      "description_via": "الوصف / عبر",
+      "account_party": "الحساب / الطرف",
+      "balance": "الرصيد",
+      "debit_dr": "مدين",
+      "credit_cr": "دائن"
+    },
+    "field": {
+      "date": "التاريخ",
+      "description": "الوصف",
+      "debit_account": "الحساب المدين",
+      "credit_account": "الحساب الدائن",
+      "amount": "المبلغ (৳)",
+      "reference": "المرجع",
+      "notes": "ملاحظات"
+    },
+    "search_placeholder_enter": "ابحث في الوصف… (اضغط Enter)"
+  },
+  "trial_balance": {
+    "title": "ميزان المراجعة",
+    "total_income": "إجمالي الإيرادات",
+    "total_expense": "إجمالي المصروفات",
+    "net_profit": "صافي الربح",
+    "net_loss": "صافي الخسارة",
+    "livestock_value": "قيمة الماشية",
+    "livestock_note": "الماشية النشطة بسعر التكلفة",
+    "no_transactions": "لا توجد معاملات مسجّلة لهذه الفترة.",
+    "livestock_stock_value": "قيمة مخزون الماشية",
+    "livestock_note_detail": "(الماشية النشطة بسعر التكلفة، غير مشمولة في الإجماليات)",
+    "col": {
+      "code": "الرمز",
+      "account": "الحساب",
+      "type": "النوع",
+      "debit": "مدين",
+      "credit": "دائن",
+      "income": "الإيرادات",
+      "expenses": "المصروفات",
+      "category": "الفئة",
+      "amount": "المبلغ"
+    },
+    "total_debit": "إجمالي المدين",
+    "total_credit": "إجمالي الدائن"
+  },
+  "payment_accounts": {
+    "title": "حسابات النقدية والبنوك",
+    "add": "إضافة حساب",
+    "edit_title": "تعديل الحساب",
+    "create_title": "إضافة حساب دفع",
+    "empty": "لا توجد حسابات دفع بعد. أضف حسابات نقدية أو بنكية أو محافظ إلكترونية.",
+    "default": "افتراضي",
+    "current_balance": "الرصيد الحالي",
+    "deficit": "(عجز)",
+    "opening": "الرصيد الافتتاحي:",
+    "view_ledger": "عرض دفتر الأستاذ",
+    "ledger_title": "دفتر أستاذ الحساب",
+    "ledger_subtitle": "جميع معاملات هذا الحساب",
+    "ledger_empty": "لا توجد معاملات مسجّلة لهذا الحساب",
+    "ledger_total_in": "إجمالي الوارد (دائن)",
+    "ledger_total_out": "إجمالي الصادر (مدين)",
+    "ledger_net": "صافي الرصيد",
+    "col": {
+      "name": "اسم الحساب",
+      "type": "النوع",
+      "balance": "الرصيد"
+    },
+    "types": {
+      "cash": "نقدي",
+      "bank": "بنك",
+      "mfs": "محفظة الجوال"
+    },
+    "field": {
+      "name": "اسم الحساب",
+      "type": "نوع الحساب",
+      "opening_balance": "الرصيد الافتتاحي (৳)",
+      "notes": "ملاحظات",
+      "bank_name": "اسم البنك",
+      "account_number": "رقم الحساب",
+      "mfs_provider": "مزوّد محفظة الجوال",
+      "phone_account": "الهاتف / رقم الحساب",
+      "set_default": "تعيين كحساب افتراضي"
+    },
+    "mfs_other": "أخرى"
+  },
+  "transfers": {
+    "title": "التحويلات بين الحسابات",
+    "add": "تحويل جديد",
+    "subtitle": "تحويل الأموال بين النقدية والبنك وbKash والحسابات الأخرى",
+    "empty": "لا توجد تحويلات مسجّلة بعد",
+    "modal_title": "تحويل جديد بين الحسابات",
+    "btn": {
+      "record": "تسجيل التحويل"
+    },
+    "col": {
+      "date": "التاريخ",
+      "from": "من حساب",
+      "to": "إلى حساب",
+      "amount": "المبلغ",
+      "notes": "ملاحظات",
+      "reference": "المرجع"
+    },
+    "field": {
+      "date": "تاريخ التحويل",
+      "from_account": "من حساب",
+      "to_account": "إلى حساب",
+      "amount": "المبلغ (৳)",
+      "notes": "ملاحظات",
+      "select_from": "اختر حساب المصدر",
+      "select_to": "اختر حساب الوجهة",
+      "reference": "رقم المرجع"
+    },
+    "account_number": "الحساب رقم {{id}}",
+    "v_same_account": "اختر حسابًا آخر — لا يمكن تحويل المال إلى الحساب نفسه الذي يخرج منه."
+  },
+  "expenses": {
+    "title": "المصروفات",
+    "add": "إضافة مصروف",
+    "modal_title": "إضافة مصروف",
+    "allocation_hint": "سيتم توزيع المصروف تلقائيًا على جميع الحيوانات النشطة.",
+    "btn": {
+      "record_allocate": "تسجيل وتوزيع"
+    },
+    "col": {
+      "date": "التاريخ",
+      "title": "العنوان",
+      "category": "الفئة",
+      "amount": "المبلغ",
+      "account": "الحساب",
+      "notes": "ملاحظات",
+      "allocated": "موزّع",
+      "paid_from": "مدفوع من"
+    },
+    "field": {
+      "date": "التاريخ",
+      "category": "الفئة",
+      "amount": "المبلغ (৳)",
+      "account": "حساب الدفع",
+      "notes": "ملاحظات",
+      "title": "العنوان",
+      "allocation_method": "طريقة التوزيع",
+      "allocation_equal": "توزيع متساوٍ",
+      "allocation_weight": "حسب الوزن",
+      "allocation_hold": "تعليق — التوزيع لاحقًا",
+      "hold_badge": "معلّق",
+      "hold_allocate_btn": "توزيع",
+      "allocation_hint_hold": "عند التعليق يُخصم المبلغ من الحساب، لكنه لا يُحمَّل على أي حيوان — ويمكنك توزيعه لاحقًا على حيوانات تختارها.",
+      "not_specified": "غير محدد",
+      "filter_cattle": "ابحث برقم الوسم أو الاسم…"
+    },
+    "placeholder": {
+      "amount_now": "المبلغ المدفوع الآن",
+      "salary_example": "مثال: راتب يونيو — رحيم",
+      "select_account": "— اختر الحساب —"
+    },
+    "label": {
+      "payment_status": "حالة الدفع",
+      "paid_amount": "المبلغ المدفوع (৳)",
+      "payment_status_paid": "مدفوع بالكامل",
+      "payment_status_partial": "مدفوع جزئيًا",
+      "payment_status_unpaid": "غير مدفوع",
+      "remaining": "المتبقي",
+      "no_active_employees": "لا يوجد موظفون نشطون"
+    },
+    "modal": {
+      "edit_title": "تعديل المصروف",
+      "save": "حفظ",
+      "title_salary": "راتب: {{name}}",
+      "title_daily_labour": "أجر يومي: {{name}} ({{date}})"
+    },
+    "error": {
+      "add_employee_first": "أضف موظفًا أولًا قبل تسجيل مصروف الراتب.",
+      "no_unpaid_labour": "لا توجد عمالة يومية مستحقة",
+      "add_unpaid_labour_first": "يجب وجود سجلات عمالة يومية غير مدفوعة قبل إضافة مصروف عمالة."
+    },
+    "salary_picker": {
+      "label": "اختر الموظف",
+      "placeholder": "— اختر الموظف —",
+      "hint": "سيؤدي الاختيار إلى تعبئة المبلغ والعنوان تلقائيًا.",
+      "per_month": "/شهر"
+    },
+    "labour_picker": {
+      "label": "عمالة يومية غير مدفوعة",
+      "placeholder": "— اختر —",
+      "auto_paid_hint": "سيؤدي الحفظ إلى تعليم هذا السجل كمدفوع تلقائيًا.",
+      "go_to_employees": "الانتقال إلى صفحة الموظفين ←",
+      "go_to_daily": "الانتقال إلى صفحة العمالة اليومية ←"
+    },
+    "validation": {
+      "title_required": "العنوان مطلوب",
+      "amount_required": "يجب أن يكون المبلغ أكبر من 0",
+      "date_required": "التاريخ مطلوب",
+      "account_required": "حساب الدفع مطلوب"
+    },
+    "msg": {
+      "updated": "تم تحديث المصروف.",
+      "update_failed": "فشل التحديث."
+    },
+    "recurring": {
+      "label": "تكلفة شهرية",
+      "monthly_hint": "يُوزَّع على شهر {{month}} بنسبة عدد الأيام التي قضاها كل حيوان في المزرعة.",
+      "one_day_hint": "يُوزَّع فقط على الحيوانات الموجودة في المزرعة بتاريخ {{date}}.",
+      "badge": "شهري"
+    }
+  },
+  "sales": {
+    "title": "المبيعات",
+    "add": "تسجيل بيع",
+    "modal_title": "تسجيل بيع",
+    "lock_warning": "سيؤدي تسجيل البيع إلى قفل سجل هذا الحيوان.",
+    "tooltip": {
+      "print_invoice": "طباعة الفاتورة"
+    },
+    "edit": {
+      "modal_title": "تعديل سجل البيع",
+      "error": {
+        "date_required": "تاريخ البيع مطلوب",
+        "buyer_required": "اسم المشتري مطلوب",
+        "price_positive": "يجب أن يكون سعر البيع أكبر من 0",
+        "account_required": "حساب الدفع مطلوب"
+      },
+      "msg": {
+        "updated": "تم تحديث تفاصيل البيع.",
+        "update_failed": "فشل التحديث."
+      }
+    },
+    "summary": {
+      "total_sold": "إجمالي المُباع",
+      "revenue": "الإيرادات",
+      "total_cost": "إجمالي التكلفة",
+      "profit_loss": "الربح/الخسارة",
+      "profitable": "مربح",
+      "loss": "خسارة"
+    },
+    "btn": {
+      "confirm": "تأكيد البيع",
+      "new": "بيع حيوانات"
+    },
+    "col": {
+      "date": "التاريخ",
+      "cattle": "الحيوان",
+      "sale_price": "سعر البيع",
+      "buyer": "المشتري",
+      "account": "الحساب",
+      "profit_loss": "الربح/الخسارة",
+      "received_in": "حساب الاستلام"
+    },
+    "field": {
+      "cattle": "الحيوان",
+      "select_cattle": "اختر حيوانًا نشطًا…",
+      "date": "تاريخ البيع",
+      "sale_price": "سعر البيع (৳)",
+      "buyer_name": "اسم المشتري",
+      "buyer_phone": "هاتف المشتري",
+      "account": "حساب الدفع",
+      "notes": "ملاحظات",
+      "sale_weight": "وزن البيع (كجم)",
+      "payment_received_into": "حساب استلام المبلغ",
+      "not_specified": "غير محدد",
+      "select_account": "— اختر الحساب —"
+    }
+  },
+  "receipt": {
+    "title": "إيصال بيع",
+    "date_label": "التاريخ",
+    "section_animal_info": "معلومات الحيوان",
+    "col_cattle": "الحيوان (رقم الوسم)",
+    "col_sale_weight": "وزن البيع",
+    "section_buyer_info": "معلومات المشتري",
+    "col_buyer_name": "اسم المشتري",
+    "col_phone": "الهاتف",
+    "section_financial_info": "التفاصيل المالية",
+    "col_sale_price": "سعر البيع",
+    "col_total_cost": "إجمالي التكلفة",
+    "profit_label": "الربح",
+    "loss_label": "الخسارة",
+    "col_payment_account": "حساب الدفع",
+    "footer": "تم إنشاء هذا الإيصال بواسطة البرنامج",
+    "print_button": "طباعة",
+    "popup_blocked": "تم حظر النافذة المنبثقة — يُرجى السماح بالنوافذ المنبثقة في متصفحك."
+  },
+  "suppliers": {
+    "title": "الموردون",
+    "add": "إضافة مورد",
+    "search_placeholder": "ابحث عن الموردين…",
+    "total_due": "إجمالي المستحق",
+    "total_paid": "إجمالي المدفوع",
+    "types": {
+      "feed": "أعلاف",
+      "medicine": "أدوية",
+      "general": "عام"
+    },
+    "col": {
+      "name": "الاسم",
+      "phone": "الهاتف",
+      "address": "العنوان",
+      "balance": "الرصيد"
+    },
+    "field": {
+      "name": "اسم المورد",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "address": "العنوان",
+      "notes": "ملاحظات",
+      "opening_balance": "الرصيد الافتتاحي (৳)",
+      "select_type_placeholder": "-- اختر النوع --"
+    },
+    "confirm_delete": "حذف {{name}}؟",
+    "btn": {
+      "save": "حفظ المورد"
+    },
+    "detail": {
+      "title": "تفاصيل المورد",
+      "purchases": "المشتريات",
+      "payments": "المدفوعات",
+      "ledger": "كشف الحساب",
+      "no_transactions": "لا توجد معاملات بعد",
+      "modal_title": "تسجيل دفعة / تسوية",
+      "type_payment": "دفعة",
+      "type_adjustment": "تسوية (شطب)",
+      "summary": {
+        "opening_balance": "الرصيد الافتتاحي",
+        "total_purchases": "إجمالي المشتريات",
+        "total_paid": "إجمالي المدفوع",
+        "current_balance": "الرصيد المستحق الحالي"
+      },
+      "btn": {
+        "record_payment": "تسجيل دفعة / تسوية"
+      },
+      "field": {
+        "payment_method": "طريقة الدفع",
+        "select_method": "اختر الطريقة",
+        "payment_account": "حساب الدفع",
+        "select_account": "اختر الحساب"
+      },
+      "col": {
+        "date": "التاريخ",
+        "description": "الوصف",
+        "debit": "مدين (مستحق)",
+        "credit": "دائن (مدفوع)",
+        "balance": "الرصيد"
+      }
+    },
+    "msg": {
+      "moved_to_trash": "تم نقل المورد إلى سلة المحذوفات.",
+      "created": "تم إنشاء المورد بنجاح.",
+      "failed_delete": "فشل حذف المورد.",
+      "failed_create": "فشل إنشاء المورد."
+    },
+    "error": {
+      "name_required": "اسم المورد مطلوب",
+      "type_required": "يُرجى اختيار نوع المورد"
+    },
+    "empty": "لا يوجد موردون بعد. أضف أول مورد."
+  },
+  "customers": {
+    "title": "العملاء",
+    "add": "إضافة عميل",
+    "search_placeholder": "ابحث عن العملاء…",
+    "balance_due_label": "الرصيد ৳",
+    "settled": "مسدَّد",
+    "outstanding_label": "مستحق",
+    "trash_link": "سلة المحذوفات",
+    "modal_title": "إضافة عميل",
+    "field": {
+      "name": "الاسم",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "photo": "الصورة",
+      "address": "العنوان",
+      "notes": "ملاحظات",
+      "opening_balance": "الرصيد الافتتاحي (৳)"
+    },
+    "error": {
+      "name_required": "اسم العميل مطلوب"
+    },
+    "confirm_delete_title": "نقل إلى سلة المحذوفات",
+    "confirm_delete_message": "نقل «{{name}}» إلى سلة المحذوفات؟ يمكنك استعادته لاحقًا.",
+    "confirm_delete_label": "نقل إلى سلة المحذوفات",
+    "msg": {
+      "moved_to_trash": "تم نقل العميل إلى سلة المحذوفات.",
+      "created": "تم إنشاء العميل.",
+      "failed_delete": "فشل الحذف."
+    },
+    "empty": "لا يوجد عملاء بعد. أضف عميلك الأول."
+  },
+  "partners": {
+    "title": "الشركاء والاستثمار",
+    "confirm_delete": "حذف {{name}}؟",
+    "add": "إضافة شريك",
+    "subtitle": "تتبّع استثمارات الشركاء وتوزيع الأرباح والمسحوبات",
+    "share_label": "% حصة",
+    "total_invested": "إجمالي الاستثمار",
+    "net_investment": "صافي الاستثمار",
+    "empty": "لا يوجد شركاء بعد. أضف شريكك الأول.",
+    "status": {
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "col": {
+      "name": "الاسم",
+      "investment": "الاستثمار",
+      "share": "الحصة %",
+      "balance": "الرصيد"
+    },
+    "field": {
+      "name": "اسم الشريك",
+      "phone": "الهاتف",
+      "address": "العنوان",
+      "investment": "مبلغ الاستثمار (৳)",
+      "share_percentage": "نسبة الحصة (%)",
+      "notes": "ملاحظات",
+      "full_name": "الاسم الكامل",
+      "initial_investment": "الاستثمار الأولي (৳)",
+      "received_into": "حساب الاستلام",
+      "not_specified": "غير محدد",
+      "join_date": "تاريخ الانضمام",
+      "select_account_placeholder": "اختر الحساب...",
+      "current_balance_label": "الرصيد الحالي:"
+    },
+    "error": {
+      "investment_account_required": "يُرجى اختيار حساب للاستثمار."
+    },
+    "btn": {
+      "give_advance": "صرف سلفة",
+      "record_payment": "تسجيل دفعة"
+    },
+    "detail": {
+      "title": "تفاصيل الشريك",
+      "investments": "الاستثمارات",
+      "withdrawals": "المسحوبات",
+      "profit_share_label": "% حصة الأرباح",
+      "joined": "تاريخ الانضمام:",
+      "total_invested": "إجمالي الاستثمار",
+      "total_withdrawn": "إجمالي المسحوبات / الأرباح",
+      "adjustments": "التسويات",
+      "net_investment": "صافي الاستثمار (النشط)",
+      "transaction_history": "سجل المعاملات",
+      "no_transactions": "لا توجد معاملات بعد",
+      "modal_add_title": "إضافة معاملة",
+      "modal_edit_title": "تعديل المعاملة",
+      "types": {
+        "investment": "استثمار",
+        "withdrawal": "سحب",
+        "profit_share": "حصة أرباح",
+        "adjustment": "تسوية"
+      },
+      "btn": {
+        "add_transaction": "إضافة معاملة",
+        "save_changes": "حفظ التغييرات"
+      },
+      "field": {
+        "payment_method": "طريقة الدفع",
+        "select_method": "اختر الطريقة",
+        "payment_account": "حساب الدفع",
+        "select_account": "اختر الحساب",
+        "photo": "صورة الملف الشخصي",
+        "photo_hint": "انقر على أيقونة الكاميرا لتغيير الصورة"
+      },
+      "col": {
+        "date": "التاريخ",
+        "type": "النوع",
+        "amount": "المبلغ",
+        "method": "الطريقة",
+        "account": "الحساب",
+        "notes": "ملاحظات"
+      },
+      "modal_edit_partner_title": "تعديل الشريك"
+    },
+    "form": {
+      "name": "الاسم",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "share_percentage": "نسبة الحصة %",
+      "status": "الحالة",
+      "notes": "ملاحظات"
+    }
+  },
+  "pl": {
+    "title": "قائمة الأرباح والخسائر",
+    "subtitle": "قائمة الدخل — تقرير على مستوى ERP",
+    "revenue": "الإيرادات",
+    "cattle_sales": "مبيعات الماشية",
+    "other_income": "إيرادات أخرى (قيود اليومية)",
+    "total_revenue": "إجمالي الإيرادات",
+    "cogs": "تكلفة البضاعة المباعة (COGS)",
+    "cattle_purchases": "تكلفة الحيوانات المباعة",
+    "feed_purchases": "العلف المستخدم",
+    "medicine": "الدواء المستخدم",
+    "total_cogs": "إجمالي تكلفة البضاعة المباعة",
+    "gross_profit": "مجمل الربح",
+    "operating_expenses": "المصروفات التشغيلية",
+    "labour": "العمالة اليومية",
+    "general_expenses": "المصروفات العامة",
+    "supplier_payments": "مدفوعات الموردين",
+    "journal_expenses": "مصروفات قيود اليومية",
+    "total_opex": "إجمالي المصروفات التشغيلية",
+    "operating_profit": "الربح التشغيلي",
+    "partner_movements": "حركات الشركاء",
+    "partner_investments": "استثمارات الشركاء",
+    "partner_withdrawals": "مسحوبات الشركاء وحصص الأرباح",
+    "net_profit": "صافي الربح / الخسارة",
+    "expense_by_category": "تفصيل المصروفات حسب الفئة",
+    "salary_payments": "مدفوعات الرواتب",
+    "treatment": "العلاج والخدمات البيطرية",
+    "asset_disposal_loss": "خسارة استبعاد الأصول",
+    "cattle_losses": "حيوانات نفقت أو نُقلت",
+    "feed_wastage": "هدر العلف",
+    "medicine_wastage": "هدر الدواء",
+    "asset_disposal_gain": "ربح بيع الأصول",
+    "loss_line_dead": "نفق {{tag}} في {{date}} — الخسارة الكاملة {{full}} (السعر {{price}} + الرعاية {{keeping}}؛ تكاليف الرعاية محسوبة في البنود أعلاه، لذا يُخصم السعر فقط هنا)",
+    "loss_line_transferred": "نُقل {{tag}} في {{date}} — الخسارة الكاملة {{full}} (السعر {{price}} + الرعاية {{keeping}}؛ تكاليف الرعاية محسوبة في البنود أعلاه، لذا يُخصم السعر فقط هنا)"
+  },
+  "bs": {
+    "title": "الميزانية العمومية",
+    "subtitle": "الأصول = الالتزامات + حقوق الملكية",
+    "as_of": "كما في تاريخ",
+    "assets": "الأصول",
+    "current_assets": "الأصول المتداولة",
+    "medicine_inventory": "مخزون الأدوية",
+    "total_current": "إجمالي الأصول المتداولة",
+    "accounts_receivable": "الذمم المدينة",
+    "supplier_prepaid": "دفعات مقدمة للموردين",
+    "fixed_assets": "الأصول الثابتة",
+    "livestock": "الماشية (بسعر التكلفة)",
+    "equipment": "المعدات والأثاث (القيمة الدفترية)",
+    "total_fixed": "إجمالي الأصول الثابتة",
+    "total_assets": "إجمالي الأصول",
+    "liabilities": "الالتزامات",
+    "accounts_payable": "الذمم الدائنة (الموردون)",
+    "no_payables": "لا توجد ذمم دائنة مستحقة",
+    "total_payables": "إجمالي الذمم الدائنة",
+    "equity": "حقوق الملكية",
+    "partner_equity": "رأس مال الشركاء",
+    "retained_earnings": "الأرباح المحتجزة",
+    "total_equity": "إجمالي حقوق الملكية",
+    "total_le": "إجمالي الالتزامات + حقوق الملكية",
+    "balanced": "الميزانية العمومية متوازنة ✓",
+    "unbalanced": "يوجد فرق في الميزانية العمومية: تحقّق من بياناتك",
+    "feed_inventory": "مخزون الأعلاف",
+    "unbalanced_by": "يوجد فرق في الميزانية العمومية: {{amount}} — تحقّق من بياناتك"
+  },
+  "cf": {
+    "title": "قائمة التدفقات النقدية",
+    "subtitle": "التشغيلية · الاستثمارية · التمويلية",
+    "operating": "النقد من الأنشطة التشغيلية",
+    "investing": "النقد من الأنشطة الاستثمارية",
+    "financing": "النقد من الأنشطة التمويلية",
+    "operating_net": "التشغيلية",
+    "investing_net": "الاستثمارية",
+    "financing_net": "التمويلية",
+    "summary": "ملخص المركز النقدي",
+    "opening_balance": "الرصيد الافتتاحي (جميع الحسابات)",
+    "net_change": "صافي التغير في النقد",
+    "inflows": "التدفقات الداخلة",
+    "outflows": "التدفقات الخارجة",
+    "no_activity": "لا يوجد نشاط في هذه الفترة",
+    "total_in": "إجمالي الوارد",
+    "total_out": "إجمالي الصادر"
+  },
+  "trial_balance_ext": {
+    "load_error": "تعذّر تحميل ميزان المراجعة. يُرجى تحديث الصفحة.",
+    "period_label": "الفترة:",
+    "partner_equity_title": "حقوق الشركاء",
+    "partner_equity_subtitle": "حركات حقوق الشركاء (الاستثمار والسحب)",
+    "col_description": "الوصف",
+    "col_amount": "المبلغ",
+    "col_type": "النوع",
+    "equity_in": "إضافة إلى رأس المال",
+    "equity_out": "سحب من رأس المال",
+    "fixed_assets_title": "الأصول الثابتة (الأصول غير المتداولة)",
+    "fixed_assets_subtitle": "القيمة الدفترية الحالية للأصول النشطة",
+    "col_asset_name": "اسم الأصل",
+    "col_category": "الفئة",
+    "col_book_value": "القيمة الدفترية",
+    "total_fixed_assets": "إجمالي الأصول الثابتة"
+  },
+  "accounts_trash": {
+    "back_link": "العودة إلى الحسابات",
+    "page_title": "سلة محذوفات الحسابات",
+    "search_placeholder": "ابحث في الحسابات المحذوفة…",
+    "col_type": "النوع",
+    "col_code": "الرمز",
+    "no_deleted": "لم يتم العثور على حسابات محذوفة",
+    "warning": "تُحفظ الحسابات المحذوفة في سلة المحذوفات. استعدها لإعادة تفعيلها، أو احذفها نهائيًا لإزالة جميع بياناتها.",
+    "warning_superadmin": "لا يمكن التراجع عن الحذف النهائي."
+  },
+  "payment_accounts_trash": {
+    "back_link": "العودة إلى حسابات الدفع",
+    "page_title": "سلة محذوفات حسابات الدفع",
+    "search_placeholder": "ابحث في حسابات الدفع المحذوفة…",
+    "col_type": "النوع",
+    "col_balance": "الرصيد",
+    "no_deleted": "لم يتم العثور على حسابات دفع محذوفة",
+    "warning": "تُحفظ حسابات الدفع المحذوفة هنا. استعدها لإعادة تفعيلها، أو احذفها نهائيًا لإزالة جميع بياناتها.",
+    "warning_manage": "لا يمكن التراجع عن الحذف النهائي."
+  },
+  "transfers_trash": {
+    "back_link": "العودة إلى التحويلات",
+    "page_title": "سلة محذوفات التحويلات",
+    "search_placeholder": "ابحث في التحويلات المحذوفة…",
+    "col_from_to": "من ← إلى",
+    "col_transfer_date": "تاريخ التحويل",
+    "no_deleted": "لم يتم العثور على تحويلات محذوفة",
+    "warning": "تُحفظ التحويلات المحذوفة هنا. استعدها لاسترجاع التحويل، أو احذفها نهائيًا لإزالة جميع بياناتها.",
+    "warning_superadmin": "لا يمكن التراجع عن الحذف النهائي."
+  },
+  "customers_trash": {
+    "page_title": "العملاء — سلة المحذوفات",
+    "page_subtitle": "يمكن استعادة العملاء المحذوفين خلال 30 يومًا.",
+    "search_placeholder": "ابحث في العملاء المحذوفين…",
+    "col_customer": "العميل",
+    "no_deleted": "لا يوجد عملاء محذوفون."
+  },
+  "partners_trash": {
+    "back_link": "العودة إلى الشركاء",
+    "page_title": "سلة محذوفات الشركاء",
+    "search_placeholder": "ابحث في الشركاء المحذوفين…",
+    "no_deleted": "لم يتم العثور على شركاء محذوفين",
+    "warning": "يُحفظ الشركاء المحذوفون في سلة المحذوفات. استعدهم لإعادة تفعيلهم، أو احذفهم نهائيًا لإزالة جميع بياناتهم.",
+    "warning_superadmin": "لا يمكن التراجع عن الحذف النهائي."
+  },
+  "suppliers_trash": {
+    "back_link": "العودة إلى الموردين",
+    "page_title": "سلة محذوفات الموردين",
+    "search_placeholder": "ابحث في الموردين المحذوفين…",
+    "col_email": "البريد الإلكتروني",
+    "no_deleted": "لم يتم العثور على موردين محذوفين",
+    "warning": "يُحفظ الموردون المحذوفون في سلة المحذوفات. استعدهم لإعادة تفعيلهم، أو احذفهم نهائيًا لإزالة جميع بياناتهم.",
+    "warning_superadmin": "لا يمكن التراجع عن الحذف النهائي."
+  },
+  "customer_detail": {
+    "status_due": "مستحق ৳{{amount}}",
+    "status_settled": "مسدَّد",
+    "summary": {
+      "opening_balance": "الرصيد الافتتاحي",
+      "total_sales": "إجمالي المبيعات",
+      "total_received": "إجمالي المقبوض",
+      "outstanding_balance": "الرصيد المستحق",
+      "hint_due": "هذا المبلغ مستحق على العميل",
+      "hint_overpaid": "تم تسجيل دفعة زائدة",
+      "hint_settled": "مسدَّد بالكامل"
+    },
+    "btn_record_payment": "تسجيل دفعة / تسوية",
+    "ledger_title": "سجل المعاملات",
+    "col": {
+      "date": "التاريخ",
+      "description": "الوصف",
+      "debit": "مدين",
+      "credit": "دائن",
+      "balance": "الرصيد (مستحق)"
+    },
+    "opening_balance_row": "الرصيد الافتتاحي",
+    "no_transactions": "لا توجد معاملات بعد.",
+    "tx_type": {
+      "sale": "بيع",
+      "sale_payment": "دفعة مقبوضة جزئيًا"
+    },
+    "payment_modal": {
+      "title": "تسجيل دفعة / تسوية",
+      "field_type": "النوع",
+      "type_payment": "دفعة مقبوضة (نقدًا / عبر البنك)",
+      "type_adjustment": "تسوية (شطب / تصحيح)",
+      "field_amount": "المبلغ (৳)",
+      "field_date": "التاريخ",
+      "field_payment_account": "حساب الدفع",
+      "select_account": "اختر الحساب…",
+      "field_notes": "ملاحظات",
+      "placeholder_adjustment_notes": "مثال: خصم ممنوح، دين مشطوب…",
+      "btn_save": "حفظ",
+      "btn_cancel": "إلغاء",
+      "error_amount": "المبلغ مطلوب",
+      "error_account": "يُرجى اختيار حساب الدفع"
+    },
+    "edit_modal": {
+      "title": "تعديل العميل",
+      "profile_photo": "صورة الملف الشخصي",
+      "photo_hint": "انقر على أيقونة الكاميرا للتغيير",
+      "field_name": "الاسم",
+      "field_phone": "الهاتف",
+      "field_email": "البريد الإلكتروني",
+      "field_address": "العنوان",
+      "field_notes": "ملاحظات",
+      "btn_save": "حفظ التغييرات",
+      "btn_cancel": "إلغاء"
+    }
+  },
+  "partner_detail_ext": {
+    "col_account": "الحساب",
+    "field_type": "النوع",
+    "field_amount": "المبلغ (৳)",
+    "field_date": "التاريخ",
+    "field_notes": "ملاحظات",
+    "modal_edit_partner_title": "تعديل الشريك",
+    "form": {
+      "name": "الاسم",
+      "phone": "الهاتف",
+      "email": "البريد الإلكتروني",
+      "share_percentage": "الحصة %",
+      "status": "الحالة",
+      "notes": "ملاحظات"
+    },
+    "field_photo": "صورة الملف الشخصي",
+    "field_photo_hint": "انقر على أيقونة الكاميرا لتغيير الصورة"
+  },
+  "supplier_detail_ext": {
+    "outstanding_warning": "مبالغ مستحقة الدفع (من المشتريات)",
+    "outstanding_count": "عدد المشتريات غير المسددة بالكامل: {{count}}",
+    "outstanding_col": {
+      "date": "التاريخ",
+      "type": "النوع",
+      "invoice": "الفاتورة",
+      "total": "الإجمالي",
+      "paid": "المدفوع",
+      "due": "المستحق",
+      "status": "الحالة"
+    },
+    "type_feed": "أعلاف",
+    "type_medicine": "أدوية",
+    "type_semen": "سائل منوي",
+    "status_unpaid": "غير مدفوع",
+    "status_partial": "مدفوع جزئيًا",
+    "total_outstanding": "إجمالي المستحق:",
+    "opening_balance_row": "الرصيد الافتتاحي",
+    "due_label": "مستحق: ৳{{amount}}",
+    "unpaid_label": "غير مدفوع",
+    "edit_modal": {
+      "title": "تعديل بيانات المورد",
+      "profile_photo": "صورة الملف الشخصي",
+      "photo_hint": "انقر على أيقونة الكاميرا لتغيير الصورة",
+      "field_name": "الاسم",
+      "field_phone": "الهاتف",
+      "field_email": "البريد الإلكتروني",
+      "field_type": "النوع",
+      "select_type": "اختر النوع...",
+      "field_address": "العنوان",
+      "field_notes": "ملاحظات",
+      "btn_save": "حفظ التغييرات"
+    },
+    "payment_modal": {
+      "field_type": "النوع",
+      "field_amount": "المبلغ (৳)",
+      "field_date": "التاريخ",
+      "field_notes": "ملاحظات",
+      "btn_save": "حفظ",
+      "placeholder_adjustment_notes": "مثال: تقريب 702 إلى 700، وشطب 2৳"
+    }
+  },
+  "expenses_trash": {
+    "back_link": "العودة إلى المصروفات",
+    "page_title": "سلة محذوفات المصروفات",
+    "warning": "تُحفظ المصروفات المحذوفة في سلة المحذوفات. استعدها لاسترجاعها، أو احذفها نهائيًا لإزالة جميع بياناتها.",
+    "search_placeholder": "ابحث في المصروفات المحذوفة…",
+    "col": {
+      "title": "العنوان",
+      "category": "الفئة"
+    },
+    "empty_desc": "لم يتم العثور على مصروفات محذوفة"
+  },
+  "entries_ext": {
+    "select_account_placeholder": "— اختر الحساب —",
+    "income_accounts_group": "حسابات الإيرادات",
+    "expense_accounts_group": "حسابات المصروفات",
+    "no_payment_account": "— لا يوجد —",
+    "payment_account_label": "حساب الدفع (اختياري)",
+    "description_placeholder": "مثال: إهلاك المعدات للربع الثاني 2026",
+    "confirm_delete_title": "حذف قيد اليومية",
+    "confirm_delete_message": "هل أنت متأكد من حذف قيد اليومية هذا؟ لا يمكن التراجع عن هذا الإجراء.",
+    "confirm_delete_label": "حذف"
+  },
+  "system_accounts": {
+    "4001": "إيرادات بيع الماشية",
+    "4002": "إيرادات بيع الحليب",
+    "4003": "إيرادات بيع المنتجات الثانوية",
+    "5001": "مصروف شراء الأعلاف",
+    "5002": "شراء الأدوية",
+    "5003": "العمالة اليومية",
+    "5004": "مصروف الرواتب",
+    "5005": "شراء الماشية",
+    "5006": "البيطرة / العلاج",
+    "5007": "مصروفات عامة",
+    "5008": "دفعات الموردين",
+    "5009": "مصروف التناسل / التلقيح الاصطناعي"
+  },
+  "active_switch": {
+    "inactive": "غير نشط",
+    "make_inactive": "إلغاء التنشيط",
+    "make_active": "تنشيط",
+    "show_inactive": "عرض غير النشطين"
+  },
+  "ui": {
+    "back": "رجوع",
+    "confirm_trash_named": "نقل «{{name}}» إلى سلة المحذوفات؟ يمكنك استعادته لاحقًا."
+  }
+}

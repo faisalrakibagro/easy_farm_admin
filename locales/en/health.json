@@ -1,0 +1,227 @@
+{
+  "vaccines": {
+    "title": "Vaccine Schedules",
+    "add": "Schedule Vaccine",
+    "trash": {
+      "back_link": "Back to Vaccines",
+      "page_title": "Vaccine Schedule Trash",
+      "warning": "Deleted vaccine schedules are stored in the trash. Restore to re-activate, or permanently delete to remove all data.",
+      "search_placeholder": "Search trashed vaccine schedules…",
+      "col": {
+        "cattle": "Cattle",
+        "vaccine": "Vaccine",
+        "scheduled_date": "Scheduled Date"
+      },
+      "empty_desc": "No deleted vaccine schedules found"
+    },
+    "modal_title": "Schedule Vaccine",
+    "col": {
+      "cattle": "Cattle",
+      "vaccine": "Vaccine",
+      "scheduled": "Scheduled",
+      "administered": "Administered",
+      "cost": "Cost",
+      "status": "Status",
+      "administered_date": "Administered Date",
+      "next_due_date": "Next Due Date",
+      "quantity": "Quantity"
+    },
+    "filter": {
+      "all": "All",
+      "scheduled": "Scheduled",
+      "completed": "Completed",
+      "overdue": "Overdue",
+      "cancelled": "Cancelled"
+    },
+    "status": {
+      "scheduled": "Scheduled",
+      "completed": "Completed",
+      "overdue": "Overdue",
+      "cancelled": "Cancelled"
+    },
+    "field": {
+      "cattle": "Cattle",
+      "select_cattle": "Select Cattle",
+      "vaccine_name": "Vaccine Name",
+      "vaccine_type": "Vaccine Type",
+      "scheduled_date": "Scheduled Date",
+      "next_due_date": "Next Due Date",
+      "next_due_date_optional": "Next Due Date (Optional)",
+      "cost": "Cost (৳)",
+      "administered_by": "Administered By",
+      "administered_date_prompt": "Administered date (YYYY-MM-DD):",
+      "notes": "Notes",
+      "cattle_list": "Cattle List",
+      "doctor_staff_name": "Doctor / Staff Name"
+    },
+    "btn": {
+      "schedule": "Schedule",
+      "mark_complete": "Mark Complete"
+    },
+    "tooltip": {
+      "move_to_trash": "Move to Trash"
+    },
+    "empty": "No vaccine records found",
+    "edit_modal_title": "Edit Vaccine",
+    "edit_modal_info": "All {{count}} cattle records will be updated together.",
+    "btn_save": "Save",
+    "confirm": {
+      "move_to_trash_title": "Move to Trash",
+      "move_to_trash_message": "\"{{vaccine_name}}\" — {{count}} cattle records will be moved to Trash. You can restore them later.",
+      "move_to_trash_label": "Move to Trash"
+    },
+    "toast": {
+      "moved_to_trash": "{{count}} records moved to Trash.",
+      "update_failed": "Update failed.",
+      "delete_failed": "Failed to delete."
+    },
+    "cattle_count": "{{count}} cattle",
+    "count_suffix": "{{count}}"
+  },
+  "treatments": {
+    "title": "Treatments",
+    "add": "Add Treatment",
+    "modal_title": "Record Treatment",
+    "trash": {
+      "back_link": "Back to Treatments",
+      "page_title": "Treatments Trash",
+      "warning": "Deleted treatments are stored in the trash. Restore to re-activate, or permanently delete to remove all data.",
+      "search_placeholder": "Search trashed treatments…",
+      "col": {
+        "cattle": "Cattle",
+        "diagnosis": "Diagnosis",
+        "treatment_date": "Treatment Date",
+        "vet": "Vet"
+      },
+      "empty_desc": "No deleted treatments found"
+    },
+    "col": {
+      "cattle": "Cattle",
+      "date": "Date",
+      "diagnosis": "Diagnosis",
+      "treatment": "Treatment",
+      "vet": "Vet / Doctor",
+      "cost": "Cost",
+      "status": "Status",
+      "doctor": "Doctor",
+      "vet_fee": "Vet Fee",
+      "med_cost": "Med Cost",
+      "total": "Total",
+      "follow_up": "Follow-up",
+      "health_status": "Health Status"
+    },
+    "status": {
+      "ongoing": "Ongoing",
+      "recovered": "Recovered",
+      "deceased": "Deceased"
+    },
+    "field": {
+      "cattle": "Cattle",
+      "select_cattle": "Select Cattle",
+      "date": "Treatment Date",
+      "diagnosis": "Diagnosis",
+      "treatment": "Treatment",
+      "vet": "Vet / Doctor",
+      "cost": "Cost (৳)",
+      "status": "Status",
+      "next_checkup": "Next Checkup Date",
+      "notes": "Notes",
+      "doctor_name": "Doctor Name",
+      "doctor_phone": "Doctor Phone",
+      "vet_fee": "Vet Fee (৳)",
+      "medicine_cost": "Medicine Cost (৳)",
+      "medicines_used": "Medicines Used",
+      "follow_up_date": "Follow-up Date",
+      "prescription": "Written Prescription",
+      "prescription_section": "Doctor's Prescription / Advice",
+      "prescription_upload": "Upload Prescription PDF / Image",
+      "file_choose": "Choose file (PDF, JPG, PNG)",
+      "payment_account": "Payment Account",
+      "select_account": "Select Account",
+      "vet_fee_per_cattle": "Vet Fee (per animal)",
+      "notes_bulk": "Notes"
+    },
+    "btn": {
+      "add": "Add Treatment",
+      "save": "Save Treatment",
+      "save_record": "Save",
+      "remove_file": "Remove",
+      "saving": "Saving...",
+      "bulk_add": "Add Bulk Treatment"
+    },
+    "tooltip": {
+      "move_to_trash": "Move to Trash"
+    },
+    "empty": "No treatment records found",
+    "edit_modal_title": "Edit Treatment",
+    "health_status_update_label": "Update Animal Health Status",
+    "health_status_update_info": "Saving will change the health status of this animal.",
+    "health_status_after_label": "Health Status After Treatment",
+    "health_status_after_info": "Saving will automatically update the animal's health status.",
+    "vet_fee_display": "Vet Fee:",
+    "bulk_modal_title": "Bulk Treatment",
+    "bulk_modal_subtitle": "Record the same doctor and treatment for multiple cattle",
+    "bulk_select_cattle_label": "Select Cattle",
+    "bulk_deselect_all": "Deselect All",
+    "bulk_select_all": "Select All",
+    "bulk_search_placeholder": "Search by tag number or name...",
+    "bulk_no_cattle": "No cattle found",
+    "bulk_date_label": "Treatment Date",
+    "bulk_follow_up_label": "Follow-up Date",
+    "bulk_doctor_name_label": "Doctor Name",
+    "bulk_doctor_phone_label": "Doctor Phone",
+    "bulk_diagnosis_label": "Diagnosis",
+    "bulk_treatment_label": "Treatment Description",
+    "bulk_medicines_label": "Medicines Used",
+    "bulk_medicines_placeholder": "List of medicines used...",
+    "bulk_notes_label": "Notes",
+    "bulk_health_status_after_info": "The health status of all {{count}} selected animals will be updated together.",
+    "bulk_records_info": "Separate treatment records will be created for all {{count}} animals and their health status will be updated.",
+    "bulk_saving": "Saving...",
+    "bulk_save_records": "Save {{count}} Records",
+    "confirm": {
+      "move_to_trash_title": "Move to Trash",
+      "move_to_trash_message": "Are you sure you want to move \"{{diagnosis}}\" to trash? You can restore it later.",
+      "move_to_trash_label": "Move to Trash",
+      "this_record": "this record"
+    },
+    "placeholder": {
+      "medicines_used": "List medicines used...",
+      "prescription": "Write the doctor's advice or prescription...",
+      "vaccines_administered_by": "Doctor / Staff Name"
+    },
+    "validation": {
+      "cattle_required": "Please select an animal",
+      "diagnosis_required": "Diagnosis is required",
+      "treatment_date_required": "Treatment date is required",
+      "payment_account_required": "Payment account is required",
+      "select_at_least_one_cattle": "Select at least one animal"
+    },
+    "toast": {
+      "moved_to_trash": "Treatment moved to trash.",
+      "delete_failed": "Failed to delete treatment.",
+      "created": "Treatment created successfully.",
+      "save_failed": "Failed to save treatment.",
+      "create_failed": "Failed to create treatment.",
+      "bulk_created": "Bulk treatment created.",
+      "bulk_save_failed": "Failed to save bulk treatment.",
+      "bulk_create_failed": "Failed to create bulk treatment.",
+      "updated": "Treatment updated.",
+      "update_failed": "Failed to update."
+    },
+    "health_status_options": {
+      "sick": "Sick",
+      "critical": "Critical",
+      "recovering": "Recovering",
+      "healthy": "Healthy"
+    },
+    "health_status_label": {
+      "sick": "Sick",
+      "critical": "Critical",
+      "recovering": "Recovering",
+      "healthy": "Healthy"
+    },
+    "bulk_selected_count": "{{count}} selected",
+    "bulk_total_fee_display": "Total: ৳{{total}} ({{count}} cattle)"
+  }
+}

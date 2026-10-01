@@ -1,0 +1,980 @@
+{
+  "search_placeholder": "ابحث برقم الوسم أو الاسم أو السلالة…",
+  "filter": {
+    "all_status": "كل الحالات",
+    "active": "نشط",
+    "sold": "مباع",
+    "dead": "نافق",
+    "transferred": "منقول",
+    "all_ages": "كل الأعمار",
+    "immature": "غير بالغ",
+    "adult": "بالغ",
+    "all_sheds": "كل الحظائر"
+  },
+  "btn": {
+    "add": "إضافة ماشية",
+    "register": "تسجيل ماشية",
+    "trash": "سلة المحذوفات",
+    "view_invoice": "عرض الفاتورة",
+    "schedule_vaccine": "جدولة لقاح",
+    "milk_entry": "إدخال الحليب",
+    "milk_entry_selected": "إدخال الحليب للحيوانات المحددة ({{count}})"
+  },
+  "tooltip": {
+    "sell_cattle": "بيع الماشية",
+    "select_all_active": "تحديد كل الحيوانات النشطة",
+    "view_invoice": "عرض الفاتورة",
+    "next_date": "التاريخ التالي",
+    "select_animal": "تحديد {{tag}}"
+  },
+  "placeholder": {
+    "select_medicine": "— اختر الدواء —",
+    "select_vaccine": "— اختر اللقاح —",
+    "doctor_name": "اسم الطبيب/الموظف",
+    "diagnosis": "اسم المرض / الأعراض",
+    "treatment_desc": "وصف العلاج...",
+    "prescription_text": "نصائح الطبيب وتعليماته...",
+    "buyer_name": "اسم المشتري",
+    "buyer_phone": "رقم الهاتف",
+    "buyer_address": "العنوان",
+    "amount_paid": "المبلغ المدفوع حتى الآن",
+    "feed_ratio_hint": "اتركه فارغًا لإبقاء نسبة العلف دون تغيير",
+    "medicines_used": "قائمة الأدوية المستخدمة..."
+  },
+  "label": {
+    "address": "العنوان"
+  },
+  "trash": {
+    "title": "سلة محذوفات الماشية",
+    "back": "العودة إلى الماشية",
+    "count": "رؤوس محذوفة: {{count}}",
+    "warning": "يمكن استعادة الإدخالات التي نُقلت إلى هنا خطأً. لا يُحذف أي حيوان نهائيًا أبدًا.",
+    "search_placeholder": "ابحث في الماشية المحذوفة…",
+    "empty_title": "سلة المحذوفات فارغة",
+    "empty_desc": "لا توجد ماشية محذوفة",
+    "force_delete_confirm": "حذف «{{tag}}» نهائيًا؟ لا يمكن التراجع عن ذلك.",
+    "col": {
+      "deleted_at": "تاريخ الحذف"
+    },
+    "btn": {
+      "restore": "استعادة",
+      "force_delete": "حذف نهائي"
+    }
+  },
+  "col": {
+    "photo": "الصورة",
+    "tag_name": "رقم الوسم / الاسم",
+    "type": "النوع",
+    "breed": "السلالة",
+    "gender": "الجنس",
+    "age_group": "الفئة العمرية",
+    "weight_kg": "الوزن (كجم)",
+    "feed_ratio": "نسبة العلف",
+    "purchase_price": "سعر الشراء",
+    "status": "الحالة",
+    "health": "الصحة",
+    "shed": "الحظيرة"
+  },
+  "status": {
+    "active": "نشط",
+    "sold": "مباع",
+    "dead": "نافق",
+    "transferred": "منقول"
+  },
+  "health_status": {
+    "healthy": "سليم",
+    "sick": "مريض",
+    "critical": "حرج",
+    "recovering": "في طور التعافي"
+  },
+  "age_category": {
+    "immature": "غير بالغ",
+    "adult": "بالغ (مكتمل النمو)"
+  },
+  "gender": {
+    "male": "ذكر",
+    "female": "أنثى"
+  },
+  "modal": {
+    "edit_title": "تعديل الماشية",
+    "create_title": "تسجيل ماشية",
+    "delete_title": "نقل الماشية إلى سلة المحذوفات",
+    "delete_desc": "سيؤدي هذا الإجراء إلى نقل <strong>{{tag}}</strong> إلى سلة المحذوفات. يمكن استعادته لاحقًا.",
+    "delete_type_tag": "اكتب رقم الوسم <strong>{{tag}}</strong> للتأكيد",
+    "delete_btn": "نقل إلى سلة المحذوفات"
+  },
+  "field": {
+    "profile_photo": "صورة الحيوان / مستند (JPG، PNG، PDF — الحد الأقصى 5 MB)",
+    "tag_number": "رقم الوسم",
+    "tag_generating": "جارٍ إنشاء رقم الوسم...",
+    "tag_auto_hint": "يُنشأ تلقائيًا، ويمكنك تغييره إلى رقم وسم مخصص.",
+    "name_optional": "الاسم (اختياري)",
+    "ear_tag": "رقم علامة الأذن",
+    "animal_type": "نوع الحيوان",
+    "color": "اللون",
+    "color_placeholder": "مثال: أسود، بني، أبيض",
+    "breed": "السلالة",
+    "breed_placeholder": "اختر السلالة أو اكتبها...",
+    "gender": "الجنس",
+    "age_category": "الفئة العمرية",
+    "health_status": "الحالة الصحية",
+    "purchase_date": "تاريخ الشراء",
+    "purchase_price": "سعر الشراء (৳)",
+    "purchase_weight": "وزن الشراء (كجم)",
+    "current_weight": "الوزن الحالي (كجم)",
+    "market_value": "القيمة السوقية الحالية (৳)",
+    "market_value_placeholder": "القيمة الحالية التقديرية",
+    "shed": "الحظيرة",
+    "no_shed": "بدون حظيرة",
+    "seller_name": "اسم البائع",
+    "seller_phone": "هاتف البائع",
+    "payment_account": "الدفع من حساب",
+    "feed_ratio_label": "تخصيص نسبة العلف يدويًا (%)",
+    "feed_ratio_hint": "0 = توزيع تلقائي حسب الوزن. حدّد قيمة لتثبيت حصة هذا الرأس من تكلفة العلف.",
+    "invoice": "الفاتورة / مستند الشراء",
+    "invoice_hint": "(PDF، JPG، JPEG، PNG، WEBP — الحد الأقصى 10 MB)",
+    "current_invoice": "الفاتورة المسجلة حاليًا",
+    "select_type": "اختر النوع",
+    "select_breed": "اختر السلالة...",
+    "select_shed": "اختر الحظيرة",
+    "select_account": "اختر الحساب",
+    "account_hint": "اختر حسابًا لتسجيل تكلفة الشراء في دفتر الأستاذ وخصمها من رصيد الحساب.",
+    "notes": "ملاحظات",
+    "age_stage": "مرحلة الأسنان",
+    "select_animal_type_first": "اختر نوع الحيوان أولًا",
+    "validation": {
+      "age_stage_required": "يجب اختيار مرحلة الأسنان",
+      "age_category_required": "يجب اختيار الفئة العمرية",
+      "tag_required": "أدخل رقم العلامة.",
+      "animal_type_required": "اختر نوع الحيوان.",
+      "breed_required": "اختر السلالة.",
+      "shed_required": "اختر الحظيرة.",
+      "purchase_date_required": "أدخل تاريخ الشراء.",
+      "purchase_price_required": "أدخل سعر الشراء (0 أو أكثر)."
+    }
+  },
+  "detail": {
+    "title": "تفاصيل الماشية",
+    "overview": "نظرة عامة",
+    "costs": "تفصيل التكاليف",
+    "weight_history": "سجل الوزن",
+    "feed_history": "سجل العلف",
+    "medicine_history": "سجل الأدوية",
+    "vaccines": "جدول اللقاحات",
+    "treatments": "العلاجات",
+    "sales": "سجل البيع",
+    "animal_information": "معلومات الحيوان",
+    "cost_breakdown": "تفصيل التكاليف",
+    "supplier_information": "معلومات المورد",
+    "unknown_supplier": "مورد غير معروف",
+    "all_time_expenses": "إجمالي المصروفات",
+    "kg_since_purchase": "كجم منذ الشراء",
+    "total_cost": "التكلفة الإجمالية",
+    "current_feed_ratio": "نسبة العلف الحالية",
+    "auto_allocated": "توزيع تلقائي حسب الوزن",
+    "fixed_override": "قيمة ثابتة مخصصة",
+    "feed_ratio": "نسبة العلف",
+    "feed_ratio_history": "سجل نسبة العلف",
+    "no_ratio_history": "لا يوجد سجل لتغييرات النسبة بعد.",
+    "update_feed_ratio": "تحديث نسبة العلف",
+    "new_feed_ratio": "نسبة العلف الجديدة (%)",
+    "effective_date": "تاريخ السريان",
+    "no_medicine_usage": "لا يوجد استخدام أدوية مسجل لهذا الحيوان.",
+    "no_vaccine_records": "لا توجد سجلات لقاحات لهذا الحيوان.",
+    "no_treatment_records": "لا توجد سجلات علاج لهذا الحيوان.",
+    "current_age_category": "الفئة العمرية الحالية",
+    "transition_history": "سجل الانتقال",
+    "no_transition_history": "لا يوجد سجل انتقال بعد.",
+    "no_ledger_entries": "لا توجد قيود في الدفتر بعد.",
+    "sale_information": "معلومات البيع",
+    "sale_date": "تاريخ البيع",
+    "buyer": "المشتري",
+    "sale_price": "سعر البيع",
+    "total_investment": "إجمالي الاستثمار",
+    "sale_amount": "مبلغ البيع",
+    "net_profit": "صافي الربح",
+    "net_loss": "صافي الخسارة",
+    "return": "عائد",
+    "loss": "خسارة",
+    "animal_active_cost_summary": "هذا الحيوان لا يزال نشطًا. يُعرض ملخص التكاليف الحالي.",
+    "total_cost_to_date": "إجمالي التكلفة حتى الآن",
+    "all_expenses_since_purchase": "جميع المصروفات منذ الشراء",
+    "initial_investment": "الاستثمار الأولي",
+    "profit_analysis_sold_only": "يتوفر تحليل الربح الكامل للحيوانات المباعة.",
+    "total_recorded_costs": "إجمالي التكاليف المسجلة",
+    "not_found": "لم يتم العثور على الماشية.",
+    "age_history": "سجل العمر",
+    "cost_ledger": "دفتر التكاليف",
+    "profit_analysis": "تحليل الربح",
+    "medicine": "الدواء",
+    "initial_weight": "بوزن أولي {{weight}} كجم",
+    "no_weight_records": "لا توجد سجلات وزن بعد.",
+    "weight_kg": "الوزن (كجم)",
+    "supplier_name_label": "الاسم",
+    "feed_ratio_table": {
+      "change_count": "إجمالي التغييرات: {{count}}",
+      "current_badge": "الحالية",
+      "first_badge": "الأولى",
+      "set_date_col": "تاريخ التحديد",
+      "ratio_col": "النسبة",
+      "change_col": "التغيير"
+    },
+    "btn": {
+      "record_weight": "تسجيل الوزن",
+      "change_ratio": "تغيير النسبة",
+      "update_ratio": "تحديث النسبة",
+      "set_immature": "تعيين كغير بالغ",
+      "set_adult": "تعيين كبالغ"
+    },
+    "col": {
+      "weight": {
+        "date": "التاريخ",
+        "weight_kg": "الوزن (كجم)",
+        "gain_kg": "الزيادة (كجم)",
+        "daily_gain": "الزيادة اليومية",
+        "days": "الأيام",
+        "notes": "ملاحظات"
+      },
+      "feed_ratio": {
+        "effective_date": "تاريخ السريان",
+        "new_ratio": "النسبة الجديدة",
+        "previous": "السابقة",
+        "notes": "ملاحظات"
+      },
+      "medicine": {
+        "date": "التاريخ",
+        "medicine": "الدواء",
+        "quantity": "الكمية",
+        "cost": "التكلفة",
+        "notes": "ملاحظات"
+      },
+      "vaccine": {
+        "vaccine": "اللقاح",
+        "type": "النوع",
+        "scheduled": "الموعد المجدول",
+        "administered": "تاريخ الإعطاء",
+        "cost": "التكلفة",
+        "quantity": "الكمية",
+        "status": "الحالة",
+        "next_due": "الموعد التالي"
+      },
+      "treatment": {
+        "date": "التاريخ",
+        "doctor": "الطبيب",
+        "diagnosis": "التشخيص",
+        "vet_fee": "أتعاب الطبيب البيطري",
+        "med_cost": "تكلفة الدواء",
+        "total": "الإجمالي",
+        "follow_up": "المتابعة"
+      },
+      "shed_transfer": {
+        "date": "التاريخ",
+        "from": "من",
+        "to": "إلى",
+        "reason": "السبب",
+        "notes": "ملاحظات",
+        "triggered_by": "بواسطة"
+      },
+      "costs": {
+        "date": "التاريخ",
+        "type": "النوع",
+        "description": "الوصف",
+        "amount": "المبلغ"
+      }
+    },
+    "modal": {
+      "save_btn": "حفظ",
+      "v": {
+        "weight_range": "أدخل وزنًا بين 1 و2000 كجم.",
+        "ratio_range": "أدخل نسبة من 0 إلى 100."
+      },
+      "vaccine": {
+        "add_btn": "إضافة لقاح",
+        "item_label": "اللقاح {{n}}",
+        "qty_placeholder": "الكمية {{unit}}",
+        "add_another": "+ إضافة لقاح آخر",
+        "administered_by": "أُعطي بواسطة",
+        "stock_ok": "✓ المخزون: {{qty}} {{unit}}",
+        "stock_low": "⚠ المخزون غير كافٍ! المتاح: {{qty}} {{unit}}",
+        "cost_suffix": "| التكلفة: ৳{{cost}}",
+        "fifo_hint": "تُحسب التكلفة تلقائيًا حسب سعر الدفعة (FIFO) — وستُضاف إلى دفتر الحيوان.",
+        "validation": {
+          "at_least_one": "يرجى إضافة لقاح واحد على الأقل مع الكمية.",
+          "stock_insufficient": "«{{name}}» — المخزون غير كافٍ! المتاح: {{qty}} {{unit}}"
+        },
+        "toast": {
+          "saved": "تم حفظ سجل اللقاح."
+        }
+      },
+      "medicine": {
+        "add_btn": "إضافة دواء",
+        "item_label": "الدواء {{n}}",
+        "qty_placeholder": "الكمية {{unit}}",
+        "add_another": "+ إضافة دواء آخر",
+        "optional_suffix": "(اختياري)",
+        "stock_ok": "✓ المخزون: {{qty}} {{unit}}",
+        "stock_low": "⚠ المخزون غير كافٍ! المتاح: {{qty}} {{unit}}",
+        "cost_suffix": "| التكلفة: ৳{{cost}}",
+        "fifo_hint": "تُحسب التكلفة تلقائيًا حسب سعر الدفعة (FIFO) — وستُضاف إلى دفتر الحيوان.",
+        "validation": {
+          "at_least_one": "يرجى إضافة دواء واحد على الأقل مع الكمية.",
+          "stock_insufficient": "«{{name}}» — المخزون غير كافٍ! المتاح: {{qty}} {{unit}}"
+        },
+        "toast": {
+          "saved": "تم حفظ سجل الدواء."
+        }
+      },
+      "treatment": {
+        "add_btn": "إضافة علاج",
+        "title": "إضافة سجل علاج",
+        "date_label": "تاريخ العلاج",
+        "health_status_label": "الحالة الصحية للحيوان بعد العلاج",
+        "health_status_hint": "عند الحفظ ستُحدَّث الحالة الصحية للحيوان تلقائيًا.",
+        "health_option": {
+          "sick": "مريض",
+          "critical": "حرج",
+          "recovering": "في طور التعافي",
+          "healthy": "سليم"
+        },
+        "doctor_name_label": "اسم الطبيب",
+        "doctor_phone_label": "هاتف الطبيب",
+        "diagnosis_label": "التشخيص",
+        "treatment_desc_label": "وصف العلاج",
+        "medicines_used_label": "الأدوية المستخدمة",
+        "prescription_section_title": "وصفة الطبيب / نصائحه",
+        "written_advice_label": "النصائح المكتوبة",
+        "upload_label": "رفع الوصفة (PDF / صورة)",
+        "choose_file": "اختر ملفًا (PDF، JPG، PNG)",
+        "remove_file": "إزالة",
+        "vet_fee_label": "أتعاب الطبيب البيطري",
+        "payment_account_label": "حساب الدفع",
+        "select_account_option": "اختر الحساب",
+        "follow_up_label": "تاريخ المتابعة",
+        "validation": {
+          "diagnosis_required": "التشخيص مطلوب",
+          "date_required": "تاريخ العلاج مطلوب",
+          "payment_account_required": "حساب الدفع مطلوب"
+        },
+        "toast": {
+          "saved": "تم حفظ سجل العلاج.",
+          "save_failed": "تعذّر حفظ العلاج."
+        }
+      },
+      "weight": {
+        "ratio_update_label": "تحديث نسبة العلف",
+        "current_ratio_prefix": "النسبة الحالية:",
+        "auto_suffix": "(تلقائي)",
+        "toast": {
+          "saved": "تم حفظ سجل الوزن."
+        }
+      },
+      "sell": {
+        "title": "بيع الماشية — {{tag}}",
+        "buyer_existing": "📋 مشترٍ مسجل",
+        "buyer_new": "➕ مشترٍ جديد",
+        "select_buyer_option": "— اختر المشتري —",
+        "new_buyer_hint": "أدخل بيانات المشتري الجديد — ستُحفظ في النظام تلقائيًا",
+        "sale_date_label": "تاريخ البيع",
+        "payment_account_label": "حساب الدفع",
+        "select_option": "— اختر —",
+        "balance_label": "الرصيد: ৳{{balance}}",
+        "sale_price_label": "سعر البيع (৳)",
+        "sale_weight_label": "وزن البيع (كجم)",
+        "payment_status_label": "حالة الدفع",
+        "status_paid": "مدفوع ✅",
+        "status_partial": "مدفوع جزئيًا ⚠️",
+        "status_unpaid": "غير مدفوع ❌",
+        "paid_amount_label": "المبلغ المدفوع (৳)",
+        "est_profit": "الربح التقديري: ৳{{amount}}",
+        "est_loss": "الخسارة التقديرية: ৳{{amount}}",
+        "total_cost_paren": "(التكلفة الإجمالية: ৳{{cost}})",
+        "confirm_btn": "تأكيد البيع",
+        "f": {
+          "buyer": "المشتري",
+          "new_name": "اسم المشتري",
+          "new_phone": "رقم الهاتف",
+          "new_address": "العنوان",
+          "sale_date": "تاريخ البيع",
+          "payment_account": "حساب الدفع",
+          "sale_price": "سعر البيع",
+          "payment_status": "حالة الدفع",
+          "paid_amount": "المبلغ المدفوع"
+        },
+        "validation": {
+          "date_required": "يرجى إدخال التاريخ.",
+          "price_required": "يرجى إدخال سعر البيع.",
+          "account_required": "يرجى اختيار حساب الدفع.",
+          "buyer_required": "يرجى اختيار المشتري.",
+          "new_buyer_name_required": "يرجى إدخال اسم المشتري الجديد.",
+          "partial_amount_required": "يرجى إدخال مبلغ الدفعة الجزئية."
+        },
+        "toast": {
+          "success": "تم بيع الماشية بنجاح.",
+          "failed": "تعذّر إتمام البيع."
+        }
+      }
+    },
+    "entry_type": {
+      "purchase": "الشراء",
+      "sale": "البيع",
+      "expense": "مصروف",
+      "feed": "العلف",
+      "medicine": "الدواء",
+      "vaccine": "اللقاح",
+      "treatment": "العلاج",
+      "labour": "العمالة",
+      "salary": "الراتب",
+      "breeding": "التلقيح",
+      "birth": "الولادة",
+      "electricity": "الكهرباء",
+      "water": "المياه",
+      "fuel": "الوقود",
+      "transport": "النقل",
+      "maintenance": "الصيانة",
+      "rent": "الإيجار",
+      "miscellaneous": "متفرقات",
+      "other": "أخرى",
+      "birth_value": "القيمة عند الولادة",
+      "milk": "الحليب",
+      "calf_value": "قيمة العجل",
+      "pregnancy_check": "فحص الحمل",
+      "byproduct": "منتج ثانوي"
+    },
+    "feed_ratio_override": "نسبة العلف: {{v}}% (قيمة ثابتة)"
+  },
+  "age_cat": {
+    "title": "إدارة الفئات العمرية",
+    "tab_categories": "الفئات العمرية",
+    "tab_stages": "مراحل الأسنان",
+    "btn_new_category": "فئة جديدة",
+    "btn_new_stage": "مرحلة أسنان جديدة",
+    "cat_modal_create": "فئة عمرية جديدة",
+    "cat_modal_edit": "تعديل الفئة",
+    "stage_modal_create": "مرحلة أسنان جديدة",
+    "stage_modal_edit": "تعديل مرحلة الأسنان",
+    "field_animal_type": "نوع الحيوان",
+    "field_sort_order": "ترتيب العرض",
+    "field_active": "نشط",
+    "select_type": "-- اختر --",
+    "placeholder_category": "مثال: عجل",
+    "placeholder_stage": "مثال: أسنان لبنية",
+    "count_suffix": "{{count}}",
+    "toast": {
+      "saved": "تم الحفظ بنجاح.",
+      "save_failed": "تعذّر الحفظ.",
+      "deleted": "تم الحذف."
+    }
+  },
+  "bulk": {
+    "selected_animals_count": "الحيوانات المحددة ({{count}})",
+    "application_date": "تاريخ الإعطاء",
+    "saving": "جارٍ الحفظ...",
+    "save_btn": "حفظ",
+    "fifo_cost_note": "تُحسب التكلفة تلقائيًا حسب سعر الدفعة (FIFO) — وستُضاف إلى دفتر كل حيوان.",
+    "qty_mode": {
+      "per_animal": "لكل حيوان",
+      "total_split": "الكمية الإجمالية (مقسّمة)"
+    },
+    "qty_placeholder": {
+      "per_animal": "لكل حيوان {{unit}}",
+      "total": "الإجمالي {{unit}}"
+    },
+    "qty_summary": {
+      "total": "الإجمالي: {{val}}",
+      "per_animal": "لكل حيوان: {{val}}"
+    },
+    "stock": {
+      "available": "✓ المخزون: {{qty}} {{unit}}",
+      "insufficient": "⚠ المخزون غير كافٍ! المتاح: {{qty}} {{unit}}",
+      "cost_summary": "| التكلفة: ৳{{perAnimal}}/حيوان | الإجمالي: ৳{{total}}"
+    },
+    "validation": {
+      "stock_insufficient_named": "«{{name}}» — المخزون غير كافٍ."
+    },
+    "bar": {
+      "selected_count": "الحيوانات المحددة: {{count}}",
+      "btn_medicine": "إعطاء دواء",
+      "btn_vaccine": "إعطاء لقاح",
+      "btn_treatment": "إعطاء علاج",
+      "btn_expense": "إضافة مصروف"
+    },
+    "medicine": {
+      "title": "إعطاء الدواء",
+      "subtitle": "عدد الحيوانات: {{count}} — يمكنك إعطاء عدة أدوية",
+      "item_label": "الدواء {{n}}",
+      "next_due_label": "موعد الدواء التالي",
+      "add_another": "+ إضافة دواء آخر",
+      "footer_count": "{{animals}} حيوان × {{items}} دواء",
+      "validation": {
+        "at_least_one": "يرجى إضافة دواء واحد على الأقل مع الكمية."
+      },
+      "toast": {
+        "saved": "تم حفظ سجلات الأدوية."
+      }
+    },
+    "vaccine": {
+      "title": "إعطاء اللقاح",
+      "subtitle": "عدد الحيوانات: {{count}} — يمكنك إعطاء عدة لقاحات",
+      "item_label": "اللقاح {{n}}",
+      "next_due_label": "موعد اللقاح التالي",
+      "add_another": "+ إضافة لقاح آخر",
+      "administered_by_label": "أُعطي بواسطة",
+      "footer_count": "{{animals}} حيوان × {{items}} لقاح",
+      "validation": {
+        "at_least_one": "يرجى إضافة لقاح واحد على الأقل مع الكمية."
+      },
+      "toast": {
+        "saved": "تم حفظ سجلات اللقاحات."
+      }
+    },
+    "treatment": {
+      "title": "إعطاء العلاج",
+      "subtitle": "عدد الحيوانات: {{count}} — أدخل تفاصيل منفصلة لكل حيوان",
+      "per_animal_section": "تفاصيل خاصة بكل حيوان",
+      "diagnosis_label": "التشخيص",
+      "health_status_after_label": "الحالة الصحية بعد العلاج",
+      "health_status": {
+        "sick": "مريض",
+        "critical": "حرج",
+        "recovering": "في طور التعافي",
+        "healthy": "سليم"
+      },
+      "follow_up_date_label": "تاريخ المتابعة",
+      "treatment_desc_label": "وصف العلاج",
+      "prescription_label": "وصفة الطبيب / نصائحه",
+      "file_label": "الوصفة (PDF / صورة)",
+      "choose_file": "اختر ملفًا",
+      "shared_section": "معلومات مشتركة لجميع الحيوانات",
+      "date_label": "تاريخ العلاج",
+      "payment_account_label": "حساب الدفع",
+      "select_account_placeholder": "اختر الحساب",
+      "doctor_name_label": "اسم الطبيب",
+      "doctor_phone_label": "هاتف الطبيب",
+      "vet_fee_label": "أتعاب الطبيب البيطري (لكل حيوان)",
+      "general_notes_label": "ملاحظات عامة",
+      "footer_count": "عدد السجلات المنفصلة: {{count}}",
+      "submit_btn": "حفظ سجلات الحيوانات ({{count}})",
+      "validation": {
+        "payment_account_required": "يرجى اختيار حساب الدفع.",
+        "diagnosis_required": "يرجى إدخال التشخيص."
+      },
+      "toast": {
+        "saved": "تم حفظ سجلات العلاج لعدد {{count}} من الحيوانات.",
+        "failed": "تعذّر حفظ العلاج."
+      }
+    },
+    "sale": {
+      "title": "بيع الماشية",
+      "subtitle": "الحيوانات المحددة: {{count}}",
+      "buyer_mode": {
+        "existing": "📋 عميل مسجل",
+        "new": "➕ عميل جديد"
+      },
+      "select_customer_placeholder": "— اختر العميل —",
+      "new_customer_hint": "أدخل بيانات العميل الجديد — ستُحفظ في النظام تلقائيًا",
+      "date_label": "تاريخ البيع",
+      "payment_account_label": "حساب الدفع",
+      "select_placeholder": "— اختر —",
+      "payment_status_label": "حالة الدفع",
+      "new_customer_paid_only_note": "يُسمح للعملاء الجدد بالبيع المدفوع بالكامل فقط",
+      "payment_status": {
+        "paid": "مدفوع ✅",
+        "partial": "مدفوع جزئيًا ⚠️",
+        "unpaid": "غير مدفوع ❌"
+      },
+      "total_paid_label": "إجمالي المبلغ المدفوع",
+      "col_cattle_tag": "الماشية (رقم الوسم)",
+      "col_sale_price_required": "سعر البيع (৳)",
+      "col_weight": "الوزن (كجم)",
+      "summary_total_label": "إجمالي البيع",
+      "col_cattle": "الماشية",
+      "col_sale_price": "سعر البيع",
+      "col_paid": "المدفوع",
+      "col_due": "المستحق",
+      "buyer_label": "المشتري:",
+      "new_addition_badge": "جديد",
+      "success_title": "تم البيع",
+      "success_count": "تم بيع {{count}} من رؤوس الماشية بنجاح",
+      "print_invoice_btn": "طباعة الفاتورة",
+      "footer_count": "عدد الحيوانات: {{count}}",
+      "submit_btn": "بيع",
+      "validation": {
+        "date_required": "يرجى إدخال تاريخ البيع.",
+        "payment_account_required": "يرجى اختيار حساب الدفع.",
+        "customer_required": "يرجى اختيار العميل.",
+        "new_customer_name_required": "يرجى إدخال اسم العميل الجديد.",
+        "partial_amount_required": "يرجى إدخال مبلغ الدفعة الجزئية.",
+        "price_required": "يرجى إدخال سعر البيع لكل حيوان."
+      },
+      "toast": {
+        "saved": "تم بيع الماشية بنجاح.",
+        "failed": "تعذّر إتمام البيع."
+      }
+    },
+    "expense": {
+      "title": "إضافة مصروف للحيوانات المحددة",
+      "subtitle": "يُحمَّل على هذه الحيوانات فقط ({{count}})",
+      "category": "الفئة",
+      "date": "التاريخ",
+      "expense_title": "ما سبب المصروف؟",
+      "title_placeholder": "مثال: نقل إلى السوق، زيارة طبيب بيطري",
+      "split": "طريقة التقسيم",
+      "split_equal": "بالتساوي",
+      "split_equal_hint": "يُقسَّم المبلغ الكلي بالتساوي",
+      "split_weight_based": "حسب الوزن",
+      "split_weight_based_hint": "الحيوان الأثقل يتحمل أكثر",
+      "split_per_animal": "مبلغ ثابت لكل حيوان",
+      "split_per_animal_hint": "كل حيوان يتحمل المبلغ نفسه",
+      "amount_total": "المبلغ الكلي (৳)",
+      "amount_per_animal": "المبلغ لكل حيوان (৳)",
+      "total_for": "عدد الحيوانات: {{count}} — المجموع {{total}}",
+      "no_weight": "لا يوجد وزن مسجّل لـ: {{tags}}. اختر التقسيم بالتساوي أو سجّل أوزانها أولًا.",
+      "col_animal": "الحيوان",
+      "col_share": "الحصة",
+      "kg": "{{kg}} كغ",
+      "total": "المجموع",
+      "status_paid": "مدفوع",
+      "status_partial": "مدفوع جزئيًا",
+      "status_unpaid": "غير مدفوع (دَين)",
+      "paid_now": "المدفوع الآن (৳)",
+      "account": "مدفوع من",
+      "account_placeholder": "اختر حسابًا",
+      "submit": "حفظ {{total}}",
+      "saved": "تم تحميل المصروف على الحيوانات ({{count}}).",
+      "validation": {
+        "title": "اكتب سبب المصروف.",
+        "amount": "أدخل مبلغًا أكبر من صفر.",
+        "date": "اختر التاريخ.",
+        "paid": "يجب أن يكون المبلغ المدفوع أكبر من صفر وأقل من المجموع.",
+        "account": "اختر الحساب الذي دُفع منه."
+      }
+    }
+  },
+  "receipt": {
+    "title": "إيصال البيع",
+    "col_weight": "الوزن",
+    "footer_note": "تم إنشاء هذا الإيصال بواسطة البرنامج",
+    "print_btn": "🖨️ طباعة"
+  },
+  "breeding": {
+    "origin_label": "المصدر",
+    "origin": {
+      "purchased": "مشترى",
+      "farm_born": "مولود في المزرعة"
+    },
+    "origin_hint": {
+      "purchased": "حيوان مشترى — يُسجَّل سعر شرائه في الدفتر كتكلفة.",
+      "farm_born": "مولود في المزرعة — لا حاجة لسعر شراء أو دفع."
+    },
+    "purpose_label": "الغرض",
+    "purpose": {
+      "fattening": "تسمين",
+      "breeding_female": "تناسل (أنثى)",
+      "breeding_male": "فحل للتناسل",
+      "dairy": "حلوب",
+      "young_stock": "عجل / حيوان صغير"
+    },
+    "profit_center": {
+      "fattening": "التسمين",
+      "breeding": "التناسل",
+      "dairy": "الألبان"
+    },
+    "reproductive_status_label": "الحالة التناسلية",
+    "reproductive_status": {
+      "open": "فارغة",
+      "inseminated": "ملقّحة",
+      "pregnant": "عُشار",
+      "lactating": "حلوب",
+      "dry": "جافة"
+    },
+    "not_set": "غير محدد",
+    "dam": "الأم",
+    "sire": "الأب",
+    "select_dam": "اختر الأم (اختياري)",
+    "select_sire": "اختر الأب (اختياري)",
+    "unknown": "غير معروف",
+    "parents_hint": "يجب أن تكون الأم (أنثى) والأب (ذكر) من نوع الحيوان نفسه.",
+    "birth_date": "تاريخ الولادة",
+    "birth_weight": "وزن الولادة (كجم)",
+    "current_weight": "الوزن الحالي (كجم)",
+    "weight_hint": "أدخل وزن الولادة أو الوزن الحالي — واحدًا على الأقل.",
+    "milking_times": "عدد الحلبات يوميًا",
+    "milking_times_default": "الافتراضي للنوع ({{count}}×)",
+    "milking_times_option": "{{count}}×",
+    "filter_all_origins": "كل المصادر",
+    "filter_all_purposes": "كل الأغراض",
+    "born_badge": "مولود في المزرعة",
+    "validation": {
+      "birth_date_required": "تاريخ الولادة مطلوب",
+      "weight_required": "أدخل وزن الولادة أو الوزن الحالي",
+      "purchase_weight_required": "وزن الشراء مطلوب",
+      "payment_account_required": "اختر الحساب الذي سيتم الدفع منه"
+    },
+    "tab_pedigree": "النسب",
+    "pedigree": {
+      "title": "شجرة العائلة",
+      "parents": "الأبوان",
+      "grandparents": "الأجداد",
+      "maternal_grand_dam": "الجدة لأم",
+      "maternal_grand_sire": "الجد لأم",
+      "paternal_grand_dam": "الجدة لأب",
+      "paternal_grand_sire": "الجد لأب",
+      "siblings": "الإخوة",
+      "sibling_full": "شقيق",
+      "sibling_half": "غير شقيق",
+      "offspring": "النسل",
+      "offspring_count": "{{count}} إجمالًا ({{female}} أنثى، {{male}} ذكر)",
+      "no_siblings": "لا يوجد إخوة مسجلون",
+      "no_offspring": "لا يوجد نسل مسجل",
+      "deleted": "محذوف",
+      "load_failed": "تعذّر تحميل شجرة العائلة"
+    },
+    "purpose_change": {
+      "button": "تغيير الغرض",
+      "title": "تغيير الغرض",
+      "current": "الغرض الحالي",
+      "new": "الغرض الجديد",
+      "date": "تاريخ السريان",
+      "reason": "السبب (اختياري)",
+      "note": "من الآن فصاعدًا تُحمَّل التكاليف على مركز الربح الجديد، وتبقى التكاليف السابقة في مكانها.",
+      "save": "حفظ",
+      "history": "سجل الغرض",
+      "no_history": "لا يوجد سجل",
+      "toast_saved": "تم تحديث الغرض"
+    },
+    "kg_since_birth": "كجم منذ الولادة",
+    "birth_value": "القيمة الداخلية",
+    "birth_value_hint": "التكلفة الافتتاحية للحيوان وإيراد التناسل المسجَّل لأمه، دون أي حركة نقدية.",
+    "birth_value_saved": "تم تحديث القيمة",
+    "birth_value_failed": "تعذّر التحديث",
+    "birth_value_form_hint": "فارغ = القيمة الافتراضية لنوع الحيوان"
+  },
+  "picker": {
+    "subtitle": "اختر الحيوانات المعنية",
+    "search": "ابحث برقم الوسم أو الاسم أو السلالة…",
+    "select_all": "تحديد الكل",
+    "clear_all": "إلغاء تحديد الكل",
+    "empty": "لا توجد حيوانات نشطة",
+    "picked": "الحيوانات المختارة: {{count}}",
+    "next": "التالي",
+    "title": {
+      "medicine": "إعطاء دواء — اختر الحيوانات",
+      "vaccine": "إعطاء لقاح — اختر الحيوانات",
+      "treatment": "علاج — اختر الحيوانات",
+      "sell": "بيع الحيوانات — اختر الحيوانات"
+    }
+  },
+  "collar": {
+    "tab_label": "الطوق",
+    "title": "الأطواق الذكية",
+    "subtitle": "رصد الشبق والمرض المبكر والحمى من بيانات المستشعرات",
+    "on": "مفعّل",
+    "off": "متوقف",
+    "off_note": "ميزة الأطواق متوقفة — لا تُستقبل أي بيانات. فعّلها من «الاتصال والإعدادات» عند وصول الأطواق.",
+    "kpi": {
+      "pending": "تنبيهات معلّقة",
+      "devices": "الأجهزة (المخصصة/الإجمالي)",
+      "online": "متصل",
+      "offline": "غير متصل",
+      "low_battery": "بطارية منخفضة"
+    },
+    "tab": {
+      "alerts": "التنبيهات",
+      "devices": "الأجهزة",
+      "settings": "الاتصال والإعدادات"
+    },
+    "alert": {
+      "heat": "شبق محتمل",
+      "low_rumination": "اجترار منخفض",
+      "low_activity": "نشاط منخفض",
+      "fever": "حمى"
+    },
+    "status": {
+      "pending": "معلّق",
+      "confirmed": "مؤكد",
+      "dismissed": "متجاهَل"
+    },
+    "all": "الكل",
+    "no_alerts": "لا توجد تنبيهات",
+    "value_vs_baseline": "{{value}} خلال 24 ساعة، المعتاد {{baseline}}",
+    "resolved_by": "تمت المعالجة بواسطة {{name}}",
+    "mark_sick": "تعيين الحيوان كمريض",
+    "heat_confirm_hint": "التأكيد يسجّل الشبق في سجل التناسل",
+    "confirm": "تأكيد",
+    "confirm_heat": "تسجيل الشبق",
+    "dismiss": "تجاهل",
+    "online": "متصل",
+    "offline": "غير متصل",
+    "inactive": "غير نشط",
+    "battery": "البطارية",
+    "unassigned": "غير مخصص",
+    "add_device": "إضافة جهاز",
+    "edit_device": "تعديل الجهاز",
+    "no_devices": "لا توجد أجهزة بعد",
+    "new_token": "رمز جديد",
+    "device_token_title": "{{serial}} — رمز الجهاز",
+    "gateway_key_title": "مفتاح البوابة",
+    "secret_once": "يُعرض الآن فقط — انسخه إلى إعدادات الطوق/البوابة. إذا فُقد، أنشئ رمزًا جديدًا (يتوقف القديم عن العمل).",
+    "saved_it": "لقد نسخته",
+    "token_after_save": "يُعرض الرمز السري للجهاز مرة واحدة بعد الحفظ.",
+    "save": "حفظ",
+    "delete": "إزالة",
+    "delete_title": "إزالة الجهاز؟",
+    "delete_message": "ستتم إزالة {{serial}}. تبقى قراءاته وتنبيهاته السابقة محفوظة.",
+    "col": {
+      "device": "الجهاز",
+      "animal": "الحيوان",
+      "status": "الحالة",
+      "token": "الرمز"
+    },
+    "field": {
+      "serial": "الرقم التسلسلي",
+      "label": "الاسم/التسمية",
+      "vendor": "الشركة المصنّعة",
+      "animal": "يرتديه",
+      "notes": "ملاحظات",
+      "active": "نشط"
+    },
+    "vendor": {
+      "generic": "عام (أي نوع)",
+      "allflex": "Allflex / SCR",
+      "afimilk": "Afimilk",
+      "nedap": "Nedap",
+      "cowmanager": "CowManager",
+      "smaxtec": "smaXtec",
+      "diy": "محلي الصنع",
+      "other": "أخرى"
+    },
+    "settings": {
+      "enable": "تفعيل ميزة الأطواق",
+      "enable_hint": "أثناء الإيقاف لا تُستقبل أي بيانات من الأطواق",
+      "heat_activity_rise_pct": "الشبق: ارتفاع النشاط",
+      "activity_drop_pct": "انخفاض النشاط",
+      "rumination_drop_pct": "انخفاض الاجترار",
+      "fever_temp": "درجة حرارة الحمى",
+      "baseline_days": "أيام حساب المستوى المعتاد",
+      "min_baseline_days": "الحد الأدنى لأيام البيانات",
+      "offline_hours": "ساعات الصمت قبل اعتباره غير متصل",
+      "raw_retention_days": "الاحتفاظ بالبيانات الخام لمدة",
+      "days": "يوم",
+      "hours": "ساعة",
+      "notify_whatsapp": "إرسال إلى WhatsApp",
+      "notify_whatsapp_hint": "تُرسل التنبيهات الجديدة إلى مستلمي تنبيهات WhatsApp"
+    },
+    "connect": {
+      "title": "توصيل الأطواق",
+      "url": "عنوان البيانات (API)",
+      "example": "مثال",
+      "gateway": "مفتاح البوابة:",
+      "none": "لا يوجد",
+      "generate": "إنشاء مفتاح البوابة",
+      "regenerate": "مفتاح بوابة جديد",
+      "steps": [
+        "في تبويب «الأجهزة» أضف كل طوق برقمه التسلسلي واختر الحيوان الذي يرتديه — ستحصل على رمز سري.",
+        "يرسل الطوق/البوابة طلب POST إلى العنوان أدناه مع الترويسة Authorization: Bearer <token>.",
+        "إذا كان خادم الشركة المصنّعة يرسل بيانات عدة أطواق دفعة واحدة، فاستخدم «مفتاح البوابة»؛ تحمل كل قراءة رقمها التسلسلي. تُضاف الأرقام التسلسلية غير المعروفة إلى قائمة الأجهزة تلقائيًا.",
+        "أسماء الحقول مرنة: timestamp/ts وsteps وrumination وtemp وlat/lng — تعمل معظم صيغ الشركات المصنّعة كما هي.",
+        "القراءات المعاد إرسالها لا تُحتسب مرتين، لذا لا مشكلة في الإرسال المتأخر بعد انقطاع الإنترنت.",
+        "للاختبار دون أطواق، نفّذ على الخادم: php artisan collar:simulate --heat=<tag> (قاعدة بيانات الاختبار فقط)."
+      ],
+      "regenerate_title": "إنشاء مفتاح بوابة جديد؟",
+      "regenerate_message": "سيتوقف مفتاح البوابة القديم عن العمل. لن ترسل البوابات التي تستخدمه أي بيانات حتى يُوضع فيها المفتاح الجديد. هل تريد المتابعة؟"
+    },
+    "import": {
+      "title": "استيراد من ملف (CSV)",
+      "hint": "ارفع ملف CSV مُصدَّرًا من لوحة الشركة المصنّعة. يحتوي الصف الأول على أسماء الأعمدة؛ وتُطابَق الحيوانات حسب tag_number أو serial.",
+      "choose": "اختر ملف CSV",
+      "working": "جارٍ الاستيراد…",
+      "result": "قراءات جديدة: {{accepted}}، موجودة مسبقًا: {{duplicates}}، مرفوضة: {{rejected}}، تنبيهات: {{alerts}}"
+    },
+    "panel": {
+      "device": "الجهاز",
+      "no_device": "لا يوجد طوق مخصص",
+      "last_temp": "آخر درجة حرارة",
+      "location": "عرض على الخريطة",
+      "no_data": "لا توجد بيانات طوق لهذا الحيوان بعد",
+      "activity": "النشاط اليومي",
+      "rumination": "الاجترار اليومي (دقائق)",
+      "minutes": "دقيقة",
+      "temp_max": "أعلى درجة حرارة يومية",
+      "recent_alerts": "أحدث التنبيهات"
+    },
+    "toast": {
+      "done": "تم",
+      "failed": "تعذّر تنفيذ ذلك",
+      "copied": "تم النسخ",
+      "device_saved": "تم حفظ الجهاز",
+      "settings_saved": "تم حفظ الإعدادات"
+    },
+    "renew_token_title": "إنشاء رمز جديد؟",
+    "renew_token_message": "سيحصل {{serial}} على رمز جديد ويتوقف الرمز القديم عن العمل. لن يرسل الطوق أي بيانات حتى يُوضع فيه الرمز الجديد. هل تريد المتابعة؟"
+  },
+  "milk_check": {
+    "title": "تم تحديد حيوان خاطئ",
+    "subtitle": "من الحيوانات المحددة لا يُدرّ الحليب: {{count}}",
+    "hint": "أزلها من التحديد، ثم اضغط «إدخال الحليب» مرة أخرى.",
+    "remove": "إزالة هذه الحيوانات من التحديد ({{count}})",
+    "removed": "تمت إزالة الحيوانات من التحديد ({{count}}). اضغط «إدخال الحليب» مرة أخرى."
+  },
+  "form_section": {
+    "identity": "الهوية",
+    "breeding": "التربية",
+    "age_health": "العمر والصحة",
+    "purchase": "الشراء",
+    "birth": "الولادة",
+    "place_feed": "الحظيرة والعلف",
+    "files_notes": "الفاتورة والملاحظات"
+  },
+  "unit": {
+    "kg": "كغ",
+    "kg_per_day": "كغ/يوم"
+  },
+  "account": {
+    "period": "من {{from}} إلى {{to}}",
+    "days": "{{n}} يومًا",
+    "total_cost": "إجمالي التكلفة",
+    "total_income": "إجمالي الدخل",
+    "gap": "الفرق",
+    "profit": "ربح",
+    "loss": "خسارة",
+    "gap_hint_active": "ما زال في المزرعة: يعود ثمن الشراء عند البيع (أو من دخله).",
+    "capital": "سعر الشراء",
+    "birth_value": "القيمة عند الولادة",
+    "running_cost": "تكلفة الرعاية",
+    "earned": "الدخل أثناء الرعاية",
+    "operating_net": "الرعاية: ربح/خسارة",
+    "per_day": "{{v}} يوميًا",
+    "recovered": "عاد {{pct}} من سعر الشراء (الدخل ناقص تكلفة الرعاية).",
+    "if_sold_today": "إذا بيع اليوم بسعر السوق ({{market}}): {{result}}.",
+    "no_market_value": "أضف القيمة السوقية الحالية للحيوان لمعرفة وضعه إذا بيع اليوم.",
+    "sold_on": "بيع في {{date}} بمبلغ {{price}} إلى {{buyer}}.",
+    "costs": "أين ذهبت الأموال",
+    "incomes": "ما الذي دخل",
+    "none": "لا شيء بعد.",
+    "monthly": "شهرًا بشهر",
+    "month": "الشهر",
+    "cost": "التكلفة",
+    "income": "الدخل",
+    "month_gap": "ذلك الشهر",
+    "running_gap": "حتى الآن",
+    "exit_dead": "نفق في {{date}} — الخسارة الكاملة {{loss}} (سعره وكل ما أُنفق على رعايته).",
+    "exit_transferred": "نُقل في {{date}} — الخسارة الكاملة {{loss}} (سعره وكل ما أُنفق على رعايته)."
+  },
+  "exit": {
+    "button": "نفق أو غادر المزرعة",
+    "title": "غادر المزرعة",
+    "title_back": "العودة إلى المزرعة",
+    "what": "ماذا حدث",
+    "choice": {
+      "dead": "نفق",
+      "transferred": "نُقل إلى مكان آخر",
+      "active": "عاد إلى المزرعة (كان خطأً)"
+    },
+    "date": "في أي يوم",
+    "reason": "السبب / ملاحظات",
+    "save": "حفظ",
+    "note": "تظهر خسارته الكاملة (السعر + كل ما أُنفق على رعايته) في حسابه. تخصم الأرباح والخسائر سعره في الشهر الذي غادر فيه — تكاليف الرعاية محسوبة شهرًا بشهر.",
+    "note_back": "يعود إلى القطيع كأنه لم يغادر.",
+    "toast_saved": "تم الحفظ."
+  }
+}

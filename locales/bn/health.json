@@ -1,0 +1,227 @@
+{
+  "vaccines": {
+    "title": "ভ্যাকসিন সময়সূচি",
+    "add": "ভ্যাকসিন নির্ধারণ করুন",
+    "trash": {
+      "back_link": "ভ্যাকসিনে ফিরুন",
+      "page_title": "ভ্যাকসিন সময়সূচি ট্র্যাশ",
+      "warning": "মুছে ফেলা ভ্যাকসিন সময়সূচি ট্র্যাশে আছে। পুনরুদ্ধার বা স্থায়ীভাবে মুছতে পারবেন।",
+      "search_placeholder": "মুছে ফেলা ভ্যাকসিন সময়সূচি খুঁজুন…",
+      "col": {
+        "cattle": "গবাদি পশু",
+        "vaccine": "ভ্যাকসিন",
+        "scheduled_date": "নির্ধারিত তারিখ"
+      },
+      "empty_desc": "কোনো মুছে ফেলা ভ্যাকসিন সময়সূচি পাওয়া যায়নি"
+    },
+    "modal_title": "ভ্যাকসিন নির্ধারণ",
+    "col": {
+      "cattle": "গবাদি পশু",
+      "vaccine": "ভ্যাকসিন",
+      "scheduled": "নির্ধারিত",
+      "administered": "প্রদান করা হয়েছে",
+      "cost": "খরচ",
+      "status": "অবস্থা",
+      "administered_date": "প্রদানের তারিখ",
+      "next_due_date": "পরবর্তী তারিখ",
+      "quantity": "পরিমাণ"
+    },
+    "filter": {
+      "all": "সব",
+      "scheduled": "নির্ধারিত",
+      "completed": "সম্পন্ন",
+      "overdue": "সময় পেরিয়েছে",
+      "cancelled": "বাতিল"
+    },
+    "status": {
+      "scheduled": "নির্ধারিত",
+      "completed": "সম্পন্ন",
+      "overdue": "সময় পেরিয়েছে",
+      "cancelled": "বাতিল"
+    },
+    "field": {
+      "cattle": "গবাদি পশু",
+      "select_cattle": "পশু নির্বাচন করুন",
+      "vaccine_name": "ভ্যাকসিনের নাম",
+      "vaccine_type": "ভ্যাকসিনের ধরন",
+      "scheduled_date": "নির্ধারিত তারিখ",
+      "next_due_date": "পরবর্তী তারিখ",
+      "next_due_date_optional": "পরবর্তী তারিখ (ঐচ্ছিক)",
+      "cost": "খরচ (৳)",
+      "administered_by": "প্রদানকারী",
+      "administered_date_prompt": "প্রদানের তারিখ (YYYY-MM-DD):",
+      "notes": "নোট",
+      "cattle_list": "পশুর তালিকা",
+      "doctor_staff_name": "ডাক্তার/কর্মীর নাম"
+    },
+    "btn": {
+      "schedule": "নির্ধারণ করুন",
+      "mark_complete": "সম্পন্ন চিহ্নিত করুন"
+    },
+    "tooltip": {
+      "move_to_trash": "ট্র্যাশে পাঠান"
+    },
+    "empty": "কোনো ভ্যাকসিন রেকর্ড নেই",
+    "edit_modal_title": "ভ্যাকসিন সম্পাদনা",
+    "edit_modal_info": "সকল {{count}}টি পশুর রেকর্ড একসাথে আপডেট হবে।",
+    "btn_save": "সেভ করুন",
+    "confirm": {
+      "move_to_trash_title": "ট্র্যাশে পাঠান",
+      "move_to_trash_message": "\"{{vaccine_name}}\" — {{count}}টি পশুর রেকর্ড ট্র্যাশে যাবে। পরে ফিরিয়ে আনা যাবে।",
+      "move_to_trash_label": "ট্র্যাশে পাঠান"
+    },
+    "toast": {
+      "moved_to_trash": "{{count}}টি রেকর্ড ট্র্যাশে গেছে।",
+      "update_failed": "আপডেট ব্যর্থ হয়েছে।",
+      "delete_failed": "মুছতে ব্যর্থ হয়েছে।"
+    },
+    "cattle_count": "{{count}}টি পশু",
+    "count_suffix": "{{count}}টি"
+  },
+  "treatments": {
+    "title": "চিকিৎসা",
+    "add": "চিকিৎসা যোগ করুন",
+    "modal_title": "চিকিৎসা রেকর্ড করুন",
+    "trash": {
+      "back_link": "চিকিৎসায় ফিরুন",
+      "page_title": "চিকিৎসা ট্র্যাশ",
+      "warning": "মুছে ফেলা চিকিৎসা রেকর্ডগুলো ট্র্যাশে আছে। পুনরুদ্ধার বা স্থায়ীভাবে মুছতে পারবেন।",
+      "search_placeholder": "মুছে ফেলা চিকিৎসা খুঁজুন…",
+      "col": {
+        "cattle": "গবাদি পশু",
+        "diagnosis": "রোগ নির্ণয়",
+        "treatment_date": "চিকিৎসার তারিখ",
+        "vet": "পশু চিকিৎসক"
+      },
+      "empty_desc": "কোনো মুছে ফেলা চিকিৎসা পাওয়া যায়নি"
+    },
+    "col": {
+      "cattle": "গবাদি পশু",
+      "date": "তারিখ",
+      "diagnosis": "রোগ নির্ণয়",
+      "treatment": "চিকিৎসা",
+      "vet": "পশু চিকিৎসক",
+      "cost": "খরচ",
+      "status": "অবস্থা",
+      "doctor": "ডাক্তার",
+      "vet_fee": "ডাক্তারের ফি",
+      "med_cost": "ওষুধের খরচ",
+      "total": "মোট",
+      "follow_up": "ফলো আপ",
+      "health_status": "স্বাস্থ্য অবস্থা"
+    },
+    "status": {
+      "ongoing": "চলমান",
+      "recovered": "সুস্থ হয়েছে",
+      "deceased": "মৃত"
+    },
+    "field": {
+      "cattle": "গবাদি পশু",
+      "select_cattle": "গবাদি পশু নির্বাচন করুন",
+      "date": "চিকিৎসার তারিখ",
+      "diagnosis": "রোগ নির্ণয়",
+      "treatment": "চিকিৎসা",
+      "vet": "পশু চিকিৎসক",
+      "cost": "খরচ (৳)",
+      "status": "অবস্থা",
+      "next_checkup": "পরবর্তী পরীক্ষার তারিখ",
+      "notes": "নোট",
+      "doctor_name": "ডাক্তারের নাম",
+      "doctor_phone": "ডাক্তারের ফোন",
+      "vet_fee": "ডাক্তারের ফি (৳)",
+      "medicine_cost": "ওষুধের খরচ (৳)",
+      "medicines_used": "ব্যবহৃত ওষুধ",
+      "follow_up_date": "ফলো-আপ তারিখ",
+      "prescription": "লিখিত পরামর্শ",
+      "prescription_section": "ডাক্তারের প্রেসক্রিপশন / পরামর্শ",
+      "prescription_upload": "প্রেসক্রিপশন PDF / ছবি আপলোড",
+      "file_choose": "ফাইল বেছে নিন (PDF, JPG, PNG)",
+      "payment_account": "পেমেন্ট অ্যাকাউন্ট",
+      "select_account": "অ্যাকাউন্ট নির্বাচন করুন",
+      "vet_fee_per_cattle": "ডাক্তারের ফি (প্রতি পশু)",
+      "notes_bulk": "নোট"
+    },
+    "btn": {
+      "add": "চিকিৎসা যোগ করুন",
+      "save": "চিকিৎসা সংরক্ষণ করুন",
+      "save_record": "সেভ করুন",
+      "remove_file": "সরান",
+      "saving": "সেভ হচ্ছে...",
+      "bulk_add": "একাধিক পশুর চিকিৎসা যোগ করুন"
+    },
+    "tooltip": {
+      "move_to_trash": "ট্র্যাশে পাঠান"
+    },
+    "empty": "কোনো চিকিৎসার রেকর্ড নেই",
+    "edit_modal_title": "চিকিৎসা সম্পাদনা",
+    "health_status_update_label": "পশুর স্বাস্থ্য অবস্থা আপডেট করুন",
+    "health_status_update_info": "সেভ করলে এই পশুর স্বাস্থ্য অবস্থা পরিবর্তন হবে।",
+    "health_status_after_label": "চিকিৎসার পর পশুর স্বাস্থ্য অবস্থা",
+    "health_status_after_info": "সেভ করলে পশুর স্বাস্থ্য অবস্থা স্বয়ংক্রিয়ভাবে আপডেট হবে।",
+    "vet_fee_display": "ডাক্তারের ফি:",
+    "bulk_modal_title": "একাধিক পশুর চিকিৎসা",
+    "bulk_modal_subtitle": "একই ডাক্তার ও চিকিৎসা একাধিক পশুর জন্য রেকর্ড করুন",
+    "bulk_select_cattle_label": "পশু নির্বাচন করুন",
+    "bulk_deselect_all": "সব বাদ দিন",
+    "bulk_select_all": "সব নির্বাচন",
+    "bulk_search_placeholder": "ট্যাগ নম্বর বা নাম দিয়ে খুঁজুন...",
+    "bulk_no_cattle": "কোনো পশু পাওয়া যায়নি",
+    "bulk_date_label": "চিকিৎসার তারিখ",
+    "bulk_follow_up_label": "ফলো-আপ তারিখ",
+    "bulk_doctor_name_label": "ডাক্তারের নাম",
+    "bulk_doctor_phone_label": "ডাক্তারের ফোন",
+    "bulk_diagnosis_label": "রোগ নির্ণয়",
+    "bulk_treatment_label": "চিকিৎসা বিবরণ",
+    "bulk_medicines_label": "ব্যবহৃত ওষুধ",
+    "bulk_medicines_placeholder": "ব্যবহৃত ওষুধের তালিকা...",
+    "bulk_notes_label": "নোট",
+    "bulk_health_status_after_info": "সকল নির্বাচিত {{count}}টি পশুর স্বাস্থ্য অবস্থা একসাথে আপডেট হবে।",
+    "bulk_records_info": "সকল {{count}}টি পশুর জন্য আলাদা আলাদা চিকিৎসা রেকর্ড তৈরি হবে এবং তাদের স্বাস্থ্য অবস্থা আপডেট হবে।",
+    "bulk_saving": "সেভ হচ্ছে...",
+    "bulk_save_records": "{{count}}টি পশুর রেকর্ড সেভ করুন",
+    "confirm": {
+      "move_to_trash_title": "ট্র্যাশে পাঠান",
+      "move_to_trash_message": "আপনি কি \"{{diagnosis}}\" ট্র্যাশে পাঠাতে চান? পরে ফিরিয়ে আনা যাবে।",
+      "move_to_trash_label": "ট্র্যাশে পাঠান",
+      "this_record": "এই রেকর্ড"
+    },
+    "placeholder": {
+      "medicines_used": "ব্যবহৃত ওষুধের তালিকা লিখুন...",
+      "prescription": "ডাক্তারের পরামর্শ বা প্রেসক্রিপশন লিখুন...",
+      "vaccines_administered_by": "ডাক্তার/কর্মীর নাম"
+    },
+    "validation": {
+      "cattle_required": "পশু নির্বাচন আবশ্যক",
+      "diagnosis_required": "রোগ নির্ণয় আবশ্যক",
+      "treatment_date_required": "চিকিৎসার তারিখ আবশ্যক",
+      "payment_account_required": "পেমেন্ট অ্যাকাউন্ট আবশ্যক",
+      "select_at_least_one_cattle": "কমপক্ষে একটি পশু নির্বাচন করুন"
+    },
+    "toast": {
+      "moved_to_trash": "চিকিৎসা ট্র্যাশে সরানো হয়েছে।",
+      "delete_failed": "চিকিৎসা মুছতে ব্যর্থ হয়েছে।",
+      "created": "চিকিৎসা সফলভাবে তৈরি হয়েছে।",
+      "save_failed": "চিকিৎসা সংরক্ষণ করতে ব্যর্থ হয়েছে।",
+      "create_failed": "চিকিৎসা তৈরি করতে ব্যর্থ হয়েছে।",
+      "bulk_created": "একাধিক চিকিৎসা তৈরি হয়েছে।",
+      "bulk_save_failed": "একাধিক চিকিৎসা সংরক্ষণ করতে ব্যর্থ হয়েছে।",
+      "bulk_create_failed": "একাধিক চিকিৎসা তৈরি করতে ব্যর্থ হয়েছে।",
+      "updated": "চিকিৎসা আপডেট হয়েছে।",
+      "update_failed": "আপডেট করতে ব্যর্থ।"
+    },
+    "health_status_options": {
+      "sick": "অসুস্থ",
+      "critical": "সংকটাপন্ন",
+      "recovering": "সুস্থ হচ্ছে",
+      "healthy": "সুস্থ"
+    },
+    "health_status_label": {
+      "sick": "অসুস্থ",
+      "critical": "সংকটাপন্ন",
+      "recovering": "সুস্থ হচ্ছে",
+      "healthy": "সুস্থ"
+    },
+    "bulk_selected_count": "{{count}}টি নির্বাচিত",
+    "bulk_total_fee_display": "মোট: ৳{{total}} ({{count}}টি পশু)"
+  }
+}

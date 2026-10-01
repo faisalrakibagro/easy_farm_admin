@@ -1,0 +1,8 @@
+/* Siyam Rupali — free Bangla font (Ekushey). */
+@font-face {
+  font-family: 'Siyam Rupali';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('siyam-rupali-v1.070.woff2') format('woff2');
+}

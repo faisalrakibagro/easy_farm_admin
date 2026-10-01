@@ -1,0 +1,227 @@
+{
+  "vaccines": {
+    "title": "جداول التطعيم",
+    "add": "جدولة لقاح",
+    "trash": {
+      "back_link": "العودة إلى اللقاحات",
+      "page_title": "سلة محذوفات جداول التطعيم",
+      "warning": "تُحفظ جداول التطعيم المحذوفة في سلة المحذوفات. استعِدها لإعادة تفعيلها، أو احذفها نهائيًا لإزالة جميع البيانات.",
+      "search_placeholder": "ابحث في جداول التطعيم المحذوفة…",
+      "col": {
+        "cattle": "الماشية",
+        "vaccine": "اللقاح",
+        "scheduled_date": "التاريخ المجدول"
+      },
+      "empty_desc": "لا توجد جداول تطعيم محذوفة"
+    },
+    "modal_title": "جدولة لقاح",
+    "col": {
+      "cattle": "الماشية",
+      "vaccine": "اللقاح",
+      "scheduled": "مجدول",
+      "administered": "تم الإعطاء",
+      "cost": "التكلفة",
+      "status": "الحالة",
+      "administered_date": "تاريخ الإعطاء",
+      "next_due_date": "موعد الجرعة التالية",
+      "quantity": "الكمية"
+    },
+    "filter": {
+      "all": "الكل",
+      "scheduled": "مجدول",
+      "completed": "مكتمل",
+      "overdue": "متأخر",
+      "cancelled": "ملغى"
+    },
+    "status": {
+      "scheduled": "مجدول",
+      "completed": "مكتمل",
+      "overdue": "متأخر",
+      "cancelled": "ملغى"
+    },
+    "field": {
+      "cattle": "الماشية",
+      "select_cattle": "اختر الماشية",
+      "vaccine_name": "اسم اللقاح",
+      "vaccine_type": "نوع اللقاح",
+      "scheduled_date": "التاريخ المجدول",
+      "next_due_date": "موعد الجرعة التالية",
+      "next_due_date_optional": "موعد الجرعة التالية (اختياري)",
+      "cost": "التكلفة (৳)",
+      "administered_by": "أُعطي بواسطة",
+      "administered_date_prompt": "تاريخ الإعطاء (YYYY-MM-DD):",
+      "notes": "ملاحظات",
+      "cattle_list": "قائمة الماشية",
+      "doctor_staff_name": "اسم الطبيب / الموظف"
+    },
+    "btn": {
+      "schedule": "جدولة",
+      "mark_complete": "تسجيل كمكتمل"
+    },
+    "tooltip": {
+      "move_to_trash": "نقل إلى سلة المحذوفات"
+    },
+    "empty": "لا توجد سجلات تطعيم",
+    "edit_modal_title": "تعديل اللقاح",
+    "edit_modal_info": "سيتم تحديث جميع سجلات الماشية البالغ عددها {{count}} معًا.",
+    "btn_save": "حفظ",
+    "confirm": {
+      "move_to_trash_title": "نقل إلى سلة المحذوفات",
+      "move_to_trash_message": "«{{vaccine_name}}» — سيتم نقل سجلات الماشية ({{count}}) إلى سلة المحذوفات. يمكنك استعادتها لاحقًا.",
+      "move_to_trash_label": "نقل إلى سلة المحذوفات"
+    },
+    "toast": {
+      "moved_to_trash": "تم نقل السجلات ({{count}}) إلى سلة المحذوفات.",
+      "update_failed": "فشل التحديث.",
+      "delete_failed": "فشل الحذف."
+    },
+    "cattle_count": "عدد الرؤوس: {{count}}",
+    "count_suffix": "{{count}}"
+  },
+  "treatments": {
+    "title": "العلاجات",
+    "add": "إضافة علاج",
+    "modal_title": "تسجيل علاج",
+    "trash": {
+      "back_link": "العودة إلى العلاجات",
+      "page_title": "سلة محذوفات العلاجات",
+      "warning": "تُحفظ العلاجات المحذوفة في سلة المحذوفات. استعِدها لإعادة تفعيلها، أو احذفها نهائيًا لإزالة جميع البيانات.",
+      "search_placeholder": "ابحث في العلاجات المحذوفة…",
+      "col": {
+        "cattle": "الماشية",
+        "diagnosis": "التشخيص",
+        "treatment_date": "تاريخ العلاج",
+        "vet": "الطبيب البيطري"
+      },
+      "empty_desc": "لا توجد علاجات محذوفة"
+    },
+    "col": {
+      "cattle": "الماشية",
+      "date": "التاريخ",
+      "diagnosis": "التشخيص",
+      "treatment": "العلاج",
+      "vet": "الطبيب البيطري",
+      "cost": "التكلفة",
+      "status": "الحالة",
+      "doctor": "الطبيب",
+      "vet_fee": "أتعاب الطبيب البيطري",
+      "med_cost": "تكلفة الأدوية",
+      "total": "الإجمالي",
+      "follow_up": "المتابعة",
+      "health_status": "الحالة الصحية"
+    },
+    "status": {
+      "ongoing": "قيد العلاج",
+      "recovered": "متعافٍ",
+      "deceased": "نافق"
+    },
+    "field": {
+      "cattle": "الماشية",
+      "select_cattle": "اختر الماشية",
+      "date": "تاريخ العلاج",
+      "diagnosis": "التشخيص",
+      "treatment": "العلاج",
+      "vet": "الطبيب البيطري",
+      "cost": "التكلفة (৳)",
+      "status": "الحالة",
+      "next_checkup": "تاريخ الفحص التالي",
+      "notes": "ملاحظات",
+      "doctor_name": "اسم الطبيب",
+      "doctor_phone": "هاتف الطبيب",
+      "vet_fee": "أتعاب الطبيب البيطري (৳)",
+      "medicine_cost": "تكلفة الأدوية (৳)",
+      "medicines_used": "الأدوية المستخدمة",
+      "follow_up_date": "تاريخ المتابعة",
+      "prescription": "الوصفة المكتوبة",
+      "prescription_section": "وصفة الطبيب / توصياته",
+      "prescription_upload": "رفع الوصفة (PDF / صورة)",
+      "file_choose": "اختر ملفًا (PDF، JPG، PNG)",
+      "payment_account": "حساب الدفع",
+      "select_account": "اختر الحساب",
+      "vet_fee_per_cattle": "أتعاب الطبيب البيطري (لكل رأس)",
+      "notes_bulk": "ملاحظات"
+    },
+    "btn": {
+      "add": "إضافة علاج",
+      "save": "حفظ العلاج",
+      "save_record": "حفظ",
+      "remove_file": "إزالة",
+      "saving": "جارٍ الحفظ...",
+      "bulk_add": "إضافة علاج جماعي"
+    },
+    "tooltip": {
+      "move_to_trash": "نقل إلى سلة المحذوفات"
+    },
+    "empty": "لا توجد سجلات علاج",
+    "edit_modal_title": "تعديل العلاج",
+    "health_status_update_label": "تحديث الحالة الصحية للماشية",
+    "health_status_update_info": "سيؤدي الحفظ إلى تغيير الحالة الصحية لهذا الحيوان.",
+    "health_status_after_label": "الحالة الصحية للماشية بعد العلاج",
+    "health_status_after_info": "سيؤدي الحفظ إلى تحديث الحالة الصحية للماشية تلقائيًا.",
+    "vet_fee_display": "أتعاب الطبيب البيطري:",
+    "bulk_modal_title": "علاج جماعي",
+    "bulk_modal_subtitle": "سجّل نفس الطبيب ونفس العلاج لعدة رؤوس من الماشية",
+    "bulk_select_cattle_label": "اختر الماشية",
+    "bulk_deselect_all": "إلغاء تحديد الكل",
+    "bulk_select_all": "تحديد الكل",
+    "bulk_search_placeholder": "ابحث برقم الوسم أو الاسم...",
+    "bulk_no_cattle": "لم يتم العثور على ماشية",
+    "bulk_date_label": "تاريخ العلاج",
+    "bulk_follow_up_label": "تاريخ المتابعة",
+    "bulk_doctor_name_label": "اسم الطبيب",
+    "bulk_doctor_phone_label": "هاتف الطبيب",
+    "bulk_diagnosis_label": "التشخيص",
+    "bulk_treatment_label": "وصف العلاج",
+    "bulk_medicines_label": "الأدوية المستخدمة",
+    "bulk_medicines_placeholder": "قائمة الأدوية المستخدمة...",
+    "bulk_notes_label": "ملاحظات",
+    "bulk_health_status_after_info": "سيتم تحديث الحالة الصحية لجميع الرؤوس المحددة البالغ عددها {{count}} معًا.",
+    "bulk_records_info": "سيتم إنشاء سجلات علاج منفصلة لجميع الرؤوس البالغ عددها {{count}} وتحديث حالتها الصحية.",
+    "bulk_saving": "جارٍ الحفظ...",
+    "bulk_save_records": "حفظ السجلات ({{count}})",
+    "confirm": {
+      "move_to_trash_title": "نقل إلى سلة المحذوفات",
+      "move_to_trash_message": "هل أنت متأكد من نقل «{{diagnosis}}» إلى سلة المحذوفات؟ يمكنك استعادته لاحقًا.",
+      "move_to_trash_label": "نقل إلى سلة المحذوفات",
+      "this_record": "هذا السجل"
+    },
+    "placeholder": {
+      "medicines_used": "اذكر الأدوية المستخدمة...",
+      "prescription": "اكتب توصية الطبيب أو وصفته...",
+      "vaccines_administered_by": "اسم الطبيب / الموظف"
+    },
+    "validation": {
+      "cattle_required": "الماشية مطلوبة",
+      "diagnosis_required": "التشخيص مطلوب",
+      "treatment_date_required": "تاريخ العلاج مطلوب",
+      "payment_account_required": "حساب الدفع مطلوب",
+      "select_at_least_one_cattle": "اختر رأس ماشية واحدًا على الأقل"
+    },
+    "toast": {
+      "moved_to_trash": "تم نقل العلاج إلى سلة المحذوفات.",
+      "delete_failed": "فشل حذف العلاج.",
+      "created": "تم تسجيل العلاج بنجاح.",
+      "save_failed": "فشل حفظ العلاج.",
+      "create_failed": "فشل تسجيل العلاج.",
+      "bulk_created": "تم تسجيل العلاج الجماعي.",
+      "bulk_save_failed": "فشل حفظ العلاج الجماعي.",
+      "bulk_create_failed": "فشل تسجيل العلاج الجماعي.",
+      "updated": "تم تحديث العلاج.",
+      "update_failed": "فشل التحديث."
+    },
+    "health_status_options": {
+      "sick": "مريض",
+      "critical": "حرج",
+      "recovering": "في طور التعافي",
+      "healthy": "سليم"
+    },
+    "health_status_label": {
+      "sick": "مريض",
+      "critical": "حرج",
+      "recovering": "في طور التعافي",
+      "healthy": "سليم"
+    },
+    "bulk_selected_count": "المحدد: {{count}}",
+    "bulk_total_fee_display": "الإجمالي: ৳{{total}} (عدد الرؤوس: {{count}})"
+  }
+}

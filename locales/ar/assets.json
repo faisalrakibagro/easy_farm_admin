@@ -1,0 +1,109 @@
+{
+  "title": "الأصول الثابتة",
+  "subtitle": "المعدات والأثاث والأجهزة الإلكترونية",
+  "add_btn": "إضافة أصل",
+  "trash_link": "سلة المحذوفات",
+  "search_placeholder": "ابحث في الأصول...",
+  "empty": "لم يتم العثور على أصول ثابتة.",
+  "empty_trash": "سلة المحذوفات فارغة.",
+  "confirm": {
+    "delete_asset": "حذف «{{name}}»؟"
+  },
+  "summary": {
+    "total_cost": "إجمالي التكلفة",
+    "book_value": "القيمة الحالية",
+    "count": "إجمالي الأصول"
+  },
+  "category": {
+    "label": "الفئة",
+    "equipment": "معدات",
+    "furniture": "أثاث",
+    "electronics": "أجهزة إلكترونية",
+    "vehicle": "مركبة",
+    "other": "أخرى",
+    "select_suffix": "اختر",
+    "select_placeholder": "اختر الفئة"
+  },
+  "status": {
+    "label": "الحالة",
+    "active": "نشط",
+    "disposed": "مُستبعَد"
+  },
+  "field": {
+    "name": "اسم الأصل",
+    "category": "الفئة",
+    "purchase_date": "تاريخ الشراء",
+    "purchase_price": "سعر الشراء",
+    "current_value": "القيمة الحالية (اختياري)",
+    "payment_account": "الدفع من حساب",
+    "vendor": "البائع / المورد",
+    "invoice_no": "رقم الفاتورة",
+    "description": "الوصف",
+    "status": "الحالة",
+    "disposed_date": "تاريخ الاستبعاد",
+    "disposal_amount": "مبلغ الاستبعاد"
+  },
+  "placeholder": {
+    "name": "مثل: كاميرا مراقبة، كرسي مكتب",
+    "vendor": "اسم البائع (اختياري)",
+    "invoice_no": "رقم الفاتورة (اختياري)",
+    "description": "ملاحظات (اختياري)",
+    "current_value": "مثل: 5000",
+    "current_value_hint": "اتركه فارغًا لاستخدام سعر الشراء كقيمة حالية.",
+    "zero": "0",
+    "select_account": "اختر حسابًا"
+  },
+  "error": {
+    "name_required": "اسم الأصل مطلوب.",
+    "category_required": "يرجى اختيار فئة.",
+    "purchase_date_required": "تاريخ الشراء مطلوب.",
+    "purchase_price_required": "سعر الشراء مطلوب.",
+    "purchase_price_min": "يجب أن يكون سعر الشراء أكبر من 0.",
+    "current_value_min": "لا يمكن أن تكون القيمة الحالية سالبة.",
+    "payment_account_required": "يرجى اختيار حساب الدفع."
+  },
+  "modal": {
+    "add_title": "إضافة أصل ثابت",
+    "edit_title": "تعديل أصل ثابت",
+    "dispose_title": "بيع / استبعاد أصل"
+  },
+  "dispose": {
+    "btn": "بيع",
+    "date": "تاريخ البيع",
+    "amount": "سعر البيع",
+    "account": "حساب الإيداع",
+    "note": "ملاحظة (اختياري)",
+    "note_placeholder": "مثل: بيع إلى تاجر ABC",
+    "gain_label": "ربح البيع",
+    "loss_label": "خسارة البيع",
+    "book_at_disposal": "القيمة الدفترية عند البيع",
+    "confirm": "تأكيد البيع",
+    "sold_badge": "مُباع",
+    "no_gain_loss": "لا ربح ولا خسارة",
+    "error": {
+      "date_required": "التاريخ مطلوب.",
+      "amount_required": "سعر البيع مطلوب.",
+      "account_required": "يرجى اختيار حساب."
+    }
+  },
+  "table": {
+    "name": "اسم الأصل",
+    "category": "الفئة",
+    "purchase_date": "تاريخ الشراء",
+    "purchase_price": "التكلفة",
+    "book_value": "القيمة الحالية",
+    "payment_account": "مدفوع من",
+    "status": "الحالة",
+    "actions": "الإجراءات",
+    "custom_value_badge": "مخصّصة",
+    "profit_word": "ربح",
+    "loss_word": "خسارة"
+  },
+  "trash": {
+    "title": "سلة محذوفات الأصول الثابتة",
+    "restore": "استعادة",
+    "force_delete": "حذف نهائي",
+    "restore_confirm": "استعادة هذا الأصل؟",
+    "force_delete_confirm": "حذف هذا الأصل نهائيًا؟ لا يمكن التراجع عن ذلك."
+  }
+}

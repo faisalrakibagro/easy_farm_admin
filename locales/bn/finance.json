@@ -1,0 +1,961 @@
+{
+  "summary": {
+    "title": "হিসাব সারসংক্ষেপ",
+    "error": "হিসাব সারসংক্ষেপ লোড করতে ব্যর্থ। পেজ রিফ্রেশ করুন বা আবার চেষ্টা করুন।",
+    "kpi": {
+      "total_income": "মোট আয়",
+      "total_expense": "মোট খরচ",
+      "net_profit_loss": "নিট লাভ/ক্ষতি",
+      "net_profit": "নিট লাভ",
+      "net_loss": "নিট ক্ষতি",
+      "livestock_value": "গবাদি পশুর মূল্য",
+      "livestock_note": "সক্রিয় পশু (খরচ মূল্যে)"
+    },
+    "cash_bank": {
+      "title": "নগদ ও ব্যাংক ব্যালেন্স",
+      "all_time": "(শুরু থেকে)",
+      "period_in": "এই সময়ে এসেছে",
+      "period_out": "এই সময়ে গেছে",
+      "transfer_in": "স্থানান্তরে এসেছে",
+      "transfer_out": "স্থানান্তরে গেছে"
+    },
+    "income_breakdown": "আয়ের বিবরণ",
+    "expense_breakdown": "খরচের বিবরণ",
+    "no_income": "এই সময়কালে কোনো আয় রেকর্ড নেই",
+    "no_expenses": "এই সময়কালে কোনো খরচ রেকর্ড নেই",
+    "journal_accounts": "জার্নাল এন্ট্রি হিসাব",
+    "income_accounts": "আয়ের হিসাব",
+    "expense_accounts": "খরচের হিসাব",
+    "deleted_account": "মুছে ফেলা হিসাব",
+    "no_entries": "কোনো এন্ট্রি নেই",
+    "total_cash_title": "মোট নগদ (সব অ্যাকাউন্ট)",
+    "total_cash_note": "সব পেমেন্ট অ্যাকাউন্টের বর্তমান ব্যালেন্স",
+    "ar_title": "ক্রেতার কাছে পাওনা (AR)",
+    "ar_details": "বিস্তারিত →",
+    "ar_description": "ক্রেতাদের কাছে এই টাকা পাওনা আছে",
+    "ap_title": "সরবরাহকারীর দেনা (AP)",
+    "ap_details": "বিস্তারিত →",
+    "ap_description": "সরবরাহকারীদের এই টাকা দেওয়া বাকি",
+    "partner_equity_title": "অংশীদারের মূলধন (মূলধনের লেনদেন)",
+    "partner_equity": {
+      "investments": "বিনিয়োগ",
+      "withdrawals": "উত্তোলন",
+      "net": "নিট"
+    },
+    "profit_vs_cash": {
+      "profit": "এই সময়ের লাভ / ক্ষতি",
+      "profit_note": "যা আয় হয়েছে তা থেকে যা খরচ হয়ে গেছে বাদে — লাভ-ক্ষতি রিপোর্টের সাথে হুবহু মেলে।",
+      "cash": "নগদ ঢুকেছে − বেরিয়েছে",
+      "cash_note": "অ্যাকাউন্টগুলোতে আসলে যত টাকা ঢুকেছে আর বেরিয়েছে (নিজের এক অ্যাকাউন্ট থেকে আরেকটায় সরানো বাদ যায়)।",
+      "cash_split": "ঢুকেছে {{in}} · বেরিয়েছে {{out}}"
+    }
+  },
+  "accounts": {
+    "title": "হিসাবের তালিকা",
+    "add": "হিসাব যোগ করুন",
+    "edit_title": "হিসাব সম্পাদনা",
+    "new_title": "নতুন হিসাব",
+    "income_accounts": "আয়ের হিসাব",
+    "expense_accounts": "খরচের হিসাব",
+    "empty": "কোনো হিসাব নেই",
+    "col": {
+      "code": "কোড",
+      "name": "হিসাবের নাম",
+      "type": "ধরন",
+      "balance": "ব্যালেন্স"
+    },
+    "types": {
+      "asset": "সম্পদ",
+      "liability": "দায়",
+      "equity": "মূলধন",
+      "income": "আয়",
+      "expense": "খরচ"
+    },
+    "field": {
+      "code": "হিসাব কোড",
+      "name": "হিসাবের নাম",
+      "type": "হিসাবের ধরন",
+      "parent": "মূল হিসাব",
+      "notes": "নোট"
+    },
+    "confirm_trash": "এই অ্যাকাউন্টটি ট্র্যাশে সরাবেন? পরে পুনরুদ্ধার করা যাবে।"
+  },
+  "entries": {
+    "title": "লেজার",
+    "add": "এন্ট্রি যোগ করুন",
+    "ledger_tab": "সাধারণ লেজার",
+    "manual_tab": "ম্যানুয়াল জার্নাল",
+    "new_entry_btn": "নতুন জার্নাল এন্ট্রি",
+    "modal_title": "নতুন ম্যানুয়াল জার্নাল এন্ট্রি",
+    "no_manual": "এখনও কোনো ম্যানুয়াল জার্নাল এন্ট্রি নেই।",
+    "hint": "সংশোধন, অবচয়, রাইট-অফ বা স্বয়ংক্রিয়ভাবে রেকর্ড না হওয়া লেনদেনের জন্য ব্যবহার করুন।",
+    "source_label": "উৎসের ধরন (ঐচ্ছিক)",
+    "source_revenue": "আয়",
+    "source_investment": "বিনিয়োগ",
+    "source_none": "— নির্দিষ্ট নয় —",
+    "account_label": "হিসাব",
+    "manual_col": {
+      "account": "হিসাব",
+      "source": "উৎস",
+      "amount": "পরিমাণ"
+    },
+    "total_debit": "মোট ডেবিট (Dr.)",
+    "total_credit": "মোট ক্রেডিট (Cr.)",
+    "net_balance": "নিট ব্যালেন্স",
+    "search_placeholder": "বিবরণ অনুসন্ধান করুন…",
+    "transactions_count": "{{count}}টি লেনদেন",
+    "entries_count": "এন্ট্রি",
+    "filter": {
+      "all_payment_accounts": "সব পেমেন্ট অ্যাকাউন্ট",
+      "all_types": "সব ধরন"
+    },
+    "btn": {
+      "clear_filters": "ফিল্টার পরিষ্কার করুন"
+    },
+    "legend": {
+      "title": "চিহ্নের বিবরণ:",
+      "debit": "ডেবিট (Dr.) — বাইরে যাওয়া অর্থ/খরচ",
+      "credit": "ক্রেডিট (Cr.) — ভেতরে আসা অর্থ/আয়",
+      "balance": "ব্যালেন্স — চলমান নিট অবস্থান"
+    },
+    "no_transactions": "কোনো লেনদেন পাওয়া যায়নি",
+    "voucher_types": {
+      "receipt": "রসিদ",
+      "payment": "পেমেন্ট",
+      "contra": "স্থানান্তর",
+      "supplier_payment": "সরবরাহকারী পেমেন্ট",
+      "adjustment": "সমন্বয়",
+      "investment": "বিনিয়োগ",
+      "withdrawal": "উত্তোলন",
+      "profit_share": "লাভের ভাগ",
+      "cattle_sale": "পশু বিক্রয়",
+      "expense": "খরচ",
+      "feed_purchase": "খাদ্য ক্রয়",
+      "medicine_purchase": "ওষুধ ক্রয়",
+      "daily_labour": "দৈনিক শ্রমিক",
+      "treatment": "ডাক্তারের ফি",
+      "asset_disposal": "সম্পদ বিক্রি/বাতিল",
+      "asset_purchase": "সম্পদ ক্রয়",
+      "cattle_purchase": "পশু ক্রয়",
+      "customer_payment": "ক্রেতার পরিশোধ",
+      "feed_adjustment": "খাদ্যের সমন্বয়",
+      "medicine_adjustment": "ওষুধের সমন্বয়",
+      "salary_advance": "বেতন অগ্রিম",
+      "salary_payment": "বেতন পরিশোধ"
+    },
+    "voucher_filter": {
+      "receipt": "রসিদ (আয়)",
+      "payment": "পেমেন্ট (খরচ)",
+      "contra": "অ্যাকাউন্ট স্থানান্তর",
+      "supplier_payment": "সরবরাহকারী পেমেন্ট",
+      "adjustment": "সমন্বয়",
+      "investment": "অংশীদার বিনিয়োগ",
+      "withdrawal": "অংশীদার উত্তোলন",
+      "profit_share": "লাভ বণ্টন",
+      "cattle_sale": "পশু বিক্রয়",
+      "expense": "খরচ",
+      "feed_purchase": "খাদ্য ক্রয়",
+      "medicine_purchase": "ওষুধ ক্রয়",
+      "daily_labour": "দৈনিক শ্রমিক",
+      "treatment": "ডাক্তারের ফি"
+    },
+    "col": {
+      "date": "তারিখ",
+      "description": "বিবরণ",
+      "debit": "ডেবিট",
+      "credit": "ক্রেডিট",
+      "account": "হিসাব",
+      "reference": "রেফারেন্স",
+      "type": "ধরন",
+      "description_via": "বিবরণ / মাধ্যমে",
+      "account_party": "হিসাব / পক্ষ",
+      "balance": "ব্যালেন্স",
+      "debit_dr": "ডেবিট (Dr.)",
+      "credit_cr": "ক্রেডিট (Cr.)"
+    },
+    "field": {
+      "date": "তারিখ",
+      "description": "বিবরণ",
+      "debit_account": "ডেবিট হিসাব",
+      "credit_account": "ক্রেডিট হিসাব",
+      "amount": "পরিমাণ (৳)",
+      "reference": "রেফারেন্স",
+      "notes": "নোট"
+    },
+    "search_placeholder_enter": "বিবরণ অনুসন্ধান করুন… (Enter চাপুন)"
+  },
+  "trial_balance": {
+    "title": "ট্রায়াল ব্যালেন্স",
+    "total_income": "মোট আয়",
+    "total_expense": "মোট খরচ",
+    "net_profit": "নিট লাভ",
+    "net_loss": "নিট ক্ষতি",
+    "livestock_value": "পশুসম্পদের মূল্য",
+    "livestock_note": "সক্রিয় পশু (খরচ মূল্যে)",
+    "no_transactions": "এই সময়কালে কোনো লেনদেন নেই।",
+    "livestock_stock_value": "পশুসম্পদ স্টক মূল্য",
+    "livestock_note_detail": "(সক্রিয় পশু খরচ মূল্যে, মোটে ধরা হয়নি)",
+    "col": {
+      "code": "কোড",
+      "account": "হিসাব",
+      "type": "ধরন",
+      "debit": "ডেবিট",
+      "credit": "ক্রেডিট",
+      "income": "আয়",
+      "expenses": "খরচ",
+      "category": "বিভাগ",
+      "amount": "পরিমাণ"
+    },
+    "total_debit": "মোট ডেবিট",
+    "total_credit": "মোট ক্রেডিট"
+  },
+  "payment_accounts": {
+    "title": "নগদ ও ব্যাংক অ্যাকাউন্ট",
+    "add": "অ্যাকাউন্ট যোগ করুন",
+    "edit_title": "অ্যাকাউন্ট সম্পাদনা",
+    "create_title": "পেমেন্ট অ্যাকাউন্ট যোগ করুন",
+    "empty": "এখনো কোনো পেমেন্ট অ্যাকাউন্ট নেই। নগদ, ব্যাংক বা মোবাইল ব্যাংকিং অ্যাকাউন্ট যোগ করুন।",
+    "default": "ডিফল্ট",
+    "current_balance": "বর্তমান ব্যালেন্স",
+    "deficit": "(ঘাটতি)",
+    "opening": "প্রারম্ভিক:",
+    "view_ledger": "লেজার দেখুন",
+    "ledger_title": "অ্যাকাউন্টের লেজার",
+    "ledger_subtitle": "এই অ্যাকাউন্টের সব লেনদেন",
+    "ledger_empty": "এই অ্যাকাউন্টে কোনো লেনদেন নেই",
+    "ledger_total_in": "মোট এসেছে (ক্রেডিট)",
+    "ledger_total_out": "মোট গেছে (ডেবিট)",
+    "ledger_net": "নিট ব্যালেন্স",
+    "col": {
+      "name": "অ্যাকাউন্টের নাম",
+      "type": "ধরন",
+      "balance": "ব্যালেন্স"
+    },
+    "types": {
+      "cash": "নগদ",
+      "bank": "ব্যাংক",
+      "mfs": "মোবাইল ব্যাংকিং"
+    },
+    "field": {
+      "name": "অ্যাকাউন্টের নাম",
+      "type": "অ্যাকাউন্টের ধরন",
+      "opening_balance": "প্রারম্ভিক ব্যালেন্স (৳)",
+      "notes": "নোট",
+      "bank_name": "ব্যাংকের নাম",
+      "account_number": "অ্যাকাউন্ট নম্বর",
+      "mfs_provider": "মোবাইল ব্যাংকিং প্রদানকারী",
+      "phone_account": "ফোন/অ্যাকাউন্ট নং",
+      "set_default": "ডিফল্ট হিসেবে সেট করুন"
+    },
+    "mfs_other": "অন্যান্য"
+  },
+  "transfers": {
+    "title": "অ্যাকাউন্ট স্থানান্তর",
+    "add": "নতুন স্থানান্তর",
+    "subtitle": "নগদ, ব্যাংক, bKash ও অন্যান্য অ্যাকাউন্টের মধ্যে টাকা স্থানান্তর করুন",
+    "empty": "কোনো স্থানান্তর রেকর্ড নেই",
+    "modal_title": "নতুন অ্যাকাউন্ট স্থানান্তর",
+    "btn": {
+      "record": "স্থানান্তর রেকর্ড করুন"
+    },
+    "col": {
+      "date": "তারিখ",
+      "from": "যে অ্যাকাউন্ট থেকে",
+      "to": "যে অ্যাকাউন্টে",
+      "amount": "পরিমাণ",
+      "notes": "নোট",
+      "reference": "রেফারেন্স"
+    },
+    "field": {
+      "date": "স্থানান্তরের তারিখ",
+      "from_account": "যে অ্যাকাউন্ট থেকে",
+      "to_account": "যে অ্যাকাউন্টে",
+      "amount": "পরিমাণ (৳)",
+      "notes": "নোট",
+      "select_from": "যে অ্যাকাউন্ট থেকে যাবে তা বাছাই করুন",
+      "select_to": "যে অ্যাকাউন্টে যাবে তা বাছাই করুন",
+      "reference": "রেফারেন্স নং"
+    },
+    "account_number": "অ্যাকাউন্ট #{{id}}",
+    "v_same_account": "অন্য একটি অ্যাকাউন্ট বাছাই করুন — যে অ্যাকাউন্ট থেকে টাকা যাচ্ছে, সেখানেই পাঠানো যায় না।"
+  },
+  "expenses": {
+    "title": "খরচ",
+    "add": "খরচ যোগ করুন",
+    "modal_title": "খরচ যোগ করুন",
+    "allocation_hint": "খরচটি সব সক্রিয় পশুর মধ্যে স্বয়ংক্রিয়ভাবে বণ্টন হবে।",
+    "btn": {
+      "record_allocate": "রেকর্ড ও বরাদ্দ"
+    },
+    "col": {
+      "date": "তারিখ",
+      "title": "শিরোনাম",
+      "category": "বিভাগ",
+      "amount": "পরিমাণ",
+      "account": "অ্যাকাউন্ট",
+      "notes": "নোট",
+      "allocated": "বরাদ্দ",
+      "paid_from": "পরিশোধের অ্যাকাউন্ট"
+    },
+    "field": {
+      "date": "তারিখ",
+      "category": "বিভাগ",
+      "amount": "পরিমাণ (৳)",
+      "account": "পেমেন্ট অ্যাকাউন্ট",
+      "notes": "নোট",
+      "title": "শিরোনাম",
+      "allocation_method": "বরাদ্দ পদ্ধতি",
+      "allocation_equal": "সমান ভাগ",
+      "allocation_weight": "ওজন ভিত্তিক",
+      "allocation_hold": "আটকে রাখুন — পরে বণ্টন করব",
+      "hold_badge": "আটকে রাখা",
+      "hold_allocate_btn": "বণ্টন করুন",
+      "allocation_hint_hold": "আটকে রাখলে টাকা অ্যাকাউন্ট থেকে কমবে, কিন্তু কোনো পশুর খরচে যাবে না — পরে আপনি নির্দিষ্ট পশু বেছে বণ্টন করবেন।",
+      "not_specified": "নির্দিষ্ট নয়",
+      "filter_cattle": "ট্যাগ বা নাম দিয়ে খুঁজুন…"
+    },
+    "placeholder": {
+      "amount_now": "এখন কত দেওয়া হয়েছে",
+      "salary_example": "যেমন: জুন মাসের বেতন — রহিম",
+      "select_account": "— অ্যাকাউন্ট নির্বাচন করুন —"
+    },
+    "label": {
+      "payment_status": "পরিশোধের অবস্থা",
+      "paid_amount": "পরিশোধিত টাকা (৳)",
+      "payment_status_paid": "সম্পূর্ণ পরিশোধিত",
+      "payment_status_partial": "আংশিক পরিশোধ",
+      "payment_status_unpaid": "অপরিশোধিত",
+      "remaining": "বাকি",
+      "no_active_employees": "কোনো সক্রিয় কর্মচারী নেই"
+    },
+    "modal": {
+      "edit_title": "খরচ সম্পাদনা",
+      "save": "সংরক্ষণ করুন",
+      "title_salary": "বেতন: {{name}}",
+      "title_daily_labour": "দৈনিক মজুরি: {{name}} ({{date}})"
+    },
+    "error": {
+      "add_employee_first": "বেতনের খরচ যোগ করতে আগে কর্মচারী যোগ করুন।",
+      "no_unpaid_labour": "দৈনিক শ্রমিকের কোনো বাকি মজুরি নেই",
+      "add_unpaid_labour_first": "শ্রমিকের খরচ যোগ করতে আগে মজুরি বাকি থাকা দৈনিক শ্রমিকের রেকর্ড থাকতে হবে।"
+    },
+    "salary_picker": {
+      "label": "কর্মচারী বাছাই করুন",
+      "placeholder": "— কর্মচারী বাছাই করুন —",
+      "hint": "বাছাই করলে টাকার পরিমাণ ও শিরোনাম নিজে থেকে বসে যাবে।",
+      "per_month": "/মাস"
+    },
+    "labour_picker": {
+      "label": "মজুরি বাকি থাকা দৈনিক শ্রমিক",
+      "placeholder": "— বাছাই করুন —",
+      "auto_paid_hint": "সেভ করলে এই রেকর্ডটি স্বয়ংক্রিয়ভাবে পরিশোধিত হয়ে যাবে।",
+      "go_to_employees": "কর্মচারী পেজে যান →",
+      "go_to_daily": "দৈনিক শ্রমিক পেজে যান →"
+    },
+    "validation": {
+      "title_required": "শিরোনাম আবশ্যক",
+      "amount_required": "পরিমাণ ০ এর বেশি হতে হবে",
+      "date_required": "তারিখ আবশ্যক",
+      "account_required": "পেমেন্ট অ্যাকাউন্ট আবশ্যক"
+    },
+    "msg": {
+      "updated": "খরচ আপডেট হয়েছে।",
+      "update_failed": "আপডেট ব্যর্থ হয়েছে।"
+    },
+    "recurring": {
+      "label": "মাসিক খরচ",
+      "monthly_hint": "{{month}} মাসে প্রতিটি পশু যতদিন খামারে ছিল, সেই অনুপাতে বণ্টিত হবে।",
+      "one_day_hint": "শুধু {{date}} তারিখে খামারে থাকা পশুদের মধ্যে ভাগ হবে।",
+      "badge": "মাসিক"
+    }
+  },
+  "sales": {
+    "title": "বিক্রয়",
+    "add": "বিক্রয় রেকর্ড করুন",
+    "modal_title": "বিক্রয় রেকর্ড করুন",
+    "lock_warning": "বিক্রয় রেকর্ড করলে এই পশুর রেকর্ড লক হয়ে যাবে।",
+    "tooltip": {
+      "print_invoice": "ইনভয়েস প্রিন্ট"
+    },
+    "edit": {
+      "modal_title": "বিক্রয় তথ্য সম্পাদনা",
+      "error": {
+        "date_required": "বিক্রয়ের তারিখ আবশ্যক",
+        "buyer_required": "ক্রেতার নাম আবশ্যক",
+        "price_positive": "বিক্রয় মূল্য ০ এর বেশি হতে হবে",
+        "account_required": "পেমেন্ট অ্যাকাউন্ট আবশ্যক"
+      },
+      "msg": {
+        "updated": "বিক্রয় তথ্য আপডেট হয়েছে।",
+        "update_failed": "আপডেট ব্যর্থ হয়েছে।"
+      }
+    },
+    "summary": {
+      "total_sold": "মোট বিক্রিত",
+      "revenue": "বিক্রির আয়",
+      "total_cost": "মোট খরচ",
+      "profit_loss": "লাভ/ক্ষতি",
+      "profitable": "লাভজনক",
+      "loss": "ক্ষতি"
+    },
+    "btn": {
+      "confirm": "বিক্রয় নিশ্চিত করুন",
+      "new": "পশু বিক্রি করুন"
+    },
+    "col": {
+      "date": "তারিখ",
+      "cattle": "গবাদি পশু",
+      "sale_price": "বিক্রয় মূল্য",
+      "buyer": "ক্রেতা",
+      "account": "অ্যাকাউন্ট",
+      "profit_loss": "লাভ/ক্ষতি",
+      "received_in": "যে অ্যাকাউন্টে জমা"
+    },
+    "field": {
+      "cattle": "গবাদি পশু",
+      "select_cattle": "সক্রিয় পশু নির্বাচন করুন…",
+      "date": "বিক্রয়ের তারিখ",
+      "sale_price": "বিক্রয় মূল্য (৳)",
+      "buyer_name": "ক্রেতার নাম",
+      "buyer_phone": "ক্রেতার ফোন",
+      "account": "পেমেন্ট অ্যাকাউন্ট",
+      "notes": "নোট",
+      "sale_weight": "বিক্রির সময় ওজন (কেজি)",
+      "payment_received_into": "যে অ্যাকাউন্টে টাকা জমা হবে",
+      "not_specified": "নির্দিষ্ট নয়",
+      "select_account": "— অ্যাকাউন্ট নির্বাচন করুন —"
+    }
+  },
+  "receipt": {
+    "title": "বিক্রয় রশিদ",
+    "date_label": "তারিখ",
+    "section_animal_info": "পশু তথ্য",
+    "col_cattle": "পশু (ট্যাগ)",
+    "col_sale_weight": "বিক্রির সময় ওজন",
+    "section_buyer_info": "ক্রেতার তথ্য",
+    "col_buyer_name": "ক্রেতার নাম",
+    "col_phone": "ফোন",
+    "section_financial_info": "আর্থিক বিবরণ",
+    "col_sale_price": "বিক্রয় মূল্য",
+    "col_total_cost": "মোট খরচ",
+    "profit_label": "লাভ",
+    "loss_label": "ক্ষতি",
+    "col_payment_account": "পেমেন্ট অ্যাকাউন্ট",
+    "footer": "এই রশিদটি সফটওয়্যার দ্বারা তৈরি",
+    "print_button": "প্রিন্ট করুন",
+    "popup_blocked": "পপ-আপ ব্লক করা হয়েছে — ব্রাউজারে পপ-আপ অনুমতি দিন।"
+  },
+  "suppliers": {
+    "title": "সরবরাহকারী",
+    "add": "সরবরাহকারী যোগ করুন",
+    "confirm_delete": "\"{{name}}\" মুছবেন?",
+    "search_placeholder": "সরবরাহকারী অনুসন্ধান করুন…",
+    "total_due": "মোট বাকি",
+    "total_paid": "মোট পরিশোধিত",
+    "types": {
+      "feed": "খাদ্য",
+      "medicine": "ওষুধ",
+      "general": "সাধারণ"
+    },
+    "col": {
+      "name": "নাম",
+      "phone": "ফোন",
+      "address": "ঠিকানা",
+      "balance": "ব্যালেন্স"
+    },
+    "field": {
+      "name": "সরবরাহকারীর নাম",
+      "phone": "ফোন",
+      "email": "ইমেইল",
+      "address": "ঠিকানা",
+      "notes": "নোট",
+      "opening_balance": "প্রারম্ভিক ব্যালেন্স (৳)",
+      "select_type_placeholder": "-- ধরন বেছে নিন --"
+    },
+    "btn": {
+      "save": "সরবরাহকারী সংরক্ষণ করুন"
+    },
+    "detail": {
+      "title": "সরবরাহকারীর বিবরণ",
+      "purchases": "ক্রয়",
+      "payments": "পেমেন্ট",
+      "ledger": "লেজার",
+      "no_transactions": "কোনো লেনদেন নেই",
+      "modal_title": "পেমেন্ট/সমন্বয় রেকর্ড করুন",
+      "type_payment": "পেমেন্ট",
+      "type_adjustment": "সমন্বয় (রাইট-অফ)",
+      "summary": {
+        "opening_balance": "প্রারম্ভিক ব্যালেন্স",
+        "total_purchases": "মোট ক্রয়",
+        "total_paid": "মোট পরিশোধিত",
+        "current_balance": "বর্তমান বাকি"
+      },
+      "btn": {
+        "record_payment": "পেমেন্ট/সমন্বয় রেকর্ড করুন"
+      },
+      "field": {
+        "payment_method": "পেমেন্ট পদ্ধতি",
+        "select_method": "পদ্ধতি নির্বাচন করুন",
+        "payment_account": "পেমেন্ট অ্যাকাউন্ট",
+        "select_account": "অ্যাকাউন্ট নির্বাচন করুন"
+      },
+      "col": {
+        "date": "তারিখ",
+        "description": "বিবরণ",
+        "debit": "ডেবিট (বাকি)",
+        "credit": "ক্রেডিট (পরিশোধ)",
+        "balance": "ব্যালেন্স"
+      }
+    },
+    "msg": {
+      "moved_to_trash": "সরবরাহকারী ট্র্যাশে সরানো হয়েছে।",
+      "created": "সরবরাহকারী সফলভাবে তৈরি হয়েছে।",
+      "failed_delete": "সরবরাহকারী মুছতে ব্যর্থ।",
+      "failed_create": "সরবরাহকারী তৈরি করতে ব্যর্থ।"
+    },
+    "error": {
+      "name_required": "সরবরাহকারীর নাম আবশ্যক",
+      "type_required": "সরবরাহকারীর ধরন বাছাই করুন"
+    },
+    "empty": "এখনো কোনো সরবরাহকারী নেই। প্রথম সরবরাহকারী যোগ করুন।"
+  },
+  "customers": {
+    "title": "ক্রেতা",
+    "add": "ক্রেতা যোগ করুন",
+    "search_placeholder": "ক্রেতা খুঁজুন…",
+    "balance_due_label": "বাকি ৳",
+    "settled": "পরিশোধিত",
+    "outstanding_label": "বাকি",
+    "trash_link": "ট্র্যাশ",
+    "modal_title": "ক্রেতা যোগ করুন",
+    "field": {
+      "name": "নাম",
+      "phone": "ফোন",
+      "email": "ইমেইল",
+      "photo": "ছবি",
+      "address": "ঠিকানা",
+      "notes": "নোট",
+      "opening_balance": "প্রারম্ভিক ব্যালেন্স (৳)"
+    },
+    "error": {
+      "name_required": "ক্রেতার নাম আবশ্যক"
+    },
+    "confirm_delete_title": "ট্র্যাশে সরান",
+    "confirm_delete_message": "\"{{name}}\" ট্র্যাশে সরাবেন? পরে পুনরুদ্ধার করা যাবে।",
+    "confirm_delete_label": "ট্র্যাশে সরান",
+    "msg": {
+      "moved_to_trash": "ক্রেতা ট্র্যাশে সরানো হয়েছে।",
+      "created": "ক্রেতা তৈরি হয়েছে।",
+      "failed_delete": "মুছতে ব্যর্থ।"
+    },
+    "empty": "এখনো কোনো ক্রেতা নেই। প্রথম ক্রেতা যোগ করুন।"
+  },
+  "partners": {
+    "title": "অংশীদার ও বিনিয়োগ",
+    "add": "অংশীদার যোগ করুন",
+    "confirm_delete": "\"{{name}}\" মুছবেন?",
+    "subtitle": "অংশীদারদের বিনিয়োগ, লাভ ভাগ এবং উত্তোলন ট্র্যাক করুন",
+    "share_label": "% অংশ",
+    "total_invested": "মোট বিনিয়োগ",
+    "net_investment": "নিট বিনিয়োগ",
+    "empty": "কোনো অংশীদার নেই। প্রথম অংশীদার যোগ করুন।",
+    "status": {
+      "active": "সক্রিয়",
+      "inactive": "নিষ্ক্রিয়"
+    },
+    "col": {
+      "name": "নাম",
+      "investment": "বিনিয়োগ",
+      "share": "অংশ %",
+      "balance": "ব্যালেন্স"
+    },
+    "field": {
+      "name": "অংশীদারের নাম",
+      "phone": "ফোন",
+      "address": "ঠিকানা",
+      "investment": "বিনিয়োগের পরিমাণ (৳)",
+      "share_percentage": "অংশীদারিত্বের শতকরা হার (%)",
+      "notes": "নোট",
+      "full_name": "পূর্ণ নাম",
+      "initial_investment": "প্রাথমিক বিনিয়োগ (৳)",
+      "received_into": "যে অ্যাকাউন্টে জমা",
+      "not_specified": "নির্দিষ্ট নয়",
+      "join_date": "যোগদানের তারিখ",
+      "select_account_placeholder": "অ্যাকাউন্ট নির্বাচন করুন...",
+      "current_balance_label": "বর্তমান ব্যালেন্স:"
+    },
+    "error": {
+      "investment_account_required": "বিনিয়োগের জন্য একটি অ্যাকাউন্ট নির্বাচন করুন।"
+    },
+    "btn": {
+      "give_advance": "অগ্রিম দিন",
+      "record_payment": "পেমেন্ট রেকর্ড করুন"
+    },
+    "detail": {
+      "title": "অংশীদারের বিবরণ",
+      "investments": "বিনিয়োগ",
+      "withdrawals": "উত্তোলন",
+      "profit_share_label": "% লাভের ভাগ",
+      "joined": "যোগদান:",
+      "total_invested": "মোট বিনিয়োগ",
+      "total_withdrawn": "মোট উত্তোলন/লাভ",
+      "adjustments": "সমন্বয়",
+      "net_investment": "নিট বিনিয়োগ (সক্রিয়)",
+      "transaction_history": "লেনদেনের ইতিহাস",
+      "no_transactions": "কোনো লেনদেন নেই",
+      "modal_add_title": "লেনদেন যোগ করুন",
+      "modal_edit_title": "লেনদেন সম্পাদনা",
+      "types": {
+        "investment": "বিনিয়োগ",
+        "withdrawal": "উত্তোলন",
+        "profit_share": "লাভের ভাগ",
+        "adjustment": "সমন্বয়"
+      },
+      "btn": {
+        "add_transaction": "লেনদেন যোগ করুন",
+        "save_changes": "পরিবর্তন সংরক্ষণ করুন"
+      },
+      "field": {
+        "payment_method": "পেমেন্ট পদ্ধতি",
+        "select_method": "পদ্ধতি নির্বাচন করুন",
+        "payment_account": "পেমেন্ট অ্যাকাউন্ট",
+        "select_account": "অ্যাকাউন্ট নির্বাচন করুন",
+        "photo": "প্রোফাইল ছবি",
+        "photo_hint": "ছবি বদলাতে ক্যামেরা আইকনে ক্লিক করুন"
+      },
+      "col": {
+        "date": "তারিখ",
+        "type": "ধরন",
+        "amount": "পরিমাণ",
+        "method": "পদ্ধতি",
+        "account": "অ্যাকাউন্ট",
+        "notes": "নোট"
+      },
+      "modal_edit_partner_title": "অংশীদার সম্পাদনা"
+    },
+    "form": {
+      "name": "নাম",
+      "phone": "ফোন",
+      "email": "ইমেইল",
+      "share_percentage": "অংশ %",
+      "status": "অবস্থা",
+      "notes": "নোট"
+    }
+  },
+  "pl": {
+    "title": "লাভ-ক্ষতি বিবরণী",
+    "subtitle": "আয় বিবরণী — ERP স্তরের রিপোর্ট",
+    "revenue": "আয়",
+    "cattle_sales": "গবাদি পশু বিক্রয়",
+    "other_income": "অন্যান্য আয় (জার্নাল)",
+    "total_revenue": "মোট আয়",
+    "cogs": "বিক্রিত পণ্যের খরচ (COGS)",
+    "cattle_purchases": "বিক্রি হওয়া পশুর কেনা দাম",
+    "feed_purchases": "ব্যবহৃত খাদ্য",
+    "medicine": "ব্যবহৃত ওষুধ",
+    "total_cogs": "মোট COGS",
+    "gross_profit": "মোট লাভ (গ্রস)",
+    "operating_expenses": "পরিচালন খরচ",
+    "labour": "দৈনিক শ্রমিক",
+    "general_expenses": "সাধারণ খরচ",
+    "supplier_payments": "সরবরাহকারী পেমেন্ট",
+    "journal_expenses": "জার্নাল খরচ",
+    "total_opex": "মোট পরিচালন খরচ",
+    "operating_profit": "পরিচালন লাভ",
+    "partner_movements": "অংশীদার লেনদেন",
+    "partner_investments": "অংশীদার বিনিয়োগ",
+    "partner_withdrawals": "অংশীদার উত্তোলন ও লাভ বণ্টন",
+    "net_profit": "নিট লাভ / ক্ষতি",
+    "expense_by_category": "বিভাগ অনুযায়ী খরচ",
+    "salary_payments": "বেতন পরিশোধ",
+    "treatment": "চিকিৎসা ও ডাক্তার",
+    "asset_disposal_loss": "সম্পদ বিক্রির ক্ষতি",
+    "cattle_losses": "মৃত বা স্থানান্তরিত পশু",
+    "feed_wastage": "খাদ্যের অপচয়",
+    "medicine_wastage": "ওষুধের অপচয়",
+    "asset_disposal_gain": "সম্পদ বিক্রির লাভ",
+    "loss_line_dead": "{{tag}} মারা গেছে {{date}} — মোট ক্ষতি {{full}} (দাম {{price}} + পালনের খরচ {{keeping}}; পালনের খরচ উপরের লাইনগুলোতে আগেই ধরা আছে, তাই এখানে শুধু দাম কাটা হলো)",
+    "loss_line_transferred": "{{tag}} স্থানান্তরিত হয়েছে {{date}} — মোট ক্ষতি {{full}} (দাম {{price}} + পালনের খরচ {{keeping}}; পালনের খরচ উপরের লাইনগুলোতে আগেই ধরা আছে, তাই এখানে শুধু দাম কাটা হলো)"
+  },
+  "bs": {
+    "title": "ব্যালেন্স শিট",
+    "subtitle": "সম্পদ = দায় + মূলধন",
+    "as_of": "তারিখ অনুযায়ী",
+    "assets": "সম্পদ",
+    "current_assets": "চলতি সম্পদ",
+    "medicine_inventory": "ওষুধের স্টক",
+    "total_current": "মোট চলতি সম্পদ",
+    "accounts_receivable": "ক্রেতার কাছে পাওনা",
+    "supplier_prepaid": "সরবরাহকারীকে অগ্রিম",
+    "fixed_assets": "স্থায়ী সম্পদ",
+    "livestock": "গবাদি পশু (ক্রয়মূল্যে)",
+    "equipment": "সরঞ্জাম ও আসবাবপত্র (বর্তমান মূল্যে)",
+    "total_fixed": "মোট স্থায়ী সম্পদ",
+    "total_assets": "মোট সম্পদ",
+    "liabilities": "দায়",
+    "accounts_payable": "দেনা (সরবরাহকারী)",
+    "no_payables": "কোনো দেনা নেই",
+    "total_payables": "মোট দেনা",
+    "equity": "মূলধন",
+    "partner_equity": "অংশীদারদের মূলধন",
+    "retained_earnings": "সঞ্চিত লাভ",
+    "total_equity": "মোট মূলধন",
+    "total_le": "মোট দায় + মূলধন",
+    "balanced": "ব্যালেন্স শিট মিলেছে ✓",
+    "unbalanced": "ব্যালেন্স শিটে পার্থক্য — ডেটা যাচাই করুন",
+    "feed_inventory": "খাদ্যের স্টক",
+    "unbalanced_by": "ব্যালেন্স শিটে পার্থক্য: {{amount}} — ডেটা যাচাই করুন"
+  },
+  "cf": {
+    "title": "নগদ প্রবাহ বিবরণী",
+    "subtitle": "পরিচালনা · বিনিয়োগ · অর্থায়ন",
+    "operating": "পরিচালনা কার্যক্রম থেকে নগদ",
+    "investing": "বিনিয়োগ কার্যক্রম থেকে নগদ",
+    "financing": "অর্থায়ন কার্যক্রম থেকে নগদ",
+    "operating_net": "পরিচালনা",
+    "investing_net": "বিনিয়োগ",
+    "financing_net": "অর্থায়ন",
+    "summary": "নগদ অবস্থানের সারসংক্ষেপ",
+    "opening_balance": "প্রারম্ভিক ব্যালেন্স (সব অ্যাকাউন্ট)",
+    "net_change": "নিট নগদ পরিবর্তন",
+    "inflows": "নগদ এসেছে",
+    "outflows": "নগদ গেছে",
+    "no_activity": "এই সময়কালে কোনো কার্যক্রম নেই",
+    "total_in": "মোট এসেছে",
+    "total_out": "মোট গেছে"
+  },
+  "trial_balance_ext": {
+    "load_error": "ট্রায়াল ব্যালেন্স লোড করতে ব্যর্থ। পেজ রিফ্রেশ করুন।",
+    "period_label": "সময়কাল:",
+    "partner_equity_title": "অংশীদারের মূলধন",
+    "partner_equity_subtitle": "অংশীদারের মূলধনের লেনদেন (বিনিয়োগ ও উত্তোলন)",
+    "col_description": "বিবরণ",
+    "col_amount": "পরিমাণ",
+    "col_type": "ধরন",
+    "equity_in": "মূলধন জমা",
+    "equity_out": "মূলধন উত্তোলন",
+    "fixed_assets_title": "স্থায়ী সম্পদ (অচলতি সম্পদ)",
+    "fixed_assets_subtitle": "সক্রিয় সম্পদের বর্তমান মূল্য",
+    "col_asset_name": "সম্পদের নাম",
+    "col_category": "বিভাগ",
+    "col_book_value": "বর্তমান মূল্য",
+    "total_fixed_assets": "মোট স্থায়ী সম্পদ"
+  },
+  "accounts_trash": {
+    "back_link": "হিসাবের তালিকায় ফিরুন",
+    "page_title": "হিসাব ট্র্যাশ",
+    "search_placeholder": "মুছে ফেলা হিসাব খুঁজুন…",
+    "col_type": "ধরন",
+    "col_code": "কোড",
+    "no_deleted": "কোনো মুছে ফেলা হিসাব পাওয়া যায়নি",
+    "warning": "মুছে ফেলা হিসাব ট্র্যাশে থাকে। আবার চালু করতে পুনরুদ্ধার করুন, বা সব ডেটা মুছতে স্থায়ীভাবে মুছুন।",
+    "warning_superadmin": "স্থায়ী মুছে ফেলা পূর্বাবস্থায় ফেরানো যাবে না।"
+  },
+  "payment_accounts_trash": {
+    "back_link": "পেমেন্ট অ্যাকাউন্টে ফিরুন",
+    "page_title": "পেমেন্ট অ্যাকাউন্ট ট্র্যাশ",
+    "search_placeholder": "মুছে ফেলা পেমেন্ট অ্যাকাউন্ট অনুসন্ধান করুন…",
+    "col_type": "ধরন",
+    "col_balance": "ব্যালেন্স",
+    "no_deleted": "কোনো মুছে ফেলা পেমেন্ট অ্যাকাউন্ট পাওয়া যায়নি",
+    "warning": "মুছে ফেলা পেমেন্ট অ্যাকাউন্ট এখানে সংরক্ষিত। পুনরায় সক্রিয় করতে পুনরুদ্ধার করুন, বা সব ডেটা মুছতে স্থায়ীভাবে মুছুন।",
+    "warning_manage": "স্থায়ী মুছে ফেলা পূর্বাবস্থায় ফেরানো যাবে না।"
+  },
+  "transfers_trash": {
+    "back_link": "স্থানান্তরে ফিরুন",
+    "page_title": "স্থানান্তর ট্র্যাশ",
+    "search_placeholder": "মুছে ফেলা স্থানান্তর খুঁজুন…",
+    "col_from_to": "থেকে → যেখানে",
+    "col_transfer_date": "স্থানান্তরের তারিখ",
+    "no_deleted": "কোনো মুছে ফেলা স্থানান্তর পাওয়া যায়নি",
+    "warning": "মুছে ফেলা স্থানান্তর এখানে থাকে। পুনরুদ্ধার করুন বা স্থায়ীভাবে মুছুন।",
+    "warning_superadmin": "স্থায়ী মুছে ফেলা পূর্বাবস্থায় ফেরানো যাবে না।"
+  },
+  "customers_trash": {
+    "page_title": "ক্রেতা — ট্র্যাশ",
+    "page_subtitle": "মুছে ফেলা ক্রেতাদের ৩০ দিনের মধ্যে পুনরুদ্ধার করা যাবে।",
+    "search_placeholder": "মুছে ফেলা ক্রেতা অনুসন্ধান করুন…",
+    "col_customer": "ক্রেতা",
+    "no_deleted": "কোনো মুছে ফেলা ক্রেতা নেই।"
+  },
+  "partners_trash": {
+    "back_link": "অংশীদারে ফিরুন",
+    "page_title": "অংশীদার ট্র্যাশ",
+    "search_placeholder": "মুছে ফেলা অংশীদার অনুসন্ধান করুন…",
+    "no_deleted": "কোনো মুছে ফেলা অংশীদার পাওয়া যায়নি",
+    "warning": "মুছে ফেলা অংশীদার ট্র্যাশে সংরক্ষিত। পুনরায় সক্রিয় করতে পুনরুদ্ধার করুন, বা স্থায়ীভাবে মুছুন।",
+    "warning_superadmin": "স্থায়ী মুছে ফেলা পূর্বাবস্থায় ফেরানো যাবে না।"
+  },
+  "suppliers_trash": {
+    "back_link": "সরবরাহকারীতে ফিরুন",
+    "page_title": "সরবরাহকারী ট্র্যাশ",
+    "search_placeholder": "মুছে ফেলা সরবরাহকারী অনুসন্ধান করুন…",
+    "col_email": "ইমেইল",
+    "no_deleted": "কোনো মুছে ফেলা সরবরাহকারী পাওয়া যায়নি",
+    "warning": "মুছে ফেলা সরবরাহকারী ট্র্যাশে সংরক্ষিত। পুনরায় সক্রিয় করতে পুনরুদ্ধার করুন, বা স্থায়ীভাবে মুছুন।",
+    "warning_superadmin": "স্থায়ী মুছে ফেলা পূর্বাবস্থায় ফেরানো যাবে না।"
+  },
+  "customer_detail": {
+    "status_due": "বাকি ৳{{amount}}",
+    "status_settled": "পরিশোধিত",
+    "summary": {
+      "opening_balance": "প্রারম্ভিক ব্যালেন্স",
+      "total_sales": "মোট বিক্রয়",
+      "total_received": "মোট আদায়",
+      "outstanding_balance": "বাকি ব্যালেন্স",
+      "hint_due": "ক্রেতার কাছে এই পরিমাণ বাকি আছে",
+      "hint_overpaid": "অতিরিক্ত পরিশোধ হয়েছে",
+      "hint_settled": "সম্পূর্ণ পরিশোধিত"
+    },
+    "btn_record_payment": "পেমেন্ট/সমন্বয় রেকর্ড করুন",
+    "ledger_title": "লেনদেনের ইতিহাস",
+    "col": {
+      "date": "তারিখ",
+      "description": "বিবরণ",
+      "debit": "ডেবিট",
+      "credit": "ক্রেডিট",
+      "balance": "ব্যালেন্স (বাকি)"
+    },
+    "opening_balance_row": "প্রারম্ভিক ব্যালেন্স",
+    "no_transactions": "কোনো লেনদেন নেই।",
+    "tx_type": {
+      "sale": "বিক্রয়",
+      "sale_payment": "আংশিক প্রাপ্ত"
+    },
+    "payment_modal": {
+      "title": "পেমেন্ট/সমন্বয় রেকর্ড করুন",
+      "field_type": "ধরন",
+      "type_payment": "টাকা আদায় (নগদ/ব্যাংক)",
+      "type_adjustment": "সমন্বয় (বাকি মওকুফ/সংশোধন)",
+      "field_amount": "পরিমাণ (৳)",
+      "field_date": "তারিখ",
+      "field_payment_account": "পেমেন্ট অ্যাকাউন্ট",
+      "select_account": "অ্যাকাউন্ট নির্বাচন করুন…",
+      "field_notes": "নোট",
+      "placeholder_adjustment_notes": "যেমন: ছাড় দেওয়া হয়েছে, বাকি মওকুফ করা হয়েছে…",
+      "btn_save": "সংরক্ষণ করুন",
+      "btn_cancel": "বাতিল",
+      "error_amount": "পরিমাণ আবশ্যক",
+      "error_account": "একটি পেমেন্ট অ্যাকাউন্ট নির্বাচন করুন"
+    },
+    "edit_modal": {
+      "title": "ক্রেতার তথ্য সম্পাদনা",
+      "profile_photo": "প্রোফাইল ছবি",
+      "photo_hint": "ছবি পরিবর্তন করতে ক্যামেরা আইকনে ক্লিক করুন",
+      "field_name": "নাম",
+      "field_phone": "ফোন",
+      "field_email": "ইমেইল",
+      "field_address": "ঠিকানা",
+      "field_notes": "নোট",
+      "btn_save": "পরিবর্তন সংরক্ষণ করুন",
+      "btn_cancel": "বাতিল"
+    }
+  },
+  "partner_detail_ext": {
+    "col_account": "অ্যাকাউন্ট",
+    "field_type": "ধরন",
+    "field_amount": "পরিমাণ (৳)",
+    "field_date": "তারিখ",
+    "field_notes": "নোট",
+    "modal_edit_partner_title": "অংশীদার সম্পাদনা",
+    "form": {
+      "name": "নাম",
+      "phone": "ফোন",
+      "email": "ইমেইল",
+      "share_percentage": "অংশ %",
+      "status": "অবস্থা",
+      "notes": "নোট"
+    },
+    "field_photo": "প্রোফাইল ছবি",
+    "field_photo_hint": "ছবি পরিবর্তন করতে ক্যামেরা আইকনে ক্লিক করুন"
+  },
+  "supplier_detail_ext": {
+    "outstanding_warning": "বাকি পেমেন্ট (ক্রয় থেকে)",
+    "outstanding_count": "{{count}}টি ক্রয় এখনো পুরো পরিশোধ হয়নি",
+    "outstanding_col": {
+      "date": "তারিখ",
+      "type": "ধরন",
+      "invoice": "ইনভয়েস",
+      "total": "মোট",
+      "paid": "দেওয়া হয়েছে",
+      "due": "বাকি",
+      "status": "অবস্থা"
+    },
+    "type_feed": "খাদ্য",
+    "type_medicine": "ওষুধ",
+    "type_semen": "সিমেন",
+    "status_unpaid": "অপরিশোধিত",
+    "status_partial": "আংশিক",
+    "total_outstanding": "মোট বাকি:",
+    "opening_balance_row": "প্রারম্ভিক ব্যালেন্স",
+    "due_label": "বাকি: ৳{{amount}}",
+    "unpaid_label": "পরিশোধিত নয়",
+    "edit_modal": {
+      "title": "সরবরাহকারীর তথ্য সম্পাদনা",
+      "profile_photo": "প্রোফাইল ছবি",
+      "photo_hint": "ছবি পরিবর্তন করতে ক্যামেরা আইকনে ক্লিক করুন",
+      "field_name": "নাম",
+      "field_phone": "ফোন",
+      "field_email": "ইমেইল",
+      "field_type": "ধরন",
+      "select_type": "ধরন নির্বাচন করুন...",
+      "field_address": "ঠিকানা",
+      "field_notes": "নোট",
+      "btn_save": "পরিবর্তন সংরক্ষণ করুন"
+    },
+    "payment_modal": {
+      "field_type": "ধরন",
+      "field_amount": "পরিমাণ (৳)",
+      "field_date": "তারিখ",
+      "field_notes": "নোট",
+      "btn_save": "সংরক্ষণ করুন",
+      "placeholder_adjustment_notes": "যেমন: ৭০২ টাকা কমিয়ে ৭০০ করা হয়েছে, ২ টাকা মওকুফ"
+    }
+  },
+  "expenses_trash": {
+    "back_link": "খরচে ফিরুন",
+    "page_title": "খরচ ট্র্যাশ",
+    "warning": "মুছে ফেলা খরচ ট্র্যাশে সংরক্ষিত। পুনরুদ্ধার করুন অথবা স্থায়ীভাবে মুছুন।",
+    "search_placeholder": "মুছে ফেলা খরচ অনুসন্ধান করুন…",
+    "col": {
+      "title": "শিরোনাম",
+      "category": "বিভাগ"
+    },
+    "empty_desc": "কোনো মুছে ফেলা খরচ পাওয়া যায়নি"
+  },
+  "entries_ext": {
+    "select_account_placeholder": "— হিসাব নির্বাচন করুন —",
+    "income_accounts_group": "আয়ের হিসাব",
+    "expense_accounts_group": "খরচের হিসাব",
+    "no_payment_account": "— নেই —",
+    "payment_account_label": "পেমেন্ট অ্যাকাউন্ট (ঐচ্ছিক)",
+    "description_placeholder": "যেমন: সরঞ্জামের অবচয় Q2 2026",
+    "confirm_delete_title": "জার্নাল এন্ট্রি মুছুন",
+    "confirm_delete_message": "আপনি কি নিশ্চিতভাবে এই জার্নাল এন্ট্রি মুছতে চান? এই পদক্ষেপ পূর্বাবস্থায় ফেরানো যাবে না।",
+    "confirm_delete_label": "মুছুন"
+  },
+  "system_accounts": {
+    "4001": "পশু বিক্রির আয়",
+    "4002": "দুধ বিক্রির আয়",
+    "4003": "উপজাত পণ্য বিক্রির আয়",
+    "5001": "খাদ্য ক্রয় খরচ",
+    "5002": "ওষুধ ক্রয়",
+    "5003": "দৈনিক শ্রমিক",
+    "5004": "বেতন খরচ",
+    "5005": "পশু ক্রয়",
+    "5006": "ভেটেরিনারি / চিকিৎসা",
+    "5007": "সাধারণ খরচ",
+    "5008": "সরবরাহকারীকে পরিশোধ",
+    "5009": "প্রজনন / কৃত্রিম প্রজনন খরচ"
+  },
+  "active_switch": {
+    "inactive": "নিষ্ক্রিয়",
+    "make_inactive": "নিষ্ক্রিয় করুন",
+    "make_active": "সক্রিয় করুন",
+    "show_inactive": "নিষ্ক্রিয়গুলো দেখান"
+  },
+  "ui": {
+    "back": "ফিরে যান",
+    "confirm_trash_named": "\"{{name}}\" ট্র্যাশে সরাবেন? পরে পুনরুদ্ধার করা যাবে।"
+  }
+}

@@ -1,0 +1,8 @@
+/* Apona Lohit — free Bangla font. */
+@font-face {
+  font-family: 'Apona Lohit';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('apona-lohit-v1.01.woff2') format('woff2');
+}

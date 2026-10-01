@@ -1,0 +1,980 @@
+{
+  "search_placeholder": "Search by tag, name, breed…",
+  "filter": {
+    "all_status": "All Statuses",
+    "active": "Active",
+    "sold": "Sold",
+    "dead": "Dead",
+    "transferred": "Transferred",
+    "all_ages": "All Ages",
+    "immature": "Immature",
+    "adult": "Adult",
+    "all_sheds": "All Sheds"
+  },
+  "btn": {
+    "add": "Add Cattle",
+    "register": "Register Cattle",
+    "trash": "Trash",
+    "view_invoice": "View Invoice",
+    "schedule_vaccine": "Schedule Vaccine",
+    "milk_entry": "Milk Entry",
+    "milk_entry_selected": "Milk entry for the {{count}} selected animals"
+  },
+  "tooltip": {
+    "sell_cattle": "Sell Cattle",
+    "select_all_active": "Select all active animals",
+    "view_invoice": "View Invoice",
+    "next_date": "Next Date",
+    "select_animal": "Select {{tag}}"
+  },
+  "placeholder": {
+    "select_medicine": "— Select Medicine —",
+    "select_vaccine": "— Select Vaccine —",
+    "doctor_name": "Doctor/Staff Name",
+    "diagnosis": "Disease name / symptoms",
+    "treatment_desc": "Treatment description...",
+    "prescription_text": "Doctor's advice and instructions...",
+    "buyer_name": "Buyer Name",
+    "buyer_phone": "Phone Number",
+    "buyer_address": "Address",
+    "amount_paid": "Amount paid so far",
+    "feed_ratio_hint": "Leave blank to keep feed ratio unchanged",
+    "medicines_used": "List of medicines used..."
+  },
+  "label": {
+    "address": "Address"
+  },
+  "trash": {
+    "title": "Cattle Trash",
+    "back": "Back to Cattle",
+    "count": "{{count}} deleted cattle",
+    "warning": "Entries moved here by mistake can be restored. Animals are never deleted permanently.",
+    "search_placeholder": "Search trashed cattle…",
+    "empty_title": "Trash Is Empty",
+    "empty_desc": "No deleted cattle found",
+    "force_delete_confirm": "Permanently delete \"{{tag}}\"? This cannot be undone.",
+    "col": {
+      "deleted_at": "Deleted At"
+    },
+    "btn": {
+      "restore": "Restore",
+      "force_delete": "Delete Forever"
+    }
+  },
+  "col": {
+    "photo": "Photo",
+    "tag_name": "Tag / Name",
+    "type": "Type",
+    "breed": "Breed",
+    "gender": "Gender",
+    "age_group": "Age Group",
+    "weight_kg": "Weight (kg)",
+    "feed_ratio": "Feed Ratio",
+    "purchase_price": "Purchase Price",
+    "status": "Status",
+    "health": "Health",
+    "shed": "Shed"
+  },
+  "status": {
+    "active": "Active",
+    "sold": "Sold",
+    "dead": "Dead",
+    "transferred": "Transferred"
+  },
+  "health_status": {
+    "healthy": "Healthy",
+    "sick": "Sick",
+    "critical": "Critical",
+    "recovering": "Recovering"
+  },
+  "age_category": {
+    "immature": "Immature",
+    "adult": "Adult (Mature)"
+  },
+  "gender": {
+    "male": "Male",
+    "female": "Female"
+  },
+  "modal": {
+    "edit_title": "Edit Cattle",
+    "create_title": "Register Cattle",
+    "delete_title": "Move Cattle to Trash",
+    "delete_desc": "This action will move <strong>{{tag}}</strong> to trash. It can be restored later.",
+    "delete_type_tag": "Type the tag number <strong>{{tag}}</strong> to confirm",
+    "delete_btn": "Move to Trash"
+  },
+  "field": {
+    "profile_photo": "Profile Photo / Document (JPG, PNG, PDF — max 5 MB)",
+    "tag_number": "Tag Number",
+    "tag_generating": "Generating tag...",
+    "tag_auto_hint": "Auto-generated. You can change it to a custom tag.",
+    "name_optional": "Name (optional)",
+    "ear_tag": "Ear Tag Number",
+    "animal_type": "Animal Type",
+    "color": "Color",
+    "color_placeholder": "e.g. Black, Brown, White",
+    "breed": "Breed",
+    "breed_placeholder": "Select or type breed...",
+    "gender": "Gender",
+    "age_category": "Age Category",
+    "health_status": "Health Status",
+    "purchase_date": "Purchase Date",
+    "purchase_price": "Purchase Price (৳)",
+    "purchase_weight": "Purchase Weight (kg)",
+    "current_weight": "Current Weight (kg)",
+    "market_value": "Current Market Value (৳)",
+    "market_value_placeholder": "Estimated current value",
+    "shed": "Shed",
+    "no_shed": "No Shed",
+    "seller_name": "Seller Name",
+    "seller_phone": "Seller Phone",
+    "payment_account": "Paid From Account",
+    "feed_ratio_label": "Feed Ratio Override (%)",
+    "feed_ratio_hint": "0 = auto-allocated by weight. Set a value to fix this animal's share of feed cost.",
+    "invoice": "Invoice / Purchase Document",
+    "invoice_hint": "(PDF, JPG, JPEG, PNG, WEBP — max 10 MB)",
+    "current_invoice": "Current invoice on record",
+    "select_type": "Select Type",
+    "select_breed": "Select breed...",
+    "select_shed": "Select Shed",
+    "select_account": "Select Account",
+    "account_hint": "Select an account to record the purchase cost in the ledger and reduce the account balance.",
+    "notes": "Notes",
+    "age_stage": "Tooth Stage",
+    "select_animal_type_first": "Select animal type first",
+    "validation": {
+      "age_stage_required": "Tooth stage selection is required",
+      "age_category_required": "Age category selection is required",
+      "tag_required": "Enter the tag number.",
+      "animal_type_required": "Choose the kind of animal.",
+      "breed_required": "Choose the breed.",
+      "shed_required": "Choose the shed.",
+      "purchase_date_required": "Enter the purchase date.",
+      "purchase_price_required": "Enter the price paid (0 or more)."
+    }
+  },
+  "detail": {
+    "title": "Cattle Details",
+    "overview": "Overview",
+    "costs": "Cost Breakdown",
+    "weight_history": "Weight History",
+    "feed_history": "Feed History",
+    "medicine_history": "Medicine History",
+    "vaccines": "Vaccine Schedule",
+    "treatments": "Treatments",
+    "sales": "Sale Record",
+    "animal_information": "Animal Information",
+    "cost_breakdown": "Cost Breakdown",
+    "supplier_information": "Supplier Information",
+    "unknown_supplier": "Unknown supplier",
+    "all_time_expenses": "all time expenses",
+    "kg_since_purchase": "kg since purchase",
+    "total_cost": "Total Cost",
+    "current_feed_ratio": "Current Feed Ratio",
+    "auto_allocated": "Auto-allocated by weight",
+    "fixed_override": "Fixed override",
+    "feed_ratio": "Feed Ratio",
+    "feed_ratio_history": "Feed Ratio History",
+    "no_ratio_history": "No ratio change history yet.",
+    "update_feed_ratio": "Update Feed Ratio",
+    "new_feed_ratio": "New Feed Ratio (%)",
+    "effective_date": "Effective Date",
+    "no_medicine_usage": "No medicine usage recorded for this animal.",
+    "no_vaccine_records": "No vaccine records for this animal.",
+    "no_treatment_records": "No treatment records for this animal.",
+    "current_age_category": "Current Age Category",
+    "transition_history": "Transition History",
+    "no_transition_history": "No transition history yet.",
+    "no_ledger_entries": "No ledger entries yet.",
+    "sale_information": "Sale Information",
+    "sale_date": "Sale Date",
+    "buyer": "Buyer",
+    "sale_price": "Sale Price",
+    "total_investment": "Total Investment",
+    "sale_amount": "Sale Amount",
+    "net_profit": "Net Profit",
+    "net_loss": "Net Loss",
+    "return": "return",
+    "loss": "loss",
+    "animal_active_cost_summary": "This animal is still active. Showing current cost summary.",
+    "total_cost_to_date": "Total Cost to Date",
+    "all_expenses_since_purchase": "All expenses since purchase",
+    "initial_investment": "Initial investment",
+    "profit_analysis_sold_only": "Full profit analysis available for sold animals.",
+    "total_recorded_costs": "Total recorded costs",
+    "not_found": "Animal not found.",
+    "age_history": "Age History",
+    "cost_ledger": "Cost Ledger",
+    "profit_analysis": "Profit Analysis",
+    "medicine": "Medicine",
+    "initial_weight": "at {{weight}} kg initial weight",
+    "no_weight_records": "No weight records yet.",
+    "weight_kg": "Weight (kg)",
+    "supplier_name_label": "Name",
+    "feed_ratio_table": {
+      "change_count": "{{count}} changes total",
+      "current_badge": "Current",
+      "first_badge": "First",
+      "set_date_col": "Set Date",
+      "ratio_col": "Ratio",
+      "change_col": "Change"
+    },
+    "btn": {
+      "record_weight": "Record Weight",
+      "change_ratio": "Change Ratio",
+      "update_ratio": "Update Ratio",
+      "set_immature": "Set as Immature",
+      "set_adult": "Set as Adult"
+    },
+    "col": {
+      "weight": {
+        "date": "Date",
+        "weight_kg": "Weight (kg)",
+        "gain_kg": "Gain (kg)",
+        "daily_gain": "Daily Gain",
+        "days": "Days",
+        "notes": "Notes"
+      },
+      "feed_ratio": {
+        "effective_date": "Effective Date",
+        "new_ratio": "New Ratio",
+        "previous": "Previous",
+        "notes": "Notes"
+      },
+      "medicine": {
+        "date": "Date",
+        "medicine": "Medicine",
+        "quantity": "Quantity",
+        "cost": "Cost",
+        "notes": "Notes"
+      },
+      "vaccine": {
+        "vaccine": "Vaccine",
+        "type": "Type",
+        "scheduled": "Scheduled",
+        "administered": "Administered",
+        "cost": "Cost",
+        "quantity": "Quantity",
+        "status": "Status",
+        "next_due": "Next Due"
+      },
+      "treatment": {
+        "date": "Date",
+        "doctor": "Doctor",
+        "diagnosis": "Diagnosis",
+        "vet_fee": "Vet Fee",
+        "med_cost": "Med Cost",
+        "total": "Total",
+        "follow_up": "Follow-up"
+      },
+      "shed_transfer": {
+        "date": "Date",
+        "from": "From",
+        "to": "To",
+        "reason": "Reason",
+        "notes": "Notes",
+        "triggered_by": "Triggered By"
+      },
+      "costs": {
+        "date": "Date",
+        "type": "Type",
+        "description": "Description",
+        "amount": "Amount"
+      }
+    },
+    "modal": {
+      "save_btn": "Save",
+      "v": {
+        "weight_range": "Enter a weight between 1 and 2000 kg.",
+        "ratio_range": "Enter a ratio from 0 to 100."
+      },
+      "vaccine": {
+        "add_btn": "Add Vaccine",
+        "item_label": "Vaccine {{n}}",
+        "qty_placeholder": "Quantity {{unit}}",
+        "add_another": "+ Add another vaccine",
+        "administered_by": "Administered By",
+        "stock_ok": "✓ Stock: {{qty}} {{unit}}",
+        "stock_low": "⚠ Insufficient stock! Available: {{qty}} {{unit}}",
+        "cost_suffix": "| Cost: ৳{{cost}}",
+        "fifo_hint": "Cost is auto-calculated by FIFO batch price — will be added to the animal's ledger.",
+        "validation": {
+          "at_least_one": "Please add at least one vaccine and quantity.",
+          "stock_insufficient": "\"{{name}}\" — Insufficient stock! Available: {{qty}} {{unit}}"
+        },
+        "toast": {
+          "saved": "Vaccine record saved."
+        }
+      },
+      "medicine": {
+        "add_btn": "Add Medicine",
+        "item_label": "Medicine {{n}}",
+        "qty_placeholder": "Quantity {{unit}}",
+        "add_another": "+ Add another medicine",
+        "optional_suffix": "(optional)",
+        "stock_ok": "✓ Stock: {{qty}} {{unit}}",
+        "stock_low": "⚠ Insufficient stock! Available: {{qty}} {{unit}}",
+        "cost_suffix": "| Cost: ৳{{cost}}",
+        "fifo_hint": "Cost is auto-calculated by FIFO batch price — will be added to the animal's ledger.",
+        "validation": {
+          "at_least_one": "Please add at least one medicine and quantity.",
+          "stock_insufficient": "\"{{name}}\" — Insufficient stock! Available: {{qty}} {{unit}}"
+        },
+        "toast": {
+          "saved": "Medicine record saved."
+        }
+      },
+      "treatment": {
+        "add_btn": "Add Treatment",
+        "title": "Add Treatment Record",
+        "date_label": "Treatment Date",
+        "health_status_label": "Animal's health status after treatment",
+        "health_status_hint": "Saving will automatically update the animal's health status.",
+        "health_option": {
+          "sick": "Sick",
+          "critical": "Critical",
+          "recovering": "Recovering",
+          "healthy": "Healthy"
+        },
+        "doctor_name_label": "Doctor's Name",
+        "doctor_phone_label": "Doctor's Phone",
+        "diagnosis_label": "Diagnosis",
+        "treatment_desc_label": "Treatment Description",
+        "medicines_used_label": "Medicines Used",
+        "prescription_section_title": "Doctor's Prescription / Advice",
+        "written_advice_label": "Written Advice",
+        "upload_label": "Upload Prescription PDF / Image",
+        "choose_file": "Choose file (PDF, JPG, PNG)",
+        "remove_file": "Remove",
+        "vet_fee_label": "Vet Fee",
+        "payment_account_label": "Payment Account",
+        "select_account_option": "Select Account",
+        "follow_up_label": "Follow-up Date",
+        "validation": {
+          "diagnosis_required": "Diagnosis is required",
+          "date_required": "Treatment date is required",
+          "payment_account_required": "Payment account is required"
+        },
+        "toast": {
+          "saved": "Treatment record saved.",
+          "save_failed": "Failed to save treatment."
+        }
+      },
+      "weight": {
+        "ratio_update_label": "Feed Ratio Update",
+        "current_ratio_prefix": "Current ratio:",
+        "auto_suffix": "(auto)",
+        "toast": {
+          "saved": "Weight record saved."
+        }
+      },
+      "sell": {
+        "title": "Sell Cattle — {{tag}}",
+        "buyer_existing": "📋 Registered Customer",
+        "buyer_new": "➕ New Customer",
+        "select_buyer_option": "— Select Customer —",
+        "new_buyer_hint": "Enter the new customer's details — they will be saved to the system automatically",
+        "sale_date_label": "Sale Date",
+        "payment_account_label": "Payment Account",
+        "select_option": "— Select —",
+        "balance_label": "Balance: ৳{{balance}}",
+        "sale_price_label": "Sale Price (৳)",
+        "sale_weight_label": "Sale Weight (kg)",
+        "payment_status_label": "Payment Status",
+        "status_paid": "Paid ✅",
+        "status_partial": "Partially Paid ⚠️",
+        "status_unpaid": "Unpaid ❌",
+        "paid_amount_label": "Paid Amount (৳)",
+        "est_profit": "Estimated Profit: ৳{{amount}}",
+        "est_loss": "Estimated Loss: ৳{{amount}}",
+        "total_cost_paren": "(Total Cost: ৳{{cost}})",
+        "confirm_btn": "Confirm Sale",
+        "f": {
+          "buyer": "Buyer",
+          "new_name": "Buyer name",
+          "new_phone": "Phone number",
+          "new_address": "Address",
+          "sale_date": "Sale date",
+          "payment_account": "Payment account",
+          "sale_price": "Sale price",
+          "payment_status": "Payment status",
+          "paid_amount": "Paid amount"
+        },
+        "validation": {
+          "date_required": "Please enter a date.",
+          "price_required": "Please enter a sale price.",
+          "account_required": "Please select a payment account.",
+          "buyer_required": "Please select a customer.",
+          "new_buyer_name_required": "Please enter the new customer's name.",
+          "partial_amount_required": "Please enter the partial payment amount."
+        },
+        "toast": {
+          "success": "Cattle sold successfully.",
+          "failed": "Sale could not be completed."
+        }
+      }
+    },
+    "entry_type": {
+      "purchase": "Purchase",
+      "sale": "Sale",
+      "expense": "Expense",
+      "feed": "Feed",
+      "medicine": "Medicine",
+      "vaccine": "Vaccine",
+      "treatment": "Treatment",
+      "labour": "Labour",
+      "salary": "Salary",
+      "breeding": "Breeding",
+      "birth": "Delivery",
+      "electricity": "Electricity",
+      "water": "Water",
+      "fuel": "Fuel",
+      "transport": "Transport",
+      "maintenance": "Maintenance",
+      "rent": "Rent",
+      "miscellaneous": "Miscellaneous",
+      "other": "Other",
+      "birth_value": "Value at birth",
+      "milk": "Milk",
+      "calf_value": "Calf value",
+      "pregnancy_check": "Pregnancy check",
+      "byproduct": "By-product"
+    },
+    "feed_ratio_override": "Feed ratio: {{v}}% (fixed override)"
+  },
+  "age_cat": {
+    "title": "Age Category Management",
+    "tab_categories": "Age Categories",
+    "tab_stages": "Tooth Stages",
+    "btn_new_category": "New Category",
+    "btn_new_stage": "New Tooth Stage",
+    "cat_modal_create": "New Age Category",
+    "cat_modal_edit": "Edit Category",
+    "stage_modal_create": "New Tooth Stage",
+    "stage_modal_edit": "Edit Tooth Stage",
+    "field_animal_type": "Animal Type",
+    "field_sort_order": "Sort Order",
+    "field_active": "Active",
+    "select_type": "— Select —",
+    "placeholder_category": "e.g. Calf",
+    "placeholder_stage": "e.g. Milk teeth",
+    "count_suffix": "{{count}}",
+    "toast": {
+      "saved": "Saved successfully.",
+      "save_failed": "Failed to save.",
+      "deleted": "Deleted."
+    }
+  },
+  "bulk": {
+    "selected_animals_count": "Selected Animals ({{count}})",
+    "application_date": "Application Date",
+    "saving": "Saving...",
+    "save_btn": "Save",
+    "fifo_cost_note": "Cost is calculated automatically by FIFO batch price — it will be added to each animal's ledger.",
+    "qty_mode": {
+      "per_animal": "Per animal",
+      "total_split": "Total amount (split)"
+    },
+    "qty_placeholder": {
+      "per_animal": "Per animal {{unit}}",
+      "total": "Total {{unit}}"
+    },
+    "qty_summary": {
+      "total": "Total: {{val}}",
+      "per_animal": "Per animal: {{val}}"
+    },
+    "stock": {
+      "available": "✓ Stock: {{qty}} {{unit}}",
+      "insufficient": "⚠ Insufficient stock! Available: {{qty}} {{unit}}",
+      "cost_summary": "| Cost: ৳{{perAnimal}}/animal | Total: ৳{{total}}"
+    },
+    "validation": {
+      "stock_insufficient_named": "\"{{name}}\" — insufficient stock."
+    },
+    "bar": {
+      "selected_count": "{{count}} animals selected",
+      "btn_medicine": "Give Medicine",
+      "btn_vaccine": "Give Vaccine",
+      "btn_treatment": "Give Treatment",
+      "btn_expense": "Add Expense"
+    },
+    "medicine": {
+      "title": "Administer Medicine",
+      "subtitle": "{{count}} animals — you can give multiple medicines",
+      "item_label": "Medicine {{n}}",
+      "next_due_label": "Next Medicine Date",
+      "add_another": "+ Add another medicine",
+      "footer_count": "{{animals}} animals × {{items}} medicines",
+      "validation": {
+        "at_least_one": "Please add at least one medicine and quantity."
+      },
+      "toast": {
+        "saved": "Medicine records saved."
+      }
+    },
+    "vaccine": {
+      "title": "Administer Vaccine",
+      "subtitle": "{{count}} animals — you can give multiple vaccines",
+      "item_label": "Vaccine {{n}}",
+      "next_due_label": "Next Vaccine Date",
+      "add_another": "+ Add another vaccine",
+      "administered_by_label": "Administered By",
+      "footer_count": "{{animals}} animals × {{items}} vaccines",
+      "validation": {
+        "at_least_one": "Please add at least one vaccine and quantity."
+      },
+      "toast": {
+        "saved": "Vaccine records saved."
+      }
+    },
+    "treatment": {
+      "title": "Administer Treatment",
+      "subtitle": "{{count}} animals — enter separate details for each",
+      "per_animal_section": "Individual Details Per Animal",
+      "diagnosis_label": "Diagnosis",
+      "health_status_after_label": "Health Status After Treatment",
+      "health_status": {
+        "sick": "Sick",
+        "critical": "Critical",
+        "recovering": "Recovering",
+        "healthy": "Healthy"
+      },
+      "follow_up_date_label": "Follow-up Date",
+      "treatment_desc_label": "Treatment Description",
+      "prescription_label": "Doctor's Prescription / Advice",
+      "file_label": "Prescription PDF / Image",
+      "choose_file": "Choose file",
+      "shared_section": "Same Information for All Animals",
+      "date_label": "Treatment Date",
+      "payment_account_label": "Payment Account",
+      "select_account_placeholder": "Select account",
+      "doctor_name_label": "Doctor's Name",
+      "doctor_phone_label": "Doctor's Phone",
+      "vet_fee_label": "Vet Fee (per animal)",
+      "general_notes_label": "General Notes",
+      "footer_count": "{{count}} separate animal records",
+      "submit_btn": "Save Records for {{count}} Animals",
+      "validation": {
+        "payment_account_required": "Please select a payment account.",
+        "diagnosis_required": "Please enter a diagnosis."
+      },
+      "toast": {
+        "saved": "Treatment records saved for {{count}} animals.",
+        "failed": "Failed to save treatment."
+      }
+    },
+    "sale": {
+      "title": "Sell Cattle",
+      "subtitle": "{{count}} animals selected",
+      "buyer_mode": {
+        "existing": "📋 Registered Customer",
+        "new": "➕ New Customer"
+      },
+      "select_customer_placeholder": "— Select Customer —",
+      "new_customer_hint": "Enter the new customer's details — they will be saved to the system automatically",
+      "date_label": "Sale Date",
+      "payment_account_label": "Payment Account",
+      "select_placeholder": "— Select —",
+      "payment_status_label": "Payment Status",
+      "new_customer_paid_only_note": "Only fully paid sales are allowed for new customers",
+      "payment_status": {
+        "paid": "Paid ✅",
+        "partial": "Partially Paid ⚠️",
+        "unpaid": "Unpaid ❌"
+      },
+      "total_paid_label": "Total Paid Amount",
+      "col_cattle_tag": "Cattle (Tag)",
+      "col_sale_price_required": "Sale Price (৳)",
+      "col_weight": "Weight (kg)",
+      "summary_total_label": "Total Sale",
+      "col_cattle": "Cattle",
+      "col_sale_price": "Sale Price",
+      "col_paid": "Paid",
+      "col_due": "Due",
+      "buyer_label": "Buyer:",
+      "new_addition_badge": "New",
+      "success_title": "Sale Completed",
+      "success_count": "{{count}} cattle sold successfully",
+      "print_invoice_btn": "Print Invoice",
+      "footer_count": "{{count}} animals",
+      "submit_btn": "Sell",
+      "validation": {
+        "date_required": "Please enter the sale date.",
+        "payment_account_required": "Please select a payment account.",
+        "customer_required": "Please select a customer.",
+        "new_customer_name_required": "Please enter the new customer's name.",
+        "partial_amount_required": "Please enter the partial payment amount.",
+        "price_required": "Please enter a sale price for each animal."
+      },
+      "toast": {
+        "saved": "Cattle sale completed successfully.",
+        "failed": "Sale could not be completed."
+      }
+    },
+    "expense": {
+      "title": "Add Expense to Selected Animals",
+      "subtitle": "Charged only to these {{count}} animals",
+      "category": "Category",
+      "date": "Date",
+      "expense_title": "What was it for?",
+      "title_placeholder": "e.g. Truck to the market, vet visit",
+      "split": "How to divide it",
+      "split_equal": "Equal",
+      "split_equal_hint": "Total split equally",
+      "split_weight_based": "By weight",
+      "split_weight_based_hint": "Heavier animals pay more",
+      "split_per_animal": "Same per animal",
+      "split_per_animal_hint": "Each animal pays the amount",
+      "amount_total": "Total amount (৳)",
+      "amount_per_animal": "Amount per animal (৳)",
+      "total_for": "{{count}} animals — total {{total}}",
+      "no_weight": "No weight recorded for: {{tags}}. Choose an equal split or record their weight first.",
+      "col_animal": "Animal",
+      "col_share": "Share",
+      "kg": "{{kg}} kg",
+      "total": "Total",
+      "status_paid": "Paid",
+      "status_partial": "Partly paid",
+      "status_unpaid": "Unpaid (owed)",
+      "paid_now": "Paid now (৳)",
+      "account": "Paid from",
+      "account_placeholder": "Select an account",
+      "submit": "Save {{total}}",
+      "saved": "Expense charged to {{count}} animals.",
+      "validation": {
+        "title": "Write what the expense was for.",
+        "amount": "Enter an amount above zero.",
+        "date": "Pick the date.",
+        "paid": "The paid part must be more than zero and less than the total.",
+        "account": "Select the account it was paid from."
+      }
+    }
+  },
+  "receipt": {
+    "title": "Sales Receipt",
+    "col_weight": "Weight",
+    "footer_note": "This receipt was generated by the software",
+    "print_btn": "🖨️ Print"
+  },
+  "breeding": {
+    "origin_label": "Origin",
+    "origin": {
+      "purchased": "Purchased",
+      "farm_born": "Farm born"
+    },
+    "origin_hint": {
+      "purchased": "A bought animal — its purchase price goes to the ledger as a cost.",
+      "farm_born": "Born on the farm — no purchase price or payment needed."
+    },
+    "purpose_label": "Purpose",
+    "purpose": {
+      "fattening": "Fattening",
+      "breeding_female": "Breeding (female)",
+      "breeding_male": "Breeding (male)",
+      "dairy": "Dairy",
+      "young_stock": "Calf / young stock"
+    },
+    "profit_center": {
+      "fattening": "Fattening",
+      "breeding": "Breeding",
+      "dairy": "Dairy"
+    },
+    "reproductive_status_label": "Reproductive status",
+    "reproductive_status": {
+      "open": "Open",
+      "inseminated": "Inseminated",
+      "pregnant": "Pregnant",
+      "lactating": "Lactating",
+      "dry": "Dry"
+    },
+    "not_set": "Not set",
+    "dam": "Mother",
+    "sire": "Father",
+    "select_dam": "Select mother (optional)",
+    "select_sire": "Select father (optional)",
+    "unknown": "Unknown",
+    "parents_hint": "Mother (female) and father (male) must be the same animal type.",
+    "birth_date": "Birth date",
+    "birth_weight": "Birth weight (kg)",
+    "current_weight": "Current weight (kg)",
+    "weight_hint": "Enter the birth weight or the current weight — at least one.",
+    "milking_times": "Milkings per day",
+    "milking_times_default": "Species default ({{count}}×)",
+    "milking_times_option": "{{count}}×",
+    "filter_all_origins": "All origins",
+    "filter_all_purposes": "All purposes",
+    "born_badge": "Farm born",
+    "validation": {
+      "birth_date_required": "Birth date is required",
+      "weight_required": "Enter the birth weight or the current weight",
+      "purchase_weight_required": "Purchase weight is required",
+      "payment_account_required": "Select the account to pay from"
+    },
+    "tab_pedigree": "Pedigree",
+    "pedigree": {
+      "title": "Family Tree",
+      "parents": "Parents",
+      "grandparents": "Grandparents",
+      "maternal_grand_dam": "Maternal grandmother",
+      "maternal_grand_sire": "Maternal grandfather",
+      "paternal_grand_dam": "Paternal grandmother",
+      "paternal_grand_sire": "Paternal grandfather",
+      "siblings": "Siblings",
+      "sibling_full": "Full",
+      "sibling_half": "Half",
+      "offspring": "Offspring",
+      "offspring_count": "{{count}} in total ({{female}} female, {{male}} male)",
+      "no_siblings": "No siblings recorded",
+      "no_offspring": "No offspring recorded",
+      "deleted": "Deleted",
+      "load_failed": "Could not load the family tree"
+    },
+    "purpose_change": {
+      "button": "Change Purpose",
+      "title": "Change Purpose",
+      "current": "Current purpose",
+      "new": "New purpose",
+      "date": "Effective date",
+      "reason": "Reason (optional)",
+      "note": "Costs from now on go to the new profit center. Earlier costs stay where they were.",
+      "save": "Save",
+      "history": "Purpose history",
+      "no_history": "No history",
+      "toast_saved": "Purpose updated"
+    },
+    "kg_since_birth": "kg since birth",
+    "birth_value": "Internal value",
+    "birth_value_hint": "The animal's opening cost and its dam's breeding income. No cash moves.",
+    "birth_value_saved": "Value updated",
+    "birth_value_failed": "Could not update",
+    "birth_value_form_hint": "Empty = the animal type default"
+  },
+  "picker": {
+    "subtitle": "Pick the animals this applies to",
+    "search": "Search by tag, name or breed…",
+    "select_all": "Select all",
+    "clear_all": "Clear all",
+    "empty": "No active animals found",
+    "picked": "{{count}} animals picked",
+    "next": "Next",
+    "title": {
+      "medicine": "Give Medicine — Pick Animals",
+      "vaccine": "Give Vaccine — Pick Animals",
+      "treatment": "Give Treatment — Pick Animals",
+      "sell": "Sell — Pick Animals"
+    }
+  },
+  "collar": {
+    "tab_label": "Collar",
+    "title": "Smart Collars",
+    "subtitle": "Catch heats, early illness and fever from sensor data",
+    "on": "On",
+    "off": "Off",
+    "off_note": "The collar feature is off — no data is accepted. Switch it on under “Connection & settings” once collars arrive.",
+    "kpi": {
+      "pending": "Pending Alerts",
+      "devices": "Devices (Assigned/Total)",
+      "online": "Online",
+      "offline": "Offline",
+      "low_battery": "Low Battery"
+    },
+    "tab": {
+      "alerts": "Alerts",
+      "devices": "Devices",
+      "settings": "Connection & Settings"
+    },
+    "alert": {
+      "heat": "Possible heat",
+      "low_rumination": "Low rumination",
+      "low_activity": "Low activity",
+      "fever": "Fever"
+    },
+    "status": {
+      "pending": "Pending",
+      "confirmed": "Confirmed",
+      "dismissed": "Dismissed"
+    },
+    "all": "All",
+    "no_alerts": "No alerts",
+    "value_vs_baseline": "{{value}} in 24h, usual {{baseline}}",
+    "resolved_by": "handled by {{name}}",
+    "mark_sick": "Mark the animal sick",
+    "heat_confirm_hint": "Confirming records the heat in breeding",
+    "confirm": "Confirm",
+    "confirm_heat": "Record heat",
+    "dismiss": "Dismiss",
+    "online": "Online",
+    "offline": "Offline",
+    "inactive": "Inactive",
+    "battery": "Battery",
+    "unassigned": "Unassigned",
+    "add_device": "Add Device",
+    "edit_device": "Edit Device",
+    "no_devices": "No devices yet",
+    "new_token": "New token",
+    "device_token_title": "{{serial}} — Device Token",
+    "gateway_key_title": "Gateway Key",
+    "secret_once": "Shown only now — copy it into the collar/gateway settings. If lost, make a new one (the old one stops working).",
+    "saved_it": "I've copied it",
+    "token_after_save": "The device's secret token is shown once after saving.",
+    "save": "Save",
+    "delete": "Remove",
+    "delete_title": "Remove Device?",
+    "delete_message": "{{serial}} will be removed. Its past readings and alerts are kept.",
+    "col": {
+      "device": "Device",
+      "animal": "Animal",
+      "status": "Status",
+      "token": "Token"
+    },
+    "field": {
+      "serial": "Serial number",
+      "label": "Name/label",
+      "vendor": "Vendor",
+      "animal": "Worn by",
+      "notes": "Notes",
+      "active": "Active"
+    },
+    "vendor": {
+      "generic": "Generic (any)",
+      "allflex": "Allflex / SCR",
+      "afimilk": "Afimilk",
+      "nedap": "Nedap",
+      "cowmanager": "CowManager",
+      "smaxtec": "smaXtec",
+      "diy": "Home-made",
+      "other": "Other"
+    },
+    "settings": {
+      "enable": "Collar feature on",
+      "enable_hint": "While off, no collar data is accepted",
+      "heat_activity_rise_pct": "Heat: activity rise",
+      "activity_drop_pct": "Activity drop",
+      "rumination_drop_pct": "Rumination drop",
+      "fever_temp": "Fever temperature",
+      "baseline_days": "Days for the usual level",
+      "min_baseline_days": "Minimum days of data",
+      "offline_hours": "Silent hours before offline",
+      "raw_retention_days": "Keep raw data for",
+      "days": "days",
+      "hours": "hours",
+      "notify_whatsapp": "Send to WhatsApp",
+      "notify_whatsapp_hint": "New alerts go to the WhatsApp alert recipients"
+    },
+    "connect": {
+      "title": "Connecting Collars",
+      "url": "Data address (API)",
+      "example": "Example",
+      "gateway": "Gateway key:",
+      "none": "none",
+      "generate": "Create gateway key",
+      "regenerate": "New gateway key",
+      "steps": [
+        "On the “Devices” tab add each collar by serial and pick the animal wearing it — you get a secret token.",
+        "The collar/gateway POSTs to the address below with the header Authorization: Bearer <token>.",
+        "If a vendor server sends many collars at once, use the “gateway key”; each reading carries its serial. Unknown serials are added to the device list automatically.",
+        "Field names are flexible: timestamp/ts, steps, rumination, temp, lat/lng — most vendor formats work as is.",
+        "Re-sent readings are not counted twice, so sending late after an internet drop is fine.",
+        "To test without collars, on the server: php artisan collar:simulate --heat=<tag> (test database only)."
+      ],
+      "regenerate_title": "Make a new gateway key?",
+      "regenerate_message": "The old gateway key stops working. Gateways using it send no data until the new key is put in them. Continue?"
+    },
+    "import": {
+      "title": "Import from File (CSV)",
+      "hint": "Upload a CSV exported from the vendor dashboard. The first row holds the column names; animals are matched by tag_number or serial.",
+      "choose": "Choose a CSV file",
+      "working": "Importing…",
+      "result": "{{accepted}} new readings, {{duplicates}} already there, {{rejected}} rejected, {{alerts}} alerts"
+    },
+    "panel": {
+      "device": "Device",
+      "no_device": "No collar assigned",
+      "last_temp": "Last temperature",
+      "location": "Show on map",
+      "no_data": "No collar data for this animal yet",
+      "activity": "Daily activity",
+      "rumination": "Daily rumination (minutes)",
+      "minutes": "minutes",
+      "temp_max": "Daily highest temperature",
+      "recent_alerts": "Recent alerts"
+    },
+    "toast": {
+      "done": "Done",
+      "failed": "Action failed",
+      "copied": "Copied",
+      "device_saved": "Device saved",
+      "settings_saved": "Settings saved"
+    },
+    "renew_token_title": "Make a new token?",
+    "renew_token_message": "{{serial}} gets a new token and the old one stops working. The collar sends no data until the new token is put in it. Continue?"
+  },
+  "milk_check": {
+    "title": "Wrong animal selected",
+    "subtitle": "{{count}} of the selected animals do not give milk",
+    "hint": "Remove them from the selection, then click Milk Entry again.",
+    "remove": "Remove these {{count}} from the selection",
+    "removed": "Removed {{count}} animals from the selection. Click Milk Entry again."
+  },
+  "form_section": {
+    "identity": "Who it is",
+    "breeding": "Breeding",
+    "age_health": "Age and health",
+    "purchase": "Purchase",
+    "birth": "Birth",
+    "place_feed": "Shed and feed",
+    "files_notes": "Invoice and notes"
+  },
+  "unit": {
+    "kg": "kg",
+    "kg_per_day": "kg/day"
+  },
+  "account": {
+    "period": "From {{from}} to {{to}}",
+    "days": "{{n}} days",
+    "total_cost": "Total cost",
+    "total_income": "Total income",
+    "gap": "Gap",
+    "profit": "Profit",
+    "loss": "Loss",
+    "gap_hint_active": "Still on the farm: the price paid comes back when it is sold (or through what it earns).",
+    "capital": "Price paid",
+    "birth_value": "Value at birth",
+    "running_cost": "Cost of keeping it",
+    "earned": "Earned while kept",
+    "operating_net": "Keeping it: profit/loss",
+    "per_day": "{{v}} a day",
+    "recovered": "{{pct}} of the price paid has come back (income minus keeping costs).",
+    "if_sold_today": "Sold today at its market value ({{market}}): {{result}}.",
+    "no_market_value": "Add a current market value to the animal to see where it would stand if sold today.",
+    "sold_on": "Sold on {{date}} for {{price}} to {{buyer}}.",
+    "costs": "Where the money went",
+    "incomes": "What came in",
+    "none": "Nothing yet.",
+    "monthly": "Month by month",
+    "month": "Month",
+    "cost": "Cost",
+    "income": "Income",
+    "month_gap": "That month",
+    "running_gap": "So far",
+    "exit_dead": "Died on {{date}} — whole loss {{loss}} (its price plus everything spent keeping it).",
+    "exit_transferred": "Transferred on {{date}} — whole loss {{loss}} (its price plus everything spent keeping it)."
+  },
+  "exit": {
+    "button": "Died or left the farm",
+    "title": "Left the farm",
+    "title_back": "Back on the farm",
+    "what": "What happened",
+    "choice": {
+      "dead": "Died",
+      "transferred": "Transferred away",
+      "active": "Back on the farm (it was a mistake)"
+    },
+    "date": "On which day",
+    "reason": "Reason / notes",
+    "save": "Save",
+    "note": "Its whole loss (price + everything spent keeping it) shows on its account. The profit & loss takes its price in the month it left — the keeping costs are already there month by month.",
+    "note_back": "It returns to the herd as if it never left.",
+    "toast_saved": "Saved."
+  }
+}

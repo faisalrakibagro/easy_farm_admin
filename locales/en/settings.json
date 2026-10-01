@@ -1,0 +1,679 @@
+{
+  "general": {
+    "title": "Settings",
+    "profile": "Profile Settings",
+    "field": {
+      "name": "Name",
+      "email": "Email",
+      "current_password": "Current Password",
+      "new_password": "New Password",
+      "confirm_password": "Confirm Password"
+    },
+    "btn": {
+      "update_profile": "Update Profile",
+      "change_password": "Change Password"
+    },
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "saved": "Saved!",
+    "saving": "Saving…",
+    "save": "Save Settings",
+    "failed_save": "Failed to save settings.",
+    "no_settings": "No settings in this group.",
+    "group_suffix": "Settings"
+  },
+  "cache": {
+    "title": "Cache Management",
+    "description": "Clear application cache to refresh data.",
+    "btn_clear": "Clear Cache",
+    "success": "Cache cleared successfully.",
+    "warning": "This will clear all cached data. The next request may be slower.",
+    "clear_section": "Clear Caches",
+    "rebuild_section": "Rebuild Caches",
+    "super_admin_only": "Super Admin only",
+    "recent_activity": "Recent Activity",
+    "no_activity": "No cache activity yet",
+    "no_activity_desc": "Run a cache operation above to see it logged here",
+    "last": "Last:",
+    "by": "by",
+    "clear_all": "Clear All",
+    "clear": "Clear",
+    "clearing": "Clearing…",
+    "rebuild": "Rebuild",
+    "rebuilding": "Rebuilding…",
+    "never": "Never",
+    "just_now": "Just now",
+    "mins_ago": "{{count}}m ago",
+    "hours_ago": "{{count}}h ago",
+    "production": {
+      "clear_safe": "Clear operations are safe in production — Laravel rebuilds caches on the next request.",
+      "rebuild_safe": "Rebuild operations pre-warm the cache and are production-safe but should only be run after configuration changes.",
+      "permission_note": "After clearing the permission cache, users must log in again for updated roles to take effect."
+    },
+    "types": {
+      "all": "All Caches",
+      "all_desc": "Clear every cache at once",
+      "config": "Config Cache",
+      "config_desc": "Cached configuration files",
+      "route": "Route Cache",
+      "route_desc": "Cached route definitions",
+      "view": "View Cache",
+      "view_desc": "Compiled Blade / view templates",
+      "application": "App Cache",
+      "application_desc": "Application-level cache data",
+      "permission": "Permission Cache",
+      "permission_desc": "Spatie role / permission cache",
+      "event": "Event Cache",
+      "event_desc": "Cached event listeners",
+      "optimized": "Optimized Files",
+      "optimized_desc": "Clear compiled / optimized files"
+    },
+    "rebuild_types": {
+      "config": "Rebuild Config",
+      "config_desc": "Cache all configuration files",
+      "route": "Rebuild Routes",
+      "route_desc": "Cache all registered routes",
+      "view": "Rebuild Views",
+      "view_desc": "Pre-compile all Blade / view templates"
+    }
+  },
+  "website": {
+    "title": "Website Settings",
+    "groups": {
+      "general": "General",
+      "company": "Company",
+      "branding": "Branding",
+      "seo": "SEO",
+      "social": "Social Media",
+      "system": "System",
+      "email": "Email",
+      "theme": "Theme"
+    },
+    "group_suffix": "Settings",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "saved": "Settings saved successfully.",
+    "failed_save": "Failed to save. Please try again.",
+    "no_settings": "No settings in this group.",
+    "field": {
+      "site_name": "Site Name",
+      "site_url": "Site URL",
+      "admin_email": "Admin Email",
+      "logo": "Logo"
+    },
+    "field_labels": {
+      "site_name": "Site Name",
+      "site_tagline": "Tagline",
+      "site_description": "Description",
+      "maintenance_mode": "Maintenance Mode",
+      "items_per_page": "Items Per Page",
+      "company_name": "Company Name",
+      "company_email": "Company Email",
+      "company_phone": "Phone Number",
+      "company_address": "Address",
+      "logo_url": "Logo URL",
+      "favicon_url": "Favicon URL",
+      "og_image_url": "OG Image URL",
+      "meta_title": "Meta Title",
+      "meta_description": "Meta Description",
+      "meta_keywords": "Meta Keywords",
+      "robots": "Robots Directive",
+      "facebook_url": "Facebook",
+      "instagram_url": "Instagram",
+      "twitter_url": "Twitter",
+      "linkedin_url": "LinkedIn",
+      "youtube_url": "YouTube",
+      "timezone": "Timezone",
+      "date_format": "Date Format",
+      "language": "Language",
+      "currency": "Currency",
+      "mail_mailer": "Mail Driver",
+      "mail_host": "SMTP Host",
+      "mail_port": "SMTP Port",
+      "mail_username": "SMTP Username",
+      "mail_from_address": "From Address",
+      "mail_from_name": "From Name",
+      "mail_encryption": "Encryption",
+      "theme_primary": "Primary color",
+      "theme_secondary": "Secondary color",
+      "theme_sidebar_bg": "Sidebar background",
+      "theme_header_bg": "Header background",
+      "theme_mode": "Color mode",
+      "theme_font_size": "Font size",
+      "theme_compact_mode": "Compact layout",
+      "theme_sidebar_logo": "Sidebar logo",
+      "theme_border_radius": "Corner radius"
+    },
+    "field_hints": {
+      "favicon_url": "Full URL of the favicon.",
+      "logo_url": "Full URL of the site logo.",
+      "og_image_url": "Open Graph image URL for social sharing.",
+      "company_name": "Company legal name.",
+      "company_email": "Primary contact email.",
+      "company_phone": "Contact phone number.",
+      "company_address": "Physical address.",
+      "mail_host": "SMTP host.",
+      "mail_mailer": "Mail driver (log, smtp, sendmail).",
+      "mail_port": "SMTP port.",
+      "mail_username": "SMTP username.",
+      "mail_from_address": "From email address.",
+      "mail_from_name": "From display name.",
+      "mail_encryption": "SMTP encryption (tls, ssl, none).",
+      "site_tagline": "A short tagline displayed below the site name.",
+      "site_description": "Short website description.",
+      "maintenance_mode": "Enable maintenance mode.",
+      "items_per_page": "Default pagination size.",
+      "site_name": "Website name.",
+      "meta_title": "Default page meta title.",
+      "meta_description": "Default meta description.",
+      "meta_keywords": "Comma-separated meta keywords.",
+      "robots": "Default robots meta directive.",
+      "youtube_url": "YouTube channel URL.",
+      "facebook_url": "Facebook page URL.",
+      "instagram_url": "Instagram profile URL.",
+      "twitter_url": "Twitter / X profile URL.",
+      "linkedin_url": "LinkedIn company page URL.",
+      "timezone": "Application timezone.",
+      "language": "Default language code.",
+      "currency": "Default currency code (ISO 4217).",
+      "date_format": "PHP date format string.",
+      "theme_primary": "Primary brand color (hex).",
+      "theme_secondary": "Secondary / muted color (hex).",
+      "theme_sidebar_bg": "Sidebar background color (hex).",
+      "theme_header_bg": "Header background color (hex).",
+      "theme_mode": "UI color mode: light or dark.",
+      "theme_font_size": "Base font size: sm, base, lg.",
+      "theme_compact_mode": "Enable compact (dense) layout.",
+      "theme_sidebar_logo": "Custom logo URL for the sidebar header.",
+      "theme_border_radius": "Global border radius: none, sm, md, lg, xl, 2xl."
+    }
+  },
+  "theme": {
+    "title": "Theme Customization",
+    "subtitle": "Customize the admin panel appearance",
+    "reset": "Reset to Defaults",
+    "reset_confirm": "Reset all theme settings to defaults?",
+    "info": "Theme changes are saved to the database. A full implementation applies these values via CSS variables at runtime.",
+    "saved": "Theme settings saved successfully.",
+    "saving": "Saving…",
+    "saved_btn": "Saved!",
+    "save": "Save Theme",
+    "failed_save": "Failed to save. Please try again.",
+    "sections": {
+      "color_mode": "Color Mode",
+      "colors": "Colors",
+      "layout": "Layout",
+      "typography": "Typography",
+      "branding": "Branding"
+    },
+    "mode": {
+      "light": "Light Mode",
+      "dark": "Dark Mode"
+    },
+    "fields": {
+      "primary_color": "Primary Color",
+      "primary_color_desc": "Main brand color used for buttons, links, and accents.",
+      "secondary_color": "Secondary Color",
+      "secondary_color_desc": "Muted secondary color for labels and passive UI elements.",
+      "sidebar_bg": "Sidebar Background",
+      "sidebar_bg_desc": "Background color for the navigation sidebar.",
+      "header_bg": "Header Background",
+      "header_bg_desc": "Background color for the top header bar.",
+      "border_radius": "Border Radius",
+      "compact_mode": "Compact Mode",
+      "compact_mode_desc": "Reduce spacing and padding for a denser layout.",
+      "font_size": "Base Font Size",
+      "sidebar_logo": "Sidebar Logo URL",
+      "sidebar_logo_desc": "Replace the default text logo with a custom image.",
+      "sidebar_logo_preview": "Sidebar logo preview"
+    },
+    "radius": {
+      "none": "None",
+      "sm": "Small",
+      "md": "Medium",
+      "lg": "Large",
+      "xl": "X-Large",
+      "2xl": "2X-Large"
+    },
+    "font": {
+      "sm": "Small",
+      "base": "Normal",
+      "lg": "Large"
+    }
+  },
+  "menus": {
+    "title": "Menu Management",
+    "add": "Add Menu Item",
+    "modal_create": "Create Menu",
+    "modal_edit": "Edit Menu",
+    "col": {
+      "title": "Title",
+      "name": "Name (slug)",
+      "url": "URL",
+      "parent": "Parent",
+      "order": "Order",
+      "icon": "Icon",
+      "permission": "Permission"
+    },
+    "field": {
+      "title": "Title",
+      "name": "Name (slug)",
+      "url": "URL",
+      "icon": "Icon",
+      "parent": "Parent Menu",
+      "order": "Order",
+      "permission": "Required Permission",
+      "select_none": "None (top level)"
+    }
+  },
+  "master_data": {
+    "animal_types": {
+      "title": "Animal Types",
+      "subtitle": "Manage the animal types on your farm",
+      "add": "Add Type",
+      "search_placeholder": "Search animal types…",
+      "empty": "No animal types yet. Add your first type.",
+      "empty_trash": "No deleted animal types.",
+      "col": {
+        "name": "Name",
+        "name_slug": "Name / Slug",
+        "description": "Description",
+        "order": "Order",
+        "status": "Status",
+        "breeding": "Breeding"
+      },
+      "field": {
+        "name": "Type Name",
+        "slug": "Slug",
+        "slug_hint": "auto-generated if empty",
+        "sort_order": "Sort Order",
+        "description": "Description",
+        "is_active": "Active (visible in dropdowns)"
+      },
+      "modal": {
+        "create_title": "Add Animal Type",
+        "edit_title": "Edit Animal Type"
+      },
+      "confirm": {
+        "force_delete": "Permanently delete this animal type?",
+        "move_trash_message": "Are you sure you want to move \"{{name}}\" to trash? You can restore it later."
+      },
+      "error": {
+        "name_required": "Animal type name is required"
+      },
+      "toast": {
+        "status_updated": "Status updated successfully.",
+        "status_update_failed": "Failed to update status.",
+        "moved_to_trash": "Animal type moved to trash.",
+        "delete_failed": "Failed to delete animal type.",
+        "restored": "Animal type restored successfully.",
+        "restore_failed": "Failed to restore animal type.",
+        "force_deleted": "Animal type permanently deleted.",
+        "force_delete_failed": "Failed to permanently delete animal type.",
+        "created": "Animal type created successfully.",
+        "updated": "Animal type updated successfully."
+      },
+      "breeding": {
+        "title": "Breeding Settings",
+        "hint": "Used for breeding and milk records. Start from a preset below and adjust the numbers.",
+        "preset": {
+          "cow": "Cow",
+          "buffalo": "Buffalo",
+          "goat": "Goat",
+          "sheep": "Sheep",
+          "camel": "Camel",
+          "dumba": "Dumba (fat-tail sheep)",
+          "save_current": "Save these values",
+          "save_hint": "Save the breeding values above as a preset for next time (e.g. horse, yak).",
+          "name": "Preset name",
+          "name_placeholder": "e.g. Horse",
+          "name_required": "Enter a name",
+          "save": "Save",
+          "cancel": "Cancel",
+          "remove": "Remove {{name}}",
+          "remove_title": "Remove preset?",
+          "remove_message": "\"{{name}}\" will no longer be offered. Animal types already saved are not changed.",
+          "remove_confirm": "Remove"
+        },
+        "field": {
+          "gestation_days": "Gestation (days)",
+          "heat_cycle_days": "Heat cycle (days)",
+          "pregnancy_check_days": "Pregnancy check — days after service",
+          "dry_period_days": "Dry off — days before delivery",
+          "is_milking": "Keep milk records for this animal type",
+          "default_milking_times": "Milkings per day (default)",
+          "calf_value": "Calf value (internal)",
+          "calf_value_female": "Female calf (৳)",
+          "calf_value_male": "Male calf (৳)",
+          "milking_sessions": "Milking sessions (default)"
+        },
+        "times": "{{count}}× a day",
+        "gestation_short": "Gestation {{days}} days",
+        "not_configured": "Not set",
+        "milking_badge": "Milk · {{sessions}}",
+        "calf_value_hint": "Given to every calf born on the farm: breeding income for the dam, opening cost of the calf. Editable per calf.",
+        "milking_sessions_hint": "Tick every session these animals may be milked in. A session can be left empty on a day it was not milked; one animal can have its own."
+      }
+    },
+    "breeds": {
+      "title": "Breeds",
+      "subtitle": "Manage animal breeds",
+      "add": "Add Breed",
+      "search_placeholder": "Search breeds…",
+      "empty": "No breeds found.",
+      "col": {
+        "name": "Name",
+        "status": "Status"
+      },
+      "field": {
+        "name": "Name (English)",
+        "name_hint": "Bangla name will appear automatically for known breeds",
+        "placeholder": "e.g. Sahiwal"
+      },
+      "modal": {
+        "create_title": "Add Breed",
+        "edit_title": "Edit Breed"
+      },
+      "confirm": {
+        "move_trash": "Move this breed to trash?"
+      },
+      "error": {
+        "name_required": "Breed name is required"
+      }
+    },
+    "sheds": {
+      "title": "Sheds",
+      "subtitle": "Manage farm shed locations for housing cattle",
+      "add": "Add Shed",
+      "search_placeholder": "Search sheds…",
+      "empty": "No sheds yet. Add your first shed.",
+      "modal_edit": "Edit Shed",
+      "modal_create": "Add Shed",
+      "col": {
+        "name": "Name",
+        "capacity": "Capacity",
+        "cattle_count": "Cattle",
+        "notes": "Notes"
+      },
+      "field": {
+        "name": "Shed Name",
+        "capacity": "Capacity (optional)",
+        "notes": "Notes (optional)",
+        "capacity_placeholder": "Max number of animals"
+      },
+      "error": {
+        "name_required": "Shed name is required"
+      },
+      "confirm": {
+        "move_trash_message": "Are you sure you want to move \"{{name}}\" to trash? You can restore it later."
+      }
+    }
+  },
+  "dashboard_sections": {
+    "title": "Dashboard Section Access",
+    "subtitle": "Control which roles can see each section on the dashboard",
+    "section_col": "Dashboard Section",
+    "refresh_note": "Changes take effect the next time users log in or refresh their session.",
+    "legend_visible": "Visible",
+    "legend_hidden": "Hidden",
+    "legend_locked": "Always visible (Super Admin)",
+    "mobile_scroll_hint": "Scroll sideways to see all roles",
+    "toggle_label": "Show “{{section}}” to {{role}}",
+    "save_failed": "Could not save the change. Please try again."
+  },
+  "supplier_types": {
+    "title": "Supplier Types",
+    "add": "Add Type",
+    "empty": "No supplier types found.",
+    "col": {
+      "label": "Type Name",
+      "notes": "Notes"
+    },
+    "field": {
+      "label": "Type Name",
+      "label_placeholder": "e.g. Equipment",
+      "notes": "Notes",
+      "notes_placeholder": "Optional description..."
+    },
+    "modal": {
+      "create_title": "Add Supplier Type",
+      "edit_title": "Edit Supplier Type"
+    },
+    "confirm_delete_title": "Delete Supplier Type",
+    "confirm_delete_message": "Delete \"{{label}}\"? This cannot be undone. It will fail if any supplier is using this type.",
+    "error": {
+      "label_required": "Type name is required"
+    }
+  },
+  "activity_logs": {
+    "title": "Activity Logs",
+    "filters_label": "Filters",
+    "clear_filters": "Clear Filters",
+    "no_logs": "No activity logs found.",
+    "system_label": "System",
+    "filter_field": {
+      "user_id": "User ID",
+      "event": "Event",
+      "log_name": "Log Name",
+      "date_from": "Date From",
+      "date_to": "Date To",
+      "module": "Module",
+      "search_description": "Search Description",
+      "user_id_placeholder": "e.g. 1"
+    },
+    "col": {
+      "event": "Event",
+      "performed_by": "Performed By",
+      "log": "Log",
+      "date": "Date",
+      "user": "User",
+      "action": "Action",
+      "model": "Module",
+      "description": "Description",
+      "created_at": "Time",
+      "record": "Record",
+      "date_time": "Date & Time",
+      "performer": "Performed By"
+    },
+    "filter": {
+      "all_actions": "All Actions",
+      "all_users": "All Users",
+      "all_events": "All Events"
+    },
+    "changes": {
+      "field": "Field",
+      "old_value": "Old Value",
+      "new_value": "New Value"
+    },
+    "events": {
+      "login": "Login",
+      "logout": "Logout",
+      "created": "Created",
+      "updated": "Updated",
+      "deleted": "Deleted",
+      "restored": "Restored"
+    },
+    "modules": {
+      "all": "All Modules",
+      "auth": "Auth (Login/Logout)",
+      "cattle": "Cattle",
+      "feed": "Feed",
+      "medicine": "Medicine",
+      "labour": "Labour",
+      "finance": "Finance",
+      "accounting": "Accounting",
+      "suppliers": "Suppliers",
+      "partners": "Partners",
+      "master_data": "Master Data",
+      "users": "Users"
+    }
+  },
+  "whatsapp": {
+    "title": "WhatsApp",
+    "subtitle": "Farm alerts to phones, and entries and questions from staff — through Meta's WhatsApp Cloud API",
+    "status": {
+      "on": "On",
+      "off": "Off",
+      "setup": "Needs setup"
+    },
+    "stats": {
+      "sent_today": "Sent today {{count}}",
+      "failed_today": "Failed today {{count}}"
+    },
+    "optional": "optional",
+    "save": "Save",
+    "saving": "Saving…",
+    "guide": {
+      "title": "Setup Guide — Step by Step",
+      "steps": [
+        "Open a Meta Developer account at developers.facebook.com → Create App → choose Business → add the WhatsApp product.",
+        "On WhatsApp → API Setup, Meta gives you a free test number. Copy its “Phone number ID” below.",
+        "In the “To” box on the same page add the numbers that should get alerts (at most 5) and verify each with its OTP — a test number can only message these.",
+        "The temporary access token there expires in 24 hours. For a permanent one: business.facebook.com → Business settings → System users → create an Admin system user → assign the app → Generate token with whatsapp_business_messaging and whatsapp_business_management (Expiry: Never).",
+        "Paste the token below, switch alerts on and save, then add recipients and press “Test”.",
+        "In free mode each recipient sends any message (e.g. “hi”) from their WhatsApp to the business (test) number once a day — every alert in the next 24 hours then arrives free. Send “hi” once before testing too.",
+        "(Optional, once on a server) In the app's WhatsApp → Configuration enter the Callback URL and Verify token below and subscribe to the “messages” field. The panel then shows who wrote in and whether messages arrived. This needs a public HTTPS address; localhost will not work.",
+        "Keep the Laravel scheduler running on the server (cron: * * * * * php artisan schedule:run) — checks run at 8 AM and 6 PM daily. Sick alerts go out immediately."
+      ]
+    },
+    "connection": {
+      "title": "Connection (Meta Cloud API)",
+      "hint": "From the Meta app's WhatsApp → API Setup page",
+      "enabled": "Alerts on",
+      "phone_number_id": "Phone number ID",
+      "access_token": "Access token",
+      "business_account_id": "WhatsApp Business Account ID",
+      "api_version": "Graph API version",
+      "app_secret": "App secret",
+      "token_saved": "saved",
+      "clear_token": "Remove the saved token",
+      "clear_secret": "Remove the saved secret",
+      "token_note": "The token is stored encrypted and never shown again. Leave blank to keep the saved one.",
+      "secret_note": "From App settings → Basic. When set, only webhooks signed by Meta are accepted."
+    },
+    "cost": {
+      "title": "Cost Control",
+      "free_only": "Free messages only",
+      "free_only_hint": "When on, only plain text is sent — Meta never charges for it.",
+      "free_tip": "Condition: an alert arrives only if the recipient wrote to your business number in the last 24 hours. Otherwise it is not delivered — and nothing is charged.",
+      "paid_warning": "When off, recipients outside the 24-hour window get the approved template — Meta may charge per message (a payment method is required).",
+      "template_name": "Template name",
+      "language": "Language code",
+      "template_hint": "Create a Utility template in WhatsApp Manager whose body has one variable, e.g. “Easy Farm alert: {{1}}”. Enter its name here once approved."
+    },
+    "webhook": {
+      "title": "Webhook",
+      "hint": "Optional — for delivery status and the free window",
+      "regenerate": "Generate a new verify token",
+      "callback_url": "Callback URL",
+      "verify_token": "Verify token",
+      "regenerate_title": "Generate a new verify token?",
+      "regenerate_message": "The current token stops working. Paste the new one into the webhook settings in Meta, or delivery updates and replies will stop arriving.",
+      "regenerate_confirm": "Generate new token",
+      "regenerated": "New verify token created"
+    },
+    "alerts": {
+      "title": "Which Alerts to Send",
+      "hint": "Only the selected alerts are sent"
+    },
+    "alert": {
+      "sick_alert": "Animal sick",
+      "low_feed_stock": "Low feed",
+      "low_medicine_stock": "Low medicine",
+      "medicine_expiry": "Medicine expiry",
+      "vaccine_due": "Vaccine due",
+      "breeding": "Breeding",
+      "weight_check": "Weight check",
+      "salary_due": "Salary due",
+      "test": "Test",
+      "collar_alert": "Collar alert",
+      "monthly_report": "Monthly report",
+      "bot": "WhatsApp automation"
+    },
+    "alert_hint": {
+      "sick_alert": "Immediately when marked sick or critical",
+      "low_feed_stock": "When stock falls below its alert level",
+      "low_medicine_stock": "When stock falls below its alert level",
+      "medicine_expiry": "30, 7, 3 and 1 days before expiry",
+      "vaccine_due": "7, 3, 1 days before and on the day",
+      "breeding": "Delivery, pregnancy check, heat, dry-off",
+      "weight_check": "Not weighed for 15 days",
+      "salary_due": "After the 25th of the month",
+      "collar_alert": "When a collar spots heat, low rumination or fever",
+      "monthly_report": "The AI farm report on the 1st of each month"
+    },
+    "recipients": {
+      "title": "Recipients ({{count}}/{{max}})",
+      "hint": "Phones that get the alerts — at most 5",
+      "add": "Add Recipient",
+      "edit": "Edit Recipient",
+      "empty": "No recipients yet",
+      "all_alerts": "All alerts",
+      "no_alerts": "No alerts",
+      "window_open": "Free window open",
+      "window_closed": "Free window closed/unknown",
+      "window_note": "The “free window” badge needs the webhook. Alerts still go out without it — the panel just can't tell whether the recipient wrote in.",
+      "test": "Test",
+      "sending": "Sending…",
+      "name": "Name",
+      "phone": "WhatsApp number",
+      "active": "Active",
+      "delete": "Remove",
+      "delete_title": "Remove Recipient?",
+      "delete_message": "{{name}} will stop getting alerts."
+    },
+    "run": {
+      "title": "Check Now",
+      "hint": "See or send the reminders now instead of waiting for the schedule",
+      "preview": "Preview",
+      "send": "Send Now",
+      "empty": "Press Preview to see what would be sent — nothing is sent.",
+      "nothing": "Nothing to send right now."
+    },
+    "log": {
+      "title": "Message Log",
+      "time": "Time",
+      "to": "To",
+      "type": "Type",
+      "message": "Message",
+      "status": "Status",
+      "empty": "No messages sent yet",
+      "template": "template",
+      "text": "text",
+      "state": {
+        "queued": "Queued",
+        "sent": "Sent",
+        "delivered": "Delivered",
+        "read": "Read",
+        "failed": "Failed"
+      }
+    },
+    "toast": {
+      "saved": "Saved",
+      "save_failed": "Could not save",
+      "recipient_saved": "Recipient saved",
+      "test_sent": "Test message sent to {{name}}",
+      "test_failed": "Test failed:",
+      "copied": "Copied"
+    }
+  },
+  "languages": {
+    "title": "Languages",
+    "subtitle": "Choose which languages the menu at the top offers, the one a new visitor starts in, and the font for each.",
+    "col_language": "Language",
+    "col_in_menu": "In menu",
+    "col_default": "Default",
+    "name": {
+      "en": "English",
+      "bn": "Bengali",
+      "ar": "Arabic"
+    },
+    "rtl": "right to left",
+    "note_one": "Only one language is on, so the language menu is hidden and everyone uses it.",
+    "note_many": "The menu at the top will offer these {{count}} languages.",
+    "save": "Save",
+    "saved": "Languages saved",
+    "save_failed": "Could not save the languages",
+    "col_font": "Font"
+  }
+}

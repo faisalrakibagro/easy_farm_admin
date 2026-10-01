@@ -1,0 +1,435 @@
+{
+  "overview": {
+    "title": "Medicine Overview",
+    "current_stock": "Current Stock",
+    "no_stock": "No medicines in inventory yet.",
+    "cards": {
+      "units": "Units",
+      "units_desc": "Manage measurement units",
+      "categories": "Categories",
+      "categories_desc": "Organize medicine types",
+      "inventory": "Inventory",
+      "inventory_desc": "Medicine stock & purchases",
+      "usage": "Usage",
+      "usage_desc": "Record medicine usage"
+    },
+    "hint": "Stock of every medicine. Tap “Batches” to see each purchase with its supplier and price."
+  },
+  "col": {
+    "medicine": "Medicine",
+    "category": "Category",
+    "purchased": "Purchased",
+    "used": "Used",
+    "remaining": "Remaining",
+    "alert": "Alert",
+    "status": "Status",
+    "name": "Name",
+    "unit": "Unit",
+    "expiry": "Expiry",
+    "qty": "Qty"
+  },
+  "units": {
+    "title": "Medicine Units",
+    "subtitle": "Measurement units for medicines",
+    "add": "Add Unit",
+    "edit_title": "Edit Unit",
+    "create_title": "Add Unit",
+    "empty": "No units yet. Add your first unit.",
+    "col": {
+      "name": "Name",
+      "symbol": "Symbol",
+      "status": "Status"
+    },
+    "field": {
+      "name": "Name",
+      "symbol": "Symbol",
+      "active": "Active"
+    }
+  },
+  "categories": {
+    "title": "Medicine Categories",
+    "subtitle": "Organize medicines by type",
+    "add": "Add Category",
+    "edit_title": "Edit Category",
+    "create_title": "Add Category",
+    "empty": "No categories yet.",
+    "col": {
+      "name": "Name",
+      "description": "Description",
+      "medicines": "Medicines"
+    },
+    "field": {
+      "name": "Name"
+    },
+    "trash": {
+      "back_link": "Back to Medicine Categories",
+      "page_title": "Medicine Categories Trash",
+      "warning": "Deleted medicine categories are stored in the trash. Restore to re-activate, or permanently delete to remove all data.",
+      "search_placeholder": "Search trashed categories…",
+      "empty_desc": "No deleted medicine categories found"
+    },
+    "delete_title": "Delete Category",
+    "delete_message": "Are you sure you want to delete this category? This action cannot be undone."
+  },
+  "inventory": {
+    "title": "Medicine Inventory",
+    "subtitle": "Medicine catalogue and stock levels",
+    "add": "Add Medicine",
+    "search_placeholder": "Search medicine…",
+    "empty": "No medicines found.",
+    "trash": {
+      "back_link": "Back to Medicine Inventory",
+      "page_title": "Medicine Trash",
+      "warning": "Deleted medicines are stored here. Restore to re-activate, or permanently delete to remove all data.",
+      "search_placeholder": "Search trashed medicines…",
+      "col": {
+        "category": "Category",
+        "unit": "Unit"
+      },
+      "empty_desc": "No deleted medicines found",
+      "confirm_move": "Are you sure you want to move this medicine to trash? You can restore it later."
+    },
+    "col": {
+      "name": "Medicine",
+      "category": "Category",
+      "unit": "Unit",
+      "stock": "Current Stock",
+      "low_alert": "Low Alert"
+    },
+    "field": {
+      "name": "Medicine Name",
+      "category": "Category",
+      "unit": "Unit",
+      "manufacturer": "Manufacturer",
+      "low_stock_alert": "Low Stock Alert Qty",
+      "low_stock_alert_hint": "Required — alert triggers when stock falls below this quantity.",
+      "milk_withdrawal_days": "Milk withdrawal (days)",
+      "milk_withdrawal_days_hint": "Days the animal's milk must not be sold after this medicine. 0 if none."
+    },
+    "validation": {
+      "low_stock_alert_required": "Low stock alert quantity is required. Please enter a threshold greater than 0."
+    },
+    "filter": {
+      "low_stock": "Low Stock",
+      "no_category": "No category"
+    },
+    "modal": {
+      "create_title": "Add Medicine",
+      "edit_title": "Edit Medicine"
+    },
+    "badge": {
+      "vaccine": "Vaccine"
+    },
+    "label": {
+      "trash": "Trash",
+      "is_vaccine": "Is this a vaccine?",
+      "vaccine_yes": "Yes — appears in the vaccine list",
+      "vaccine_no": "No — regular medicine"
+    }
+  },
+  "purchases": {
+    "title": "Medicine Purchases",
+    "add": "Add Purchase",
+    "record": "Record Purchase",
+    "empty": "No purchases recorded yet.",
+    "trash": {
+      "back_link": "Back to Medicine Purchases",
+      "page_title": "Medicine Purchases Trash",
+      "warning": "Deleted purchases are stored in the trash. Restore to recover the record, or permanently delete to remove all data.",
+      "search_placeholder": "Search trashed purchases…",
+      "col": {
+        "purchase_info": "Purchase Info",
+        "supplier": "Supplier",
+        "total_cost": "Total Cost"
+      },
+      "empty_desc": "No deleted medicine purchases found",
+      "confirm_move": "Are you sure you want to move this purchase record to trash?"
+    },
+    "detail_title": "Purchase Details",
+    "edit_title": "Edit Purchase",
+    "create_title": "Record Medicine Purchase",
+    "items": "Items",
+    "grand_total": "Grand Total",
+    "edit_note": "Note: Items cannot be changed after purchase is recorded.",
+    "edit_items_warning": "You can update the receipt or notes.",
+    "new_total": "New Total",
+    "receipt_file_hint": "Receipt File (PDF, JPG, PNG — max 10 MB)",
+    "btn": {
+      "save_changes": "Save Changes",
+      "record": "Record Purchase"
+    },
+    "label": {
+      "trash": "Trash",
+      "payment": "Payment",
+      "payment_status": "Payment Status",
+      "paid_full": "Fully Paid",
+      "partial": "Partial",
+      "unpaid": "Unpaid",
+      "due": "Due",
+      "paid_amount": "Amount Paid (৳)",
+      "paid_amount_hint": "How much is being paid now",
+      "phone_or_invoice_hint": "(phone or invoice — one required)",
+      "auto_filled_editable": "(auto-filled — editable)"
+    },
+    "action": {
+      "view_details": "View details",
+      "edit": "Edit",
+      "delete": "Delete",
+      "remove_item": "Remove",
+      "change_file": "Change File",
+      "upload_receipt": "Upload Receipt"
+    },
+    "item": {
+      "label": "Item {{num}}",
+      "subtotal": "Subtotal",
+      "correct_unit_price": "Items — correct unit price if entered wrong",
+      "recalc_warning": "Changing the unit price recalculates the total cost and automatically adjusts the account balance."
+    },
+    "placeholder": {
+      "phone_number": "Phone number"
+    },
+    "col": {
+      "medicine": "Medicine",
+      "date": "Date",
+      "quantity": "Quantity",
+      "unit_price": "Unit Price",
+      "total": "Total",
+      "expiry": "Expiry Date",
+      "supplier": "Supplier",
+      "account": "Account",
+      "invoice": "Invoice",
+      "items": "Items",
+      "total_cost": "Total Cost",
+      "paid_from": "Paid From",
+      "unit_price_bdt": "Unit Price (৳)"
+    },
+    "field": {
+      "medicine": "Medicine",
+      "date": "Purchase Date",
+      "quantity": "Quantity",
+      "unit_price": "Unit Price (৳)",
+      "expiry_date": "Expiry Date",
+      "batch_number": "Batch Number",
+      "supplier": "Supplier",
+      "account": "Payment Account",
+      "notes": "Notes",
+      "invoice_no": "Invoice No.",
+      "supplier_name": "Supplier Name",
+      "supplier_phone": "Supplier Phone",
+      "manual_supplier": "Enter manually",
+      "batch_no": "Batch No.",
+      "select_medicine": "Select medicine…",
+      "add_item": "+ Add Medicine",
+      "paid_from": "Paid From",
+      "not_specified": "Not specified",
+      "select_account": "Select Payment Account"
+    }
+  },
+  "batches": {
+    "title": "Batch Stock",
+    "total": "Total Batches",
+    "empty": "No batches found",
+    "col": {
+      "medicine": "Medicine",
+      "batch": "Batch",
+      "batch_no": "Batch No.",
+      "purchase_date": "Purchase Date",
+      "quantity": "Quantity",
+      "expiry": "Expiry",
+      "status": "Status",
+      "received": "Received",
+      "used": "Used",
+      "remaining": "Remaining",
+      "unit_price": "Unit Price",
+      "expiry_date": "Expiry Date",
+      "supplier": "Supplier",
+      "remaining_value": "Value left"
+    },
+    "invoice": "Invoice {{no}}",
+    "remaining_value": "Value of stock left",
+    "hint": "Each purchase is its own batch with its own price. Use takes the batch that expires first.",
+    "view_batches": "Batches"
+  },
+  "usage": {
+    "title": "Medicine Usage",
+    "subtitle": "Record and track medicine given to animals",
+    "add": "Record Usage",
+    "record": "Record Usage",
+    "empty": "No medicine usage records yet.",
+    "edit_title": "Edit Usage Record",
+    "create_title": "Record Medicine Usage",
+    "edit_note": "Quantity cannot be changed.",
+    "fifo_hint": "Stock will be deducted using FIFO method.",
+    "btn": {
+      "record": "Record",
+      "save_changes": "Save Changes",
+      "clear": "Clear",
+      "save": "Save",
+      "give": "Give Medicine"
+    },
+    "filter": {
+      "all_cattle": "All Cattle",
+      "all_medicines": "All Medicines"
+    },
+    "col": {
+      "date": "Date",
+      "medicine": "Medicine",
+      "cattle": "Cattle",
+      "quantity": "Quantity",
+      "given_by": "Given By",
+      "qty_used": "Qty Used",
+      "cost": "Cost",
+      "next_due_date": "Next Due Date"
+    },
+    "field": {
+      "date": "Date",
+      "medicine": "Medicine",
+      "cattle": "Cattle",
+      "quantity": "Quantity",
+      "given_by": "Given By",
+      "notes": "Notes",
+      "select_cattle": "Select cattle…",
+      "select_medicine": "Select medicine…",
+      "quantity_used": "Quantity Used",
+      "vaccine_link": "Link to Vaccine Schedule",
+      "no_vaccine_link": "No vaccine link",
+      "next_due_date": "Next Due Date",
+      "next_due_date_optional": "Next Due Date (Optional)"
+    },
+    "detail": {
+      "unit_cost": "Unit Cost",
+      "batch": "Batch",
+      "vaccine_link": "Vaccine Link"
+    },
+    "tooltip": {
+      "move_to_trash": "Move to Trash"
+    },
+    "label": {
+      "cattle_list": "Cattle List ({{count}})",
+      "next_due_date_optional": "Next Due Date (Optional)",
+      "optional": "(optional)"
+    },
+    "cattle_count": "{{count}} cattle",
+    "modal": {
+      "edit_title": "Edit Medicine Record",
+      "update_all_warning": "All {{count}} cattle records will be updated together."
+    },
+    "toast": {
+      "updated": "{{count}} records updated.",
+      "update_failed": "Update failed.",
+      "moved_to_trash": "{{count}} records moved to Trash.",
+      "delete_failed": "Delete failed."
+    },
+    "confirm": {
+      "move_to_trash_title": "Move to Trash",
+      "move_to_trash_message": "\"{{medicine}}\" — {{count}} cattle records will be moved to Trash. You can restore them later.",
+      "move_to_trash_label": "Move to Trash"
+    },
+    "trash": {
+      "title": "Deleted Medicine Usage",
+      "subtitle": "Restore or permanently delete records.",
+      "back": "Back",
+      "col_deleted_at": "Deleted At",
+      "empty": "No deleted records.",
+      "confirm_restore": {
+        "title": "Restore?",
+        "message": "Restore this usage record?",
+        "label": "Restore"
+      },
+      "confirm_delete": {
+        "title": "Permanently Delete?",
+        "message": "This will be permanently removed.",
+        "label": "Delete Forever"
+      },
+      "toast": {
+        "restored": "Restored.",
+        "restore_error": "Restore failed.",
+        "deleted": "Permanently deleted.",
+        "delete_error": "Delete failed."
+      }
+    }
+  },
+  "adjustments": {
+    "title": "Medicine Wastage / Loss Adjustments",
+    "subtitle": "Record damaged or wasted medicine — allocated as farm overhead, not to any individual animal.",
+    "btn_add": "Record Adjustment",
+    "modal_title": "Record Medicine Adjustment",
+    "modal_hint": "Stock will be deducted via FIFO. This cost goes to farm overhead — not allocated to any animal.",
+    "empty": "No adjustment records yet.",
+    "col": {
+      "date": "Date",
+      "item": "Medicine",
+      "type": "Type",
+      "quantity": "Quantity",
+      "unit_price": "Unit Price",
+      "total_cost": "Total Cost",
+      "reason": "Reason"
+    },
+    "field": {
+      "item": "Medicine",
+      "type": "Adjustment Type",
+      "quantity": "Quantity",
+      "date": "Date",
+      "reason": "Reason",
+      "notes_placeholder": "Details (optional)"
+    },
+    "type": {
+      "wastage": "Wastage",
+      "damage": "Damage",
+      "expiry": "Expired",
+      "spillage": "Spillage",
+      "spoilage": "Spoilage",
+      "pest": "Pest",
+      "theft": "Theft",
+      "other": "Other"
+    },
+    "select_item": "Select medicine...",
+    "item_option": "{{name}} (remaining: {{qty}} {{unit}})",
+    "validation": {
+      "item_required": "Select a medicine.",
+      "quantity_required": "Enter a valid quantity.",
+      "date_required": "Date is required."
+    },
+    "confirm_delete": {
+      "title": "Delete Adjustment?",
+      "message": "Deleting this record will restore the stock. Are you sure?",
+      "label": "Delete"
+    },
+    "trash": {
+      "title": "Deleted Medicine Adjustments",
+      "subtitle": "Restore or permanently delete records.",
+      "back": "Back",
+      "col_deleted_at": "Deleted At",
+      "empty": "No deleted records.",
+      "confirm_restore": {
+        "title": "Restore?",
+        "message": "Restore this adjustment record?",
+        "label": "Restore"
+      },
+      "confirm_delete": {
+        "title": "Permanently Delete?",
+        "message": "This will be permanently removed.",
+        "label": "Delete Forever"
+      },
+      "toast": {
+        "restored": "Restored.",
+        "restore_error": "Restore failed.",
+        "deleted": "Permanently deleted.",
+        "delete_error": "Delete failed."
+      }
+    },
+    "toast": {
+      "recorded": "Adjustment recorded.",
+      "deleted": "Deleted.",
+      "delete_error": "Could not delete.",
+      "save_error": "Failed to save."
+    }
+  },
+  "search_select": {
+    "placeholder": "— Select from stock —",
+    "search_placeholder": "Search by name...",
+    "no_results": "No medicine found",
+    "stock_display": "{{name}} ({{qty}} {{symbol}} in stock)",
+    "stock_suffix": "{{qty}} {{symbol}} in stock"
+  }
+}
